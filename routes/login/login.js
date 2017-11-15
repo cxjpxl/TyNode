@@ -41,6 +41,7 @@ router.post('/register',async (ctx,next)=>{
     if(user){
         msg = "时间修改成功";
     }
+    console.log(msg);
     await update(User,{userName : userName},{$set:{valueTime:valueTime}});
     ctx.body = {
         no:200,
@@ -68,8 +69,6 @@ router.post('/login',async (ctx,next)=>{
     let body  = ctx.request.body;
     let userName  = body.userName;
     let comId = body.comId;
-    console.log("userName:"+userName);
-    console.log("comId:"+comId);
     if(!userName||!comId){
         ctx.body = {
             no:201,
