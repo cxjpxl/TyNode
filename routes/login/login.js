@@ -35,11 +35,17 @@ router.post('/register',async (ctx,next)=>{
         };
         return ;
     }
+
+    let msg = "注册成功";
+    let user = await User.findOne({userName: userName}).exec();
+    if(user){
+        msg = "时间修改成功";
+    }
     await update(User,{userName : userName},{$set:{valueTime:valueTime}});
     ctx.body = {
         no:200,
         time:valueTime,
-        msg:'注册成功',
+        msg:msg,
     };
 
 });
