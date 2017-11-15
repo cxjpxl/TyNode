@@ -20,6 +20,7 @@ console.log("mongo connected");
 const appWebSocket = websockify(new Koa());
 global.ctxs = [];
 appWebSocket.ws.use((ctx) => {
+    console.log("有连接,当前连接个数"+global.ctxs.length);
     global.ctxs .push(ctx);
     ctx.websocket.on('message', function(message) {
 
