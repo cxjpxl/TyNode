@@ -1,0 +1,23 @@
+body,div,ul,li,h1,h2,h3,h4,h5,h6,p,hr,button,img,a{
+    margin: 0;
+    padding: 0;
+    -webkit-padding-start: 0;
+}
+
+.container{
+    padding:10px;
+    margin:0 auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.loginDiv {
+    padding:10px;
+    border-color: #00B7FF;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+}

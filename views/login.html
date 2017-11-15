@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/login.css" rel="stylesheet">
+    <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <title>登录</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loginDiv">
+            <form  id="form">
+                用户:<input id='userInput' type="text" name="user"/>
+                <div style="margin-top: 10px">
+                    密码:<input id='pwdInput' type="password" name="pwd"/>
+                </div>
+                <div style="margin-top: 30px">
+                    <input type="submit" value="登录" onclick="return mySubmit()"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function () {
+            var user = '{{user}}';
+            if (!user) return;
+            $('#userInput').attr('value', user);
+            $('#pwdInput').attr('value', '{{pwd}}');
+        });
+
+        function mySubmit() {
+            var user = $('#userInput').val().replace(/(^\s*)|(\s*$)/g, "");
+            var pwd = $('#pwdInput').val().replace(/(^\s*)|(\s*$)/g, "");
+
+            if(!user||user == ''){
+                alert('用户不能为空！');
+                return false;
+            }
+
+            $.ajax({
+                type:"POST",
+                url:"/cxj/login",
+                contentType:"application/json",
+                dataType:"json",
+                data:JSON.stringify(
+                    {user:user,
+                        pwd:pwd,
+                    }),
+                success:function(data){
+                    if(data&&data.no){
+                        console.log(data);
+                        alert(data.msg);
+                    }else{
+                        alert('获取数据失败');
+                    }
+                }
+            });
+            return false;
+        }
+    </script>
+</body>
+</html>
