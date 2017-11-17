@@ -1,9 +1,6 @@
 /**
  * Created by cxj on 17-11-13.
  */
-/**
- * Created by cxj on 17-10-26.
- */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
