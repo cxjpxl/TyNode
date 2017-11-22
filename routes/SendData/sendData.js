@@ -39,7 +39,7 @@ router.post('/sendData', async (ctx, next) => {
 
     }
 
-    if(message == "null") {
+    if(message == "null"&&type!=1) {
         ctx.body={
             no:202,
             msg:'数据不能为null',
