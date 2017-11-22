@@ -30,6 +30,15 @@ router.post('/sendData', async (ctx, next) => {
         };
         return ;
     }
+
+    if(message == "null") {
+        ctx.body={
+            no:200,
+            msg:'发送成功',
+        };
+        return ;
+    }
+
     //将消息保存在数据库里面
     for(let i = 0 ; i <  global.ctxs.length ; i ++){
         let socket = global.ctxs[i];
