@@ -56,8 +56,11 @@ router.post('/sendData', async (ctx, next) => {
     }
 
     //解析type为1的情况
+    console.log("type ="+type);
     if(type == 1){
+        console.log("type == 1");
         let dataArray = JSON.parse(message);
+        console.log(dataArray.length);
         let gameArray = [];
         for(let i = 0 ; i < dataArray.length; i++){
             let dataItem = dataArray[i];
