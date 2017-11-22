@@ -3,7 +3,7 @@
  */
 const router = require('koa-router')();
 const Message = require('../../models/Message').Message;
-
+const Game = require('../../models/Game').Game;
 
 
 function update(model,query,update){
@@ -39,14 +39,6 @@ router.post('/sendData', async (ctx, next) => {
 
     }
 
-
-    if(type == 1){
-        console.log(body);
-        console.log(message);
-        console.log(type);
-        console.log("------------------")
-    }
-
     if(message == "null") {
         ctx.body={
             no:202,
@@ -55,8 +47,39 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
+    if(type !=1 || type !=2){
+        ctx.body={
+            no:203,
+            msg:'type类型错误',
+        };
+        return ;
+    }
+
+    //解析type为1的情况
+    if(type == 1){
+        let dataArray = JSON.parse(message);
+        let gameArray = [];
+        for(let i = 0 ; i < dataArray.length; i++){
+            let dataItem = dataArray[i];
+            let teamName = dataItem["teamName"];
+            let nameH = teamName[0];
+            let nameG = teamName[1];
+            let idset = dataItem["idset"];
+            let mid = idset[0];
+            let time = dataItem["gameTime"];
+
+            console.log("nameH:"+nameH);
+            console.log("nameG:"+nameG);
+            console.log("mid:"+mid);
+            console.log("time:"+time);
+        }
+    }
+
+
+
 
     //将消息保存在数据库里面
+    /*
     for(let i = 0 ; i <  global.ctxs.length ; i ++){
         let socket = global.ctxs[i];
         if(!socket) continue;
@@ -65,14 +88,15 @@ router.post('/sendData', async (ctx, next) => {
         }catch (e){
 
         }
-    }
-    if(type == 1){
-        let time = new Date().getTime();
-        await update(Message,{time:time},{$set:{
-            message:message.toString(),
-            time:time,
-        }});
-    }
+    }*/
+
+    // if(type == 1){
+    //     let time = new Date().getTime();
+    //     await update(Message,{time:time},{$set:{
+    //         message:message.toString(),
+    //         time:time,
+    //     }});
+    // }
 
     ctx.body={
         no:200,
