@@ -4,6 +4,7 @@
 const router = require('koa-router')();
 const Message = require('../../models/Message').Message;
 const Game = require('../../models/Game').Game;
+var JSON5 = require('json5');
 
 
 function update(model,query,update){
@@ -57,7 +58,7 @@ router.post('/sendData', async (ctx, next) => {
 
 
     if(type == 1){
-        let dataArray = JSON.parse(message);
+        let dataArray = JSON5.parse(message);
         if(dataArray.length > 0 ){
             //删除数据
             await Game.remove({}).exec();
@@ -78,7 +79,7 @@ router.post('/sendData', async (ctx, next) => {
 
 
     if(type == 2){
-        let data = JSON.parse(message);
+        let data = JSON5.parse(message);
         let mid = data["MID"];
         let eid = data["EID"];
        // if(eid==9926||eid==9927||eid==2086||eid==1062){
