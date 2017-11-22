@@ -42,6 +42,9 @@ router.post('/sendData', async (ctx, next) => {
 
     if(type == 1){
         console.log(body);
+        console.log(message);
+        console.log(type);
+        console.log("------------------")
     }
 
     if(message == "null"&&type!=1) {
