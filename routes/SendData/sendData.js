@@ -47,7 +47,7 @@ router.post('/sendData', async (ctx, next) => {
         console.log("------------------")
     }
 
-    if(message == "null"&&type!=1) {
+    if(message == "null") {
         ctx.body={
             no:202,
             msg:'数据不能为null',
@@ -69,7 +69,7 @@ router.post('/sendData', async (ctx, next) => {
     if(type == 1){
         let time = new Date().getTime();
         await update(Message,{time:time},{$set:{
-            message:message,
+            message:message.toString(),
             time:time,
         }});
     }
