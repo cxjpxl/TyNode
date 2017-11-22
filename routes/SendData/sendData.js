@@ -55,10 +55,8 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
-    //解析type为1的情况
-    console.log("type ="+type);
+
     if(type == 1){
-        console.log("type == 1");
         let dataArray = JSON.parse(message);
         if(dataArray.length > 0 ){
             //删除数据
@@ -76,6 +74,15 @@ router.post('/sendData', async (ctx, next) => {
                 await g.save();
             }
         }
+    }
+
+
+    if(type == 2){
+             let time = new Date().getTime();
+             await update(Message,{time:time},{$set:{
+                message:message.toString(),
+                 time:time,
+             }});
     }
 
 
