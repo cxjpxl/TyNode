@@ -47,7 +47,7 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
-    if(type !=1 || type !=2){
+    if(type !=1 && type !=2){
         ctx.body={
             no:203,
             msg:'type类型错误',
