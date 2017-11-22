@@ -60,21 +60,21 @@ router.post('/sendData', async (ctx, next) => {
     if(type == 1){
         console.log("type == 1");
         let dataArray = JSON.parse(message);
-        console.log(dataArray.length);
-        let gameArray = [];
-        for(let i = 0 ; i < dataArray.length; i++){
-            let dataItem = dataArray[i];
-            let teamName = dataItem["teamName"];
-            let nameH = teamName[0];
-            let nameG = teamName[1];
-            let idset = dataItem["idset"];
-            let mid = idset[0];
-            let time = dataItem["gameTime"];
-
-            console.log("nameH:"+nameH);
-            console.log("nameG:"+nameG);
-            console.log("mid:"+mid);
-            console.log("time:"+time);
+        if(dataArray.length > 0 ){
+            //删除数据
+            await Game.remove({}).exec();
+            //存数据
+            for(let i = 0 ; i < dataArray.length; i++){
+                let dataItem = dataArray[i];
+                let teamName = dataItem["teamName"];
+                let nameH = teamName[0];
+                let nameG = teamName[1];
+                let idset = dataItem["idset"];
+                let mid = idset[0];
+                let time = dataItem["gameTime"];
+                let g = new Game({nameH,nameG,mid,time});
+                await g.save();
+            }
         }
     }
 
