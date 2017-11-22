@@ -38,17 +38,11 @@ router.post('/sendData', async (ctx, next) => {
     }catch (e){
 
     }
-    if(type == 2){
-        console.log("type:"+type);
-    }else{
-        console.log("type:"+type);
-    }
-
 
     if(message == "null") {
         ctx.body={
-            no:200,
-            msg:'发送成功',
+            no:202,
+            msg:'数据不能为null',
         };
         return ;
     }
