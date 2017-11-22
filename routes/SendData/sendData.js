@@ -84,10 +84,12 @@ router.post('/sendData', async (ctx, next) => {
         let eid = data["EID"];
        if(eid==9926||eid==9927||eid==2086||eid==1062){
             let game = await Game.findOne({mid: mid}).exec();
+            let time = new Date().getTime();
             if(game&&game.mid){
                 let curData = {
                     game,
                     eid,
+                    curTime:time,
                 };
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
                  let socket = global.ctxs[i];
