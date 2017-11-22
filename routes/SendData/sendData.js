@@ -23,12 +23,19 @@ function update(model,query,update){
 router.post('/sendData', async (ctx, next) => {
     let body  = ctx.request.body;
     let message  = body.message;
-    if(!message){
+    let type = body.type;
+    if(!message||!type){
         ctx.body={
             no:201,
             msg:'消息不能为空',
         };
         return ;
+    }
+
+    try{
+        type = parseInt(type);
+    }catch (e){
+
     }
 
     if(message == "null") {
@@ -38,6 +45,7 @@ router.post('/sendData', async (ctx, next) => {
         };
         return ;
     }
+
 
     //将消息保存在数据库里面
     for(let i = 0 ; i <  global.ctxs.length ; i ++){
@@ -49,11 +57,14 @@ router.post('/sendData', async (ctx, next) => {
 
         }
     }
-    let time = new Date().getTime();
-    await update(Message,{time:time},{$set:{
-        message:message,
-        time:time,
-    }});
+    if(type == 1){
+        let time = new Date().getTime();
+        await update(Message,{time:time},{$set:{
+            message:message,
+            time:time,
+        }});
+    }
+
     ctx.body={
         no:200,
         msg:'发送成功',
