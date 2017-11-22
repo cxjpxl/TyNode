@@ -31,6 +31,7 @@ router.post('/sendData', async (ctx, next) => {
         };
         return ;
     }
+    console.log("type:"+type);
 
     try{
         type = parseInt(type);
@@ -58,6 +59,7 @@ router.post('/sendData', async (ctx, next) => {
         }
     }
     if(type == 1){
+        console.log("type=1发生");
         let time = new Date().getTime();
         await update(Message,{time:time},{$set:{
             message:message,
