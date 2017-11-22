@@ -78,35 +78,29 @@ router.post('/sendData', async (ctx, next) => {
 
 
     if(type == 2){
-             let time = new Date().getTime();
-             await update(Message,{time:time},{$set:{
-                message:message.toString(),
-                 time:time,
-             }});
+        let data = JSON.parse(message);
+        let mid = data["MID"];
+        let eid = data["EID"];
+        if(eid==9926||eid==9927||eid==2086||eid==1062){
+            let game = await game.findOne({mid: mid}).exec();
+            if(game&&game.mid){
+                let curData = {
+                    game,
+                    eid,
+                };
+                 for(let i = 0 ; i <  global.ctxs.length ; i ++){
+                 let socket = global.ctxs[i];
+                 if(!socket) continue;
+                 try{
+                    socket.websocket.send(JSON.stringify(curData));
+                 }catch (e){
+
+                 }
+                 }
+            }
+        }
     }
 
-
-
-
-    //将消息保存在数据库里面
-    /*
-    for(let i = 0 ; i <  global.ctxs.length ; i ++){
-        let socket = global.ctxs[i];
-        if(!socket) continue;
-        try{
-            socket.websocket.send(message.toString());
-        }catch (e){
-
-        }
-    }*/
-
-    // if(type == 1){
-    //     let time = new Date().getTime();
-    //     await update(Message,{time:time},{$set:{
-    //         message:message.toString(),
-    //         time:time,
-    //     }});
-    // }
 
     ctx.body={
         no:200,
