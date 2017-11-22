@@ -31,13 +31,19 @@ router.post('/sendData', async (ctx, next) => {
         };
         return ;
     }
-    console.log("type:"+type);
+
 
     try{
         type = parseInt(type);
     }catch (e){
 
     }
+    if(type == 2){
+        console.log("type:"+type);
+    }else{
+        console.log("type:"+type);
+    }
+
 
     if(message == "null") {
         ctx.body={
