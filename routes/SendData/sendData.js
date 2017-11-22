@@ -82,7 +82,7 @@ router.post('/sendData', async (ctx, next) => {
         let data = JSON5.parse(message);
         let mid = data["MID"];
         let eid = data["EID"];
-       // if(eid==9926||eid==9927||eid==2086||eid==1062){
+       if(eid==9926||eid==9927||eid==2086||eid==1062){
             let game = await Game.findOne({mid: mid}).exec();
             if(game&&game.mid){
                 let curData = {
@@ -98,7 +98,7 @@ router.post('/sendData', async (ctx, next) => {
 
                  }
                  }
-          //  }
+            }
         }
     }
 
