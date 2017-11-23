@@ -25,6 +25,12 @@ router.post('/sendData', async (ctx, next) => {
     let body  = ctx.request.body;
     let message  = body.message;
     let type = body.type;
+
+
+    console.log(body);
+    console.log(message);
+    console.log(type);
+
     if(!message||!type){
         ctx.body={
             no:201,
