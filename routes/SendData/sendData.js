@@ -87,14 +87,14 @@ router.post('/sendData', async (ctx, next) => {
         }});
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
-        let eid = data["EID"];
-       if(eid==9926||eid==9927||eid==2086||eid==1062){
+        let cid = data["CID"];
+       if(cid==9926||cid==9927||cid==2086||cid==1062){
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
             if(game&&game.mid){
                 let curData = {
                     game,
-                    eid,
+                    cid,
                     curTime:time,
                 };
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
