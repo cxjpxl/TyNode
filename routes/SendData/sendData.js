@@ -88,7 +88,6 @@ router.post('/sendData', async (ctx, next) => {
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
         let cid = data["CID"];
-
         try{
             cid = parseInt(cid);
         }catch (e){
@@ -104,7 +103,7 @@ router.post('/sendData', async (ctx, next) => {
             if(game&&game.mid){
                 let curData = {
                     game,
-                    cid,
+                    data,
                     curTime:time,
                 };
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
