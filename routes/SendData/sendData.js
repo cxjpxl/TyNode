@@ -98,7 +98,7 @@ router.post('/sendData', async (ctx, next) => {
             };
             return ;
         }
-
+        console.log("cid:"+cid);
        if(cid==9926||cid==9927||cid==2086||cid==1062||cid==2055||cid==1031){
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
