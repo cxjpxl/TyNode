@@ -99,6 +99,7 @@ router.post('/sendData', async (ctx, next) => {
             return ;
         }
         console.log("cid:"+cid);
+        console.log(typeof (cid));
        if(cid==9926||cid==9927||cid==2086||cid==1062||cid==2055||cid==1031){
            console.log("有数据过来:"+cid);
             let game = await Game.findOne({mid: mid}).exec();
