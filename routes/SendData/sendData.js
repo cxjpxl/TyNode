@@ -88,6 +88,17 @@ router.post('/sendData', async (ctx, next) => {
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
         let cid = data["CID"];
+
+        try{
+            cid = parseInt(cid);
+        }catch (e){
+            ctx.body={
+                no:203,
+                msg:'cid类型错误',
+            };
+            return ;
+        }
+
        if(cid==9926||cid==9927||cid==2086||cid==1062||cid==2055||cid==1031){
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
