@@ -98,9 +98,7 @@ router.post('/sendData', async (ctx, next) => {
             };
             return ;
         }
-        console.log("cid:"+cid);
-        console.log(typeof (cid));
-       if([9926,9927,2086,1062,2055,1031].indexOf(cid) != -1){
+       if(cid==9926||cid==9927||cid==2086||cid==1062||cid==2055||cid==1031){
            console.log("有数据过来:"+cid);
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
