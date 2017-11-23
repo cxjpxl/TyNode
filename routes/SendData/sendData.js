@@ -26,11 +26,6 @@ router.post('/sendData', async (ctx, next) => {
     let message  = body.message;
     let type = body.type;
 
-
-    console.log(body);
-    console.log(message);
-    console.log(type);
-
     if(!message||!type){
         ctx.body={
             no:201,
@@ -76,6 +71,7 @@ router.post('/sendData', async (ctx, next) => {
                 let nameG = teamName[1];
                 let idset = dataItem["idset"];
                 let mid = idset[0];
+                if(mid == "0") continue;
                 let time = dataItem["gameTime"];
                 let g = new Game({nameH,nameG,mid,time});
                 await g.save();
@@ -90,11 +86,8 @@ router.post('/sendData', async (ctx, next) => {
             message:message,
         }});
         let data = JSON5.parse(message);
-        console.log(data);
         let mid = data["MID"]+"";
-        console.log(mid);
         let eid = data["EID"];
-        console.log(eid);
        if(eid==9926||eid==9927||eid==2086||eid==1062){
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
