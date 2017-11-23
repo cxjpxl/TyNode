@@ -88,7 +88,7 @@ router.post('/sendData', async (ctx, next) => {
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
         let cid = data["CID"];
-       if(cid==9926||cid==9927||cid==2086||cid==1062){
+       if(cid==9926||cid==9927||cid==2086||cid==1062||cid==2055||cid==1031){
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
             if(game&&game.mid){
