@@ -80,8 +80,11 @@ router.post('/sendData', async (ctx, next) => {
 
     if(type == 2){
         let data = JSON5.parse(message);
+        console.log(data);
         let mid = data["MID"];
+        console.log(mid);
         let eid = data["EID"];
+        console.log(eid);
        if(eid==9926||eid==9927||eid==2086||eid==1062){
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
