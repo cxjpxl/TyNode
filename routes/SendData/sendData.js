@@ -91,7 +91,7 @@ router.post('/sendData', async (ctx, next) => {
         }});
         let data = JSON5.parse(message);
         console.log(data);
-        let mid = data["MID"];
+        let mid = data["MID"]+"";
         console.log(mid);
         let eid = data["EID"];
         console.log(eid);
