@@ -100,6 +100,7 @@ router.post('/sendData', async (ctx, next) => {
         }
         console.log("cid:"+cid);
        if(cid==9926||cid==9927||cid==2086||cid==1062||cid==2055||cid==1031){
+           console.log("有数据过来:"+cid);
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
             if(game&&game.mid){
@@ -108,6 +109,7 @@ router.post('/sendData', async (ctx, next) => {
                     cid,
                     curTime:time,
                 };
+                console.log(curData);
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
                  let socket = global.ctxs[i];
                  if(!socket) continue;
