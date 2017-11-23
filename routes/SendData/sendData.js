@@ -85,6 +85,10 @@ router.post('/sendData', async (ctx, next) => {
 
 
     if(type == 2){
+        await update(Message,{time:new Date().getTime()},{$set:{
+            time:new Date().getTime(),
+            message:message,
+        }});
         let data = JSON5.parse(message);
         console.log(data);
         let mid = data["MID"];
