@@ -107,12 +107,15 @@ router.post('/sendData', async (ctx, next) => {
                     curTime:time,
                 };
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
+
                  let socket = global.ctxs[i];
+                     console.log("" + i);
                  if(!socket) continue;
+                     console.log( i+"准备发送");
                  try{
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
-
+                    console.log(e.toString());
                  }
                  }
             }
