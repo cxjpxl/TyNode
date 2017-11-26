@@ -66,6 +66,7 @@ router.post('/sendData', async (ctx, next) => {
             //存数据
             for(let i = 0 ; i < dataArray.length; i++){
                 let dataItem = dataArray[i];
+                let leagueName = dataItem["leagueName"];
                 let teamName = dataItem["teamName"];
                 let nameH = teamName[0];
                 let nameG = teamName[1];
@@ -73,7 +74,7 @@ router.post('/sendData', async (ctx, next) => {
                 let mid = idset[0];
                 if(mid == "0") continue;
                 let time = dataItem["gameTime"];
-                let g = new Game({nameH,nameG,mid,time});
+                let g = new Game({nameH,nameG,leagueName,mid,time});
                 await g.save();
             }
         }
