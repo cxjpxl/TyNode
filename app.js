@@ -23,7 +23,7 @@ appWebSocket.ws.use((ctx) => {
     global.ctxs .push(ctx);
     console.log("有连接,当前连接个数"+global.ctxs.length);
     ctx.websocket.on('message', function(message) {
-
+        console.log("收到消息:"+message+"\n当前连接个数:"+global.ctxs.length);
     });
     ctx.websocket.on('close', function(){
         for(let i= 0 ; i < global.ctxs .length ; i ++){
