@@ -30,6 +30,7 @@ appWebSocket.ws.use((ctx) => {
         for(let i= 0 ; i < global.ctxs .length ; i ++){
             if(global.ctxs [i] == ctx){
                 global.ctxs .pop(ctx);
+                console.log("找到  "+global.ctxs.length);
                 break;
             }
         }
