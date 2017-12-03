@@ -116,6 +116,11 @@ router.post('/sendData', async (ctx, next) => {
                  try{
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
+                     try{
+                         socket.websocket.close(1000,"no open");
+                     }catch (e1){
+
+                     } console.log(e1.toString());
                     console.log(e.toString());
                  }
                  }
