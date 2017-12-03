@@ -20,6 +20,7 @@ console.log("mongo connected");
 const appWebSocket = websockify(new Koa());
 global.ctxs = [];
 appWebSocket.ws.use((ctx) => {
+    ctx.tag = new Date().getTime();
     global.ctxs .push(ctx);
     console.log("有连接,当前连接个数"+global.ctxs.length);
     ctx.websocket.on('message', function(message) {
@@ -27,9 +28,9 @@ appWebSocket.ws.use((ctx) => {
         ctx.websocket.send("11");
     });
     ctx.websocket.on('close', function(){
-        console.log("关闭回调，"+global.ctxs.length);
+        console.log("关闭回调，"+global.ctxs.length+",tag:"+ctx.tag);
         for(let i= 0 ; i < global.ctxs .length ; i ++){
-            if(global.ctxs [i] == ctx){
+            if(global.ctxs [i].tag == ctx.tag){
                 global.ctxs .pop(ctx);
                 console.log("找到  "+global.ctxs.length);
                 break;
