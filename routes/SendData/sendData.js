@@ -110,18 +110,16 @@ router.post('/sendData', async (ctx, next) => {
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
                  let socket = global.ctxs[i];
                  if(!socket) continue;
-                     console.log( i+"准备发送");
-               //  try{
-               //     socket.websocket.send(JSON.stringify(curData));
-               //  }catch (e){
+                 try{
+                    socket.websocket.send(JSON.stringify(curData));
+                 }catch (e){
+                     console.log("发送错误:"+e.toString());
                      try{
-                         console.log("发生错误  要关闭");
                          socket.websocket.close(1000,"no open");
                      }catch (e1){
-                         console.log(e1.toString());
+                         console.log("关闭错误:"+e1.toString());
                      }
-                 //   console.log(e.toString());
-                // }
+                 }
                  }
             }
       // }
