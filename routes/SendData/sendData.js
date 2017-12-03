@@ -117,10 +117,11 @@ router.post('/sendData', async (ctx, next) => {
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
                      try{
+                         console.log("发生错误  要关闭");
                          socket.websocket.close(1000,"no open");
                      }catch (e1){
-
-                     } console.log(e1.toString());
+                         console.log(e1.toString());
+                     }
                     console.log(e.toString());
                  }
                  }
