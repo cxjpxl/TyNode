@@ -27,6 +27,7 @@ appWebSocket.ws.use((ctx) => {
         ctx.websocket.send("11");
     });
     ctx.websocket.on('close', function(){
+        console.log("关闭回调，"+global.ctxs.length);
         for(let i= 0 ; i < global.ctxs .length ; i ++){
             if(global.ctxs [i] == ctx){
                 global.ctxs .pop(ctx);
