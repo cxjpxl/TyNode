@@ -33,8 +33,8 @@ appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('close', function(){
         for(let i= 0 ; i < global.ctxs .length ; i ++){
             if(global.ctxs [i]&&ctx&&ctx.tag&&global.ctxs [i].tag == ctx.tag){
-                console.log("有断开,当前连接个数"+global.ctxs.length);
                 global.ctxs .pop(ctx);
+                console.log("有断开,当前连接个数"+global.ctxs.length);
                 break;
             }
         }
