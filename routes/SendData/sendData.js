@@ -115,7 +115,7 @@ router.post('/sendData', async (ctx, next) => {
                  }catch (e){
                      console.log("发送错误:"+e.toString());
                      try{
-                         socket.websocket.close(1000,"no open");
+                       //  socket.websocket.close(1000,"no open");
                      }catch (e1){
                          console.log("关闭错误:"+e1.toString());
                      }
