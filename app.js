@@ -20,16 +20,19 @@ console.log("mongo connected");
 const appWebSocket = websockify(new Koa());
 global.ctxs = [];
 appWebSocket.ws.use((ctx) => {
-    ctx.tag = new Date().getTime();
-    global.ctxs .push(ctx);
-    console.log("有连接,当前连接个数"+global.ctxs.length);
+    if(ctx&&!ctx.tag){
+        ctx.tag = new Date().getTime();
+        global.ctxs .push(ctx);
+        console.log("有连接,当前连接个数"+global.ctxs.length);
+    }
+
     ctx.websocket.on('message', function(message) {
       //  console.log("收到消息:"+message+"\n当前连接个数:"+global.ctxs.length);
         ctx.websocket.send("11");
     });
     ctx.websocket.on('close', function(){
         for(let i= 0 ; i < global.ctxs .length ; i ++){
-            if(global.ctxs [i].tag == ctx.tag){
+            if(global.ctxs [i]&&ctx&&ctx.tag&&global.ctxs [i].tag == ctx.tag){
                 global.ctxs .pop(ctx);
                 break;
             }
