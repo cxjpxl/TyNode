@@ -110,6 +110,7 @@ router.post('/sendData', async (ctx, next) => {
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
                  let socket = global.ctxs[i];
                  if(!socket) continue;
+                 console.log("发送数据:"+i);
                  try{
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
