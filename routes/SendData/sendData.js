@@ -60,7 +60,7 @@ router.post('/sendData', async (ctx, next) => {
 
     if(type == 1){
         let dataArray = JSON5.parse(message);
-       // Console.log(dataArray);
+       console.log(dataArray);
         if(dataArray.length > 0 ){
             //删除数据
             await Game.remove({}).exec();
