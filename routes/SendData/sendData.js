@@ -71,7 +71,7 @@ router.post('/sendData', async (ctx, next) => {
                 let teamName = dataItem["teamName"];
                 let nameH = teamName[0];
                 let nameG = teamName[1];
-                let idset = dataItem["idset"];
+                let idset = dataItem["idset"]+"";
                 let mid = idset[0];
                 //if(mid == "0") continue;
                 let time = dataItem["gameTime"];
