@@ -229,6 +229,23 @@ function  getSaiList() {
     addSaiName("迪卓恩", "第戎",data);
     addSaiName("科尔多瓦", "哥杜巴",data);
     addSaiName("拉温那", "拉文纳",data);
+    addSaiName("西维尔 B队", "塞维利亚竞技",data);
+    addSaiName("索尔福德市", "莎尔福德城",data);
+    addSaiName("库内奥", "库尼奥1905",data);
+    addSaiName("祖云达斯", "尤文图斯",data);
+    addSaiName("克罗托内", "克努托内",data);
+    addSaiName("森索罗", "萨索洛",data);
+    addSaiName("卡坦薩羅", "卡坦萨罗",data);
+    addSaiName("柏干尼斯", "帕加尼斯",data);
+    addSaiName("格拉兹风暴", "格拉兹",data);
+    addSaiName("錫拉庫紮", "锡拉库萨",data);
+    addSaiName("法马里绍", "法马利卡欧",data);
+    addSaiName("NK 路德斯", "鲁达士",data);
+    addSaiName("班尼云度", "班尼文托",data);
+    addSaiName("拉斯帕尔马斯", "拉斯彭马斯",data);
+    addSaiName("里斯本竞技", "士砵亭",data);
+    addSaiName("艾科坎", "阿柯孔",data);
+    addSaiName("华历简奴", "瓦莱卡诺",data);
     return data;
 }
 
