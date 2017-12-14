@@ -246,6 +246,7 @@ function  getSaiList() {
     addSaiName("里斯本竞技", "士砵亭",data);
     addSaiName("艾科坎", "阿柯孔",data);
     addSaiName("华历简奴", "瓦莱卡诺",data);
+    addSaiName("Keshla FK", "克斯拉",data);
     return data;
 }
 
