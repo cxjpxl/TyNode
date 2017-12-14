@@ -9,6 +9,10 @@ const websockify = require("koa-websocket");
 /********************连接数据库*****************/
 const mongodb = require('./config/mongodb');
 const mongoose = require('mongoose');
+const AddData = require('./utlis/AddSai');
+
+
+global.lianSaiData = AddData.getSaiList();
 mongoose.Promise = global.Promise;
 let cxjDbCon = mongoose.createConnection(mongodb.url,{
         useMongoClient: true,
