@@ -5,6 +5,8 @@ function  addSaiName(key,value,data) {
     if (!data[key])
     {
         data[key]= value;
+    }else{
+        console.log(data[key]);
     }
 }
 
@@ -248,6 +250,8 @@ function  getSaiList() {
     addSaiName("华历简奴", "瓦莱卡诺",data);
     addSaiName("Keshla FK", "克斯拉",data);
     addSaiName("高阿体育会", "SC果阿",data);
+    addSaiName("阿尔阿瓦斯杜拜", "瓦斯尔杜拜",data);
+    addSaiName("阿尔瓦赫达阿布扎比", "艾尔维达",data);
     return data;
 }
 
