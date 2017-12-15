@@ -108,11 +108,17 @@ router.post('/login',async (ctx,next)=>{
             comId:comId,
         }});
     }else  if(user.comId != comId){
-        ctx.body = {
-            no:201,
-            msg:'只能在同一台电脑上面使用!',
-        };
-        return ;
+        if(comId.length > 36 && comId.indexOf(user.comId)>=0){  //新的长度肯定比旧的长
+            await  update(User,{userName : userName},{$set:{
+                comId:comId,
+            }});
+        }else{
+            ctx.body = {
+                no:201,
+                msg:'只能在同一台电脑上面使用!',
+            };
+            return ;
+        }
     }
 
 
