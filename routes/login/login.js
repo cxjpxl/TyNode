@@ -5,10 +5,10 @@ const router = require('koa-router')();
 const User = require('../../models/User').User;
 
 
-router.get('/time', async (ctx, next) => {
+router.get('/sl', async (ctx, next) => {
     ctx.body = {
         no:200,
-        time:new Date().getTime(),
+        length:global.ctxs.length,
     };
 });
 
