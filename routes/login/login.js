@@ -125,10 +125,14 @@ router.post('/login',async (ctx,next)=>{
         return ;
     }
 
+
+    await  update(User,{userName : userName},{$set:{
+        loginTime:currentTime,
+    }});
+
     ctx.body = {
         no:200,
         time:user.valueTime,
-        loginTime:currentTime,
         msg:'登录成功!',
     };
 
