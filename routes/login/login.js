@@ -128,6 +128,7 @@ router.post('/login',async (ctx,next)=>{
     ctx.body = {
         no:200,
         time:user.valueTime,
+        loginTime:currentTime,
         msg:'登录成功!',
     };
 
