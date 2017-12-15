@@ -254,6 +254,7 @@ function  getSaiList() {
     addSaiName("阿尔瓦赫达阿布扎比", "艾尔维达",data);
     addSaiName("瓦迪格拉", "瓦迪戴加",data);
     addSaiName("阿拉伯康才克托", "阿拉伯建筑",data);
+    addSaiName("瓦尔内斯体育生队", "华恩斯体育生",data);
     return data;
 }
 
