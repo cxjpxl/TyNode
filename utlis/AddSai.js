@@ -256,6 +256,7 @@ function  getSaiList() {
     addSaiName("阿拉伯康才克托", "阿拉伯建筑",data);
     addSaiName("瓦尔内斯体育生队", "华恩斯体育生",data);
     addSaiName("喀拉拉爆破手", "克瑞拉巴拉斯特斯",data);
+    addSaiName("Beitar Ironi Maale Adumim", "比达玛勒阿杜米姆",data);
 
     return data;
 }
