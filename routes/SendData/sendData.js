@@ -102,6 +102,14 @@ router.post('/sendData', async (ctx, next) => {
        //if(cid==9926||cid==9927||cid==2086||cid==1062||cid==2055||cid==1031){
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
+            if(global.lianSaiData){
+                if(global.lianSaiData[game.nameH]){
+                    game.nameH = global.lianSaiData[game.nameH];
+                }
+                if(global.lianSaiData[game.nameG]){
+                    game.nameG = global.lianSaiData[game.nameG];
+                }
+            }
             if(game&&game.mid){
                 let curData = {
                     game,

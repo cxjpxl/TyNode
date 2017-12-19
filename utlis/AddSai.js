@@ -267,6 +267,8 @@ function  getSaiList() {
     addSaiName("阿森纳", "阿仙奴",data);
     addSaiName("西汉姆联", "韦斯咸联",data);
     addSaiName("阿尔贝塞特", "阿尔巴塞特",data);
+    addSaiName("勒智昂夏普尔 U19", "里雄莱锡安夏普尔耶乌达U19",data);
+    addSaiName("萨哈尼恩U19", "沙克尼U19",data);
     return data;
 }
 

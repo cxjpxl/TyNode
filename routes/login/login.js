@@ -21,10 +21,12 @@ function  addSaiName(key,value,data) {
 }
 
 router.get('/lianSai', async (ctx, next) => {
-    let data = global.lianSaiData;
+   // let data = global.lianSaiData;
     ctx.body = {
         no:200,
-        data,
+        data:{
+            "阿森纳":"阿仙奴",
+        },
     };
 });
 
