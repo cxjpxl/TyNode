@@ -269,6 +269,19 @@ function  getSaiList() {
     addSaiName("阿尔贝塞特", "阿尔巴塞特",data);
     addSaiName("勒智昂夏普尔 U19", "里雄莱锡安夏普尔耶乌达U19",data);
     addSaiName("萨哈尼恩U19", "沙克尼U19",data);
+    addSaiName("丘吉尔兄弟SC", "巴得斯尤",data);
+    addSaiName("伊斯梅利", "依斯麦里",data);
+    addSaiName("歷索斯 U19", "雷克斯欧斯U19",data);
+    addSaiName("CD Aves U19", "阿维斯U19",data);
+    addSaiName("玛利比(中)", "莫利比 [中]",data);
+    addSaiName("拉加競技(中)", "拉加卡萨布兰卡",data);
+    addSaiName("加拉法(中)", "阿尔葛拉法 [中]",data);
+    addSaiName("彼特捷德", "佩特捷德",data);
+    addSaiName("PAOK沙朗歷基", "PAOK",data);
+    addSaiName("马美洛迪夕阳", "马摩洛迪落日",data);
+    addSaiName("Chipstead FC", "奇普斯蒂",data);
+
+
     return data;
 }
 
