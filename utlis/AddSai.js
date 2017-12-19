@@ -257,7 +257,6 @@ function  getSaiList() {
     addSaiName("瓦尔内斯体育生队", "华恩斯体育生",data);
     addSaiName("喀拉拉爆破手", "克瑞拉巴拉斯特斯",data);
     addSaiName("Beitar Ironi Maale Adumim", "比达玛勒阿杜米姆",data);
-
     addSaiName("阿尔维达特安曼", "威达特安曼",data);
     addSaiName("阿隆頓", "沙巴阿罗登",data);
     addSaiName("卡拜里", "卡比利亚",data);
@@ -265,6 +264,9 @@ function  getSaiList() {
     addSaiName("阿尔沙巴柏利雅德", "沙巴柏利雅德",data);
     addSaiName("伊米瑞特", "酋长",data);
     addSaiName("阿尔阿利吉达", "阿尔艾利吉达",data);
+    addSaiName("阿森纳", "阿仙奴",data);
+    addSaiName("西汉姆联", "韦斯咸联",data);
+    addSaiName("阿尔贝塞特", "阿尔巴塞特",data);
     return data;
 }
 
