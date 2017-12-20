@@ -280,8 +280,28 @@ function  getSaiList() {
     addSaiName("PAOK沙朗歷基", "PAOK",data);
     addSaiName("马美洛迪夕阳", "马摩洛迪落日",data);
     addSaiName("Chipstead FC", "奇普斯蒂",data);
-
-
+    addSaiName("埃格特利斯", "伊高泰利斯",data);
+    addSaiName("帕纳基奥斯", "帕纳及勒斯",data);
+    addSaiName("切禾U19", "基尔禾U19",data);
+    addSaiName("Ghivizzano Borgoamozzano", "基维扎诺",data);
+    addSaiName("图顿库奥", "图托科约",data);
+    addSaiName("Vigor Carpaneto", "维格尔卡尔帕内托",data);
+    addSaiName("AC Crema 1908 ASD", "克雷马",data);
+    addSaiName("A.C. Trento S.C.S.D.", "特伦托",data);
+    addSaiName("體育拉巴特", "FUS拉巴特",data);
+    addSaiName("伊蒂哈德伊斯坎达利", "伊蒂哈德亚历山大",data);
+    addSaiName("彭拿切基", "帕那洽基",data);
+    addSaiName("托瑞莱万特", "多域斯利云特奥瑞欧斯",data);
+    addSaiName("Cadiz CF B ", "卡迪斯B队",data);
+    addSaiName("阿豪瑞諾(中)", "韦托尔韦加",data);
+    addSaiName("布罗凯尔特", "布隆方丹",data);
+    addSaiName("超级联盟", "超级联队",data);
+    addSaiName("马卡耶", "马卡RJ",data);
+    addSaiName("Goytacaz", "哥塔卡扎RJ",data);
+    addSaiName("卡柏法伦斯", "康柏费伦斯RJ",data);
+    addSaiName("赫塔费", "基达菲",data);
+    addSaiName("CD 科瓦东加", "科瓦栋卡",data);
+    addSaiName("施斯达奥", "艾尔切艾利塔奴",data);
     return data;
 }
 
