@@ -302,6 +302,25 @@ function  getSaiList() {
     addSaiName("赫塔费", "基达菲",data);
     addSaiName("CD 科瓦东加", "科瓦栋卡",data);
     addSaiName("施斯达奥", "艾尔切艾利塔奴",data);
+    addSaiName("伊斯兰教体育俱乐部", "莫哈末丹达卡",data);
+    addSaiName("谢赫拉塞尔", "谢克鲁瑟尔",data);
+    addSaiName("孟加拉米爾斯", "Team BJMC",data);
+    addSaiName("德哈夫拉", "德哈法",data);
+    addSaiName("阿积曼", "阿基曼",data);
+    addSaiName("拉里萨", "拉瑞沙",data);
+    addSaiName("阿纳根尼希", "卡迪",data);
+    addSaiName("卡特高皮亚斯", "杜可萨",data);
+    addSaiName("卡利地亚雅典", "卡利地亚",data);
+    addSaiName("阿尔纳萨杜拜", "纳萨杜拜 [中]",data);
+    addSaiName("艾恩俱樂部", "艾恩",data);
+    addSaiName("塞那乔恩(中)", "SJK塞那乔其 [中]",data);
+    addSaiName("阿尔卡迪西亚阿克巴", "瓜达席亚",data);
+    addSaiName("帕福斯 FC", "帕福斯",data);
+    addSaiName("VVSB Noordwijkerhout", "VVSB",data);
+    addSaiName("ACD納爾德奧", "纳尔德奥",data);
+    addSaiName("波藤紮", "波坦察",data);
+    addSaiName("美國队RJ", "美国RJ",data);
+    addSaiName("博恩苏塞索", "邦苏塞索RJ",data);
     return data;
 }
 
