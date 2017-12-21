@@ -104,6 +104,8 @@ router.post('/login',async (ctx,next)=>{
         return ;
     }
 
+    console.log("comid:"+comId+"\n"+"user.comId:"+user.comId);
+
     if(user.comId.length==0){
         //用户第一次注册后的登录
         await  update(User,{userName : userName},{$set:{
