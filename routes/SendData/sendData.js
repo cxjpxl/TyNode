@@ -103,11 +103,11 @@ router.post('/sendData', async (ctx, next) => {
             let game = await Game.findOne({mid: mid}).exec();
             let time = new Date().getTime();
             if(global.lianSaiData){
-                if(global.lianSaiData[game.nameH]){
-                    game.nameH = global.lianSaiData[game.nameH];
+                if(global.lianSaiData[game.nameH+""]){
+                    game.nameH = global.lianSaiData[game.nameH+""];
                 }
-                if(global.lianSaiData[game.nameG]){
-                    game.nameG = global.lianSaiData[game.nameG];
+                if(global.lianSaiData[game.nameG+""]){
+                    game.nameG = global.lianSaiData[game.nameG+""];
                 }
             }
             if(game&&game.mid){
