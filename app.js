@@ -36,9 +36,9 @@ appWebSocket.ws.use((ctx) => {
         ctx.websocket.send("11");
     });
     ctx.websocket.on('close', function(){
-        for(let i= 0 ; i < global.ctxs .length ; i ++){
+        for(let i= 0 ; i < global.ctxs.length ; i ++){
             if(global.ctxs [i]&&ctx&&ctx.tag&&global.ctxs [i].tag == ctx.tag){
-                global.ctxs .pop(ctx);
+                global.ctxs.splice(i, 1);
                 console.log("有断开,当前连接个数"+global.ctxs.length);
                 break;
             }
