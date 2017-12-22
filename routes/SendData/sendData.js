@@ -103,6 +103,8 @@ router.post('/sendData', async (ctx, next) => {
             let game = await Game.findOne({mid: mid}).exec();
         let time = new Date().getTime();
             if(game&&game.mid){
+
+                console.log("主队:"+game.nameH+"||客队："+ game.nameG);
                 if(global.lianSaiData){
                     if(game.nameH&&global.lianSaiData[game.nameH+""]){
                         game.nameH = global.lianSaiData[game.nameH+""];
@@ -113,6 +115,8 @@ router.post('/sendData', async (ctx, next) => {
                         console.log("客队:"+game.nameG);
                     }
                 }
+
+                console.log("主队:"+game.nameH+"||客队："+ game.nameG);
 
                 let curData = {
                     game,
@@ -126,7 +130,7 @@ router.post('/sendData', async (ctx, next) => {
                  try{
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
-
+                    console.log(e.toString());
                  }
                  }
             }
