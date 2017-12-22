@@ -104,10 +104,10 @@ router.post('/sendData', async (ctx, next) => {
         let time = new Date().getTime();
             if(game&&game.mid){
                 if(global.lianSaiData){
-                    if(global.lianSaiData[game.nameH+""]){
+                    if(game.nameH&&global.lianSaiData[game.nameH+""]){
                         game.nameH = global.lianSaiData[game.nameH+""];
                     }
-                    if(global.lianSaiData[game.nameG+""]){
+                    if(game.nameG&&global.lianSaiData[game.nameG+""]){
                         game.nameG = global.lianSaiData[game.nameG+""];
                     }
                 }
