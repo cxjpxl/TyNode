@@ -321,6 +321,11 @@ function  getSaiList() {
     addSaiName("波藤紮", "波坦察",data);
     addSaiName("美國队RJ", "美国RJ",data);
     addSaiName("博恩苏塞索", "邦苏塞索RJ",data);
+    addSaiName("Indian Arrows", "印地安阿罗",data);
+    addSaiName("Gokulam Kerala", "歌库拉姆喀拉拉",data);
+    addSaiName("東孟加拉", "翠鸟东孟加拉",data);
+    addSaiName("巴萨诺", "巴塞诺",data);
+    addSaiName("贝迪斯", "皇家贝迪斯",data);
     return data;
 }
 
