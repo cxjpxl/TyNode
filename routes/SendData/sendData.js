@@ -106,9 +106,11 @@ router.post('/sendData', async (ctx, next) => {
                 if(global.lianSaiData){
                     if(game.nameH&&global.lianSaiData[game.nameH+""]){
                         game.nameH = global.lianSaiData[game.nameH+""];
+                        console.log("主队:"+game.nameH);
                     }
                     if(game.nameG&&global.lianSaiData[game.nameG+""]){
                         game.nameG = global.lianSaiData[game.nameG+""];
+                        console.log("客队:"+game.nameG);
                     }
                 }
 
