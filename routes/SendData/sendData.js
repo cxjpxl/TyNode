@@ -123,7 +123,7 @@ router.post('/sendData', async (ctx, next) => {
                     data,
                     curTime:time,
                 };
-                let tempsCtx  = [];
+
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
                  let socket = global.ctxs[i];
                  if(!socket) continue;
@@ -131,18 +131,11 @@ router.post('/sendData', async (ctx, next) => {
                  try{
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
-                     tempsCtx.push(ctx);
+
                  }
                  }
 
-                for(let i = 0 ; i < tempsCtx.length ; i ++){
-                    for(let j = 0 ; j <global.ctxs.length ; j ++){
-                        if(global.ctxs[j].tag == tempsCtx[i].tag){
-                            global.ctxs.splice(j, 1);
-                            break;
-                        }
-                    }
-                }
+
             }
       // }
     }
