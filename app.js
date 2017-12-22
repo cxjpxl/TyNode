@@ -33,7 +33,14 @@ appWebSocket.ws.use((ctx) => {
             global.ctxs .push(ctx);
             console.log("有连接,当前连接个数"+global.ctxs.length);
         }
-        ctx.websocket.send("11");
+
+        for(let i= 0 ; i < global.ctxs.length ; i ++){
+            if(global.ctxs [i]&&ctx&&ctx.tag&&global.ctxs [i].tag == ctx.tag){
+                ctx.websocket.send("11");
+                break;
+            }
+        }
+        //ctx.websocket.send("11");
     });
     ctx.websocket.on('close', function(){
         for(let i= 0 ; i < global.ctxs.length ; i ++){
