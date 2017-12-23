@@ -327,6 +327,14 @@ function  getSaiList() {
     addSaiName("巴萨诺", "巴塞诺",data);
     addSaiName("贝迪斯", "皇家贝迪斯",data);
 
+    addSaiName("西隆拉壮", "拉庄",data);
+    addSaiName("安卡拉袓古", "安卡拉高古",data);
+    addSaiName("埃米尼奧", "加纳埃米尼奥",data);
+    addSaiName("维迪比斯(中)", "维泰贝斯卡斯特伦斯",data);
+    addSaiName("阿科夏普尔", "奥卡哈伯",data);
+    addSaiName("德里戴拿模", "德里迪纳摩",data);
+
+
     return data;
 }
 
