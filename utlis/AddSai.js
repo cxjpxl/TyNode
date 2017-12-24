@@ -331,9 +331,7 @@ function  getSaiList() {
     addSaiName("德里戴拿模", "德里迪纳摩",data);
     addSaiName("元朗足球會", "元朗",data);
     addSaiName("突尼斯人体育", "史塔德",data);
-
-
-
+    addSaiName("尼奈斯加贝斯", "斯塔德加贝申",data);
     return data;
 }
 
