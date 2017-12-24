@@ -122,7 +122,10 @@ router.post('/sendData', async (ctx, next) => {
                        let nameH = game.nameH;
                        if(isNum){
                             nameH = nameH.replace("U"+numH,"").trim();
+                           console.log("主队转化:"+nameH);
                        }
+
+
 
                        if(global.lianSaiData[nameH+""]){
                            game.nameH = global.lianSaiData[nameH+""];
@@ -150,6 +153,7 @@ router.post('/sendData', async (ctx, next) => {
                         let nameG = game.nameG;
                         if(isNum){
                             nameG = nameG.replace("U"+numG,"").trim();
+                            console.log("客队转化:"+nameG);
                         }
 
                         if(global.lianSaiData[nameG+""]){
