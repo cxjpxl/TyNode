@@ -106,14 +106,61 @@ router.post('/sendData', async (ctx, next) => {
 
                 console.log("主队:"+game.nameH+"||客队："+ game.nameG);
                 if(global.lianSaiData){
-                    if(game.nameH&&global.lianSaiData[game.nameH+""]){
-                        game.nameH = global.lianSaiData[game.nameH+""];
-                        console.log("主队:"+game.nameH);
+                   if(game.nameH){
+                       let nameHs = game.nameH.split("U");
+                       let isNum   = false;
+                       let numH = "";
+                       if(nameHs.length > 1){
+                           numH = nameHs[nameHs.length -1];
+                           try{
+                               numH = parseInt(numH);
+                               isNum = true;
+                           }catch (e){
+
+                            }
+                       }
+                       let nameH = game.nameH;
+                       if(isNum){
+                            nameH = nameH.replace("U"+numH,"").trim();
+                       }
+
+                       if(global.lianSaiData[nameH+""]){
+                           game.nameH = global.lianSaiData[nameH+""];
+                           if(isNum){
+                               game.nameH = game.nameH +"U"+numH;
+                           }
+                           console.log("主队:"+game.nameH);
+                       }
+                   }
+
+                    //客队
+                    if(game.nameG){
+                        let nameGs = game.nameG.split("U");
+                        let isNum   = false;
+                        let numG = "";
+                        if(nameGs.length > 1){
+                            numG = nameGs[nameGs.length -1];
+                            try{
+                                numG = parseInt(numG);
+                                isNum = true;
+                            }catch (e){
+
+                            }
+                        }
+                        let nameG = game.nameG;
+                        if(isNum){
+                            nameG = nameG.replace("U"+numG,"").trim();
+                        }
+
+                        if(global.lianSaiData[nameG+""]){
+                            game.nameG = global.lianSaiData[nameG+""];
+                            if(isNum){
+                                game.nameG = game.nameG +"U"+numG;
+                            }
+                            console.log("客队:"+game.nameG);
+                        }
                     }
-                    if(game.nameG&&global.lianSaiData[game.nameG+""]){
-                        game.nameG = global.lianSaiData[game.nameG+""];
-                        console.log("客队:"+game.nameG);
-                    }
+
                 }
 
                 console.log("主队:"+game.nameH+"||客队："+ game.nameG);
