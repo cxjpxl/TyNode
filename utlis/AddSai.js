@@ -333,7 +333,7 @@ function  getSaiList() {
     addSaiName("维迪比斯(中)", "维泰贝斯卡斯特伦斯",data);
     addSaiName("阿科夏普尔", "奥卡哈伯",data);
     addSaiName("德里戴拿模", "德里迪纳摩",data);
-
+    addSaiName("元朗足球會", "元朗",data);
 
     return data;
 }
