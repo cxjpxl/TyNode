@@ -76,12 +76,15 @@ function  getSaiList() {
     addSaiName("布隆迪", "蒲隆地共和国",data);
     addSaiName("加巴拉PFC", "卡巴拉",data);
     addSaiName("南德阿美利加(后)", "苏阿美利加",data);
+    addSaiName("南德阿美利加", "苏阿美利加",data);
     addSaiName("罗比沙奇拉夏普尔", "海法罗比沙普拉",data);
     addSaiName("泊列勃理", "柏斯波利斯",data);
     addSaiName("桑納特纳夫特阿巴丹", "纳夫特",data);
     addSaiName("丹蒙迪谢赫", "贾马尔",data);
-    addSaiName("尤文提度(后) ", "尤文都德彼德拉斯",data);
+    addSaiName("尤文提度(后)", "尤文都德彼德拉斯",data);
+    addSaiName("尤文提度", "尤文都德彼德拉斯",data);
     addSaiName("保卫者队(后)", "德丰索体育队",data);
+    addSaiName("保卫者队", "德丰索体育队",data);
     addSaiName("沃伦塔里", "沃鲁塔瑞",data);
     addSaiName("菲伦斯", "费伦斯",data);
     addSaiName("托奧斯", "奧斯",data);
@@ -210,6 +213,7 @@ function  getSaiList() {
     addSaiName("克森艾斯顿", "柯尔松阿什顿",data);
     addSaiName("科瓦达皮耶达迪", "科瓦皮耶达迪",data);
     addSaiName("伊汀堡(中)", "爱丁堡城",data);
+    addSaiName("伊汀堡", "爱丁堡城",data);
     addSaiName("考文垂", "高云地利",data);
     addSaiName("希美咸史特城", "赫默尔亨普斯特德城",data);
     addSaiName("连高尔", "林肯城",data);
