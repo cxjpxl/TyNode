@@ -333,7 +333,18 @@ function  getSaiList() {
     addSaiName("突尼斯人体育", "史塔德",data);
     addSaiName("尼奈斯加贝斯", "斯塔德加贝申",data);
     addSaiName("拉加競技", "拉加卡萨布兰卡",data);
-
+    addSaiName("阿尔阿利开罗", "阿尔艾利开罗",data);
+    addSaiName("约克", "约克城",data);
+    addSaiName("修安聯", "修安联",data);
+    addSaiName("威靈", "威林联",data);
+    addSaiName("达特福德队", "达特福特",data);
+    addSaiName("TNS全網絡", "新圣塔斯",data);
+    addSaiName("尼威", "瑟傅德鲁迪",data);
+    addSaiName("兰迪德诺", "兰杜诺",data);
+    addSaiName("巴拉镇", "巴拉城",data);
+    addSaiName("诺域治", "诺维奇",data);
+    addSaiName("利兹联", "列斯联",data);
+    addSaiName("伊普斯维奇城", "伊普斯维奇",data);
     return data;
 }
 
