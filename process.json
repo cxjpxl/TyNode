@@ -1,0 +1,18 @@
+{
+  "apps" : [
+    {
+      "name"      : "ty",
+      "max_memory_restart" : "300M",
+      "script"    : "./bin/www",
+      "log_date_format":"YYYY-MM-DD HH:mm Z",
+      "out_file"  : "./log/out/out.log",
+      "error_file" : "./log/error/error.log",
+      "instances"  : "1", //开启实例数量，max为cpu核数
+      "exec_mode"  : "fork", //集群模式，最大提升网站并uster
+      "env" : {
+        "NODE_ENV" : "production",
+        "PORT" : 8500
+      }
+    }
+  ]
+}
