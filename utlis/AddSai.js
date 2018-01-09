@@ -409,6 +409,9 @@ function  getSaiList() {
     addSaiName("吉奥競技", "戈亚尼恩斯",data);
     addSaiName("保地花高 SP", "博塔福格SP",data);
     addSaiName("索诺拉", "西玛罗雷斯索诺拉",data);
+    addSaiName("阿尔塔德蒙法瓦尼亚", "阿尔塔达孟费瓦尼亚",data);
+    addSaiName("萨尔米亚", "沙米亚",data);
+    addSaiName("克雷迪", "OFI克雷迪",data);
     return data;
 }
 
