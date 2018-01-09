@@ -147,9 +147,9 @@ router.post('/sendData', async (ctx, next) => {
 
                        if(global.lianSaiData[nameH+""]){
                            game.nameH = global.lianSaiData[nameH+""];
-                           if(isNum){
+                         /*  if(isNum){
                                game.nameH = game.nameH +"U"+numH;
-                           }
+                           }*/
                            console.log("主队:"+game.nameH);
                        }
                    }
@@ -193,9 +193,9 @@ router.post('/sendData', async (ctx, next) => {
 
                         if(global.lianSaiData[nameG+""]){
                             game.nameG = global.lianSaiData[nameG+""];
-                            if(isNum){
+                           /* if(isNum){
                                 game.nameG = game.nameG +"U"+numG;
-                            }
+                            }*/
                             console.log("客队:"+game.nameG);
                         }
                     }
