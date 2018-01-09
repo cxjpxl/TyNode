@@ -349,6 +349,20 @@ function  getSaiList() {
     addSaiName("诺域治", "诺维奇",data);
     addSaiName("利兹联", "列斯联",data);
     addSaiName("伊普斯维奇城", "伊普斯维奇",data);
+    addSaiName("金奈", "金奈城",data);
+    addSaiName("基尔史莫纳夏普尔", "伊若尼奇亚夏普尔",data);
+    addSaiName("特拉维夫叶胡达", "耶乌达",data);
+    addSaiName("托德拉", "通迪拉",data);
+    addSaiName("马卡比内坦亚", "马卡比奈坦亚",data);
+    addSaiName("寶利", "贝利",data);
+    addSaiName("布格斯", "伯吉斯山",data);
+    addSaiName("泰沃頓鎮", "特沃顿",data);
+    addSaiName("基特宁", "凯特宁",data);
+    addSaiName("聖艾夫斯鎮", "史蒂爱文斯城",data);
+    addSaiName("尼德姆馬基特", "讷翰马科",data);
+    addSaiName("THURROCK FC", "土洛克",data);
+    addSaiName("哈云特", "哈文特",data);
+    addSaiName("連菲特", "连菲特",data);
     return data;
 }
 
