@@ -408,6 +408,7 @@ function  getSaiList() {
     addSaiName("诺瓦艾夸古", "诺瓦艾夸古RJ",data);
     addSaiName("吉奥競技", "戈亚尼恩斯",data);
     addSaiName("保地花高 SP", "博塔福格SP",data);
+    addSaiName("索诺拉", "西玛罗雷斯索诺拉",data);
     return data;
 }
 
