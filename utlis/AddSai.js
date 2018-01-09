@@ -361,8 +361,53 @@ function  getSaiList() {
     addSaiName("马都拉联队", "马都拉联",data);
     addSaiName("阿提柏", "阿提柏SP",data);
     addSaiName("力亚拿", "尤尼奥隆多诺波利斯",data);
-
-
+    addSaiName("里奧普雷圖", "里奥沛图SP",data);
+    addSaiName("邁拉索爾", "迈拉索尔SP",data);
+    addSaiName("阿美利加PE", "美国PE",data);
+    addSaiName("马利利亚", "马利利亚SP",data);
+    addSaiName("富明尼斯", "富明尼斯RJ",data);
+    addSaiName("尤文都德", "尤文都德RS",data);
+    addSaiName("裡奧布郎庫 SP", "里奥布郎库SP",data);
+    addSaiName("维络", "维罗体育队SP",data);
+    addSaiName("隆迪那", "隆迪那PR",data);
+    addSaiName("格羅寶", "格罗宝RN",data);
+    addSaiName("皮拉西卡巴", "皮拉西卡巴SP",data);
+    addSaiName("圣卡坦奴", "圣卡坦奴SP",data);
+    addSaiName("裡奧布郎庫", "里奥布朗库AC",data);
+    addSaiName("圣本托", "圣本托SP",data);
+    addSaiName("保地花高PB", "博塔福格PB",data);
+    addSaiName("史特塞特普洛", "塞特普洛AL",data);
+    addSaiName("聖安德雷", "圣安德雷SP",data);
+    addSaiName("馬杜雷拉", "米底那RJ",data);
+    addSaiName("立納瑟", "立纳瑟SP",data);
+    addSaiName("帕拉恩瑟PA", "帕拉恩瑟",data);
+    addSaiName("费古伦斯", "费古伦斯SC",data);
+    addSaiName("巴拉纳", "柏拉拿PR",data);
+    addSaiName("图坝奥", "图坝奥SC",data);
+    addSaiName("高士路", "高士路MG",data);
+    addSaiName("布拉希尔体育", "布拉希尔SP",data);
+    addSaiName("彼辛度 PA", "帕桑度PA",data);
+    addSaiName("EC皮马维拉", "皮马维拉SP",data);
+    addSaiName("EC维托里亚", "维多利亚BA",data);
+    addSaiName("伊图阿诺", "伊图阿诺SP",data);
+    addSaiName("維拉諾瓦", "维拉诺瓦GO",data);
+    addSaiName("哥列迪巴", "哥里迪巴PR",data);
+    addSaiName("西尔热", "卡尔拉CE",data);
+    addSaiName("巴海尔", "巴海亚BA",data);
+    addSaiName("国际队圣保罗AC", "国民队SP",data);
+    addSaiName("ABC那托", "ABC RN",data);
+    addSaiName("佩纳博伦斯", "佩纳博伦斯SP",data);
+    addSaiName("納帝科", "纳帝科PE",data);
+    addSaiName("纪柏拉拿", "纪柏拉拿RO",data);
+    addSaiName("CE艾莫瑞", "艾莫尔RS",data);
+    addSaiName("德陈昭", "雅乌SP",data);
+    addSaiName("拉加爾圖SE", "拉加尔图SE",data);
+    addSaiName("邦迪比达", "邦迪比达SP",data);
+    addSaiName("阿拉沙EC", "阿拉沙MG",data);
+    addSaiName("霸塔苔斯", "霸塔苔斯SP",data);
+    addSaiName("诺瓦艾夸古", "诺瓦艾夸古RJ",data);
+    addSaiName("吉奥競技", "戈亚尼恩斯",data);
+    addSaiName("保地花高 SP", "博塔福格SP",data);
     return data;
 }
 
