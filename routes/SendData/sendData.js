@@ -107,6 +107,24 @@ router.post('/sendData', async (ctx, next) => {
                 console.log("主队:"+game.nameH+"||客队："+ game.nameG);
                 if(global.lianSaiData){
                    if(game.nameH){
+                       if(game.nameH.indexOf("(中)")>0){
+                           game.nameH = game.nameH.replace("(中)","").trim();
+                       }
+
+                       if(game.nameH.indexOf("[中]")>0){
+                           game.nameH = game.nameH.replace("[中]","").trim();
+                       }
+
+                       if(game.nameH.indexOf("(女)")>0){
+                           game.nameH = game.nameH.replace("(女)","").trim();
+                       }
+
+                       if(game.nameH.indexOf("(后)")>0){
+                           game.nameH = game.nameH.replace("(后)","").trim();
+                       }
+
+                       game.nameH = game.nameH.trim();
+
                        let nameHs = game.nameH.split("U");
                        let isNum   = false;
                        let numH = "";
@@ -138,6 +156,23 @@ router.post('/sendData', async (ctx, next) => {
 
                     //客队
                     if(game.nameG){
+                        if(game.nameG.indexOf("(中)")>0){
+                            game.nameG = game.nameG.replace("(中)","").trim();
+                        }
+                        if(game.nameG.indexOf("[中]")>0){
+                            game.nameG = game.nameG.replace("[中]","").trim();
+                        }
+
+                        if(game.nameG.indexOf("(女)")>0){
+                            game.nameG = game.nameG.replace("(女)","").trim();
+                        }
+
+                        if(game.nameG.indexOf("(后)")>0){
+                            game.nameG = game.nameG.replace("(后)","").trim();
+                        }
+
+                        game.nameG = game.nameG.trim();
+
                         let nameGs = game.nameG.split("U");
                         let isNum   = false;
                         let numG = "";
