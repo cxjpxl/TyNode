@@ -422,6 +422,24 @@ function  getSaiList() {
     addSaiName("康卡纽", "孔卡尔诺",data);
     addSaiName("薩瑟堡", "波城",data);
     addSaiName("肖萊特", "绍莱特",data);
+    addSaiName("Cong An Nhan Dan FC", "人民公安",data);
+    addSaiName("广宁", "坦广宁",data);
+    addSaiName("黃安嘉萊", "归仁",data);
+    addSaiName("Ha Noi FC ", "河内",data);
+    addSaiName("Binh Dinh", "平定",data);
+    addSaiName("胡志明市", "胡志明市足球俱乐部",data);
+    addSaiName("Levico Terme", "莱维科泰尔梅",data);
+    addSaiName("巴西红牛", "巴西红牛SP",data);
+    addSaiName("萨奥 尤涩 RS", "圣乔斯RS",data);
+    addSaiName("奥萨斯库奥达斯", "格雷米奥奥萨斯库奥达柯SP",data);
+    addSaiName("哥连泰斯", "哥连泰斯SP",data);
+    addSaiName("聖瑞蒙度 RR", "圣雷姆恩多RR",data);
+    addSaiName("加芬尼卡", "康菲安卡SE",data);
+    addSaiName("索卡罗斯", "索卡罗斯SP",data);
+    addSaiName("馬蘭瓜佩", "马兰瓜佩CE",data);
+    addSaiName("Horizonte CE", "奥里藏特CE",data);
+    addSaiName("Guarani de Juazeiro CE", "古兰尼CE",data);
+
     return data;
 }
 
