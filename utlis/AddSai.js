@@ -441,7 +441,7 @@ function  getSaiList() {
     addSaiName("Guarani de Juazeiro CE", "古兰尼CE",data);
     addSaiName("巴巴朗斯", "巴巴伦斯SP",data);
     addSaiName("里奧布蘭克 ES", "里奥布郎库ES",data);
-
+    addSaiName("赛甘地诺", "萨幹梯诺",data);
 
     return data;
 }
