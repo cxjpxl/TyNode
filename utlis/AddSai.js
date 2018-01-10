@@ -439,6 +439,9 @@ function  getSaiList() {
     addSaiName("馬蘭瓜佩", "马兰瓜佩CE",data);
     addSaiName("Horizonte CE", "奥里藏特CE",data);
     addSaiName("Guarani de Juazeiro CE", "古兰尼CE",data);
+    addSaiName("巴巴朗斯", "巴巴伦斯SP",data);
+    addSaiName("里奧布蘭克 ES", "里奥布郎库ES",data);
+
 
     return data;
 }
