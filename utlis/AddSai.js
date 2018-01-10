@@ -413,10 +413,15 @@ function  getSaiList() {
     addSaiName("萨尔米亚", "沙米亚",data);
     addSaiName("克雷迪", "OFI克雷迪",data);
     addSaiName("奥林比亚高斯", "奥林比亚高斯CFP",data);
-
     addSaiName("希雷迪亚诺", "希尔迪奥诺",data);
     addSaiName("肯梅利塔", "卡梅利塔",data);
-
+    addSaiName("明尼路", "米内罗竞技",data);
+    addSaiName("尼奥特", "尼欧特",data);
+    addSaiName("格洛堡", "格洛堡38",data);
+    addSaiName("圣诺伊斯", "安坦迪",data);
+    addSaiName("康卡纽", "孔卡尔诺",data);
+    addSaiName("薩瑟堡", "波城",data);
+    addSaiName("肖萊特", "绍莱特",data);
     return data;
 }
 
