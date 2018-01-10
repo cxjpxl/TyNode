@@ -412,6 +412,7 @@ function  getSaiList() {
     addSaiName("阿尔塔德蒙法瓦尼亚", "阿尔塔达孟费瓦尼亚",data);
     addSaiName("萨尔米亚", "沙米亚",data);
     addSaiName("克雷迪", "OFI克雷迪",data);
+    addSaiName("奥林比亚高斯", "奥林比亚高斯CFP",data);
     return data;
 }
 
