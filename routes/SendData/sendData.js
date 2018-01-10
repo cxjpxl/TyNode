@@ -137,20 +137,11 @@ router.post('/sendData', async (ctx, next) => {
 
                             }
                        }
-                       let nameH = game.nameH;
                        if(isNum){
-                            nameH = nameH.replace("U"+numH,"").trim();
-                           console.log("主队转化:"+nameH);
+                           game.nameH = game.nameH.replace("U"+numH,"").trim();
                        }
-
-
-
-                       if(global.lianSaiData[nameH+""]){
-                           game.nameH = global.lianSaiData[nameH+""];
-                         /*  if(isNum){
-                               game.nameH = game.nameH +"U"+numH;
-                           }*/
-                           console.log("主队:"+game.nameH);
+                       if(global.lianSaiData[game.nameH+""]){
+                           game.nameH = global.lianSaiData[game.nameH+""];
                        }
                    }
 
@@ -185,25 +176,16 @@ router.post('/sendData', async (ctx, next) => {
 
                             }
                         }
-                        let nameG = game.nameG;
                         if(isNum){
-                            nameG = nameG.replace("U"+numG,"").trim();
-                            console.log("客队转化:"+nameG);
+                            game.nameG = game.nameG.replace("U"+numG,"").trim();
                         }
 
-                        if(global.lianSaiData[nameG+""]){
-                            game.nameG = global.lianSaiData[nameG+""];
-                           /* if(isNum){
-                                game.nameG = game.nameG +"U"+numG;
-                            }*/
-                            console.log("客队:"+game.nameG);
+                        if(global.lianSaiData[game.nameG+""]){
+                            game.nameG = global.lianSaiData[game.nameG+""];
                         }
                     }
 
                 }
-
-                console.log("主队:"+game.nameH+"||客队："+ game.nameG);
-
                 let curData = {
                     game,
                     data,
@@ -213,7 +195,6 @@ router.post('/sendData', async (ctx, next) => {
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
                  let socket = global.ctxs[i];
                  if(!socket) continue;
-                 console.log("发送数据:"+i);
                  try{
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
