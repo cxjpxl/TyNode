@@ -449,6 +449,15 @@ function  getSaiList() {
     addSaiName("桑托斯瓜皮莱斯", "山度士DG",data);
     addSaiName("昆士蘭獅隊", "昆士兰狮队",data);
     addSaiName("阿巴哈尼", "阿坝汉尼度哈卡",data);
+    addSaiName("艾斯迪格拿梅里阿瓦", "艾斯迪格拿候萨斯坦",data);
+    addSaiName("特黑兰", "德黑兰",data);
+    addSaiName("特拉克托", "泰拉克托",data);
+    addSaiName("培坎", "派肯",data);
+    addSaiName("瑞法", "阿尔瑞法",data);
+    addSaiName("东里法", "伊斯特瑞法",data);
+    addSaiName("马尔克基亚", "马勒基亚",data);
+    addSaiName("阿尔希德", "希德",data);
+
     return data;
 }
 
