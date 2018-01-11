@@ -448,7 +448,6 @@ function  getSaiList() {
     addSaiName("薩普里薩", "沙普利萨",data);
     addSaiName("桑托斯瓜皮莱斯", "山度士DG",data);
 
-
     return data;
 }
 
