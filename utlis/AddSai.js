@@ -461,6 +461,8 @@ function  getSaiList() {
     addSaiName("普斯特喬", "坡斯特乔",data);
     addSaiName("马贝尔拉", "玛贝亚",data);
     addSaiName("阿希亞瓊", "沙迦",data);
+    addSaiName("阿尔納斯利雅德", "纳撒利雅德",data);
+    addSaiName("阿非哈", "费哈",data);
 
 
     return data;
