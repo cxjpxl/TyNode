@@ -458,6 +458,10 @@ function  getSaiList() {
     addSaiName("马尔克基亚", "马勒基亚",data);
     addSaiName("阿尔希德", "希德",data);
 
+    addSaiName("瓦拉什斯凱", "梅泽里西",data);
+    addSaiName("普斯特喬", "坡斯特乔",data);
+
+
     return data;
 }
 
