@@ -444,6 +444,11 @@ function  getSaiList() {
     addSaiName("赛甘地诺", "萨幹梯诺",data);
     addSaiName("剑鱼队", "多拉多斯",data);
     addSaiName("萨卡特卡斯", "麦拉斯萨卡特卡斯",data);
+    addSaiName("泽伦顿", "佩雷斯泽内度",data);
+    addSaiName("薩普里薩", "沙普利萨",data);
+    addSaiName("桑托斯瓜皮莱斯", "山度士DG",data);
+
+
     return data;
 }
 
