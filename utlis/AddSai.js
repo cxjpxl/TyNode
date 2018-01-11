@@ -463,8 +463,7 @@ function  getSaiList() {
     addSaiName("阿希亞瓊", "沙迦",data);
     addSaiName("阿尔納斯利雅德", "纳撒利雅德",data);
     addSaiName("阿非哈", "费哈",data);
-
-
+    addSaiName("法斯", "阿尔菲斯",data);
     return data;
 }
 
