@@ -447,7 +447,7 @@ function  getSaiList() {
     addSaiName("泽伦顿", "佩雷斯泽内度",data);
     addSaiName("薩普里薩", "沙普利萨",data);
     addSaiName("桑托斯瓜皮莱斯", "山度士DG",data);
-
+    addSaiName("昆士蘭獅隊", "昆士兰狮队",data);
     return data;
 }
 
