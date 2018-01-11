@@ -464,6 +464,17 @@ function  getSaiList() {
     addSaiName("阿尔納斯利雅德", "纳撒利雅德",data);
     addSaiName("阿非哈", "费哈",data);
     addSaiName("法斯", "阿尔菲斯",data);
+    addSaiName("特雷泽", "特雷泽PB",data);
+    addSaiName("科爾迪諾", "科尔迪诺MA",data);
+    addSaiName("国际体育会", "国际体育会RS",data);
+    addSaiName("巴拉纳体育会", "帕拉尼恩斯",data);
+    addSaiName("沃突普兰古恩斯", "沃图波兰伦斯SP",data);
+    addSaiName("基斯奧马", "基斯奥马SC",data);
+    addSaiName("卡比华兰奴", "卡皮哇瑞罗SP",data);
+    addSaiName("沙佩科恩斯", "乔沛高恩斯SC",data);
+    addSaiName("山度士", "山度士SP",data);
+
+
     return data;
 }
 
