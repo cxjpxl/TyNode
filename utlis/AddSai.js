@@ -480,7 +480,7 @@ function  getSaiList() {
     addSaiName("最卡宾", "泽维卡平联",data);
     addSaiName("Shan United FC", "掸联",data);
     addSaiName("弗列德", "弗兰候萨斯坦",data);
-
+    addSaiName("迪巴铝富查伊拉", "迪巴阿富查伊拉",data);
     return data;
 }
 
