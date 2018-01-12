@@ -477,6 +477,10 @@ function  getSaiList() {
     addSaiName("西亚詹美甘", "史拉加梅罕",data);
     addSaiName("阿汉", "紮巴汉",data);
     addSaiName("塞柏", "塞帕卡拉杰",data);
+    addSaiName("最卡宾", "泽维卡平联",data);
+    addSaiName("Shan United FC", "掸联",data);
+
+
     return data;
 }
 
