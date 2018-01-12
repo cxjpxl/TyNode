@@ -487,6 +487,13 @@ function  getSaiList() {
     addSaiName("Tzeirei Tamra", "提泽雷塔玛拉",data);
     addSaiName("裏桑勒智昂", "纳拉特耶乌达夏普尔",data);
     addSaiName("Shimshon Kfar Qasem", "参孙卡法权瑟姆",data);
+    addSaiName("阿尔拉德", "雷德",data);
+    addSaiName("沃尔特雷东达", "沃尔特雷东达RJ",data);
+    addSaiName("积安维尔", "积安维尔SC",data);
+    addSaiName("加菲泰尼洛斯", "卡菲塔勒斯塔帕丘拉",data);
+    addSaiName("阿尔阿利多哈", "阿尔艾利多哈",data);
+    addSaiName("阿尔阿拉毕多哈", "阿拉毕多哈",data);
+
 
     return data;
 }
