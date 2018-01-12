@@ -481,6 +481,13 @@ function  getSaiList() {
     addSaiName("Shan United FC", "掸联",data);
     addSaiName("弗列德", "弗兰候萨斯坦",data);
     addSaiName("迪巴铝富查伊拉", "迪巴阿富查伊拉",data);
+
+    addSaiName("荷兹利亚夏普尔", "赫兹立亚马卡比",data);
+    addSaiName("阿基纳扎力", "阿基纳紮力马卡比",data);
+    addSaiName("Tzeirei Tamra", "提泽雷塔玛拉",data);
+    addSaiName("裏桑勒智昂", "纳拉特耶乌达夏普尔",data);
+    addSaiName("Shimshon Kfar Qasem", "参孙卡法权瑟姆",data);
+
     return data;
 }
 
