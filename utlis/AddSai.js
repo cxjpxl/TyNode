@@ -500,6 +500,13 @@ function  getSaiList() {
     addSaiName("科帕沃古", "HK科帕沃古",data);
     addSaiName("凯夫拉维卡", "凯夫拉维克",data);
 
+    addSaiName("马斯里", "马萨雷",data);
+    addSaiName("Firhouse Clover", "菲浩斯克咯沃尔",data);
+    addSaiName("Portmarnock AFC", "波特马诺克",data);
+    addSaiName("伊斯頓沙伯", "伊斯特恩沙伯奥克兰",data);
+    addSaiName("惠灵顿凤凰", "威灵顿凤凰",data);
+    addSaiName("鹰啸联队", "豪克斯湾",data);
+
 
     return data;
 }
