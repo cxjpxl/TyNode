@@ -473,8 +473,10 @@ function  getSaiList() {
     addSaiName("卡比华兰奴", "卡皮哇瑞罗SP",data);
     addSaiName("沙佩科恩斯", "乔沛高恩斯SC",data);
     addSaiName("山度士", "山度士SP",data);
-
-
+    addSaiName("东北联盟", "东北联",data);
+    addSaiName("西亚詹美甘", "史拉加梅罕",data);
+    addSaiName("阿汉", "紮巴汉",data);
+    addSaiName("塞柏", "塞帕卡拉杰",data);
     return data;
 }
 
