@@ -493,6 +493,12 @@ function  getSaiList() {
     addSaiName("加菲泰尼洛斯", "卡菲塔勒斯塔帕丘拉",data);
     addSaiName("阿尔阿利多哈", "阿尔艾利多哈",data);
     addSaiName("阿尔阿拉毕多哈", "阿拉毕多哈",data);
+    addSaiName("香港飛馬", "香港飞马",data);
+    addSaiName("利華戴亞塔林", "雷瓦狄亚",data);
+    addSaiName("华露", "华路",data);
+    addSaiName("白金星", "铂星",data);
+    addSaiName("科帕沃古", "HK科帕沃古",data);
+    addSaiName("凯夫拉维卡", "凯夫拉维克",data);
 
 
     return data;
