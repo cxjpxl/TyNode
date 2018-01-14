@@ -499,13 +499,21 @@ function  getSaiList() {
     addSaiName("白金星", "铂星",data);
     addSaiName("科帕沃古", "HK科帕沃古",data);
     addSaiName("凯夫拉维卡", "凯夫拉维克",data);
-
     addSaiName("马斯里", "马萨雷",data);
     addSaiName("Firhouse Clover", "菲浩斯克咯沃尔",data);
     addSaiName("Portmarnock AFC", "波特马诺克",data);
     addSaiName("伊斯頓沙伯", "伊斯特恩沙伯奥克兰",data);
     addSaiName("惠灵顿凤凰", "威灵顿凤凰",data);
     addSaiName("鹰啸联队", "豪克斯湾",data);
+    addSaiName("史莫哈", "索莫哈",data);
+    addSaiName("FH夏拿佐杜亚", "夏拿佐杜亚",data);
+    addSaiName("弗罗瑞安娜FC", "佛罗里亚纳",data);
+    addSaiName("希伯尼恩斯", "喜柏尼恩斯波拉",data);
+    addSaiName("El-Kanemi Warriors", "卡尼米勇士",data);
+    addSaiName("高顿", "金箭",data);
+    addSaiName("华特斯", "拜维思",data);
+    addSaiName("Rockmount AFC", "洛克茂",data);
+    addSaiName("University College Cork AFC", "科克大学学院",data);
 
 
     return data;
