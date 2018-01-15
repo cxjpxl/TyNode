@@ -514,6 +514,11 @@ function  getSaiList() {
     addSaiName("Rockmount AFC", "洛克茂",data);
     addSaiName("University College Cork AFC", "科克大学学院",data);
     addSaiName("巴塞隆拿瓜亚基尔", "巴塞隆拿SC",data);
+    addSaiName("米切尔顿FC", "米切尔顿",data);
+    addSaiName("阿尔哈拉穆哈拉格", "哈拉",data);
+    addSaiName("圣罗拉", "绍乌拉",data);
+    addSaiName("阿尔拿杰玛麦纳麦", "拿加马麦纳麦",data);
+
 
     return data;
 }
