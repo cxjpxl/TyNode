@@ -518,7 +518,6 @@ function  getSaiList() {
     addSaiName("阿尔哈拉穆哈拉格", "哈拉",data);
     addSaiName("圣罗拉", "绍乌拉",data);
     addSaiName("阿尔拿杰玛麦纳麦", "拿加马麦纳麦",data);
-
     addSaiName("同奈", "隆奈",data);
     addSaiName("珀西布万隆", "万隆",data);
     addSaiName("Binh Dinh FC", "平定",data);
@@ -541,6 +540,7 @@ function  getSaiList() {
     addSaiName("诺梅卡柳", "卡里鲁",data);
     addSaiName("棉兰", "PSMS棉兰",data);
     addSaiName("PSM望加锡", "马卡萨",data);
+
     return data;
 }
 
