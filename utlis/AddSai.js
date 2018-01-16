@@ -539,7 +539,8 @@ function  getSaiList() {
     addSaiName("半岛电力", "潘尼苏拉",data);
     addSaiName("Ha Noi FC", "河内",data);
     addSaiName("诺梅卡柳", "卡里鲁",data);
-
+    addSaiName("棉兰", "PSMS棉兰",data);
+    addSaiName("PSM望加锡", "马卡萨",data);
     return data;
 }
 
