@@ -537,6 +537,11 @@ function  getSaiList() {
     addSaiName("斯特拉福特郡", "斯特拉特福镇",data);
     addSaiName("湯橋天使", "唐布里基",data);
     addSaiName("半岛电力", "潘尼苏拉",data);
+    addSaiName("Ha Noi FC", "河内",data);
+
+
+
+
     return data;
 }
 
