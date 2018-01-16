@@ -519,7 +519,24 @@ function  getSaiList() {
     addSaiName("圣罗拉", "绍乌拉",data);
     addSaiName("阿尔拿杰玛麦纳麦", "拿加马麦纳麦",data);
 
-
+    addSaiName("同奈", "隆奈",data);
+    addSaiName("珀西布万隆", "万隆",data);
+    addSaiName("Binh Dinh FC", "平定",data);
+    addSaiName("平陽", "贝卡麦克斯",data);
+    addSaiName("Atletico de Kolkata", "加尔各答体育会",data);
+    addSaiName("波希米亚人 1905", "布咸麦恩斯1905",data);
+    addSaiName("阿拉伯", "阿拉巴",data);
+    addSaiName("CS康斯坦丁", "CS康桑汰",data);
+    addSaiName("费伦巴治", "费内巴切",data);
+    addSaiName("克里夫顿维尔", "克理东维拉",data);
+    addSaiName("十字軍", "库莎达斯",data);
+    addSaiName("杜肯奴", "登甘宁",data);
+    addSaiName("保地花高", "博塔福格RJ",data);
+    addSaiName("波图格萨 RJ", "波图加沙RJ",data);
+    addSaiName("桑托斯拉古纳", "圣多斯",data);
+    addSaiName("斯特拉福特郡", "斯特拉特福镇",data);
+    addSaiName("湯橋天使", "唐布里基",data);
+    addSaiName("半岛电力", "潘尼苏拉",data);
     return data;
 }
 
