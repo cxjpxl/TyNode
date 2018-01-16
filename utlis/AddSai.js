@@ -538,9 +538,7 @@ function  getSaiList() {
     addSaiName("湯橋天使", "唐布里基",data);
     addSaiName("半岛电力", "潘尼苏拉",data);
     addSaiName("Ha Noi FC", "河内",data);
-
-
-
+    addSaiName("诺梅卡柳", "卡里鲁",data);
 
     return data;
 }
