@@ -554,7 +554,6 @@ function  getSaiList() {
     addSaiName("卡希亚斯", "塞卡西亚斯RS",data);
     addSaiName("帕托邁那斯", "URT MG",data);
     addSaiName("图皮", "吐匹MG",data);
-
     addSaiName("Kalteng Putra FC", "卡腾浦特拉",data);
     addSaiName("拜尼亚斯", "般尼亚斯",data);
     addSaiName("ASD Borgaro Nobis", "保尔格罗诺比斯",data);
@@ -570,6 +569,43 @@ function  getSaiList() {
     addSaiName("Sasso Marconi", "萨索马可尼",data);
     addSaiName("A.S.D.Villabiagio", "维纳比亚几奥",data);
     addSaiName("Aquila Montevarchi", "蒙泰瓦尔基",data);
+
+    addSaiName("Kwara Utd", "卡瓦拉联",data);
+    addSaiName("阿卡瓦聯", "阿卡瓦联",data);
+    addSaiName("Go Round FC", "高劳",data);
+    addSaiName("卡諾支柱", "卡农皮勒斯",data);
+    addSaiName("Heartland FC", "赫兰德",data);
+    addSaiName("杰拉", "阿尔杰拉",data);
+    addSaiName("卡兹玛", "卡斯马",data);
+    addSaiName("艾吉亚", "阿亚纳帕",data);
+    addSaiName("阿美利加明尼路", "美国MG",data);
+    addSaiName("Oeste FC SP", "欧斯特SP",data);
+    addSaiName("Sao Carlos FC SP", "索卡罗斯SP",data);
+    addSaiName("Monte Azul SP", "蒙特阿苏尔SP",data);
+    addSaiName("CA Penapolense SP", "佩纳博伦斯SP",data);
+    addSaiName("Sertaozinho SP", "赦陶宁欧SP",data);
+    addSaiName("迪斯波图SP", "波图加沙SP",data);
+    addSaiName("Batatais FC SP", "霸塔苔斯SP",data);
+    addSaiName("Inter De Limeira SP", "国际里梅拉SP",data);
+    addSaiName("Gremio Osasco Audax SP", "格雷米奥奥萨斯库奥达柯SP",data);
+    addSaiName("XV de Piracicaba SP", "皮拉西卡巴SP",data);
+    addSaiName("Rio Claro SP", "里奥克拉洛SP",data);
+    addSaiName("EC Taubate SP", "陶巴特SP",data);
+    addSaiName("EC Agua Santa SP", "阿故圣塔SP",data);
+    addSaiName("Noroeste SP", "诺罗斯特SP",data);
+    addSaiName("Mogi Mirim SP", "莫奇米林SP",data);
+    addSaiName("Marilia SP", "马利利亚SP",data);
+    addSaiName("MAD Manthiqueira SP", "曼斯奎拉SP",data);
+    addSaiName("Taboao da Serra SP", "席瑞拉SP",data);
+    addSaiName("康戈迪亚齐安 SC", "孔科迪SC",data);
+    addSaiName("沙佩科恩斯SC", "乔沛高恩斯SC",data);
+    addSaiName("Joinville EC SC", "积安维尔SC",data);
+    addSaiName("Internacional de Lages SC", "国际拉热斯SC",data);
+    addSaiName("奥瓦SC", "阿瓦伊SC",data);
+    addSaiName("Itumbiara GO", "伊通比亚拉GO",data);
+    addSaiName("AC Goianiense GO", "戈亚尼恩斯",data);
+    addSaiName("Gremio Anapolis GO", "甘美奥阿纳波利斯GO",data);
+
 
     return data;
 }
