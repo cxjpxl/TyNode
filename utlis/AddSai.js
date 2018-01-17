@@ -546,6 +546,15 @@ function  getSaiList() {
     addSaiName("马杜雷拉", "米底那RJ",data);
     addSaiName("巴西佩洛塔斯", "布拉希尔佩洛塔斯RS",data);
     addSaiName("法林明高", "法林明高RJ",data);
+    addSaiName("丹波SC", "甸普",data);
+    addSaiName("布尔诺", "泽伯约维卡般奴",data);
+    addSaiName("MFK 斯卡利察", "斯卡利卡",data);
+    addSaiName("拉賈马特魯港", "阿尔拉加马特鲁港",data);
+    addSaiName("高士路 RS", "高士路",data);
+    addSaiName("卡希亚斯", "塞卡西亚斯RS",data);
+    addSaiName("帕托邁那斯", "URT MG",data);
+    addSaiName("图皮", "吐匹MG",data);
+
     return data;
 }
 
