@@ -555,6 +555,22 @@ function  getSaiList() {
     addSaiName("帕托邁那斯", "URT MG",data);
     addSaiName("图皮", "吐匹MG",data);
 
+    addSaiName("Kalteng Putra FC", "卡腾浦特拉",data);
+    addSaiName("拜尼亚斯", "般尼亚斯",data);
+    addSaiName("ASD Borgaro Nobis", "保尔格罗诺比斯",data);
+    addSaiName("Inveruno", "英维尔洛",data);
+    addSaiName("瓦雷斯", "瓦雷泽",data);
+    addSaiName("AS卡薩爾", "卡萨莱",data);
+    addSaiName("USD 1913 Seregno", "塞雷尼奥",data);
+    addSaiName("AC Bra ASD", "布拉",data);
+    addSaiName("卡斯泰爾韋特羅", "卡斯泰尔韦特罗",data);
+    addSaiName("福尔利", "弗利",data);
+    addSaiName("Sammaurese", "桑木瑞斯",data);
+    addSaiName("ASD Romagna Centro", "罗马吉纳圣图",data);
+    addSaiName("Sasso Marconi", "萨索马可尼",data);
+    addSaiName("A.S.D.Villabiagio", "维纳比亚几奥",data);
+    addSaiName("Aquila Montevarchi", "蒙泰瓦尔基",data);
+
     return data;
 }
 
