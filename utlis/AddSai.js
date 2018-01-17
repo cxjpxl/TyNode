@@ -540,7 +540,7 @@ function  getSaiList() {
     addSaiName("诺梅卡柳", "卡里鲁",data);
     addSaiName("棉兰", "PSMS棉兰",data);
     addSaiName("PSM望加锡", "马卡萨",data);
-
+    addSaiName("飓风队", "乌拉坎",data);
     return data;
 }
 
