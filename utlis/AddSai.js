@@ -541,6 +541,11 @@ function  getSaiList() {
     addSaiName("棉兰", "PSMS棉兰",data);
     addSaiName("PSM望加锡", "马卡萨",data);
     addSaiName("飓风队", "乌拉坎",data);
+    addSaiName("费罗维亚里亚", "费罗维里亚SP",data);
+    addSaiName("蓬泰代拉", "邦特德拉",data);
+    addSaiName("马杜雷拉", "米底那RJ",data);
+    addSaiName("巴西佩洛塔斯", "布拉希尔佩洛塔斯RS",data);
+    addSaiName("法林明高", "法林明高RJ",data);
     return data;
 }
 
