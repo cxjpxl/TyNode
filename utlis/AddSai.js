@@ -605,6 +605,28 @@ function  getSaiList() {
     addSaiName("Itumbiara GO", "伊通比亚拉GO",data);
     addSaiName("AC Goianiense GO", "戈亚尼恩斯",data);
     addSaiName("Gremio Anapolis GO", "甘美奥阿纳波利斯GO",data);
+    addSaiName("彼辛度", "帕桑度PA",data);
+    addSaiName("Parauapebas FC", "帕劳阿佩巴斯PA",data);
+    addSaiName("Aparecidense GO", "阿帕雷西登瑟GO",data);
+    addSaiName("戈亚斯GO", "奎亚斯GO",data);
+    addSaiName("Uniclinic AC CE", "尤尼克立尼CE",data);
+    addSaiName("福塔雷萨", "福塔雷萨CE",data);
+    addSaiName("法林明高阿爾科韋迪PE", "法林明高PE",data);
+    addSaiName("慕尼斯帕尔利比亚", "幕尼西波利比利亚",data);
+    addSaiName("利蒙足球俱乐部", "格雷西亚",data);
+    addSaiName("CA Votuporanguense SP", "沃图波兰伦斯SP",data);
+    addSaiName("SP祖雲達斯", "佐云图斯SP",data);
+    addSaiName("Nacional AC SP", "国民队SP",data);
+    addSaiName("Sao Bernardo SP", "圣贝纳多SP",data);
+    addSaiName("EC Sao Bernardo SP", "EC圣贝纳多SP",data);
+    addSaiName("Portuguesa Santista SP", "波图加沙珊提斯塔SP",data);
+    addSaiName("Rio Preto SP", "里奥沛图SP",data);
+    addSaiName("IR克查域克", "IR雷克查域克",data);
+    addSaiName("Acao MT", "阿曹MT",data);
+    addSaiName("Pocone MT", "颇克勒MT",data);
+    addSaiName("米那罗斯", "麦尼拉斯",data);
+    addSaiName("莫纳加斯马图林", "摩纳加斯",data);
+    addSaiName("麦罗波利塔诺", "麦罗波利塔诺斯",data);
 
 
     return data;
