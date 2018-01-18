@@ -653,7 +653,7 @@ function  getSaiList() {
     addSaiName("CE 铁路", "费罗维里亚CE",data);
     addSaiName("ABC那托", "ABC RN",data);
     addSaiName("巴伊亚", "巴海亚BA",data);
-
+    addSaiName("阿拉捷倫瑟", "阿拉伦斯",data);
 
     return data;
 }
