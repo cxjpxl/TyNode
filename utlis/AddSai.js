@@ -657,6 +657,10 @@ function  getSaiList() {
     addSaiName("纳查雷域克", "UMF拿尔维克",data);
     addSaiName("CEOV Operario", "欧帕瑞欧MT",data);
     addSaiName("鲁沃登斯", "卢维丹斯MT",data);
+    addSaiName("加拉加斯", "卡拉卡斯",data);
+    addSaiName("苏利亚马拉开波", "苏里亚",data);
+    addSaiName("图积兰奴斯", "祖积兰奴斯",data);
+    addSaiName("萨莫拉", "萨马拉",data);
 
 
     return data;
