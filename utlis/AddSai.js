@@ -635,6 +635,9 @@ function  getSaiList() {
     addSaiName("华斯高", "华斯高RJ",data);
     addSaiName("班古", "邦古RJ",data);
     addSaiName("宝地花高 SP", "博塔福格SP",data);
+    addSaiName("大南城主", "宋兰义安",data);
+
+
     return data;
 }
 
