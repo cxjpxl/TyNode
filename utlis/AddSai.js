@@ -634,7 +634,7 @@ function  getSaiList() {
     addSaiName("科特迪瓦", "象牙海岸",data);
     addSaiName("华斯高", "华斯高RJ",data);
     addSaiName("班古", "邦古RJ",data);
-
+    addSaiName("宝地花高 SP", "博塔福格SP",data);
     return data;
 }
 
