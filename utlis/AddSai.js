@@ -641,9 +641,12 @@ function  getSaiList() {
     addSaiName("阿尔科尔", "科赫",data);
     addSaiName("扎马雷克", "紮马雷克",data);
     addSaiName("North East United FC", "东北联",data);
-
-
-
+    addSaiName("东方龙狮", "东方体育会",data);
+    addSaiName("傑志", "杰志",data);
+    addSaiName("Vila Nova GO", "维拉诺瓦GO",data);
+    addSaiName("Anapolis GO", "阿纳波利斯GO",data);
+    addSaiName("EC Rio Verde GO", "里奥韦尔迪GO",data);
+    addSaiName("BOA EC MG", "博阿MG",data);
     return data;
 }
 
