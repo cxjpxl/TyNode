@@ -647,6 +647,14 @@ function  getSaiList() {
     addSaiName("Anapolis GO", "阿纳波利斯GO",data);
     addSaiName("EC Rio Verde GO", "里奥韦尔迪GO",data);
     addSaiName("BOA EC MG", "博阿MG",data);
+    addSaiName("维拉诺波利斯", "文瑞波里斯RS",data);
+    addSaiName("卡尔拉", "CSA AL",data);
+    addSaiName("Sampaio Correa MA", "森柏欧MA",data);
+    addSaiName("CE 铁路", "费罗维里亚CE",data);
+    addSaiName("ABC那托", "ABC RN",data);
+    addSaiName("巴伊亚", "巴海亚BA",data);
+
+
     return data;
 }
 
