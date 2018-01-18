@@ -627,8 +627,7 @@ function  getSaiList() {
     addSaiName("米那罗斯", "麦尼拉斯",data);
     addSaiName("莫纳加斯马图林", "摩纳加斯",data);
     addSaiName("麦罗波利塔诺", "麦罗波利塔诺斯",data);
-
-
+    addSaiName("尤尼克里尼克CE", "尤尼克立尼CE",data);
     return data;
 }
 
