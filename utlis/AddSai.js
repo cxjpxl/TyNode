@@ -2,6 +2,8 @@
 
 
 function  addSaiName(key,value,data) {
+    key = key.trim();
+    value =value.trim();
     if (!data[key])
     {
         data[key]= value;
@@ -395,7 +397,6 @@ function  getSaiList() {
     addSaiName("西尔热", "卡尔拉CE",data);
     addSaiName("巴海尔", "巴海亚BA",data);
     addSaiName("国际队圣保罗AC", "国民队SP",data);
-    addSaiName("ABC那托", "ABC RN",data);
     addSaiName("佩纳博伦斯", "佩纳博伦斯SP",data);
     addSaiName("納帝科", "纳帝科PE",data);
     addSaiName("纪柏拉拿", "纪柏拉拿RO",data);
@@ -536,7 +537,6 @@ function  getSaiList() {
     addSaiName("斯特拉福特郡", "斯特拉特福镇",data);
     addSaiName("湯橋天使", "唐布里基",data);
     addSaiName("半岛电力", "潘尼苏拉",data);
-    addSaiName("Ha Noi FC", "河内",data);
     addSaiName("诺梅卡柳", "卡里鲁",data);
     addSaiName("棉兰", "PSMS棉兰",data);
     addSaiName("PSM望加锡", "马卡萨",data);
