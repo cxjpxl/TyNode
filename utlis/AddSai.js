@@ -654,6 +654,7 @@ function  getSaiList() {
     addSaiName("ABC那托", "ABC RN",data);
     addSaiName("巴伊亚", "巴海亚BA",data);
     addSaiName("阿拉捷倫瑟", "阿拉伦斯",data);
+    addSaiName("纳查雷域克", "UMF拿尔维克",data);
 
     return data;
 }
