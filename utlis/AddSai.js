@@ -640,6 +640,9 @@ function  getSaiList() {
     addSaiName("伊斯顿沙伯", "伊斯特恩沙伯",data);
     addSaiName("阿尔科尔", "科赫",data);
     addSaiName("扎马雷克", "紮马雷克",data);
+    addSaiName("North East United FC", "东北联",data);
+
+
 
     return data;
 }
