@@ -628,6 +628,13 @@ function  getSaiList() {
     addSaiName("莫纳加斯马图林", "摩纳加斯",data);
     addSaiName("麦罗波利塔诺", "麦罗波利塔诺斯",data);
     addSaiName("尤尼克里尼克CE", "尤尼克立尼CE",data);
+    addSaiName("披瑟巴亚苏腊巴亚", "帕尔斯巴亚",data);
+    addSaiName("匹尼", "PS TNI",data);
+    addSaiName("卡斯利士堡", "基锡里士邦",data);
+    addSaiName("科特迪瓦", "象牙海岸",data);
+    addSaiName("华斯高", "华斯高RJ",data);
+    addSaiName("班古", "邦古RJ",data);
+
     return data;
 }
 
