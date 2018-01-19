@@ -666,7 +666,11 @@ function  getSaiList() {
     addSaiName("巴厘普山联", "巴厘联",data);
     addSaiName("波尼奥FC", "婆罗洲",data);
     addSaiName("PSPS Riau", "北乾巴鲁",data);
-
+    addSaiName("Magwe FC", "马圭",data);
+    addSaiName("贝尔雅法", "柏纳加法欧托杜瑟姆",data);
+    addSaiName("希昆哈米茲拉", "石库哈米扎哈",data);
+    addSaiName("加西姆舒阿夏普尔", "卡法卡斯姆沙瓦夏普尔",data);
+    addSaiName("奈蒂沃特馬卡比", "奈蒂沃特",data);
     return data;
 }
 
