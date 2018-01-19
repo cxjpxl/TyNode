@@ -675,6 +675,10 @@ function  getSaiList() {
     addSaiName("格乔", "格索",data);
     addSaiName("萨尔高卡果阿邦", "萨尔高卡",data);
     addSaiName("梅基亚", "艾马希亚",data);
+    addSaiName("阿尔阿利麦纳麦", "阿尔艾利麦纳麦",data);
+    addSaiName("库巴", "高巴",data);
+    addSaiName("若爾薩莫拉", "若尔萨莫拉",data);
+    addSaiName("CA巴特纳", "巴特纳",data);
 
     return data;
 }
