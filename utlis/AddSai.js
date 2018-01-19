@@ -663,6 +663,9 @@ function  getSaiList() {
     addSaiName("萨莫拉", "萨马拉",data);
     addSaiName("英特土尔库", "英特杜古",data);
     addSaiName("TPV 坦佩雷", "TPV谭柏利",data);
+    addSaiName("巴厘普山联", "巴厘联",data);
+    addSaiName("波尼奥FC", "婆罗洲",data);
+
     return data;
 }
 
