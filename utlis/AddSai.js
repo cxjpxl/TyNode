@@ -661,8 +661,8 @@ function  getSaiList() {
     addSaiName("苏利亚马拉开波", "苏里亚",data);
     addSaiName("图积兰奴斯", "祖积兰奴斯",data);
     addSaiName("萨莫拉", "萨马拉",data);
-
-
+    addSaiName("英特土尔库", "英特杜古",data);
+    addSaiName("TPV 坦佩雷", "TPV谭柏利",data);
     return data;
 }
 
