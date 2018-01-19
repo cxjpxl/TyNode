@@ -671,6 +671,8 @@ function  getSaiList() {
     addSaiName("希昆哈米茲拉", "石库哈米扎哈",data);
     addSaiName("加西姆舒阿夏普尔", "卡法卡斯姆沙瓦夏普尔",data);
     addSaiName("奈蒂沃特馬卡比", "奈蒂沃特",data);
+    addSaiName("武里南联", "布襦姆联",data);
+
     return data;
 }
 
