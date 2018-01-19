@@ -674,6 +674,7 @@ function  getSaiList() {
     addSaiName("哈拉治", "哈拉彻",data);
     addSaiName("格乔", "格索",data);
     addSaiName("萨尔高卡果阿邦", "萨尔高卡",data);
+    addSaiName("梅基亚", "艾马希亚",data);
 
     return data;
 }
