@@ -569,7 +569,6 @@ function  getSaiList() {
     addSaiName("Sasso Marconi", "萨索马可尼",data);
     addSaiName("A.S.D.Villabiagio", "维纳比亚几奥",data);
     addSaiName("Aquila Montevarchi", "蒙泰瓦尔基",data);
-
     addSaiName("Kwara Utd", "卡瓦拉联",data);
     addSaiName("阿卡瓦聯", "阿卡瓦联",data);
     addSaiName("Go Round FC", "高劳",data);
@@ -672,7 +671,8 @@ function  getSaiList() {
     addSaiName("加西姆舒阿夏普尔", "卡法卡斯姆沙瓦夏普尔",data);
     addSaiName("奈蒂沃特馬卡比", "奈蒂沃特",data);
     addSaiName("武里南联", "布襦姆联",data);
-
+    addSaiName("哈拉治", "哈拉彻",data);
+    addSaiName("格乔", "格索",data);
     return data;
 }
 
