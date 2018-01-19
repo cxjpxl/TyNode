@@ -679,6 +679,14 @@ function  getSaiList() {
     addSaiName("库巴", "高巴",data);
     addSaiName("若爾薩莫拉", "若尔萨莫拉",data);
     addSaiName("CA巴特纳", "巴特纳",data);
+    addSaiName("阿尔拿达布賴米", "纳达艾布赖米",data);
+    addSaiName("沙巴柏巴卡", "沙巴柏阿曼",data);
+    addSaiName("阿尔伊蒂哈德吉达", "伊蒂哈德吉达",data);
+    addSaiName("德桑帕拉多斯体育队", "德沙帕拉多斯",data);
+    addSaiName("祖文图德尤尼达大学", "祖文图德尤尼达",data);
+    addSaiName("拉腊竞技", "拉拉",data);
+    addSaiName("AS马尔萨", "马撒",data);
+    addSaiName("哈曼利弗", "哈曼苏塞",data);
 
     return data;
 }
