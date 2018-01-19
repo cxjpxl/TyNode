@@ -673,6 +673,8 @@ function  getSaiList() {
     addSaiName("武里南联", "布襦姆联",data);
     addSaiName("哈拉治", "哈拉彻",data);
     addSaiName("格乔", "格索",data);
+    addSaiName("萨尔高卡果阿邦", "萨尔高卡",data);
+
     return data;
 }
 
