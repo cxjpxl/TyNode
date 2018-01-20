@@ -708,6 +708,11 @@ function  getSaiList() {
     addSaiName("费伦巴赫", "费伦巴治",data);
     addSaiName("巴扬卡拉泗水联", "巴扬卡拉",data);
     addSaiName("PSIS Semarang", "PSIS三宝珑",data);
+
+    addSaiName("CE Santanyi", "桑塔尼",data);
+    addSaiName("梅卡达尔", "梅卡达",data);
+
+
     return data;
 }
 
