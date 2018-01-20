@@ -714,6 +714,37 @@ function  getSaiList() {
     addSaiName("帕拉多", "巴拉特",data);
     addSaiName("DRB 塔杰纳奈特", "DRB塔杰纳奈特",data);
     addSaiName("ES萨兹斯", "扎尔吉斯",data);
+    addSaiName("高利寧", "高利宁",data);
+    addSaiName("雷森迪", "雷森德RJ",data);
+    addSaiName("阿故聖塔SP", "阿故圣塔SP",data);
+    addSaiName("沃突普兰古恩斯SP", "沃图波兰伦斯SP",data);
+    addSaiName("MC 阿尔及尔", "MC阿尔及尔",data);
+    addSaiName("米拉索", "迈拉索尔SP",data);
+    addSaiName("弗羅勒斯塔CE", "弗罗勒斯塔CE",data);
+    addSaiName("安纳波利斯GO", "甘美奥阿纳波利斯GO",data);
+    addSaiName("馬林加", "马林加PR",data);
+    addSaiName("国际队圣保罗SP", "国民队SP",data);
+    addSaiName("奥萨斯库奥达斯SP", "格雷米奥奥萨斯库奥达柯SP",data);
+    addSaiName("巴拉那斯", "巴拉纳斯RN",data);
+    addSaiName("阿美利加纳塔尔", "美国RN",data);
+    addSaiName("UA Barbarense SP", "巴巴伦斯SP",data);
+    addSaiName("奧克拉洛SP", "里奥克拉洛SP",data);
+    addSaiName("奧斯特SP", "欧斯特SP",data);
+    addSaiName("哥斯達黎加大學", "哥斯达黎加大学",data);
+    addSaiName("圣保罗", "圣保罗SP",data);
+    addSaiName("甘美奥诺瓦里桑蒂诺", "甘美奥诺瓦里桑蒂诺SP",data);
+    addSaiName("卡洛圣佩德鲁", "卡洛",data);
+    addSaiName("拉斯禾拉斯", "乌拉坎拉斯埃拉斯",data);
+    addSaiName("国际立寐热SP", "国际里梅拉SP",data);
+    addSaiName("CD 帕萨基纳", "帕萨奎纳",data);
+    addSaiName("利斯菲体育会", "利斯菲体育会PE",data);
+    addSaiName("阿福加杜斯", "阿福加杜斯PE",data);
+    addSaiName("国民竞技", "国家体育会",data);
+    addSaiName("伊图诺 FC", "伊图阿诺SP",data);
+    addSaiName("帕拉高米纳斯", "帕哥米纳斯PA",data);
+    addSaiName("馬拉巴", "马拉巴PA",data);
+    addSaiName("卡尔登斯", "卡德尼斯MG",data);
+    addSaiName("惠灵顿", "威灵顿队",data);
 
     return data;
 }
