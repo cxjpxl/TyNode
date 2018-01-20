@@ -706,6 +706,8 @@ function  getSaiList() {
     addSaiName("GFA FC", "GFA",data);
     addSaiName("海法", "海法夏普尔",data);
     addSaiName("费伦巴赫", "费伦巴治",data);
+    addSaiName("巴扬卡拉泗水联", "巴扬卡拉",data);
+    addSaiName("PSIS Semarang", "PSIS三宝珑",data);
     return data;
 }
 
