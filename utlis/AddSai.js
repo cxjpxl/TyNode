@@ -713,6 +713,8 @@ function  getSaiList() {
     addSaiName("自由洲明星队", "自由州星",data);
     addSaiName("帕拉多", "巴拉特",data);
     addSaiName("DRB 塔杰纳奈特", "DRB塔杰纳奈特",data);
+    addSaiName("ES萨兹斯", "扎尔吉斯",data);
+
     return data;
 }
 
