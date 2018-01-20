@@ -700,7 +700,6 @@ function  getSaiList() {
     addSaiName("格倫杜蘭", "格伦杜兰",data);
     addSaiName("基拿雲", "格兰坊",data);
     addSaiName("沃伦点城", "沃伦角城",data);
-
     addSaiName("南区足球会", "冠忠南区",data);
     addSaiName("Myawady FC", "米亚瓦迪",data);
     addSaiName("GFA FC", "GFA",data);
@@ -708,11 +707,12 @@ function  getSaiList() {
     addSaiName("费伦巴赫", "费伦巴治",data);
     addSaiName("巴扬卡拉泗水联", "巴扬卡拉",data);
     addSaiName("PSIS Semarang", "PSIS三宝珑",data);
-
     addSaiName("CE Santanyi", "桑塔尼",data);
     addSaiName("梅卡达尔", "梅卡达",data);
-
-
+    addSaiName("阿尔萨得多哈", "萨得",data);
+    addSaiName("自由洲明星队", "自由州星",data);
+    addSaiName("帕拉多", "巴拉特",data);
+    addSaiName("DRB 塔杰纳奈特", "DRB塔杰纳奈特",data);
     return data;
 }
 
