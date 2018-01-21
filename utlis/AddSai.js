@@ -786,7 +786,16 @@ function  getSaiList() {
     addSaiName("布尔戈斯", "皇家布尔戈斯",data);
     addSaiName("叁蔓堤罗", "三蔓堤罗",data);
     addSaiName("CD马力诺", "马力诺",data);
-
+    addSaiName("蒙纳斯堤", "曼纳斯特",data);
+    addSaiName("AS加贝斯", "加贝斯",data);
+    addSaiName("梅德宁", "梅德尼讷",data);
+    addSaiName("里尔", "利尔",data);
+    addSaiName("克斯奇", "中新地",data);
+    addSaiName("科尔多瓦 B", "哥杜巴B队",data);
+    addSaiName("圣费尔南多", "圣费尔南多埃勒诺",data);
+    addSaiName("梅西亚B", "梅西亚英佩尔",data);
+    addSaiName("拉尤宁", "拉尤宁CF",data);
+    addSaiName("圣马田", "森玛提纳",data);
     return data;
 }
 
