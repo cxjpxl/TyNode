@@ -798,6 +798,8 @@ function  getSaiList() {
     addSaiName("奥萨斯库SP", "甘美奥奥萨斯库SP",data);
     addSaiName("维络SP", "维罗体育队SP",data);
     addSaiName("布拉希尔体育SP", "布拉希尔SP",data);
+    addSaiName("維克吉", "维吉旅行者",data);
+    addSaiName("Yobe Desert Stars", "约贝沙漠之星",data);
 
 
 
