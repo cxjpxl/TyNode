@@ -801,8 +801,33 @@ function  getSaiList() {
     addSaiName("維克吉", "维吉旅行者",data);
     addSaiName("Yobe Desert Stars", "约贝沙漠之星",data);
 
-
-
+    addSaiName("里賈納", "里贾纳",data);
+    addSaiName("阿尔卡西亚哈瓦利", "卡德西亚",data);
+    addSaiName("阿尔阿拉毕墁所利亚", "阿拉毕科威特",data);
+    addSaiName("博阿", "博阿MG",data);
+    addSaiName("通布斯FC", "通布斯MG",data);
+    addSaiName("彭美拉斯", "彭美拉斯SP",data);
+    addSaiName("马瑟欧", "CRB AL",data);
+    addSaiName("CEO FC AL", "CEO AL",data);
+    addSaiName("Bahia De Feira BA", "巴海亚迪费拉BA",data);
+    addSaiName("Vitoria da Conquista BA", "维多利亚大孔基斯塔BA",data);
+    addSaiName("普拉斯哥野", "普拉斯哥野SC",data);
+    addSaiName("基斯奧馬", "基斯奥马SC",data);
+    addSaiName("泰拉登特斯", "蒂拉登特斯CE",data);
+    addSaiName("奎尔巴", "古亚伯MT",data);
+    addSaiName("密斯托", "密斯托MT",data);
+    addSaiName("斯尔诺特", "斯尔诺特PR",data);
+    addSaiName("里奧布兰克 PR", "里奥布郎库PR",data);
+    addSaiName("哥里迪巴", "哥里迪巴PR",data);
+    addSaiName("伊瓜苏", "伊瓜苏PR",data);
+    addSaiName("Londrina PR", "隆迪那PR",data);
+    addSaiName("波蒂加", "波蒂家莫索罗RN",data);
+    addSaiName("圣塔库鲁", "圣塔库鲁PE",data);
+    addSaiName("安托尼亞那青年", "祖文图德安图尼安",data);
+    addSaiName("甘拿斯亞迪羅", "甘拿斯亚迪罗",data);
+    addSaiName("圣路易斯", "圣路易斯RS",data);
+    addSaiName("馬拉卡特高", "马拉卡达高",data);
+    addSaiName("查莱特纳高", "查拉特南戈",data);
     return data;
 }
 
