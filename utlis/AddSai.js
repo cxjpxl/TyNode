@@ -828,6 +828,13 @@ function  getSaiList() {
     addSaiName("圣路易斯", "圣路易斯RS",data);
     addSaiName("馬拉卡特高", "马拉卡达高",data);
     addSaiName("查莱特纳高", "查拉特南戈",data);
+    addSaiName("塔奇拉", "塔赤雷",data);
+    addSaiName("奥利恩特", "欧里恩特",data);
+    addSaiName("廸波特斯", "迪波特斯",data);
+    addSaiName("萨连斯基莫斯塔", "瑞尼斯基",data);
+    addSaiName("赫维迪尼", "安卡兰",data);
+
+
     return data;
 }
 
