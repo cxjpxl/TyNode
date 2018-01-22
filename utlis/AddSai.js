@@ -833,6 +833,8 @@ function  getSaiList() {
     addSaiName("廸波特斯", "迪波特斯",data);
     addSaiName("萨连斯基莫斯塔", "瑞尼斯基",data);
     addSaiName("赫维迪尼", "安卡兰",data);
+    addSaiName("SAI (EZ)", "SAI加尔各答",data);
+
 
 
     return data;
