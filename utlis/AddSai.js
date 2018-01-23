@@ -836,6 +836,9 @@ function  getSaiList() {
     addSaiName("SAI (EZ)", "SAI加尔各答",data);
     addSaiName("河内足球俱乐部", "河内",data);
     addSaiName("Football School of India", "印度足球学校",data);
+    addSaiName("波琴", "波鸿",data);
+    addSaiName("科隆米爾斯", "克伦米尔",data);
+    addSaiName("Stade Briochin", "博里奥庆",data);
     return data;
 }
 
