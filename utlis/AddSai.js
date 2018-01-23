@@ -847,6 +847,18 @@ function  getSaiList() {
     addSaiName("柔佛州足球俱乐部", "柔佛达罗塔晋",data);
     addSaiName("Bacabal MA", "巴卡巴尔MA",data);
     addSaiName("瑞模貝雷", "瑞模贝雷PA",data);
+    addSaiName("塞克特兹亚", "耐斯茨奥纳",data);
+    addSaiName("普尔城", "罗依斯顿",data);
+    addSaiName("温盖特", "温葛特",data);
+    addSaiName("曼彻斯特", "联曼足球会",data);
+    addSaiName("斯巴坦斯", "布莱斯史巴登斯",data);
+    addSaiName("艾爾佛莱頓", "阿尔费登",data);
+    addSaiName("哈羅蓋特", "哈洛贾特",data);
+    addSaiName("雷明頓", "莱明顿",data);
+    addSaiName("维拉密雷", "维拉米特",data);
+    addSaiName("桑西內納", "山斯尼纳",data);
+    addSaiName("内乌肯独立", "内乌肯独立队",data);
+    addSaiName("瓦斯科SC", "瓦斯科",data);
     return data;
 }
 
