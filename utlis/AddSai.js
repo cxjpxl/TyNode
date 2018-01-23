@@ -839,6 +839,14 @@ function  getSaiList() {
     addSaiName("波琴", "波鸿",data);
     addSaiName("科隆米爾斯", "克伦米尔",data);
     addSaiName("Stade Briochin", "博里奥庆",data);
+    addSaiName("兰达杰联", "兰达吉德联",data);
+    addSaiName("乌兹别克斯坦", "乌兹别克",data);
+    addSaiName("TC Sports Club", "TC体育",data);
+    addSaiName("清化", "FLC清化",data);
+    addSaiName("蒙通联", "孟通",data);
+    addSaiName("柔佛州足球俱乐部", "柔佛达罗塔晋",data);
+    addSaiName("Bacabal MA", "巴卡巴尔MA",data);
+    addSaiName("瑞模貝雷", "瑞模贝雷PA",data);
     return data;
 }
 
