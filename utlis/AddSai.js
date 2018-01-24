@@ -859,6 +859,9 @@ function  getSaiList() {
     addSaiName("桑西內納", "山斯尼纳",data);
     addSaiName("内乌肯独立", "内乌肯独立队",data);
     addSaiName("瓦斯科SC", "瓦斯科",data);
+    addSaiName("北克鲁塞罗", "克鲁塞罗德尔诺特",data);
+    addSaiName("柏迪亞體育", "柏迪亚体育会",data);
+    addSaiName("羅卡體育", "罗卡",data);
     return data;
 }
 
