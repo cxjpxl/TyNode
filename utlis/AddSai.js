@@ -800,7 +800,6 @@ function  getSaiList() {
     addSaiName("布拉希尔体育SP", "布拉希尔SP",data);
     addSaiName("維克吉", "维吉旅行者",data);
     addSaiName("Yobe Desert Stars", "约贝沙漠之星",data);
-
     addSaiName("里賈納", "里贾纳",data);
     addSaiName("阿尔卡西亚哈瓦利", "卡德西亚",data);
     addSaiName("阿尔阿拉毕墁所利亚", "阿拉毕科威特",data);
@@ -862,6 +861,8 @@ function  getSaiList() {
     addSaiName("北克鲁塞罗", "克鲁塞罗德尔诺特",data);
     addSaiName("柏迪亞體育", "柏迪亚体育会",data);
     addSaiName("羅卡體育", "罗卡",data);
+    addSaiName("布里斯班前锋", "布里斯本前锋",data);
+    addSaiName("立纳瑟", "立纳瑟SP",data);
     return data;
 }
 
