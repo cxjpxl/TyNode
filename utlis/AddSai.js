@@ -863,6 +863,13 @@ function  getSaiList() {
     addSaiName("羅卡體育", "罗卡",data);
     addSaiName("布里斯班前锋", "布里斯本前锋",data);
     addSaiName("立纳瑟", "立纳瑟SP",data);
+
+
+    addSaiName("里奧普雷圖SP", "里奥沛图SP",data);
+    addSaiName("民主队 GV", "迪模卡拉塔MG",data);
+    addSaiName("卡斯卡韦尔", "卡斯卡韦尔PR",data);
+    addSaiName("CE Uniao PR", "乌尼昂PR",data);
+    addSaiName("塞爾道吉諾SP", "赦陶宁欧SP",data);
     return data;
 }
 
