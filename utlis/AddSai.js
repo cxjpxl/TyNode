@@ -873,6 +873,9 @@ function  getSaiList() {
     addSaiName("穆里西AL", "木瑞慈AL",data);
     addSaiName("阿里安萨", "阿利安萨圣萨尔瓦多",data);
     addSaiName("苏索纳特", "松索纳特",data);
+    addSaiName("乔达路普", "ECU乔达路普",data);
+    addSaiName("巴拉卡斯中央", "巴洛克斯",data);
+    addSaiName("伯拉根森", "伯拉根森SP",data);
     return data;
 }
 
