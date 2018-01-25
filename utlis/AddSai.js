@@ -868,12 +868,11 @@ function  getSaiList() {
     addSaiName("卡斯卡韦尔", "卡斯卡韦尔PR",data);
     addSaiName("CE Uniao PR", "乌尼昂PR",data);
     addSaiName("塞爾道吉諾SP", "赦陶宁欧SP",data);
-    addSaiName("阿美利加明尼路", "美国MG",data);
-    addSaiName("图皮", "吐匹MG",data);
-    addSaiName("Sao Carlos FC SP", "索卡罗斯SP",data);
     addSaiName("奥林比亚SP", "奥林匹亚SP",data);
     addSaiName("桑堤斯塔SP", "波图加沙珊提斯塔SP",data);
     addSaiName("穆里西AL", "木瑞慈AL",data);
+    addSaiName("阿里安萨", "阿利安萨圣萨尔瓦多",data);
+    addSaiName("苏索纳特", "松索纳特",data);
     return data;
 }
 
