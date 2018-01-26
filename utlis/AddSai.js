@@ -878,6 +878,9 @@ function  getSaiList() {
     addSaiName("伯拉根森", "伯拉根森SP",data);
     addSaiName("阿喀巴", "阿卡巴",data);
     addSaiName("侯赛恩", "胡森伊尔比德",data);
+    addSaiName("Ha Tinh", "河静",data);
+    addSaiName("峴港 FC", "岘港",data);
+    addSaiName("特腊帕尼", "特拉帕尼",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
