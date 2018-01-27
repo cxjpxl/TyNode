@@ -881,6 +881,8 @@ function  getSaiList() {
     addSaiName("Ha Tinh", "河静",data);
     addSaiName("峴港 FC", "岘港",data);
     addSaiName("特腊帕尼", "特拉帕尼",data);
+    addSaiName("佩特帕", "皮塔帕",data);
+    addSaiName("圣达菲波哥大", "圣塔菲",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
