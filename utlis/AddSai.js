@@ -958,6 +958,8 @@ function  getSaiList() {
     addSaiName("禾达费拉迪体育会", "沃特尔菲尔蒂",data);
     addSaiName("奇南德加", "赤纳德格",data);
     addSaiName("圣达菲联队", "圣塔菲联",data);
+    addSaiName("南韩大学队", "南韩大学特选队",data);
+    addSaiName("阿尔法赛利哈玛", "费萨里哈曼",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
