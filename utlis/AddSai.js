@@ -969,6 +969,8 @@ function  getSaiList() {
     addSaiName("萨卡兹斯帕斯", "萨卡齐斯帕斯",data);
     addSaiName("图库曼竞技", "图库曼体育会",data);
     addSaiName("毁灭者俱乐", "底斯若耶斯",data);
+    addSaiName("Cong An Nhan Dan", "人民公安",data);
+    addSaiName("阿尔法赛利安曼", "阿尔费萨里安曼",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
