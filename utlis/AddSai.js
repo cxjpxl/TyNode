@@ -990,6 +990,10 @@ function  getSaiList() {
     addSaiName("Real Ariquemes RO", "皇家阿里克米斯RO",data);
     addSaiName("Manaus AM", "马瑙斯AM",data);
     addSaiName("Atletico Acreano AC", "艾莱提可阿科瑞罗",data);
+    addSaiName("瑟克雷大学生体育队", "瑟克雷",data);
+    addSaiName("布拉格斯拉維亞", "布拉格斯拉维亚",data);
+    addSaiName("安德莱赫特", "安德列治",data);
+    addSaiName("阿玛祖鲁", "艾玛祖鲁",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
