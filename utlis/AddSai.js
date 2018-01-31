@@ -981,6 +981,15 @@ function  getSaiList() {
     addSaiName("伊梅莱", "尹美利克",data);
     addSaiName("波拉斯班查奴卡", "布拉卡巴尼亚卢卡",data);
     addSaiName("蒙特維多國民隊", "蒙特维多国民队",data);
+
+    addSaiName("摩纳哥", "图鲁兹",data);
+    addSaiName("Bosque Formosa GO", "福尔摩沙DF",data);
+    addSaiName("Santa Maria DF", "圣玛利亚DF",data);
+    addSaiName("Real FC DF", "瑞尔DF",data);
+    addSaiName("Interporto TO", "尹特普托TO",data);
+    addSaiName("Real Ariquemes RO", "皇家阿里克米斯RO",data);
+    addSaiName("Manaus AM", "马瑙斯AM",data);
+    addSaiName("Atletico Acreano AC", "艾莱提可阿科瑞罗",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
