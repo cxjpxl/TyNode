@@ -12,7 +12,7 @@ const mongoose = require('mongoose');
 const AddData = require('./utlis/AddSai');
 
 var findNet = require('find-net');
-findNet.init(/皇冠体育|体育投注|真人娱乐|AG视讯|MG电子|电子游艺|电子娱乐|体育赛事|彩票游戏|百家乐|赌博|新葡京|威尼斯|金沙|波音/,2,8);
+findNet.init(/皇冠体育|体育投注|真人娱乐|AG视讯|MG电子|体育赛事/,2,8);
 
 
 global.lianSaiData = AddData.getSaiList();
