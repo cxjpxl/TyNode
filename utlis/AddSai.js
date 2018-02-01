@@ -1000,6 +1000,11 @@ function  getSaiList() {
     addSaiName("加玛", "加马DF",data);
     addSaiName("帕拉羅阿DF", "帕拉罗阿DF",data);
     addSaiName("巴兰基利亚青年", "小巴兰哈拉",data);
+    addSaiName("卡帕提", "卡帕堤利夫",data);
+    addSaiName("皮耳森", "皮尔森",data);
+    addSaiName("斯塔达尔斯", "丝托达尔斯",data);
+    addSaiName("郎达伊尔比德", "蓝慕沙",data);
+    addSaiName("賽利亞", "赛利亚",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
