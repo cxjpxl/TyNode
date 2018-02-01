@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "debug": "^2.6.3",
-    "find-net": "0.2.0",
+    "find-net": "0.1.9",
     "ioredis": "^3.1.2",
     "jpush-sdk": "^3.4.1",
     "json5": "^0.5.1",
