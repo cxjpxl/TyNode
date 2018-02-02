@@ -1005,6 +1005,26 @@ function  getSaiList() {
     addSaiName("斯塔达尔斯", "丝托达尔斯",data);
     addSaiName("郎达伊尔比德", "蓝慕沙",data);
     addSaiName("賽利亞", "赛利亚",data);
+    addSaiName("关丹港", "关丹",data);
+    addSaiName("UKM FC", "马来西亚国家大学",data);
+    addSaiName("菲爾達聯", "菲尔达",data);
+    addSaiName("红土联队", "瑞德兰茨联",data);
+    addSaiName("Terengganu FC 2", "丁加奴II队",data);
+    addSaiName("馬利漢姆", "马利汉姆",data);
+    addSaiName("FELCRA FC", "菲尔卡拉",data);
+    addSaiName("马来西亚皇家警察", "皇家警察足球俱乐部",data);
+    addSaiName("柔佛州足球俱乐部2", "柔佛达罗塔晋II队",data);
+    addSaiName("BSG莱比锡化工", "车米莱比锡",data);
+    addSaiName("奥尔巴赫", "VfB阿尔巴赫",data);
+    addSaiName("纽斯特里兹", "纽斯特里茨",data);
+    addSaiName("瓦尔多夫", "阿斯多瑞亚瓦尔多夫",data);
+    addSaiName("美因兹Am", "美因茨05青年队",data);
+    addSaiName("阿斯特拉基尔奎", "阿斯特拉吉尔古",data);
+    addSaiName("费罗", "费罗卡利尔",data);
+    addSaiName("祖文图德尤尼达", "祖文图德尤尼达瓜莱瓜伊丘",data);
+    addSaiName("恩斯蒂图", "联合队",data);
+    addSaiName("男生竞技", "男孩竞技",data);
+    addSaiName("哥達拿查拉", "芝华士",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
