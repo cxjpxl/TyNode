@@ -1047,6 +1047,16 @@ function  getSaiList() {
     addSaiName("裏本瑞德", "利伯泰德",data);
     addSaiName("古迪比", "KTP",data);
     addSaiName("埃格斯托夫-朗雷德", "鄂杰斯托夫兰任德",data);
+
+    addSaiName("理文足球会", "理文",data);
+    addSaiName("Lions FC", "昆士兰狮队",data);
+    addSaiName("Cairns FC", "凯恩斯",data);
+    addSaiName("Terengganu FC", "丁加奴",data);
+    addSaiName("雪兰莪州经济发展局", "雪兰莪州发展局",data);
+    addSaiName("North Queensland United", "北昆士兰联",data);
+    addSaiName("Magpies Crusaders FC", "鹊十字军",data);
+    addSaiName("洪卡/阿卡泰米阿", "洪卡学院",data);
+
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
