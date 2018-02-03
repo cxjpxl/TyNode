@@ -198,7 +198,7 @@ router.post('/sendData', async (ctx, next) => {
                  try{
                     socket.websocket.send(JSON.stringify(curData));
                  }catch (e){
-
+                    console.log(e.toString());
                  }
                  }
 
