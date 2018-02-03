@@ -1055,10 +1055,10 @@ function  getSaiList() {
     addSaiName("North Queensland United", "北昆士兰联",data);
     addSaiName("Magpies Crusaders FC", "鹊十字军",data);
     addSaiName("洪卡/阿卡泰米阿", "洪卡学院",data);
-
     addSaiName("梦想FC", "港菁",data);
     addSaiName("珀斯SC", "佩尔斯",data);
     addSaiName("Apollon Pontou", "阿波罗波恩特欧",data);
+    addSaiName("艾尔格里尼克", "阿格利尼克",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
