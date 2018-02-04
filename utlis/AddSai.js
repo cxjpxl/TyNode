@@ -1085,9 +1085,10 @@ function  getSaiList() {
     addSaiName("冠忠南区", "南区足球会",data);
     addSaiName("乌丁根05", "乌丁根",data);
     addSaiName("波洛克瓦尼", "波罗克瓦尼城",data);
-
     addSaiName("P Iirot YJ", "伊洛特YJ",data);
     addSaiName("VIFK Vaasa", "维夫克",data);
+    addSaiName("华列达", "瓦莱塔",data);
+    addSaiName("巴仁FC", "巴尔赞",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
