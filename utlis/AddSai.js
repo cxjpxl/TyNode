@@ -1024,7 +1024,6 @@ function  getSaiList() {
     addSaiName("恩斯蒂图", "联合队",data);
     addSaiName("男生竞技", "男孩竞技",data);
     addSaiName("哥達拿查拉", "芝华士",data);
-
     addSaiName("拉哈特", "莫阿敦提泽尔雷拉哈特",data);
     addSaiName("Shillong Lajong FC", "拉庄",data);
     addSaiName("阿尔雅莫科安曼", "雅莫科安曼",data);
@@ -1059,7 +1058,6 @@ function  getSaiList() {
     addSaiName("Apollon Pontou", "阿波罗波恩特欧",data);
     addSaiName("艾尔格里尼克", "阿格利尼克",data);
     addSaiName("伊斯特恩沙伯奥克兰", "伊斯特恩沙伯",data);
-
     addSaiName("萨尔斯堡", "红牛萨尔斯堡",data);
     addSaiName("亞塔奇", "亚塔奇",data);
     addSaiName("基亞索", "基亚索",data);
@@ -1089,7 +1087,6 @@ function  getSaiList() {
     addSaiName("华列达", "瓦莱塔",data);
     addSaiName("巴仁FC", "巴尔赞",data);
     addSaiName("基尔禾", "切沃",data);
-
     addSaiName("圣帕特里克", "圣巴特里",data);
     addSaiName("Internacional San Miguel de Allende", "圣米格尔德阿连德",data);
     addSaiName("聖馬田學院", "圣马丁",data);
@@ -1115,6 +1112,12 @@ function  getSaiList() {
     addSaiName("羅薩裏奧體育", "罗沙里奥体育",data);
     addSaiName("国民会亚松森", "那西昂诺",data);
     addSaiName("茨高", "奇科",data);
+    addSaiName("巴里科士邦", "巴里科斯士邦",data);
+    addSaiName("康戈迪亞齊安", "康戈迪亚齐安",data);
+    addSaiName("K.奧芬巴查", "奥芬巴查踢球者",data);
+    addSaiName("金斯頓拿", "基士多尼亚",data);
+    addSaiName("独立队足球俱乐部", "独立FBC",data);
+    addSaiName("万卡约", "万卡",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
