@@ -1121,6 +1121,8 @@ function  getSaiList() {
     addSaiName("U关丹港", "关丹",data);
     addSaiName("丁加奴足球俱乐部", "丁加奴",data);
     addSaiName("Felcra FC", "菲尔卡拉",data);
+    addSaiName("Nacional FC AM", "国民队AM",data);
+    addSaiName("巴西人", "布拉希莱恩斯DF",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
