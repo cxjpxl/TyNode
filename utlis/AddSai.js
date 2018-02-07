@@ -1124,8 +1124,12 @@ function  getSaiList() {
     addSaiName("Nacional FC AM", "国民队AM",data);
     addSaiName("巴西人", "布拉希莱恩斯DF",data);
     addSaiName("Southside Eagles FC", "南国老鹰",data);
-
-
+    addSaiName("瑟蘭迪亚DF", "瑟兰迪亚DF",data);
+    addSaiName("摩吉米林SP", "莫奇米林SP",data);
+    addSaiName("CA Itapemirim ES", "伊塔佩米林ES",data);
+    addSaiName("艾斯哥比度", "埃斯科贝多",data);
+    addSaiName("SD Sparta TO", "斯巴达TO",data);
+    addSaiName("聖瑞蒙度RR", "圣雷姆恩多RR",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
