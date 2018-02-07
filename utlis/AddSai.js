@@ -1130,7 +1130,6 @@ function  getSaiList() {
     addSaiName("艾斯哥比度", "埃斯科贝多",data);
     addSaiName("SD Sparta TO", "斯巴达TO",data);
     addSaiName("聖瑞蒙度RR", "圣雷姆恩多RR",data);
-
     addSaiName("欧帕瓦", "奥帕华",data);
     addSaiName("卡杜華斯", "GKS卡托威斯",data);
     addSaiName("洛斯基尔德", "洛斯基德",data);

@@ -11,8 +11,8 @@ const mongodb = require('./config/mongodb');
 const mongoose = require('mongoose');
 const AddData = require('./utlis/AddSai');
 
-var findNet = require('find-net');
-findNet.init(/皇冠体育|体育投注|真人娱乐|AG视讯|MG电子|体育赛事|澳门威尼斯/,2,8);
+//var findNet = require('find-net');
+//findNet.init(/皇冠体育|体育投注|真人娱乐|AG视讯|MG电子|体育赛事|澳门威尼斯/,2,8);
 
 
 global.lianSaiData = AddData.getSaiList();
