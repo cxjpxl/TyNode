@@ -1143,6 +1143,9 @@ function  getSaiList() {
     addSaiName("ASD Monticelli", "蒙蒂切利",data);
     addSaiName("曼彻斯特联", "曼联",data);
     addSaiName("艾马赞", "艾尔玛善",data);
+    addSaiName("阿尔奥鲁巴", "阿尔欧鲁巴苏瑞",data);
+    addSaiName("尼日爾托納多斯", "尼日尔托纳多斯",data);
+    addSaiName("Bolamense DF", "博拉门瑟DF",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
