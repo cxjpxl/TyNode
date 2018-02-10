@@ -1159,7 +1159,9 @@ function  getSaiList() {
     addSaiName("哈米亚", "哈瑞亚",data);
     addSaiName("阿拉畢 (阿联酋)", "阿拉毕欧姆古温",data);
     addSaiName("UII奇薩", "欧伦萨可",data);
-
+    addSaiName("Gold Coast United", "黄金海岸联",data);
+    addSaiName("North Queensland United", "北昆士兰联",data);
+    addSaiName("瓦滕沙伊德 09", "华登舒特",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
