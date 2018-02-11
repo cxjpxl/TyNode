@@ -1200,6 +1200,27 @@ function  getSaiList() {
     addSaiName("帕塔亚联", "芭堤雅联",data);
     addSaiName("巴蜀基利", "巴蜀",data);
     addSaiName("特羅警察", "特罗警察",data);
+    addSaiName("Asante Kotoko SC", "阿散蒂科托科",data);
+    addSaiName("CARA Brazzaville", "布拉扎维尔",data);
+    addSaiName("奥林匹克萨非", "奥林比亚萨非",data);
+    addSaiName("埃努古流浪者", "埃努古流浪",data);
+    addSaiName("卡拉米勇士", "卡尼米勇士",data);
+    addSaiName("拉辛卡薩布蘭卡", "拉辛卡萨布兰卡",data);
+    addSaiName("波帕扬大学", "珀帕妍",data);
+    addSaiName("Olympic Real De Bangui", "皇家奥林匹克",data);
+    addSaiName("IF Magni", "马格力",data);
+    addSaiName("候卡尔夏拿佐杜亚", "候卡尔",data);
+    addSaiName("Libertad", "利伯泰德",data);
+    addSaiName("蒙特维多竞技", "蒙特维多竞赛会",data);
+    addSaiName("丹奴比", "丹纽比奥",data);
+    addSaiName("珮雷拉", "佩雷拉",data);
+    addSaiName("福塔雷绍查", "福塔雷扎CEIF",data);
+    addSaiName("慕尼奇博尔立米诺", "慕尼崎柏尔立米诺",data);
+    addSaiName("水晶竞技队", "水晶竞技",data);
+    addSaiName("哥杜雷亚图卢阿", "科图鲁阿",data);
+    addSaiName("River Plate Montevideo", "蒙特维多河床队",data);
+    addSaiName("La Equidad", "拉伊奎达德",data);
+    addSaiName("马拉顿", "莫拉松",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
