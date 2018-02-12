@@ -1221,6 +1221,9 @@ function  getSaiList() {
     addSaiName("River Plate Montevideo", "蒙特维多河床队",data);
     addSaiName("La Equidad", "拉伊奎达德",data);
     addSaiName("马拉顿", "莫拉松",data);
+    addSaiName("CSM雅西", "拉斯理工体育会",data);
+    addSaiName("圣马丁德图车曼", "圣马丁德图库曼",data);
+    addSaiName("塞雷那", "希金斯",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
