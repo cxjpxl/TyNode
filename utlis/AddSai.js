@@ -1245,6 +1245,7 @@ function  getSaiList() {
     addSaiName("阿尔纳沙阿尔费尔瓦尼耶", "阿尔纳赛尔费尔瓦尼耶",data);
     addSaiName("Cwmamman United", "库马曼联",data);
     addSaiName("UTC卡哈马卡", "卡加马卡",data);
+    addSaiName("里加足球俱乐部", "里加",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
