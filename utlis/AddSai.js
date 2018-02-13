@@ -1238,6 +1238,13 @@ function  getSaiList() {
     addSaiName("本國聯队", "内政联队",data);
     addSaiName("全北现代汽车", "全北现代",data);
     addSaiName("阿尔瓦赫达大马士革", "阿尔瓦达",data);
+    addSaiName("BW林茨", "布劳伟斯林兹",data);
+    addSaiName("莫多瓦耶", "摩尔多维亚",data);
+    addSaiName("Al Ansar Beirut", "阿萨尔麦地那",data);
+    addSaiName("恩拿基亚", "卢兹恩吉亚",data);
+    addSaiName("阿尔纳沙阿尔费尔瓦尼耶", "阿尔纳赛尔费尔瓦尼耶",data);
+    addSaiName("Cwmamman United", "库马曼联",data);
+    addSaiName("UTC卡哈马卡", "卡加马卡",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
