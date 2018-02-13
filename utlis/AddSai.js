@@ -1235,6 +1235,9 @@ function  getSaiList() {
     addSaiName("森格利亞競技", "森格莱阿",data);
     addSaiName("科美西歐", "科美西欧",data);
     addSaiName("迪亞茲", "迪亚兹",data);
+    addSaiName("本國聯队", "内政联队",data);
+    addSaiName("全北现代汽车", "全北现代",data);
+    addSaiName("阿尔瓦赫达大马士革", "阿尔瓦达",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
