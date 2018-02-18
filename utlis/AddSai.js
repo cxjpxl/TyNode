@@ -1288,8 +1288,12 @@ function  getSaiList() {
     addSaiName("托列斯比卡拉", "西托任比卡拉",data);
     addSaiName("Wide Bay Buccaneers", "广湾海盗",data);
     addSaiName("白城", "白城伍德维尔",data);
-
-
+    addSaiName("Sagaing United FC", "实皆联",data);
+    addSaiName("塔比歷斯", "塔比历斯",data);
+    addSaiName("兰德斯", "兰达斯",data);
+    addSaiName("乔科品斯", "乔科平所达",data);
+    addSaiName("法瑞伊", "费里塔比",data);
+    addSaiName("达尔库达", "达库德",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
