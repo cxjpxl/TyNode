@@ -1295,7 +1295,6 @@ function  getSaiList() {
     addSaiName("FC Ahal", "阿哈尔",data);
     addSaiName("帕克斯", "佩克斯",data);
     addSaiName("多伦多FC", "多伦多",data);
-
     addSaiName("阿尔沙巴柏麦纳麦", "沙巴柏麦纳麦",data);
     addSaiName("多罗吉", "都罗基",data);
     addSaiName("OFK佩特罗瓦", "派佐瓦克",data);
@@ -1309,6 +1308,30 @@ function  getSaiList() {
     addSaiName("海尔欧 (苏丹)", "希拉尔恩图曼",data);
     addSaiName("LISCR FC", "LISCR蒙罗维亚",data);
     addSaiName("Young Buffaloes", "年轻水牛",data);
+    addSaiName("Eding Sport FC", "伊丁体育",data);
+    addSaiName("艾斯普", "埃斯波",data);
+    addSaiName("史达", "斯达",data);
+    addSaiName("Aduana Stars FC", "阿杜亚纳",data);
+    addSaiName("Al Tahaddi", "塔哈迪",data);
+    addSaiName("AS Real Bamako", "皇家巴马科",data);
+    addSaiName("AS Togo Port", "多哥港",data);
+    addSaiName("AC勒奥帕德", "AC罗帕德",data);
+    addSaiName("米莫萨", "ASEC密模沙",data);
+    addSaiName("Buffles du Borgou FC", "博尔古水牛",data);
+    addSaiName("ASAC Concorde", "康戈德",data);
+    addSaiName("AC Rezzato", "雷扎托",data);
+    addSaiName("Ciserano", "奇塞拉诺",data);
+    addSaiName("BFC 西奧福克", "斯欧福克",data);
+    addSaiName("基斯柏斯汉维特", "汉维德",data);
+    addSaiName("Generation Foot", "根内拉逊",data);
+    addSaiName("Zulte Waregem", "威尔郡",data);
+    addSaiName("阿爾馬裏克", "阿尔梅瑞克",data);
+    addSaiName("Township Rollers FC", "托姆斯普",data);
+    addSaiName("AS Otoho", "奥托贺",data);
+    addSaiName("Banjul Hawks FC", "班珠尔",data);
+    addSaiName("Fram/Ulfarnir", "弗雷姆乌法利尔",data);
+    addSaiName("堪萨斯巫师", "肯萨斯城体育会",data);
+    addSaiName("奥拉弗斯维", "维吉欧拉维克",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
