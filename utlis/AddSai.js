@@ -1357,6 +1357,7 @@ function  getSaiList() {
     addSaiName("甲府维费瑞", "甲府风林",data);
     addSaiName("Lahti YJ", "拉迪YJ",data);
     addSaiName("弗恩拉布拉达", "富恩拉布雷达",data);
+    addSaiName("斯巴达克苏博蒂察", "斯巴达克苏波迪加",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
