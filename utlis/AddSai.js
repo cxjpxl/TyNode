@@ -1348,14 +1348,13 @@ function  getSaiList() {
     addSaiName("华萨斯布达佩斯", "华萨斯",data);
     addSaiName("沃特福德", "屈福特",data);
     addSaiName("雷法拉竞技", "艾朗迪考瑞法拉",data);
-
     addSaiName("橫濱飛翼", "横滨",data);
     addSaiName("讚岐烏冬", "卡马塔马尔赞岐",data);
     addSaiName("冈山绿雉", "冈山雉鸡",data);
     addSaiName("愛媛FC", "爱媛",data);
     addSaiName("雷法山口", "雷诺法山口",data);
     addSaiName("熊本", "熊本深红",data);
-
+    addSaiName("甲府维费瑞", "甲府风林",data);
 
     /*********************打印数量********************/
     let counter = 0;
