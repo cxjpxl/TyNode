@@ -1376,6 +1376,11 @@ function  getSaiList() {
     addSaiName("特克尼克", "泰尼科",data);
     addSaiName("思罗图尔雷克雅维克", "图罗杜尔",data);
     addSaiName("普罗雷索", "普罗格雷索",data);
+    addSaiName("巴格達空軍", "巴格达空军",data);
+    addSaiName("巴兰基利亚", "巴瑞库拉",data);
+    addSaiName("屈達福", "屈福特",data);
+    addSaiName("士特宁", "艾洛亚",data);
+    addSaiName("泰拿尼斯", "塔勒雷斯",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
