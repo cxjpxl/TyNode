@@ -1397,6 +1397,11 @@ function  getSaiList() {
     addSaiName("EC Tupy", "图匹ES",data);
     addSaiName("Cameta PA", "卡梅塔PA",data);
     addSaiName("科羅拉多急流", "科罗拉多急流",data);
+    addSaiName("班南特斯叶里温", "巴纳特斯",data);
+    addSaiName("比尔舒华夏普尔", "比尔舒华哈索罗沙夏普尔",data);
+    addSaiName("FC Hermannstadt", "赫曼施塔特",data);
+    addSaiName("BFC 西奧福克", "斯欧福克",data);
+    addSaiName("Cibao FC", "希巴欧",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
