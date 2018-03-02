@@ -1412,6 +1412,12 @@ function  getSaiList() {
     addSaiName("摩托聖路易", "摩托MA",data);
     addSaiName("聖塔奎特瑞", "圣塔奎特瑞MA",data);
     addSaiName("紐約红牛", "纽约红牛",data);
+    addSaiName("帕斯科華倫", "帕斯科华伦",data);
+    addSaiName("卡瓦利尔斯", "绿色古利",data);
+    addSaiName("班特列格林斯", "班特列",data);
+    addSaiName("西阿德莱德海拉斯", "西阿德莱",data);
+    addSaiName("札幌冈萨多", "北海道札幌冈萨多",data);
+
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
