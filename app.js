@@ -24,7 +24,7 @@ const appWebSocket = websockify(new Koa());
 appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('message', function(message) {
       if(!ctx.tag){
-          ctx.tag = message;
+          ctx.tag = message.toString();
           console.log(ctx.tag);
       }
        ctx.websocket.send("11");
