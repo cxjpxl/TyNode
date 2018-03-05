@@ -31,11 +31,11 @@ appWebSocket.ws.use((ctx) => {
                   console.log("当前连接:"+ctx.tag+",版本:"+data.version);
               }else{
                   ctx.tag = "guest";
-                  console.log("当前连接有问题");
+                  console.log("当前连接使用旧版本:" + message.toString());
               }
           }catch (e){
               ctx.tag = "guest";
-              console.log("当前连接使用旧版本。");
+              console.log("当前连接使用旧版本:" + message.toString());
           }
       }
        ctx.websocket.send("11");
