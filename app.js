@@ -24,7 +24,7 @@ const appWebSocket = websockify(new Koa());
 global.ctxs = [];
 appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('message', function(message) {
-        console.log("num:",global.ws.server.clients.size)
+     //   console.log("num:",global.ws.server.clients.size)
        ctx.websocket.send("11");
     });
 });

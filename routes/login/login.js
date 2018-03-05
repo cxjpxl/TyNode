@@ -8,7 +8,7 @@ const User = require('../../models/User').User;
 router.get('/sl', async (ctx, next) => {
     ctx.body = {
         no:200,
-        length:global.ctxs.length,
+        length:global.ws?global.ws.server.clients.size:0,
     };
 });
 
