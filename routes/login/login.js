@@ -122,7 +122,7 @@ router.post('/login',async (ctx,next)=>{
     }else  if(user.comId != comId){
        ctx.body = {
            no:201,
-           msg:'只能在同一台电脑上面使用!',
+           msg:"只能在"+user.userName+"电脑上面使用!",
        };
       return ;
 
