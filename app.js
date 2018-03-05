@@ -24,24 +24,26 @@ const appWebSocket = websockify(new Koa());
 global.ctxs = [];
 appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('message', function(message) {
-      //  console.log("收到消息:"+message+"\n当前连接个数:"+global.ctxs.length);
-        if(ctx&&!ctx.tag){
+
+        console.log("num:",global.ws.server.clients.size)
+      //  console.log("收到消息:"+message+"\n;前连接个数:"+global.ctxs.length);
+       /* if(ctx&&!ctx.tag){
             ctx.tag = new Date().getTime();
             global.ctxs .push(ctx);
             console.log("有连接,当前连接个数"+global.ctxs.length);
-        }
+        }*/
         ctx.websocket.send("11");
     });
-    ctx.websocket.on('close', function(){
-        for(let i= 0 ; i < global.ctxs.length ; i ++){
+    /* ctx.websocket.on('close', function(){
+       for(let i= 0 ; i < global.ctxs.length ; i ++){
             if(global.ctxs [i]&&ctx&&ctx.tag&&global.ctxs [i].tag == ctx.tag){
                 global.ctxs.splice(i, 1);
                 console.log("有断开,当前连接个数"+global.ctxs.length);
                 break;
             }
-        }
-    });
+    });  }*/
 });
+global.ws = appWebSocket.ws;
 appWebSocket.listen(8600); //webSocket端口
 console.log("webSocket on 8600");
 /*****************session的处理******************/

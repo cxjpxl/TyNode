@@ -192,17 +192,22 @@ router.post('/sendData', async (ctx, next) => {
                     curTime:time,
                 };
 
-                 for(let i = 0 ; i <  global.ctxs.length ; i ++){
+               /*  for(let i = 0 ; i <  global.ctxs.length ; i ++){
                     let socket = global.ctxs[i];
-                    if(!socket||!socket.tag) continue;
+                    if(!socket) continue;
                     try{
                         socket.websocket.send(JSON.stringify(curData));
                     }catch (e){
-                        console.log(e.toString());
+                        console.log(e.toString()); //not open
                     }
-                 }
-
-
+                 }*/
+                try {
+                    global.ws.server.clients.map(ws=>{
+                        ws.send(JSON.stringify(curData));
+                    });
+                }catch (e){
+                    console.log(e.toString());
+                }
             }
       // }
     }
