@@ -11,10 +11,6 @@ const mongodb = require('./config/mongodb');
 const mongoose = require('mongoose');
 const AddData = require('./utlis/AddSai');
 
-//var findNet = require('find-net');
-//findNet.init(/皇冠体育|体育投注|真人娱乐|AG视讯|MG电子|体育赛事|澳门威尼斯/,2,8);
-
-
 global.lianSaiData = AddData.getSaiList();
 mongoose.Promise = global.Promise;
 let cxjDbCon = mongoose.createConnection(mongodb.url,{
@@ -27,8 +23,6 @@ console.log("mongo connected");
 const appWebSocket = websockify(new Koa());
 global.ctxs = [];
 appWebSocket.ws.use((ctx) => {
-
-
     ctx.websocket.on('message', function(message) {
       //  console.log("收到消息:"+message+"\n当前连接个数:"+global.ctxs.length);
         if(ctx&&!ctx.tag){

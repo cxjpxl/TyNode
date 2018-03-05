@@ -193,13 +193,13 @@ router.post('/sendData', async (ctx, next) => {
                 };
 
                  for(let i = 0 ; i <  global.ctxs.length ; i ++){
-                 let socket = global.ctxs[i];
-                 if(!socket) continue;
-                 try{
-                    socket.websocket.send(JSON.stringify(curData));
-                 }catch (e){
-                    console.log(e.toString());
-                 }
+                    let socket = global.ctxs[i];
+                    if(!socket||!socket.tag) continue;
+                    try{
+                        socket.websocket.send(JSON.stringify(curData));
+                    }catch (e){
+                        console.log(e.toString());
+                    }
                  }
 
 
