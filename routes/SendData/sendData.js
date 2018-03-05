@@ -192,7 +192,7 @@ router.post('/sendData', async (ctx, next) => {
                     curTime:time,
                 };
 
-               /*  for(let i = 0 ; i <  global.ctxs.length ; i ++){
+                 for(let i = 0 ; i <  global.ctxs.length ; i ++){
                     let socket = global.ctxs[i];
                     if(!socket) continue;
                     try{
@@ -200,9 +200,9 @@ router.post('/sendData', async (ctx, next) => {
                     }catch (e){
                         console.log(e.toString()); //not open
                     }
-                 }*/
+                 }
                 try {
-                    global.ws.server.clients.map(ws=>{
+                    global.ws.server.clients.forEach(ws=>{
                         ws.send(JSON.stringify(curData));
                     });
                 }catch (e){
