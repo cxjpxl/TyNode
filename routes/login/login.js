@@ -6,9 +6,26 @@ const User = require('../../models/User').User;
 
 
 router.get('/sl', async (ctx, next) => {
+    let  data = "";
+    if(global.ws&& global.ws.server&& global.ws.server.clients){
+        try {
+            global.ws.server.clients.forEach(ws=>{
+                try {
+                    if(ws && ws.myTag){
+                        data = data + "\n"+ws.myTag;
+                    }
+                }catch (e1){
+                    console.log(e1.toString());
+                }
+            });
+        }catch (e){
+            console.log(e.toString());
+        }
+    }
     ctx.body = {
         no:200,
         length:global.ws?global.ws.server.clients.size:0,
+        data:data,
     };
 });
 
