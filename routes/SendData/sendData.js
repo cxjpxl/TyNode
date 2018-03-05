@@ -192,10 +192,16 @@ router.post('/sendData', async (ctx, next) => {
                     curTime:time,
                 };
 
-               if(global.ws){
+               if(global.ws&& global.ws.server&& global.ws.server.clients){
                    try {
                        global.ws.server.clients.forEach(ws=>{
-                           ws.send(JSON.stringify(curData));
+                           try {
+                               if(ws){
+                                   ws.send(JSON.stringify(curData));
+                               }
+                           }catch (e1){
+                               console.log(e1.toString());
+                           }
                        });
                    }catch (e){
                        console.log(e.toString());
