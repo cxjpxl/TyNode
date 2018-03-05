@@ -29,8 +29,12 @@ appWebSocket.ws.use((ctx) => {
               if(data&&data.user&&data.version){
                   ctx.tag = data.user;
                   console.log("当前连接:"+ctx.tag+",版本:"+data.version);
+              }else{
+                  ctx.tag = "guest";
+                  console.log("当前连接有问题");
               }
           }catch (e){
+              ctx.tag = "guest";
               console.log("当前连接使用旧版本。");
           }
       }
