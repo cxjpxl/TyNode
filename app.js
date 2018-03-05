@@ -23,7 +23,10 @@ console.log("mongo connected");
 const appWebSocket = websockify(new Koa());
 appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('message', function(message) {
-     //   console.log("num:",global.ws.server.clients.size)
+      if(!ctx.tag){
+          ctx.tag = message;
+          console.log(ctx.tag);
+      }
        ctx.websocket.send("11");
     });
 });
