@@ -24,8 +24,15 @@ const appWebSocket = websockify(new Koa());
 appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('message', function(message) {
       if(!ctx.tag){
-          ctx.tag = message.toString();
-          console.log(ctx.tag);
+          try{
+              let data  = JSON.parse(message.toString());
+              if(data&&data.user&&data.version){
+                  ctx.tag = data.user;
+                  console.log("当前连接:"+ctx.tag+",版本:"+data.version);
+              }
+          }catch (e){
+
+          }
       }
        ctx.websocket.send("11");
     });
