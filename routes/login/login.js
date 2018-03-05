@@ -3,8 +3,7 @@
  */
 const router = require('koa-router')();
 const User = require('../../models/User').User;
-
-
+const Urls = require('../../models/Urls').Urls;
 router.get('/sl', async (ctx, next) => {
     let  data = "";
     if(global.ws&& global.ws.server&& global.ws.server.clients){
@@ -122,7 +121,7 @@ router.post('/login',async (ctx,next)=>{
     }else  if(user.comId != comId){
        ctx.body = {
            no:201,
-           msg:"只能在"+user.userName+"电脑上面使用!",
+           msg:"只能在一个电脑上面使用!",
        };
       return ;
 
@@ -143,9 +142,14 @@ router.post('/login',async (ctx,next)=>{
         loginTime:currentTime,
     }});
 
+
+    //获取urls
+    let urls = await Urls.findOne({userName: userName}).exec();
+
     ctx.body = {
         no:200,
         time:user.valueTime,
+        urls:user.userName.indexOf("admin") == -1?urls.urls:"",
         msg:'登录成功!',
     };
 
@@ -180,6 +184,51 @@ router.post('/queryUser',async (ctx,next)=>{
     };
 
 });
+
+
+//修改配置权限
+router.post('/addUrls',async (ctx,next)=>{
+    let body  = ctx.request.body;
+    let userName  = body.userName;
+    if(!userName){
+        ctx.body = {
+            no:201,
+            msg:'缺少用户名!',
+        };
+        return ;
+    }
+
+    if(userName.indexOf("admin")>=0){
+        ctx.body = {
+            no:201,
+            msg:'该用户拥有多版本权限!',
+        };
+        return ;
+    }
+
+    let urls  = body.urls;
+    // console.log(urls);
+    if(!urls){
+        ctx.body = {
+            no:201,
+            msg:'缺少配置网址!',
+        };
+        return ;
+    }
+    //
+    console.log("urls",userName,typeof urls)
+    console.log(await  update(Urls,{userName : userName},{$set:{
+        urls :urls,
+    }}))
+
+    ctx.body = {
+        no:200,
+        msg:'成功!',
+    };
+
+});
+
+
 
 
 module.exports = router;
