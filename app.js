@@ -21,7 +21,6 @@ global.cxjDbCon = cxjDbCon;
 console.log("mongo connected");
 /*********************链接webSocket*************************/
 const appWebSocket = websockify(new Koa());
-global.ctxs = [];
 appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('message', function(message) {
      //   console.log("num:",global.ws.server.clients.size)
