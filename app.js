@@ -23,18 +23,18 @@ console.log("mongo connected");
 const appWebSocket = websockify(new Koa());
 appWebSocket.ws.use((ctx) => {
     ctx.websocket.on('message', function(message) {
-      if(!ctx.tag){
+      if(!ctx.websocket.myTag){
           try{
               let data  = JSON.parse(message.toString());
               if(data&&data.user&&data.version){
-                  ctx.tag = data.user;
-                  console.log("当前连接:"+ctx.tag+",版本:"+data.version);
+                  ctx.websocket.myTag = data.user;
+                  console.log("当前连接:"+ctx.websocket.myTag+",版本:"+data.version);
               }else{
-                  ctx.tag = "guest";
+                  ctx.websocket.myTag = "guest";
                   console.log("当前连接使用旧版本:" + message.toString());
               }
           }catch (e){
-              ctx.tag = "guest";
+              ctx.websocket.myTag = "guest";
               console.log("当前连接使用旧版本:" + message.toString());
           }
       }

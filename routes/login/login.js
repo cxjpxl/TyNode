@@ -12,7 +12,7 @@ router.get('/sl', async (ctx, next) => {
             global.ws.server.clients.forEach(ws=>{
                 try {
                     if(ws && ws.myTag){
-                        data = data + "\n"+ws.myTag;
+                        data = ws.myTag+","+data;
                     }
                 }catch (e1){
                     console.log(e1.toString());
