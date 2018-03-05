@@ -31,7 +31,7 @@ appWebSocket.ws.use((ctx) => {
                   console.log("当前连接:"+ctx.tag+",版本:"+data.version);
               }
           }catch (e){
-
+              console.log("当前连接使用旧版本。");
           }
       }
        ctx.websocket.send("11");
