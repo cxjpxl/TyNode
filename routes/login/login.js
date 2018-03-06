@@ -94,7 +94,7 @@ router.post('/login',async (ctx,next)=>{
     let body  = ctx.request.body;
     let userName  = body.userName;
     let comId = body.comId;
-    if(!userName||!comId){
+    if(!userName||!comId || comId.length === 0){
         ctx.body = {
             no:201,
             msg:'参数错误!',
@@ -102,7 +102,16 @@ router.post('/login',async (ctx,next)=>{
         return ;
     }
 
-    let user = await User.findOne({userName: userName}).exec();
+    let user = await User.findOne({comId: comId}).exec();
+    if(user && user.userName != userName){
+        ctx.body = {
+            no:201,
+            msg:'同一台电脑只能登陆一个账户!',
+        };
+        return ;
+    }
+
+     user = await User.findOne({userName: userName}).exec();
     if(!user) {
         ctx.body = {
             no:201,
