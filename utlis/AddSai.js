@@ -1514,10 +1514,14 @@ function  getSaiList() {
     addSaiName("悉尼 FC (青年队)", "悉尼(青年)",data);
     addSaiName("夏克悉尼", "哈柯亚东悉尼市",data);
     addSaiName("安郅", "安芝",data);
-
     addSaiName("朗福特", "朗福特城",data);
     addSaiName("塔格雷", "堤格雷",data);
     addSaiName("芝加哥火燄", "芝加哥火焰",data);
+    addSaiName("奥特 BK", "奥特",data);
+    addSaiName("特羅素", "特罗素",data);
+    addSaiName("卡坦尼亞", "卡坦尼亚",data);
+    addSaiName("基爾梅斯", "基尔梅斯",data);
+    addSaiName("杜希達聯", "杜希达联",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
