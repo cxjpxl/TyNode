@@ -1504,7 +1504,6 @@ function  getSaiList() {
     addSaiName("光州 FC", "光州",data);
     addSaiName("史賓威白鷹", "史宾威白鹰",data);
     addSaiName("波克海尔联", "波克海尔",data);
-    addSaiName("Wide Bay Buccaneers", "广湾海盗",data);
     addSaiName("聖彼德斯堡戴拿模", "圣彼德斯堡戴拿模",data);
     addSaiName("A.P.I.A萊洽德", "APIA莱洽德",data);
     addSaiName("马可尼", "马柯尼",data);
