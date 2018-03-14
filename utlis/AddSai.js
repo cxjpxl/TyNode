@@ -1569,6 +1569,14 @@ function  getSaiList() {
     addSaiName("恩高斯达Am", "印戈斯塔德青年队",data);
     addSaiName("1860罗森海姆队", "罗森海姆队",data);
     addSaiName("拜列治", "拜罗伊特",data);
+    addSaiName("皮平斯列特", "皮皮斯里德",data);
+    addSaiName("1860慕尼黑", "慕尼黑1860",data);
+    addSaiName("安弗里", "翁特尔弗赫林格",data);
+    addSaiName("戈亚斯", "奎亚斯GO",data);
+    addSaiName("佩斯普拉", "查亚普拉佩西普拉",data);
+    addSaiName("航源足球队", "航源",data);
+    addSaiName("TJ ISKRA Borcice", "伊斯卡波瑞斯",data);
+    addSaiName("巴迪", "波里索夫巴迪",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
