@@ -48,6 +48,7 @@ router.post('/register',async (ctx,next)=>{
     let v = "V2.2"; //最新版本信息
 
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
+    console.log("----:"+version);
     if(!version || version!=v){
         ctx.body = {
             no:201,
