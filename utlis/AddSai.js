@@ -1605,6 +1605,9 @@ function  getSaiList() {
     addSaiName("布岩", "布哈拉",data);
     addSaiName("索格迪又纳吉扎克", "索格迪纳吉紮克",data);
     addSaiName("Atletico Petroleos de Luanda", "皮昂内罗斯坎昆",data);
+    addSaiName("FK叶尔加瓦", "叶尔加瓦",data);
+    addSaiName("拉特维加斯", "美塔里加",data);
+    addSaiName("斯巴塔克", "祖玛拿斯巴达克",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
