@@ -44,20 +44,7 @@ router.post('/register',async (ctx,next)=>{
     let body  = ctx.request.body;
     let userName  = body.userName;
     let valueTime = body.valueTime;
-    let version = body.version;
-    let v = "V2.2"; //最新版本信息
 
-    //如果版本号不存在或者不是当前服务器对应的版本 不能使用
-    console.log("----:"+version);
-    if(!version || version!=v){
-        console.log("----1111:");
-        ctx.body = {
-            no:201,
-            msg:"请使用新版本"+v,
-        };
-        return ;
-    }
-    console.log("----222:");
     if(!userName || !valueTime){
         ctx.body = {
             no:201,
@@ -108,6 +95,20 @@ router.post('/login',async (ctx,next)=>{
     let body  = ctx.request.body;
     let userName  = body.userName;
     let comId = body.comId;
+
+    let version = body.version;
+    let v = "V2.2"; //最新版本信息
+
+    //如果版本号不存在或者不是当前服务器对应的版本 不能使用
+    if(!version || version!=v){
+        ctx.body = {
+            no:201,
+            msg:"请使用新版本"+v,
+        };
+        return ;
+    }
+
+
     if(!userName||!comId || comId.length === 0){
         ctx.body = {
             no:201,
