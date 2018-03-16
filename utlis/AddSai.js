@@ -1594,6 +1594,9 @@ function  getSaiList() {
     addSaiName("U.Y.S.S. New York", "UYSS纽约",data);
     addSaiName("利加斯", "利加斯斯科拉",data);
     addSaiName("斯塔利桥", "史塔布理治",data);
+    addSaiName("海德堡联", "海德堡",data);
+    addSaiName("撲雷索夫", "塔特拉扑雷索夫",data);
+    addSaiName("奧巴候辛", "奥柏侯逊",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
