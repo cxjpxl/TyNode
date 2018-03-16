@@ -50,12 +50,14 @@ router.post('/register',async (ctx,next)=>{
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
     console.log("----:"+version);
     if(!version || version!=v){
+        console.log("----1111:");
         ctx.body = {
             no:201,
             msg:"请使用新版本"+v,
         };
         return ;
     }
+    console.log("----222:");
     if(!userName || !valueTime){
         ctx.body = {
             no:201,
