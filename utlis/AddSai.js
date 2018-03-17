@@ -1619,6 +1619,9 @@ function  getSaiList() {
     addSaiName("不伦瑞克城", "布伦瑞克城",data);
     addSaiName("XSKT 芹苴", "芹苴",data);
     addSaiName("Meixian Techand", "梅州梅县铁汉",data);
+    addSaiName("Zhejiang Greentown", "浙江绿城",data);
+    addSaiName("维切福伦斯堡", "维切弗伦斯堡",data);
+    addSaiName("1860罗森海姆队", "罗森海姆队",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
