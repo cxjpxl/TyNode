@@ -1635,6 +1635,8 @@ function  getSaiList() {
     addSaiName("GKS傑斯特澤比", "GKS台基",data);
     addSaiName("保顿", "博尔顿",data);
     addSaiName("圣贝尔纳多SP", "圣贝纳多SP",data);
+    addSaiName("Shijiazhuang Ever Bright", "石家庄永昌",data);
+    addSaiName("西贡足球俱乐部", "西贡",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
