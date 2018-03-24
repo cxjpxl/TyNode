@@ -1656,7 +1656,6 @@ function  getSaiList() {
     addSaiName("El波韦尼尔", "埃尔波韦尼尔",data);
     addSaiName("卢兹安尼亚GO", "卢兹阿尼亚DF",data);
     addSaiName("托莱多EC", "托莱多PR",data);
-
     addSaiName("The Gap FC", "加普",data);
     addSaiName("拖雷斯", "塔拉兹",data);
     addSaiName("吉爾波亞", "吉尔波亚英",data);
@@ -1665,6 +1664,22 @@ function  getSaiList() {
     addSaiName("沙莫林", "萨蒙林",data);
     addSaiName("波罗尼", "波赫隆尼",data);
     addSaiName("國際巴迪斯拉華", "国际巴迪斯拉华",data);
+
+    addSaiName("华城FC", "华城",data);
+    addSaiName("中浪野马", "中浪绰拉斯姆斯堂",data);
+    addSaiName("黑鎮市魔隊", "黑镇市",data);
+    addSaiName("薩瑟蘭鯊魚", "萨瑟兰德",data);
+    addSaiName("伍倫貢狼隊", "卧龙岗狼队",data);
+    addSaiName("阿爾巴尼克里克", "阿尔巴尼克里克",data);
+    addSaiName("奧斯堡Am", "奥斯堡青年队",data);
+    addSaiName("科布倫茨", "科布伦茨",data);
+    addSaiName("胡派達爾", "胡派达尔",data);
+    addSaiName("哈维尔斯", "哈韦尔斯",data);
+    addSaiName("卡馬頓", "卡马顿",data);
+    addSaiName("威夫流浪隊", "威夫流浪队",data);
+    addSaiName("艾爾", "艾尔",data);
+    addSaiName("東法夫郡", "东法夫",data);
+    addSaiName("纽约城足球俱乐部", "纽约城",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
