@@ -97,10 +97,11 @@ router.post('/login',async (ctx,next)=>{
     let comId = body.comId;
 
     let version = body.version;
-    let v = "V2.2"; //最新版本信息
+    let v = "V2.28"; //最新版本信息
+    let v1 = "V2.2";
 
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
-    if(!version || version!=v){
+    if(!version ||(version!=v1 && version!=v) ){
         ctx.body = {
             no:201,
             msg:"请使用新版本"+v,
