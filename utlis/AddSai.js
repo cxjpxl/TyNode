@@ -1700,10 +1700,8 @@ function  getSaiList() {
     addSaiName("NK Rogaska", "罗加什卡",data);
     addSaiName("伊尼胡列斯", "英胡列斯",data);
     addSaiName("泽基岑", "席克臣",data);
-
     addSaiName("波斯尼亚和黑塞哥维那", "波斯尼亚",data);
-
-
+    addSaiName("扣夫", "科夫",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
