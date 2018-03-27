@@ -4,6 +4,8 @@
 const router = require('koa-router')();
 const User = require('../../models/User').User;
 const Urls = require('../../models/Urls').Urls;
+const Web = require('../../models/Web').Web;
+
 router.get('/sl', async (ctx, next) => {
     let  data = "";
     if(global.ws&& global.ws.server&& global.ws.server.clients){
@@ -99,7 +101,7 @@ router.post('/login',async (ctx,next)=>{
     let version = body.version;
     let v = "V2.28"; //最新版本信息
 
-    let v1 = "V2.28";
+    let v1 = "V2.3";
 
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
     if(!version ||(version!=v1 && version!=v) ){
@@ -136,8 +138,6 @@ router.post('/login',async (ctx,next)=>{
         };
         return ;
     }
-
-    console.log("userName:"+userName);
 
     if(user.comId.length==0){
         //用户第一次注册后的登录
@@ -202,11 +202,12 @@ router.post('/queryUser',async (ctx,next)=>{
         };
         return ;
     }
-
+    let webs = await Web.find({userName: userName}).exec();
     ctx.body = {
         no:200,
         msg:'成功!',
-        user
+        user,
+        webs
     };
 
 });
@@ -241,11 +242,8 @@ router.post('/addUrls',async (ctx,next)=>{
         };
         return ;
     }
-    //
-    console.log("urls",userName,typeof urls)
-    console.log(await  update(Urls,{userName : userName},{$set:{
-        urls :urls,
-    }}))
+
+   await  update(Urls,{userName : userName},{$set:{urls :urls,}});
 
     ctx.body = {
         no:200,
@@ -253,6 +251,57 @@ router.post('/addUrls',async (ctx,next)=>{
     };
 
 });
+
+
+
+//退出登录 收集信息
+/**
+ *  {user:user,web:[{url,sys,money,webUser,webPwd}]}
+ */
+router.post('/outLogin',async (ctx,next)=>{
+    let body  = ctx.request.body;
+    let userName  = body.userName;
+    if(!userName){
+        ctx.body = {
+            no:201,
+            msg:'缺少用户名!',
+        };
+        return ;
+    }
+
+    if(userName.indexOf("client")>0){
+        ctx.body = {
+            no:200,
+            msg:'不在范围内!',
+        };
+        return ;
+    }
+
+    //网站收集
+    let web  = body.web;
+    if(!web){
+        ctx.body = {
+            no:201,
+            msg:'缺少网址!',
+        };
+        return ;
+    }
+    for(let i = 0 ; i < web.length ; i ++){
+        let  sys = web[i].sys;
+        let money = web[i].money;
+        let url = web[i].url;
+        let webUser = web[i].webUser;
+        let webPwd = web[i].webPwd;
+        await  update(Web,{userName : userName,url:url,webUser:webUser},
+            {$set:{sys :sys,money:money,webPwd:webPwd}});
+    }
+    ctx.body = {
+        no:200,
+        msg:'成功!',
+    };
+
+});
+
 
 
 
