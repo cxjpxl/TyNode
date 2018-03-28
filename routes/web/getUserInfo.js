@@ -3,7 +3,7 @@
  */
 const router = require('koa-router')();
 const Web = require('../../models/Web').Web;
-//参数message
+//参数message   参数  user   pwd
 router.get('/getUserInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
     let user = [
