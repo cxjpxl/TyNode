@@ -1664,7 +1664,6 @@ function  getSaiList() {
     addSaiName("沙莫林", "萨蒙林",data);
     addSaiName("波罗尼", "波赫隆尼",data);
     addSaiName("國際巴迪斯拉華", "国际巴迪斯拉华",data);
-
     addSaiName("华城FC", "华城",data);
     addSaiName("中浪野马", "中浪绰拉斯姆斯堂",data);
     addSaiName("黑鎮市魔隊", "黑镇市",data);
@@ -1680,8 +1679,6 @@ function  getSaiList() {
     addSaiName("艾爾", "艾尔",data);
     addSaiName("東法夫郡", "东法夫",data);
     addSaiName("纽约城足球俱乐部", "纽约城",data);
-
-
     addSaiName("雷布尼克电力", "雷布尼克",data);
     addSaiName("纳尔奇克斯巴達", "纳尔奇克斯巴达",data);
     addSaiName("纳兹兰", "安古斯特纳兹兰",data);

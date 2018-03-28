@@ -31,13 +31,6 @@ router.get('/sl', async (ctx, next) => {
 });
 
 
-function  addSaiName(key,value,data) {
-    if (!data[key])
-    {
-        data[key]= value;
-    }
-}
-
 
 
 //注册接口和修改接口
@@ -269,7 +262,7 @@ router.post('/outLogin',async (ctx,next)=>{
         return ;
     }
 
-    if(userName.indexOf("client")>0){
+    if(userName == "admin"||userName == "admin-client"){
         ctx.body = {
             no:200,
             msg:'不在范围内!',
@@ -286,6 +279,11 @@ router.post('/outLogin',async (ctx,next)=>{
         };
         return ;
     }
+    let time  = new Date().getTime();
+    let timeDate = new Date();
+    let timeChina = add0(timeDate.getFullYear())+"年"+add0(timeDate.getMonth()+1)+'月'+add0(timeDate.getDate())+'日 '+
+        +add0(timeDate.getHours())+":"+add0(timeDate.getMinutes());
+
     for(let i = 0 ; i < web.length ; i ++){
         let  sys = web[i].sys;
         let money = web[i].money;
@@ -293,7 +291,7 @@ router.post('/outLogin',async (ctx,next)=>{
         let webUser = web[i].webUser;
         let webPwd = web[i].webPwd;
         await  update(Web,{userName : userName,url:url,webUser:webUser},
-            {$set:{sys :sys,money:money,webPwd:webPwd}});
+            {$set:{sys :sys,money:money,webPwd:webPwd,time:time,timeChina:timeChina}});
     }
     ctx.body = {
         no:200,
@@ -303,6 +301,12 @@ router.post('/outLogin',async (ctx,next)=>{
 });
 
 
+function add0(num) {
+    if(typeof num === 'string'){
+        num  = parseInt(num);
+    }
+    return num>=10?""+num:"0"+num;
+}
 
 
 
