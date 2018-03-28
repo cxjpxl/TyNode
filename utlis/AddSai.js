@@ -1699,6 +1699,8 @@ function  getSaiList() {
     addSaiName("泽基岑", "席克臣",data);
     addSaiName("波斯尼亚和黑塞哥维那", "波斯尼亚",data);
     addSaiName("扣夫", "科夫",data);
+    addSaiName("瓦乌布日赫", "PWSZ瓦乌布日赫",data);
+    addSaiName("SV罗迪豪森", "洛顶豪森",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
