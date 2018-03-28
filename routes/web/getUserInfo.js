@@ -11,17 +11,24 @@ router.get('/getUserInfo', async (ctx, next) => {
         {userName:"admin5"}, {userName:"admin6"},{userName:"admin7"}, {userName:"admin8"},
         {userName:"admin1001"}, {userName:"admin1002"}, {userName:"admin1003"},{userName:"admin1004"},
         {userName:"admin2001"}, {userName:"admin2002"}, {userName:"admin2003"},{userName:"admin2004"},
-        {userName:"VIP4"},{userName:"VIP5"}
+        {userName:"VIP4"},{userName:"VIP5"},
+        {userName:"cxj"}
         ];
     if(ctx_query.user){
         user = [{userName:ctx_query.user}]
     }
-    let webs = await Web.find({$or: user}).exec();
-    ctx.body={
-        no:200,
-        webs,
-        msg:'发送成功',
+    let data = await Web.find({$or: user}).exec();
+    let doc = [];
+    for(let i = 0 ; i < data.length ; i ++){
+        if(!doc[i]) doc[i]={};
+        doc[i]["用户"] = data[i].userName;
+        doc[i]["网址"] = data[i].url;
+        doc[i]["系统"] = data[i].sys;
+        doc[i]["金额"] = data[i].money;
+        doc[i]["账户"] = data[i].webUser;
+        doc[i]["时间"]=data[i].timeChina;
     }
+    ctx.downloadXLS(doc,'mydownload-xls');
 });
 
 
