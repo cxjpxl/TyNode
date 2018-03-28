@@ -3,7 +3,7 @@
  */
 const router = require('koa-router')();
 const Web = require('../../models/Web').Web;
-//参数message   参数  user   pwd
+//参数message   参数  user   pwd   all
 router.get('/getUserInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
     let user = [
@@ -17,7 +17,14 @@ router.get('/getUserInfo', async (ctx, next) => {
     if(ctx_query.user){
         user = [{userName:ctx_query.user}]
     }
-    let data = await Web.find({$or: user}).exec();
+    let data ;
+    if(ctx_query.all){
+         data = await Web.find({}).exec();
+    }else {
+         data = await Web.find({$or: user}).exec();
+    }
+
+
     let doc = [];
     for(let i = 0 ; i < data.length ; i ++){
         if(!doc[i]) doc[i]={};
