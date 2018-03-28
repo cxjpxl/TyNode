@@ -10,6 +10,7 @@ const websockify = require("koa-websocket");
 const mongodb = require('./config/mongodb');
 const mongoose = require('mongoose');
 const AddData = require('./utlis/AddSai');
+const xls = require('koa-router-xls')
 
 global.lianSaiData = AddData.getSaiList();
 mongoose.Promise = global.Promise;
@@ -66,6 +67,7 @@ onerror(app);
 app.use(bodyparser({}));//对所有类型开放
 app.use(json());
 app.use(logger());
+app.use(xls());
 
 /*******************公共模块*************************/
 app.use(require('koa-static')(__dirname + '/public'));
