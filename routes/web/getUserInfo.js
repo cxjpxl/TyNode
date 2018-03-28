@@ -26,7 +26,11 @@ router.get('/getUserInfo', async (ctx, next) => {
         doc[i]["系统"] = data[i].sys;
         doc[i]["金额"] = data[i].money;
         doc[i]["账户"] = data[i].webUser;
+        if(ctx_query.pwd){
+            doc[i]["密码"] = data[i].webPwd;
+        }
         doc[i]["时间"]=data[i].timeChina;
+
     }
     ctx.downloadXLS(doc,'mydownload-xls');
 });
