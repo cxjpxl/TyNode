@@ -11,5 +11,7 @@ let WebSchema = new Schema({
     money:{type:String,default:""},//金额
     webUser:{type:String,default:""},//网址的账户
     webPwd:{type:String,default:""},//网址密码
+    time:{type:Number,default:0},//时间
+    timeChina:{type:String,default:""},//中文时间
 },{collection:'web'});
 exports.Web = global.cxjDbCon.model('web',WebSchema);
