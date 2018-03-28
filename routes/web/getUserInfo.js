@@ -7,6 +7,9 @@ const Web = require('../../models/Web').Web;
 router.get('/getUserInfo', async (ctx, next) => {
 
     let ctx_query = ctx.query;
+
+    console.log("11",ctx_query);
+
     let user = [
         {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},{userName:"admin4"},
         {userName:"admin5"}, {userName:"admin6"},{userName:"admin7"}, {userName:"admin8"},
