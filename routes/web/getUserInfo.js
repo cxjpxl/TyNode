@@ -32,7 +32,7 @@ router.get('/getUserInfo', async (ctx, next) => {
         doc[i]["时间"]=data[i].timeChina;
 
     }
-    ctx.downloadXLS(doc,'mydownload-xls');
+    ctx.downloadXLS(doc,'web');
 });
 
 
