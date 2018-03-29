@@ -1567,7 +1567,6 @@ function  getSaiList() {
     addSaiName("NK 克尔什科", "克里斯柯",data);
     addSaiName("塞利根普腾", "塞利根波滕",data);
     addSaiName("恩高斯达Am", "印戈斯塔德青年队",data);
-    addSaiName("1860罗森海姆队", "罗森海姆队",data);
     addSaiName("拜列治", "拜罗伊特",data);
     addSaiName("皮平斯列特", "皮皮斯里德",data);
     addSaiName("1860慕尼黑", "慕尼黑1860",data);
@@ -1718,6 +1717,21 @@ function  getSaiList() {
     addSaiName("奥兰治蔚蓝", "橘郡",data);
     addSaiName("西雅图音速 II", "西雅图音响II队",data);
     addSaiName("Fresno FC", "弗雷斯诺",data);
+
+    addSaiName("CD Areosa", "阿里欧萨",data);
+    addSaiName("洛斯耶比尼斯", "洛斯也本尼斯",data);
+    addSaiName("普拉维亚诺", "帕拉维亚诺",data);
+    addSaiName("伊扎拉", "衣扎拉",data);
+    addSaiName("皇家聯邦", "皇家联邦",data);
+    addSaiName("CD Castuera", "卡斯图埃拉",data);
+    addSaiName("赫雷斯足球俱乐部", "皆若兹CF",data);
+    addSaiName("埃斯特雷马杜拉 II", "埃斯特雷马杜拉B队",data);
+    addSaiName("拉斯帕尔马斯 C", "拉斯彭马斯C队",data);
+    addSaiName("洛斯利亞諾斯德亞里達內", "洛斯利亚诺斯德亚里达内",data);
+    addSaiName("LKS洛茲", "LKS罗兹",data);
+    addSaiName("毕尔包 B", "毕尔巴鄂竞技B队",data);
+    addSaiName("AD圣胡安", "圣胡安",data);
+    addSaiName("圣保利Am", "圣保利青年队",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
