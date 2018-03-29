@@ -1714,6 +1714,10 @@ function  getSaiList() {
     addSaiName("索林", "苏林",data);
     addSaiName("盧斯高", "鲁高萨格勒布",data);
     addSaiName("NK Dinamo Zagreb 2", "萨格勒布戴拿模II队",data);
+    addSaiName("俄克拉何馬能量", "OKC能量",data);
+    addSaiName("奥兰治蔚蓝", "橘郡",data);
+    addSaiName("西雅图音速 II", "西雅图音响II队",data);
+    addSaiName("Fresno FC", "弗雷斯诺",data);
     /*********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
