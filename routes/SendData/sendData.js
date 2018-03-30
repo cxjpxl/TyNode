@@ -123,6 +123,10 @@ router.post('/sendData', async (ctx, next) => {
                            game.nameH = game.nameH.replace("(后)","").trim();
                        }
 
+                       if(game.nameH.indexOf("II")>0){
+                           game.nameH = game.nameH.replace("II","").trim();
+                       }
+
                        game.nameH = game.nameH.trim();
 
                        let nameHs = game.nameH.split("U");
@@ -160,6 +164,10 @@ router.post('/sendData', async (ctx, next) => {
 
                         if(game.nameG.indexOf("(后)")>0){
                             game.nameG = game.nameG.replace("(后)","").trim();
+                        }
+
+                        if(game.nameG.indexOf("II")>0){
+                            game.nameG = game.nameG.replace("II","").trim();
                         }
 
                         game.nameG = game.nameG.trim();
