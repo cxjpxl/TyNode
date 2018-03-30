@@ -1749,7 +1749,16 @@ function  getSaiList() {
     addSaiName("巴雷达", "巴雷达巴洛皮",data);
     addSaiName("阿尔巴塞特", "阿尔巴塞特基金会",data);
 
-    /*********************打印数量********************/
+    addSaiName("华拉度列 B", "华拉度列B队",data);
+    addSaiName("CD Monte (w)", "莫特",data);
+    addSaiName("Sardoma CF (w)", "萨度玛",data);
+    addSaiName("樸盧斯高", "朴卢斯高",data);
+    addSaiName("Brandenburger SC Sud 05", "布兰登堡05",data);
+    addSaiName("布约维奇", "布迪祖怀斯",data);
+    addSaiName("皮塞克队", "皮斯克",data);
+    addSaiName("柏斯汉维特", "汉维德",data);
+
+    /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
