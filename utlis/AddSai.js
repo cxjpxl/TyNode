@@ -1763,6 +1763,9 @@ function  getSaiList() {
     addSaiName("庆州水利", "庆州KHNP",data);
     addSaiName("莫蘭德城", "莫兰德城",data);
     addSaiName("萨瑟兰鲨鱼", "萨瑟兰德",data);
+    addSaiName("索甸奴拖比度", "鱼雷佐迪诺",data);
+    addSaiName("索斯諾維茨", "索斯诺维茨",data);
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
