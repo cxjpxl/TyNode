@@ -1759,7 +1759,11 @@ function  getSaiList() {
     addSaiName("柏斯汉维特", "汉维德",data);
     addSaiName("维特布斯克", "维迪比斯克",data);
     addSaiName("南阿德莱德黑豹", "南阿德莱得黑豹",data);
+    addSaiName("天安CCFC", "天安城",data);
+    addSaiName("庆州水利", "庆州KHNP",data);
+    addSaiName("莫蘭德城", "莫兰德城",data);
     /********************打印数量********************/
+    let counter = 0;
     let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
