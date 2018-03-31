@@ -1764,7 +1764,6 @@ function  getSaiList() {
     addSaiName("莫蘭德城", "莫兰德城",data);
     /********************打印数量********************/
     let counter = 0;
-    let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
     return data;
