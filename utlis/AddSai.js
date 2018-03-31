@@ -1762,6 +1762,7 @@ function  getSaiList() {
     addSaiName("天安CCFC", "天安城",data);
     addSaiName("庆州水利", "庆州KHNP",data);
     addSaiName("莫蘭德城", "莫兰德城",data);
+    addSaiName("萨瑟兰鲨鱼", "萨瑟兰德",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
