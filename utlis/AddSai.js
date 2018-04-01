@@ -1770,6 +1770,7 @@ function  getSaiList() {
     addSaiName("北京控股", "北京北控",data);
     addSaiName("本田鎖業", "本田制锁",data);
     addSaiName("圣彼得堡泽尼特", "圣彼德斯堡泽尼特",data);
+    addSaiName("烏尼邱夫", "乌尼丘夫",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
