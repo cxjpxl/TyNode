@@ -1793,6 +1793,7 @@ function  getSaiList() {
     addSaiName("谢夫", "FK杰夫",data);
     addSaiName("弗洛罗", "佛罗",data);
     addSaiName("勒万格尔", "乐范格尔",data);
+    addSaiName("特赖斯基兴", "提尔艾克琛",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
