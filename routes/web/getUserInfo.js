@@ -9,6 +9,7 @@ router.get('/getUserInfo', async (ctx, next) => {
     let user = [
         {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},{userName:"admin4"},
         {userName:"admin5"}, {userName:"admin6"},{userName:"admin7"}, {userName:"admin8"},
+        {userName:"admin9"},
         {userName:"admin1001"}, {userName:"admin1002"}, {userName:"admin1003"},{userName:"admin1004"},
         {userName:"admin2001"}, {userName:"admin2002"}, {userName:"admin2003"},{userName:"admin2004"},
         {userName:"admin3001"},
