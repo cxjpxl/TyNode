@@ -92,7 +92,7 @@ router.post('/login',async (ctx,next)=>{
     let comId = body.comId;
 
     let version = body.version;
-    let v = "V2.32"; //最新版本信息
+    let v = "V2.38"; //最新版本信息
 
     let v1 = "V2.32";
 
