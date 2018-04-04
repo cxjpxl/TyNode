@@ -1748,7 +1748,6 @@ function  getSaiList() {
     addSaiName("CF Igualada (w)", "伊瓜拉达",data);
     addSaiName("巴雷达", "巴雷达巴洛皮",data);
     addSaiName("阿尔巴塞特", "阿尔巴塞特基金会",data);
-
     addSaiName("华拉度列 B", "华拉度列B队",data);
     addSaiName("CD Monte (w)", "莫特",data);
     addSaiName("Sardoma CF (w)", "萨度玛",data);
@@ -1801,6 +1800,7 @@ function  getSaiList() {
     addSaiName("索格达", "桑恩达",data);
     addSaiName("瑞索维亚", "雷索维亚",data);
     addSaiName("兹罗纳格拉", "法鲁巴兹",data);
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
