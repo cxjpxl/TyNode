@@ -1801,6 +1801,11 @@ function  getSaiList() {
     addSaiName("瑞索维亚", "雷索维亚",data);
     addSaiName("兹罗纳格拉", "法鲁巴兹",data);
 
+    addSaiName("France (w)", "法国队(女)",data);
+    addSaiName("Italy (w)", "意大利(女)",data);
+
+
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
