@@ -18,7 +18,7 @@ router.get('/getUserInfo', async (ctx, next) => {
     if(ctx_query.user){
         user = [{userName:ctx_query.user}]
     }
-    let time = new Date().getTime()- 24*60*60*1000;
+    let time = new Date().getTime()- 10*24*60*60*1000;
     let data ;
     if(ctx_query.all){
          data = await Web.find({time:{$gte:time}}).exec();
