@@ -1810,6 +1810,13 @@ function  getSaiList() {
     addSaiName("OFC 内塞伯尔", "内塞伯尔",data);
     addSaiName("巴尔奇克", "贝尔奇克",data);
     addSaiName("慕哈瑞克", "马勒基亚",data);
+    addSaiName("Holland Park Hawks (w)", "荷兰公园老鹰",data);
+    addSaiName("University of Queensland (BPL)(w)", "昆士兰科技大学",data);
+    addSaiName("富勒姆联", "塞利斯贝瑞国际",data);
+    addSaiName("阿德莱德大学", "阿德莱得城",data);
+    addSaiName("敖德萨足球俱乐部", "真丘支纳敖德萨",data);
+    addSaiName("艾维安哈德", "艾维铵哈德",data);
+    addSaiName("爱尔兰共和国", "爱尔兰",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
