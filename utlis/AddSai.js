@@ -1433,7 +1433,6 @@ function  getSaiList() {
     addSaiName("休城", "休姆",data);
     addSaiName("士特宁狮队", "史崔林狮队",data);
     addSaiName("杜伊斯堡", "奥斯拿布克",data);
-    addSaiName("纽伦堡", "海登海默",data);
     addSaiName("柏多華", "柏多华",data);
     addSaiName("阿尔布加亚安曼", "巴夸",data);
     addSaiName("波德比錫奇斯", "保德比斯基",data);
