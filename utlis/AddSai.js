@@ -1828,6 +1828,8 @@ function  getSaiList() {
     addSaiName("科斯特羅馬斯巴達", "科斯特罗马斯巴达",data);
     addSaiName("Woden Weston FC", "沃登韦斯顿",data);
     addSaiName("Waitakere City", "怀塔克雷市",data);
+    addSaiName("本田 FC", "本田",data);
+    addSaiName("新力仙台 FC", "仙台新力",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
