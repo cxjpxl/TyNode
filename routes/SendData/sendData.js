@@ -195,6 +195,7 @@ router.post('/sendData', async (ctx, next) => {
 
                 }
                 let curData = {
+                    cmd:1,
                     game,
                     data,
                     curTime:time,
