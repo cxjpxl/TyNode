@@ -1843,6 +1843,7 @@ function  getSaiList() {
     addSaiName("TG隊", "托尔恩格鲁本",data);
     addSaiName("FK卡爾期克朗", "卡尔斯克鲁纳",data);
     addSaiName("胡思瓦那", "胡斯华纳",data);
+    addSaiName("Samut Sakhon FC", "萨穆特松柯恩",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
