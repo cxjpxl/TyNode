@@ -10,7 +10,8 @@ const websockify = require("koa-websocket");
 const mongodb = require('./config/mongodb');
 const mongoose = require('mongoose');
 const AddData = require('./utlis/AddSai');
-const xls = require('koa-router-xls')
+const xls = require('koa-router-xls');
+const acheck = require('./utlis/Acheckutil');
 
 global.lianSaiData = AddData.getSaiList();
 mongoose.Promise = global.Promise;
@@ -45,6 +46,7 @@ appWebSocket.ws.use((ctx) => {
 global.ws = appWebSocket.ws;
 appWebSocket.listen(8600); //webSocket端口
 console.log("webSocket on 8600");
+
 /*****************session的处理******************/
 const Store = require('./lib/store');
 const session = require("koa-session2");
@@ -57,6 +59,11 @@ app.use(session({
     httpOnly:true,
     prefix:'cxj-sess', // 存储sessoin时的前缀
 }));
+/********************************************/
+// 联赛名字，{1:主队进球,0:客队进球},主队比分,客队比分,主队名字,客队名字,比赛进行的时间，目前
+acheck(1,100,(league,state,score1,score2,tm1,tm2,gametime)=>{
+    //console.log('--------',league,state,score1,score2,tm1,tm2,gametime)
+});
 
 /*******************路由*********************/
 const index = require('./routes/index');
