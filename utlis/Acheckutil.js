@@ -92,8 +92,8 @@ async function parse(allobj){
 			}
 		}
 	}else{
-		if(!(data.c&&data.c.h))console.log('暂无更新的比赛');
-		if(!(allobj && allobj.A))console.log('暂无比赛')
+		//if(!(data.c&&data.c.h))console.log('暂无更新的比赛');
+	//	if(!(allobj && allobj.A))console.log('暂无比赛')
 	}
 }
 
