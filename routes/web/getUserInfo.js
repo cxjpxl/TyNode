@@ -3,6 +3,31 @@
  */
 const router = require('koa-router')();
 const Web = require('../../models/Web').Web;
+
+
+var request = require('request');
+
+
+function httpGet(url) {
+    return new Promise((resolve,reject)=>{
+        request(url, function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+                resolve(body)
+            }
+        });
+    })
+}
+
+/**/
+router.get('/getCuid', async (ctx, next) => {
+    let ctx_query = ctx.query;
+   let  url = decodeURI(ctx_query.url);
+   let data =  await  httpGet(url);
+   console.log(data);
+    ctx.body = data;
+});
+
+
 //参数message   参数  user   pwd   all
 router.get('/getUserInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
