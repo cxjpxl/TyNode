@@ -18,7 +18,6 @@ router.post('/getCode', async (ctx, next) => {
     let body  = ctx.request.body;
     let base64  = body.base64;
     let codeRlt = await  getOCRContent(base64);
-    console.log(codeRlt);
     if(codeRlt === null) codeRlt = "";
     codeRlt = codeRlt.replace(" ","");
     //不能含有中文
