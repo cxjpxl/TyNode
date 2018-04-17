@@ -12,6 +12,7 @@ const mongoose = require('mongoose');
 const AddData = require('./utlis/AddSai');
 const xls = require('koa-router-xls');
 const acheck = require('./utlis/Acheckutil');
+const TXinit = require('tx-ai-utils').TXinit;
 
 global.lianSaiData = AddData.getSaiList();
 mongoose.Promise = global.Promise;
@@ -59,7 +60,8 @@ app.use(session({
     httpOnly:true,
     prefix:'cxj-sess', // 存储sessoin时的前缀
 }));
-/********************************************/
+/****************楚明代码****************************/
+TXinit("1106751737","ST72VUWacXpwXeGx"); //识别码处理
 // 联赛名字，{1:主队进球,0:客队进球},主队比分,客队比分,主队名字,客队名字,比赛进行的时间，目前
 acheck(1,100,(league,state,score1,score2,tm1,tm2,gametime)=>{
     //console.log('--------',league,state,score1,score2,tm1,tm2,gametime)

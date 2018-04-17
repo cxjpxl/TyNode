@@ -6,25 +6,33 @@ const Web = require('../../models/Web').Web;
 
 
 var request = require('request');
+const getOCRContent = require('tx-ai-utils').getOCRContent;
 
 
-function httpGet(url) {
-    return new Promise((resolve,reject)=>{
-        request(url, function (error, response, body) {
-            if (!error && response.statusCode == 200) {
-                resolve(body)
-            }
-        });
-    })
-}
 
-/**/
-router.get('/getCuid', async (ctx, next) => {
-    let ctx_query = ctx.query;
-   let  url = decodeURI(ctx_query.url);
-   let data =  await  httpGet(url);
-   console.log(data);
-    ctx.body = data;
+
+/**
+ *  参数   base64:""
+ * */
+router.post('/getCode', async (ctx, next) => {
+    let body  = ctx.request.body;
+    let base64  = body.base64;
+    let codeRlt = await  getOCRContent(base64);
+    console.log(codeRlt);
+    if(codeRlt === null) codeRlt = "";
+    codeRlt = codeRlt.replace(" ","");
+    //不能含有中文
+    let reg = /^[0-9a-zA-Z]+$/
+    if(!reg.test(codeRlt)){
+        codeRlt = "";
+    }
+    //长度必须为4
+    if(codeRlt.length!= 4){
+        codeRlt = "";
+    }
+    ctx.body = {
+        code:codeRlt,
+    };
 });
 
 
