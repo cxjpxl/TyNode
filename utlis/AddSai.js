@@ -1886,6 +1886,17 @@ function  getSaiList() {
     addSaiName("洛禾卡杜华斯", "卡拓维兹",data);
     addSaiName("魯森比洛克", "鲁森比洛克",data);
     addSaiName("SC Dnipro-1", "SC迪尼普",data);
+    addSaiName("迈萨非", "马萨菲",data);
+    addSaiName("哈尔科夫", "克夏基夫",data);
+    addSaiName("TSV Schwaben Augsburg", "士瓦本奥斯堡",data);
+    addSaiName("估特德", "IK高首德",data);
+    addSaiName("哈萨侯姆", "哈沙侯姆IF",data);
+    addSaiName("索維斯本", "索维斯本GoIF",data);
+    addSaiName("TuS Schwachhausen", "斯华屈森",data);
+    addSaiName("Union Neumunster", "尤尼恩纽曼斯特",data);
+    addSaiName("Gremio Catanduvense SP", "甘美奥卡坦度文斯SP",data);
+    addSaiName("Catanduva FC SP", "卡坦杜瓦SP",data);
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
