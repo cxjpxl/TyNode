@@ -52,11 +52,21 @@ router.get('/getUserInfo', async (ctx, next) => {
     }
     let time = new Date().getTime()- 10*24*60*60*1000;
     let data ;
-    if(ctx_query.all){
-         data = await Web.find({time:{$gte:time}}).sort({time:-1}).exec();
-    }else {
-         data = await Web.find({$or: user,time:{$gte:time}}).sort({time:-1}).exec();
+
+    if(ctx_query.noTime){
+        if(ctx_query.all){
+            data = await Web.find({}).sort({time:-1}).exec();
+        }else {
+            data = await Web.find({$or: user}).sort({time:-1}).exec();
+        }
+    }else{
+        if(ctx_query.all){
+            data = await Web.find({time:{$gte:time}}).sort({time:-1}).exec();
+        }else {
+            data = await Web.find({$or: user,time:{$gte:time}}).sort({time:-1}).exec();
+        }
     }
+
 
 
     let doc = [];
