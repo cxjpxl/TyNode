@@ -144,7 +144,7 @@ function  getSaiList() {
     addSaiName("埃尔维斯", "阿维斯",data);
     addSaiName("阿尔贾兹拉阿布扎比", "詹辛拉",data);
     addSaiName("列吉亚格但斯克", "列治亚",data);
-    addSaiName("莱赫波茲南", "莱克",data);
+    addSaiName("莱赫波茲南", "波兹南莱希",data);
     addSaiName("费内巴切", "费伦巴治",data);
     addSaiName("史特加", "斯图加特",data);
     addSaiName("艾比路內費", "艾宾奴列夫",data);
@@ -242,7 +242,7 @@ function  getSaiList() {
     addSaiName("拉斯帕尔马斯", "拉斯彭马斯",data);
     addSaiName("里斯本竞技", "士砵亭",data);
     addSaiName("艾科坎", "阿柯孔",data);
-    addSaiName("华历简奴", "瓦莱卡诺",data);
+    addSaiName("华历简奴", "巴列卡诺",data);
     addSaiName("Keshla FK", "克斯拉",data);
     addSaiName("高阿体育会", "SC果阿",data);
     addSaiName("阿尔阿瓦斯杜拜", "瓦斯尔杜拜",data);
@@ -1357,7 +1357,7 @@ function  getSaiList() {
     addSaiName("甲府维费瑞", "甲府风林",data);
     addSaiName("Lahti YJ", "拉迪YJ",data);
     addSaiName("弗恩拉布拉达", "富恩拉布雷达",data);
-    addSaiName("斯巴达克苏博蒂察", "斯巴达克苏波迪加",data);
+    addSaiName("斯巴达克苏博蒂察", "苏博蒂察斯巴达克",data);
     addSaiName("里澤士邦", "里泽士邦",data);
     addSaiName("拜仁慕尼黑青年队", "贺芬咸青年队",data);
     addSaiName("艾希斯特", "艾禾斯堡",data);
@@ -1896,8 +1896,7 @@ function  getSaiList() {
     addSaiName("Union Neumunster", "尤尼恩纽曼斯特",data);
     addSaiName("Gremio Catanduvense SP", "甘美奥卡坦度文斯SP",data);
     addSaiName("Catanduva FC SP", "卡坦杜瓦SP",data);
-
-
+  ////////////////////////////////////////////////////////////////////////////
     addSaiName("马士积治", "马斯特里赫特",data);
     addSaiName("唐卡士打", "唐卡斯特流浪者",data);
     addSaiName("韦根", "维冈竞技",data);
@@ -1915,6 +1914,19 @@ function  getSaiList() {
     addSaiName("瑞普斯威尔", "拉珀斯维尔",data);
     addSaiName("费伦斯华路士", "费伦茨瓦罗斯",data);
     addSaiName("华斯兰德比华伦", "华斯兰德",data);
+    addSaiName("海文利", "奥哈瓦里",data);
+    addSaiName("贝尔格勒红星", "贝尔格莱德红星",data);
+    addSaiName("斯萊戈", "斯莱戈流浪",data);
+    addSaiName("金堡尔", "坎布尔",data);
+    addSaiName("多积治", "多德勒支",data);
+    addSaiName("El Farolito", "法罗利托",data);
+    addSaiName("FC Davis", "戴维斯",data);
+    addSaiName("宾菲加", "本菲卡",data);
+    addSaiName("奥美多里奥班巴", "欧梅多",data);
+    addSaiName("苏利亚体育会", "JBL苏里亚",data);
+    addSaiName("巴拉卡斯中央", "巴洛克斯",data);
+    addSaiName("FC天蓝", "天蓝",data);
+    addSaiName("查勒斯頓電池", "查尔斯顿电池",data);
 
     /********************打印数量********************/
     let counter = 0;
