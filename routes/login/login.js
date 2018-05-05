@@ -165,16 +165,16 @@ router.post('/login',async (ctx,next)=>{
     //获取urls
     let urls = await Urls.findOne({userName: userName}).exec();
 
-    let vipUrls = urls.urls;
+    /*let vipUrls = urls.urls;
     if(!vipUrls || vipUrls.length == 0){
         vipUrls = "www.6d888.com";
-    }
+    }*/
 
 
     ctx.body = {
         no:200,
         time:user.valueTime,
-        urls:user.userName.indexOf("admin") == -1?vipUrls:"",
+        urls:user.userName.indexOf("admin") == -1?urls.urls:"",
         msg:'登录成功!',
     };
 
