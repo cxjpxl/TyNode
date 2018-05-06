@@ -175,7 +175,7 @@ router.post('/login',async (ctx,next)=>{
     ctx.body = {
         no:200,
         time:user.valueTime,
-        urls:user.userName.indexOf("admin") == -1?vipUrls.urls:"",
+        urls:user.userName.indexOf("admin") == -1?vipUrls:"",
         msg:'登录成功!',
     };
 
