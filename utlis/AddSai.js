@@ -1985,6 +1985,16 @@ function  getSaiList() {
     addSaiName("SV Curslack Neuengamme", "克斯拉克诺因加默",data);
     addSaiName("Heider SV", "海德尔",data);
     addSaiName("迪比辛尼", "德布勒森",data);
+    addSaiName("Dar Al Dawa", "达瓦",data);
+    addSaiName("阿萨拉", "阿萨拉哈",data);
+    addSaiName("阿尔托拉", "阿尔图拉",data);
+    addSaiName("阿尔阿拉毕伊尔比德", "阿拉毕伊尔比德",data);
+    addSaiName("卡爾梅爾", "卡尔梅尔",data);
+    addSaiName("伊哈兰姆沙", "伊哈连姆沙",data);
+    addSaiName("艾沙爾特", "阿尔萨特",data);
+    addSaiName("艾沙赫", "阿尔萨瑞",data);
+
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
