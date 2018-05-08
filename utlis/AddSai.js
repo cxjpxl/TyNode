@@ -1892,7 +1892,7 @@ function  getSaiList() {
     addSaiName("Union Neumunster", "尤尼恩纽曼斯特",data);
     addSaiName("Gremio Catanduvense SP", "甘美奥卡坦度文斯SP",data);
     addSaiName("Catanduva FC SP", "卡坦杜瓦SP",data);
-  ////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////5.6/////////////////////////////////////
     addSaiName("马士积治", "马斯特里赫特",data);
     addSaiName("唐卡士打", "唐卡斯特流浪者",data);
     addSaiName("韦根", "维冈竞技",data);
@@ -1957,6 +1957,7 @@ function  getSaiList() {
     addSaiName("加拉塔沙雷", "加拉塔萨雷",data);
     addSaiName("阿森纳图拉", "图拉兵工厂",data);
     addSaiName("彭里安奧斯", "帕尼奥尼奥斯",data);
+    //////////////////////5.7/////////////////////////////////////
     addSaiName("艾杜哈尼", "杜海勒",data);
     addSaiName("希尔星堡", "赫尔辛堡",data);
     addSaiName("威尔郡", "祖尔特瓦雷根",data);
@@ -1969,6 +1970,19 @@ function  getSaiList() {
     addSaiName("贾布朗尼", "亚布洛内茨",data);
     addSaiName("洛格伦", "洛克伦",data);
     addSaiName("些路迪", "凯尔特人",data);
+
+    ////////////////////////5.8////////////////////////////////
+    addSaiName("尼罗卡", "NEROCA",data);
+    addSaiName("阿卡德米凯拉特", "凯拉特阿卡德米",data);
+    addSaiName("布拉特铁米塔", "布拉特",data);
+    addSaiName("塔兰", "凯兰",data);
+    addSaiName("克孜勒奥尔达港", "贝空鲁尔",data);
+    addSaiName("河内足球俱乐部 2", "河内II队",data);
+    addSaiName("Zhetysu Taldykorgan B", "斯咸迪苏B队",data);
+    addSaiName("马克塔拉", "玛塔拉尔杰提萨",data);
+    addSaiName("Pune City (R)", "普纳城",data);
+    addSaiName("Lonestar Kashmir", "克什米尔",data);
+    
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
