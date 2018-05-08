@@ -1996,6 +1996,8 @@ function  getSaiList() {
     addSaiName("馬模", "马尔默",data);
     addSaiName("KFUM Oslo 2", "KFUM奥斯陆B队",data);
     addSaiName("莫迪 2", "莫迪B队",data);
+    addSaiName("Landvetter IS", "兰德维特尔",data);
+    addSaiName("Serbiska KoIF Kozara", "柯扎拉塞尔维亚",data);
 
     /********************打印数量********************/
     let counter = 0;
