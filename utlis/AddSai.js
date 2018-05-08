@@ -155,7 +155,7 @@ function  getSaiList() {
     addSaiName("李斯特城", "莱斯特城",data);
     addSaiName("史云斯", "斯旺西城",data);
     addSaiName("般尼茅夫", "伯恩茅斯",data);
-    addSaiName("特尔斯", "托尔司",data);
+    addSaiName("特尔斯", "图尔",data);
      addSaiName("伊斯坦堡", "伊斯坦堡士邦",data);
      addSaiName("班加罗尔", "班加鲁鲁",data);
      addSaiName("史特加Am", "斯图加特青年队",data);
@@ -1993,7 +1993,9 @@ function  getSaiList() {
     addSaiName("伊哈兰姆沙", "伊哈连姆沙",data);
     addSaiName("艾沙爾特", "阿尔萨特",data);
     addSaiName("艾沙赫", "阿尔萨瑞",data);
-
+    addSaiName("馬模", "马尔默",data);
+    addSaiName("KFUM Oslo 2", "KFUM奥斯陆B队",data);
+    addSaiName("莫迪 2", "莫迪B队",data);
 
     /********************打印数量********************/
     let counter = 0;
