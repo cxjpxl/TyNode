@@ -1187,7 +1187,7 @@ function  getSaiList() {
     addSaiName("切尔达B", "切尔达B队",data);
     addSaiName("莫斯科卡赞卡火车头", "卡赞卡火车头",data);
     addSaiName("迪尼伯莫吉廖夫", "迪尼普莫吉莱夫",data);
-    addSaiName("克拉斯诺达尔 2", "克拉斯诺达尔II队",data);
+    addSaiName("克拉斯诺达尔 2", "库班克拉斯诺达尔",data);
     addSaiName("夏卡-j/HJS/YJ", "夏卡哈马YJ",data);
     addSaiName("拉查斯馬", "纳空叻差斯玛",data);
     addSaiName("拉納維", "泰国皇家海军",data);
@@ -1473,7 +1473,7 @@ function  getSaiList() {
     addSaiName("溫哥華白帽", "温哥华白帽",data);
     addSaiName("艾瑞布尼", "埃尔布尼",data);
     addSaiName("卡磐B队", "卡磐II队",data);
-    addSaiName("當薩勒", "当萨勒",data);
+    addSaiName("當薩勒", "多姆扎莱",data);
     addSaiName("提拉哈卡默爾夏普爾", "提拉哈卡默尔夏普尔",data);
     addSaiName("路达", "鲁达瓦伦",data);
     addSaiName("Hwaepul SC", "火炬体育团",data);
@@ -1490,7 +1490,7 @@ function  getSaiList() {
     addSaiName("横滨体育", "横滨SCC",data);
     addSaiName("布格勒斯特祖雲斯", "布格勒斯特祖云达斯",data);
     addSaiName("WSG华顿斯", "华登斯",data);
-    addSaiName("馬特斯", "马特斯",data);
+    addSaiName("馬特斯", "莱格尼察",data);
     addSaiName("卡宾提利", "卡宾迪利",data);
     addSaiName("科布漫步者隊", "科布漫步者",data);
     addSaiName("萊茨納", "莱茨纳",data);
@@ -1879,7 +1879,7 @@ function  getSaiList() {
     addSaiName("维斯拉普拉维", "华沙普拉维",data);
     addSaiName("列治亞托馬舒夫", "列治亚托马舒夫",data);
     addSaiName("洛禾卡杜华斯", "卡拓维兹",data);
-    addSaiName("魯森比洛克", "鲁森比洛克",data);
+    addSaiName("魯森比洛克", "鲁容贝罗克",data);
     addSaiName("SC Dnipro-1", "SC迪尼普",data);
     addSaiName("迈萨非", "马萨菲",data);
     addSaiName("哈尔科夫", "克夏基夫",data);
@@ -1997,7 +1997,15 @@ function  getSaiList() {
     addSaiName("莫迪 2", "莫迪B队",data);
     addSaiName("Landvetter IS", "兰德维特尔",data);
     addSaiName("Serbiska KoIF Kozara", "柯扎拉塞尔维亚",data);
-
+   //////////////////////5.9///////////////////////////////////
+    addSaiName("新城堡联", "纽卡斯尔喷气机",data);
+    addSaiName("FK Torpedo Izhevsk (w)", "伊热夫斯克鱼雷",data);
+    addSaiName("FFSA NTC", "南澳足协NTC",data);
+    addSaiName("史洛特", "斯洛瓦茨科",data);
+    addSaiName("克拉斯诺达尔", "库班克拉斯诺达尔",data);
+    addSaiName("斯瓦达", "斯瓦达2005",data);
+    addSaiName("GKS贝乌哈图夫", "博尔切图",data);
+    addSaiName("白礼顿", "布莱顿",data);
 
     /********************打印数量********************/
     let counter = 0;
