@@ -1379,7 +1379,7 @@ function  getSaiList() {
     addSaiName("屈達福", "瓦特福德",data);
     addSaiName("士特宁", "艾洛亚",data);
     addSaiName("泰拿尼斯", "塔勒雷斯",data);
-    addSaiName("阿華加德", "艾文嘉德",data);
+    addSaiName("阿華加德", "阿华加德",data);
     addSaiName("達利亞特夏普爾", "达利亚阿卡梅夏普尔",data);
     addSaiName("馬卡比阿力伊斯爾", "马卡比阿力伊斯尔",data);
     addSaiName("恩菲尔德镇", "恩菲尔德城",data);
@@ -1538,7 +1538,6 @@ function  getSaiList() {
     addSaiName("Udon Thani FC", "乌东塔尼",data);
     addSaiName("河內 T&T", "河内足球俱乐部",data);
     addSaiName("海防", "海防队",data);
-    addSaiName("哈韦尔斯", "哈维尔斯",data);
     addSaiName("沃伊沃迪纳", "瓦伊伏丁纳",data);
     addSaiName("莫斯科斯巴達", "莫斯科斯巴达",data);
     addSaiName("施巴利亞", "施巴利亚",data);
@@ -1998,6 +1997,7 @@ function  getSaiList() {
     addSaiName("莫迪 2", "莫迪B队",data);
     addSaiName("Landvetter IS", "兰德维特尔",data);
     addSaiName("Serbiska KoIF Kozara", "柯扎拉塞尔维亚",data);
+
 
     /********************打印数量********************/
     let counter = 0;
