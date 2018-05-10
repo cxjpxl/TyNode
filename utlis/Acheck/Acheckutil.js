@@ -130,19 +130,23 @@ function getTeamChange(aa,D){
     //1、存在网站数据得分加错的时候，或者突然加到某个球队，然后突然扣除
     //2、网站认为进球了，事实上并没有
     if (aa[14] != D[2]) {
-    	console.log('主old',aa[14])
-    	console.log('主new',D[2])
+    //	console.log('主old',aa[14])
+    // 	console.log('主new',D[2])
         // 再判断，这个分数是加是减
         if(D[2]>aa[14])score1change = true;
-        else{console.log(`这是一个错误事件，主队并没有进球\n`)}
+        else{
+        	// console.log(`这是一个错误事件，主队并没有进球\n`)
+        }
         aa[14] = D[2];//先更新分数
     }
     if (aa[15] != D[3]) {
-    	console.log('客--old',aa[15])
-    	console.log('客--new',D[3])
+   // 	console.log('客--old',aa[15])
+   // 	console.log('客--new',D[3])
         // 再判断，这个分数是加是减
         if(D[3]>aa[15])score2change = true;
-        else{console.log(`这是一个错误事件，客队并没有进球\n`)}
+        else{
+        	// console.log(`这是一个错误事件，客队并没有进球\n`)
+        }
         aa[15] = D[3];//先更新分数
     }
     scorechange=score1change||score2change;
@@ -159,7 +163,7 @@ async function getAdata(){
 		try{
 			ADATA = JSON.parse(data.data)
 		}catch(err){
-			console.error('getAdata err',data)
+			// console.error('getAdata err',data)
 		}
 	}
 }
@@ -188,9 +192,9 @@ function runtest(){
 
 	}
 	// console.log('结果----',obj)
-	console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
+	// console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
 	if(obj&&!obj.direct){
-		console.log(`网站球队方向与A系统的球队方向相反`)
+		// console.log(`网站球队方向与A系统的球队方向相反`)
 	}
 }
 // runtest()
@@ -247,7 +251,7 @@ function checkParams(j,time,state){
 					}
 				}catch(err){
 					//进入半场
-					console.log('err',err)
+					// console.log('err',err)
 				}
 			// }
 		}
