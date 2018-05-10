@@ -2030,7 +2030,6 @@ function  getSaiList() {
     addSaiName("索察", "索肖",data);
     addSaiName("威姆斯", "兰斯",data);
     addSaiName("纽文西亚", "努曼西亚",data);
-
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
