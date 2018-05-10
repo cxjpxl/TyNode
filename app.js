@@ -69,7 +69,7 @@ acheck(1,100,(league,state,score1,score2,tm1,tm2,gametime)=>{
         cmd:2,//表示进球的处理
         league,state,score1,score2,tm1,tm2,gametime
     };
-   // console.log('--------',league,state,score1,score2,tm1,tm2,gametime);
+    console.log('--------',league,state,score1,score2,tm1,tm2,gametime);
     if(global.ws&& global.ws.server&& global.ws.server.clients){
         try {
             global.ws.server.clients.forEach(ws=>{
