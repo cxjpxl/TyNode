@@ -64,7 +64,27 @@ app.use(session({
 TXinit("1106845374","hCcpXobCTUgSEDz0"); //识别码处理
 // 联赛名字，{1:主队进球,0:客队进球},主队比分,客队比分,主队名字,客队名字,比赛进行的时间
 acheck(1,100,(league,state,score1,score2,tm1,tm2,gametime)=>{
-    console.log('--------',league,state,score1,score2,tm1,tm2,gametime)
+
+    let data = {
+        cmd:2,//表示进球的处理
+        league,state,score1,score2,tm1,tm2,gametime
+    };
+   // console.log('--------',league,state,score1,score2,tm1,tm2,gametime);
+    if(global.ws&& global.ws.server&& global.ws.server.clients){
+        try {
+            global.ws.server.clients.forEach(ws=>{
+                try {
+                    if(ws){
+                        ws.send(JSON.stringify(data));
+                    }
+                }catch (e1){
+                    //console.log(e1.toString());
+                }
+            });
+        }catch (e){
+            //console.log(e.toString());
+        }
+    }
 });
 
 /*******************路由*********************/
