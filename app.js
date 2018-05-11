@@ -65,6 +65,16 @@ TXinit("1106845374","hCcpXobCTUgSEDz0"); //识别码处理
 // 联赛名字，{1:主队进球,0:客队进球},主队比分,客队比分,主队名字,客队名字,比赛进行的时间
 acheck(1,100,(league,state,score1,score2,tm1,tm2,gametime)=>{
 
+
+    try {
+        state = parseInt(state);
+        score1 = parseInt(score1);
+        score2 = parseInt(score2);
+        gametime = parseInt(gametime);
+    }catch (error){
+        return ;
+    }
+
     let data = {
         cmd:2,//表示进球的处理
         league,state,score1,score2,tm1,tm2,gametime
