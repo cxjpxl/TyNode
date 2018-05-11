@@ -72,6 +72,7 @@ acheck(1,100,(league,state,score1,score2,tm1,tm2,gametime)=>{
         score2 = parseInt(score2);
         gametime = parseInt(gametime);
     }catch (error){
+        console.log("error data",error);
         return ;
     }
 
