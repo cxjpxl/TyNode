@@ -2053,6 +2053,11 @@ function  getSaiList() {
     addSaiName("Suwon UDC (w)", "水原",data);
     addSaiName("斯塔尔卡缅斯克", "斯塔尔卡缅斯科耶",data);
     addSaiName("Khazar Baku FK", "哈扎尔巴库",data);
+    addSaiName("苏维杜夫 2", "苏维杜夫II队",data);
+    addSaiName("马舒克KMV", "麦呼克KMV",data);
+    addSaiName("里佩克", "利比克",data);
+    addSaiName("高斯特罗玛", "科斯特罗马斯巴达",data);
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
