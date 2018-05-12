@@ -36,7 +36,7 @@ function  getSaiList() {
     addSaiName("阿里斯", "阿里斯塞萨洛尼基",data);
     addSaiName("潘塞拉高斯", "邦萨拉高斯",data);
     addSaiName("邦萨拉高斯", "喜百年",data);
-    addSaiName("斯洛云布拉迪斯拉发", "斯洛云",data);
+    addSaiName("斯洛云布拉迪斯拉发", "布拉迪斯拉发",data);
     addSaiName("侯布洛", "霍布罗",data);
     addSaiName("曼希恩", "曼海姆",data);
     addSaiName("济拉", "兹拉",data);
@@ -340,7 +340,7 @@ function  getSaiList() {
     addSaiName("伊普斯维奇城", "伊普斯维奇",data);
     addSaiName("金奈", "金奈城",data);
     addSaiName("基尔史莫纳夏普尔", "伊若尼奇亚夏普尔",data);
-    addSaiName("特拉维夫叶胡达", "耶乌达",data);
+    addSaiName("特拉维夫叶胡达", "耶胡达",data);
     addSaiName("托德拉", "通迪拉",data);
     addSaiName("马卡比内坦亚", "马卡比奈坦亚",data);
     addSaiName("寶利", "贝利",data);
@@ -1204,7 +1204,7 @@ function  getSaiList() {
     addSaiName("波帕扬大学", "珀帕妍",data);
     addSaiName("Olympic Real De Bangui", "皇家奥林匹克",data);
     addSaiName("IF Magni", "马格力",data);
-    addSaiName("候卡尔夏拿佐杜亚", "候卡尔",data);
+    addSaiName("候卡尔夏拿佐杜亚", "豪卡尔",data);
     addSaiName("Libertad", "利伯泰德",data);
     addSaiName("蒙特维多竞技", "蒙特维多竞赛会",data);
     addSaiName("丹奴比", "丹纽比奥",data);
@@ -1587,7 +1587,7 @@ function  getSaiList() {
     addSaiName("利加斯", "列加斯",data);
     addSaiName("斯塔利桥", "史塔布理治",data);
     addSaiName("海德堡联", "海德堡",data);
-    addSaiName("撲雷索夫", "塔特拉扑雷索夫",data);
+    addSaiName("撲雷索夫", "扑雷索夫",data);
     addSaiName("奧巴候辛", "奥柏侯逊",data);
     addSaiName("卡夫尔加西姆", "卡法加西姆",data);
     addSaiName("其姆奇", "希姆基",data);
@@ -1798,7 +1798,7 @@ function  getSaiList() {
     addSaiName("胡志明市足球會", "胡志明市足球俱乐部",data);
     addSaiName("蒙他拿", "PFC蒙大拿",data);
     addSaiName("斯拉维亚", "索菲亚斯拉维亚",data);
-    addSaiName("布雷斯戴拿模", "戴拿模比斯特",data);
+    addSaiName("布雷斯戴拿模", "布列斯特迪纳摩",data);
     addSaiName("马里乍", "马里萨",data);
     addSaiName("OFC 内塞伯尔", "内塞伯尔",data);
     addSaiName("巴尔奇克", "贝尔奇克",data);
@@ -2146,6 +2146,13 @@ function  getSaiList() {
     addSaiName("法拉姆拉尔维克", "弗雷姆拉维克",data);
     addSaiName("卡積沙斯", "卡积沙斯",data);
     addSaiName("高美尔", "戈梅利",data);
+    addSaiName("辛尼卡", "塞尼察",data);
+    addSaiName("波特諾", "波特诺",data);
+    addSaiName("塔尔萨钻机工", "塔尔萨罗夫内卡斯",data);
+    addSaiName("Orange County SC", "橘郡",data);
+    addSaiName("圣路尔斯", "圣路易斯",data);
+    addSaiName("薩克拉門托", "萨克拉门托",data);
+    addSaiName("雷諾1868", "雷诺1868",data);
 
     /********************打印数量********************/
     let counter = 0;
