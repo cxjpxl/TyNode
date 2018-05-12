@@ -1758,7 +1758,7 @@ function  getSaiList() {
     addSaiName("索甸奴拖比度", "鱼雷佐迪诺",data);
     addSaiName("索斯諾維茨", "索斯诺维茨",data);
     addSaiName("町田澤維亞", "町田泽维亚",data);
-    addSaiName("東京日視", "东京日视",data);
+    addSaiName("東京日視", "东京绿茵",data);
     addSaiName("北京控股", "北京北控",data);
     addSaiName("本田鎖業", "本田制锁",data);
     addSaiName("圣彼得堡泽尼特", "圣彼德斯堡泽尼特",data);
@@ -2084,6 +2084,8 @@ function  getSaiList() {
     addSaiName("阿积士", "阿贾克斯",data);
     addSaiName("恩戴十一", "印地十一",data);
     addSaiName("莫纳洛黑豹", "莫纳洛偏索",data);
+    addSaiName("德岛沃缇", "德岛漩涡",data);
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
