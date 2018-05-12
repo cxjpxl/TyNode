@@ -2085,6 +2085,8 @@ function  getSaiList() {
     addSaiName("恩戴十一", "印地十一",data);
     addSaiName("莫纳洛黑豹", "莫纳洛偏索",data);
     addSaiName("德岛沃缇", "德岛漩涡",data);
+    addSaiName("北京理工", "北京理工大学",data);
+    addSaiName("Zibo Sunday", "淄博星期天",data);
 
     /********************打印数量********************/
     let counter = 0;
