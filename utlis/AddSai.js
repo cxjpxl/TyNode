@@ -64,7 +64,7 @@ function  getSaiList() {
     addSaiName("伊安尼那", "基亚连拿",data);
     addSaiName("拉密亚", "拉米亚",data);
     addSaiName("艾路卡", "阿鲁卡",data);
-    addSaiName("歷索斯", "雷克斯欧斯",data);
+    addSaiName("歷索斯", "雷克索西斯",data);
     addSaiName("歐力維倫斯", "奥利维伦斯",data);
     addSaiName("卡拉奥华", "CS卡拉奥华大学",data);
     addSaiName("马德里竞技", "马德里",data);
@@ -235,7 +235,7 @@ function  getSaiList() {
     addSaiName("柏干尼斯", "帕加尼斯",data);
     addSaiName("格拉兹风暴", "格拉兹",data);
     addSaiName("錫拉庫紮", "锡拉库萨",data);
-    addSaiName("法马里绍", "法马利卡欧",data);
+    addSaiName("法马里绍", "费马利卡奥",data);
     addSaiName("NK 路德斯", "鲁达士",data);
     addSaiName("班尼云度", "班尼文托",data);
     addSaiName("拉斯帕尔马斯", "拉斯彭马斯",data);
@@ -2089,6 +2089,7 @@ function  getSaiList() {
     addSaiName("Zibo Sunday", "淄博星期天",data);
     addSaiName("阿格斯達斯亞", "阿格斯",data);
     addSaiName("Pascoe Vale", "帕斯科华伦",data);
+    addSaiName("斯普希圣乔治", "圣格奥尔基塞普西",data);
 
     /********************打印数量********************/
     let counter = 0;
