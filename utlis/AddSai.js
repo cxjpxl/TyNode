@@ -2145,6 +2145,7 @@ function  getSaiList() {
     addSaiName("昂同 FC", "昂同",data);
     addSaiName("法拉姆拉尔维克", "弗雷姆拉维克",data);
     addSaiName("卡積沙斯", "卡积沙斯",data);
+    addSaiName("高美尔", "戈梅利",data);
 
     /********************打印数量********************/
     let counter = 0;
