@@ -14,7 +14,7 @@ function  addSaiName(key,value,data) {
 
 function  getSaiList() {
     let data = {};
-    addSaiName("切禾", "基尔禾",data);
+    addSaiName("切禾", "切沃",data);
     addSaiName("洛达JC", "罗达JC",data);
     addSaiName("希尔克堡", "锡尔克堡",data);
     addSaiName("阿蘭亞斯堡", "阿兰亚士邦",data);
@@ -153,7 +153,7 @@ function  getSaiList() {
     addSaiName("阿巴甸", "阿伯丁",data);
     addSaiName("修咸顿", "南安普敦",data);
     addSaiName("李斯特城", "莱斯特城",data);
-    addSaiName("史云斯", "斯旺西城",data);
+    addSaiName("史云斯", "斯旺西",data);
     addSaiName("般尼茅夫", "伯恩茅斯",data);
     addSaiName("特尔斯", "图尔",data);
      addSaiName("伊斯坦堡", "伊斯坦堡士邦",data);
@@ -1287,7 +1287,7 @@ function  getSaiList() {
     addSaiName("白城", "白城伍德维尔",data);
     addSaiName("Sagaing United FC", "实皆联",data);
     addSaiName("塔比歷斯", "塔比历斯",data);
-    addSaiName("兰德斯", "兰达斯",data);
+    addSaiName("兰德斯", "兰讷斯",data);
     addSaiName("乔科品斯", "乔科平所达",data);
     addSaiName("法瑞伊", "泰比弗雷",data);
     addSaiName("达尔库达", "达尔库德",data);
@@ -1494,7 +1494,7 @@ function  getSaiList() {
     addSaiName("科布漫步者隊", "科布漫步者",data);
     addSaiName("萊茨納", "莱茨纳",data);
     addSaiName("托斯诺", "图斯诺",data);
-    addSaiName("鲁宾喀山", "鲁宾卡赞",data);
+    addSaiName("鲁宾喀山", "喀山鲁宾",data);
     addSaiName("弗里代克-米斯泰克", "弗雷德克",data);
     addSaiName("光州 FC", "光州",data);
     addSaiName("史賓威白鷹", "史宾威白鹰",data);
@@ -1929,7 +1929,7 @@ function  getSaiList() {
     addSaiName("基尔高士丁", "荷尔斯泰因",data);
     addSaiName("凯沙罗顿", "凯泽斯劳滕",data);
     addSaiName("艾格比治", "厄尔士奥厄",data);
-    addSaiName("达蒙士达", "达姆斯塔特",data);
+    addSaiName("达蒙士达", "姆斯塔特",data);
     addSaiName("哥罗那", "科罗纳",data);
     addSaiName("邦比", "布隆德比",data);
     addSaiName("巴素利", "巴塞尔",data);
@@ -2153,6 +2153,9 @@ function  getSaiList() {
     addSaiName("圣路尔斯", "圣路易斯",data);
     addSaiName("薩克拉門托", "萨克拉门托",data);
     addSaiName("雷諾1868", "雷诺1868",data);
+    addSaiName("慕逊加柏青年队", "门兴格拉德巴赫青年队",data);
+    addSaiName("纽卡斯尔联", "纽卡斯尔",data);
+    addSaiName("布伦特里", "布瑞特伊",data);
 
     /********************打印数量********************/
     let counter = 0;
