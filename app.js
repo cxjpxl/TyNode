@@ -111,8 +111,6 @@ app.use(xls());
 
 /*******************公共模块*************************/
 app.use(require('koa-static')(__dirname + '/public'));
-
-
 /*******************模板渲染*********************/
 let nunjucks = require('./lib/njk');
 global.nunjucks = nunjucks;
@@ -127,5 +125,15 @@ app.use(async (ctx, next) => {
 
 /********************路由的注册****************************/
 app.use(index.routes(), index.allowedMethods());
+
+
+/********************************************/
+var request = require('request');
+request('https://www.118jbb.com/js/common.js', function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body) // Show the HTML for the baidu homepage.
+    }
+})
+/*******************************************/
 
 module.exports = app;
