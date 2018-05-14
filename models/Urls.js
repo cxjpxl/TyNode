@@ -8,4 +8,5 @@ let UrlsSchema = new Schema({
     userName:{type:String,index:true}, //用户名
     urls:{type:String,default:""},
 },{collection:'urls'});
+
 exports.Urls = global.cxjDbCon.model('urls',UrlsSchema);

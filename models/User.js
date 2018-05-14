@@ -10,4 +10,5 @@ let UserSchema = new Schema({
     valueTime:{type:Number,index:true},//账户使用有效期
     loginTime:{type:String,default:0},//账户登录时间
 },{collection:'user'});
+
 exports.User = global.cxjDbCon.model('user',UserSchema);

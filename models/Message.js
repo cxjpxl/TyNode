@@ -8,4 +8,5 @@ let MessageSchema = new Schema({
     message:{type:String,index:true},
     time:{type:Number,index:true}
 },{collection:'message'});
+
 exports.Message = global.cxjDbCon.model('message',MessageSchema);

@@ -14,4 +14,5 @@ let WebSchema = new Schema({
     time:{type:Number,default:0},//时间
     timeChina:{type:String,default:""},//中文时间
 },{collection:'web'});
+
 exports.Web = global.cxjDbCon.model('web',WebSchema);
