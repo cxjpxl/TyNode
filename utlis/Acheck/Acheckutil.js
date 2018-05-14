@@ -96,7 +96,7 @@ async function parse(allobj){
                             }
 
                         }
-                        console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
+                        console.log('zcm--------',mname,isMasterIn,mscore,gscore,master,guest,time)
                         if(obj&&!obj.direct){
                             console.log(`-----网站球队方向与A系统的球队方向相反-----`)
                         }
