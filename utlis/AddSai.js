@@ -2199,6 +2199,10 @@ function  getSaiList() {
     addSaiName("奧林匹克馬爾默", "奥林匹克",data);
     addSaiName("布格拉斯特星队", "布加勒斯特星",data);
 
+    addSaiName("阿拉特B队", "阿拉特II队",data);
+    addSaiName("阿拉斯克B队", "阿拉斯克II队",data);
+    addSaiName("佩历克B队", "佩历克II队",data);
+    addSaiName("Club Nacional Asuncion (R)", "那西昂诺(後备)",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
