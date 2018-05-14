@@ -6,5 +6,4 @@ var config = require("./config");
 let mongodb = {
     url:'mongodb://localhost/'+config.cxjDb,
 };
-
 module.exports = mongodb;
