@@ -127,6 +127,15 @@ router.post('/sendData', async (ctx, next) => {
                            game.nameH = game.nameH.replace("II","").trim();
                        }
 
+                       if(game.nameH.indexOf("(W)")>0){
+                           game.nameH = game.nameH.replace("(W)","").trim();
+                       }
+
+                       if(game.nameH.indexOf("(w)")>0){
+                           game.nameH = game.nameH.replace("(w)","").trim();
+                       }
+
+
                        game.nameH = game.nameH.trim();
 
                        let nameHs = game.nameH.split("U");
@@ -169,6 +178,15 @@ router.post('/sendData', async (ctx, next) => {
                         if(game.nameG.indexOf("II")>0){
                             game.nameG = game.nameG.replace("II","").trim();
                         }
+
+                        if(game.nameG.indexOf("(W)")>0){
+                            game.nameG = game.nameG.replace("(W)","").trim();
+                        }
+
+                        if(game.nameG.indexOf("(w)")>0){
+                            game.nameG = game.nameG.replace("(w)","").trim();
+                        }
+
 
                         game.nameG = game.nameG.trim();
 

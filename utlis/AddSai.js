@@ -626,7 +626,7 @@ function  getSaiList() {
     addSaiName("尤尼克里尼克CE", "尤尼克立尼CE",data);
     addSaiName("披瑟巴亚苏腊巴亚", "帕尔斯巴亚",data);
     addSaiName("匹尼", "PS TNI",data);
-    addSaiName("卡斯利士堡", "基锡里士邦",data);
+    addSaiName("卡斯利士堡", "开塞利体育",data);
     addSaiName("科特迪瓦", "象牙海岸",data);
     addSaiName("华斯高", "华斯高RJ",data);
     addSaiName("班古", "邦古RJ",data);
@@ -700,7 +700,7 @@ function  getSaiList() {
     addSaiName("Myawady FC", "米亚瓦迪",data);
     addSaiName("GFA FC", "GFA",data);
     addSaiName("海法", "海法夏普尔",data);
-    addSaiName("费伦巴赫", "费伦巴治",data);
+    addSaiName("费伦巴赫", "费内巴切",data);
     addSaiName("巴扬卡拉泗水联", "巴扬卡拉",data);
     addSaiName("PSIS Semarang", "PSIS三宝珑",data);
     addSaiName("CE Santanyi", "桑塔尼",data);
@@ -1737,13 +1737,13 @@ function  getSaiList() {
     addSaiName("森柏欧", "森柏欧MA",data);
     addSaiName("麦格理湖", "麦觉理湖城",data);
     addSaiName("查尔斯顿城蓝色", "查尔斯顿市布鲁斯",data);
-    addSaiName("RCD Espanyol B (w)", "爱斯宾奴B队",data);
-    addSaiName("CF Igualada (w)", "伊瓜拉达",data);
+    addSaiName("RCD Espanyol B", "爱斯宾奴B队",data);
+    addSaiName("CF Igualada", "伊瓜拉达",data);
     addSaiName("巴雷达", "巴雷达巴洛皮",data);
     addSaiName("阿尔巴塞特", "阿尔巴塞特基金会",data);
     addSaiName("华拉度列 B", "华拉度列B队",data);
-    addSaiName("CD Monte (w)", "莫特",data);
-    addSaiName("Sardoma CF (w)", "萨度玛",data);
+    addSaiName("CD Monte", "莫特",data);
+    addSaiName("Sardoma CF", "萨度玛",data);
     addSaiName("樸盧斯高", "朴卢斯高",data);
     addSaiName("Brandenburger SC Sud 05", "布兰登堡05",data);
     addSaiName("布约维奇", "布迪祖怀斯",data);
@@ -1793,8 +1793,8 @@ function  getSaiList() {
     addSaiName("索格达", "桑恩达",data);
     addSaiName("瑞索维亚", "雷索维亚",data);
     addSaiName("兹罗纳格拉", "法鲁巴兹",data);
-    addSaiName("France (w)", "法国队(女)",data);
-    addSaiName("Italy (w)", "意大利(女)",data);
+    addSaiName("France", "法国队(女)",data);
+    addSaiName("Italy", "意大利(女)",data);
     addSaiName("胡志明市足球會", "胡志明市足球俱乐部",data);
     addSaiName("蒙他拿", "PFC蒙大拿",data);
     addSaiName("斯拉维亚", "索菲亚斯拉维亚",data);
@@ -1803,8 +1803,8 @@ function  getSaiList() {
     addSaiName("OFC 内塞伯尔", "内塞伯尔",data);
     addSaiName("巴尔奇克", "贝尔奇克",data);
     addSaiName("慕哈瑞克", "马勒基亚",data);
-    addSaiName("Holland Park Hawks (w)", "荷兰公园老鹰",data);
-    addSaiName("University of Queensland (BPL)(w)", "昆士兰科技大学",data);
+    addSaiName("Holland Park Hawks", "荷兰公园老鹰",data);
+    addSaiName("University of Queensland (BPL)", "昆士兰科技大学",data);
     addSaiName("富勒姆联", "塞利斯贝瑞国际",data);
     addSaiName("阿德莱德大学", "阿德莱得城",data);
     addSaiName("敖德萨足球俱乐部", "真丘支纳敖德萨",data);
@@ -1997,7 +1997,7 @@ function  getSaiList() {
     addSaiName("Serbiska KoIF Kozara", "柯扎拉塞尔维亚",data);
    //////////////////////5.9///////////////////////////////////
     addSaiName("新城堡联", "纽卡斯尔喷气机",data);
-    addSaiName("FK Torpedo Izhevsk (w)", "伊热夫斯克鱼雷",data);
+    addSaiName("FK Torpedo Izhevsk", "伊热夫斯克鱼雷",data);
     addSaiName("FFSA NTC", "南澳足协NTC",data);
     addSaiName("史洛特", "斯洛瓦茨科",data);
     addSaiName("克拉斯诺达尔", "库班克拉斯诺达尔",data);
@@ -2049,7 +2049,7 @@ function  getSaiList() {
     addSaiName("FC Oleksandriya", "亚历山德里亚",data);
     addSaiName("Sabah FK", "沙巴巴库",data);
     addSaiName("奧林匹克登尼茨克", "顿涅茨克奥林匹克",data);
-    addSaiName("Suwon UDC (w)", "水原",data);
+    addSaiName("Suwon UDC", "水原",data);
     addSaiName("斯塔尔卡缅斯克", "斯塔尔卡缅斯科耶",data);
     addSaiName("Khazar Baku FK", "哈扎尔巴库",data);
     addSaiName("苏维杜夫 2", "苏维杜夫II队",data);
@@ -2183,6 +2183,11 @@ function  getSaiList() {
     addSaiName("巴巴达斯", "巴尔瓦达斯",data);
     addSaiName("霍塔", "贺塔",data);
     addSaiName("雷乌斯B", "雷乌斯B队",data);
+    addSaiName("Bulleen Lions", "布琳狮子",data);
+    addSaiName("斯馬納", "斯马纳",data);
+    addSaiName("巴爾瑙爾戴拿模", "巴尔瑙尔戴拿模",data);
+    addSaiName("Hyundai Steel Red Angels", "现代制铁",data);
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
