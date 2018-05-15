@@ -2203,6 +2203,12 @@ function  getSaiList() {
     addSaiName("Club Nacional Asuncion (R)", "那西昂诺(後备)",data);
     addSaiName("Nam Dinh 2", "南定II队",data);
     addSaiName("HJS Akatemia", "HJS阿卡泰米阿",data);
+    addSaiName("AGMK Olmaliq", "AGMK",data);
+    addSaiName("斯沃路斯", "姆巴巴内斯沃路斯",data);
+    addSaiName("PD阿哥斯杜", "阿哥斯杜",data);
+    addSaiName("斯塔德劳", "斯塔拉尤",data);
+    addSaiName("斯普特俱樂部", "维纳尔SK",data);
+    addSaiName("TP马森比", "TP马赞姆贝",data);
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
