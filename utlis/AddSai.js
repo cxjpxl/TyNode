@@ -1258,7 +1258,7 @@ function  getSaiList() {
     addSaiName("新英倫革命", "新英伦革命",data);
     addSaiName("達拉斯燃燒", "达拉斯",data);
     addSaiName("拉克霍尔", "拉卡海尔",data);
-    addSaiName("萨克达顿涅茨克", "萨克达",data);
+    addSaiName("萨克达顿涅茨克", "顿涅茨克矿工",data);
     addSaiName("拉卡塔米亚", "拉卡塔麦斯",data);
     addSaiName("Sturt Lions", "斯图特狮子",data);
     addSaiName("索尔兹伯里美国", "塞利斯贝瑞联",data);
@@ -2241,6 +2241,7 @@ function  getSaiList() {
     addSaiName("FFSA NTC", "南澳足协NTC",data);
     addSaiName("SAI加爾各答", "SAI加尔各答",data);
     addSaiName("Tata Football Academy", "塔塔足球学院",data);
+    addSaiName("顺化", "顺化足球俱乐部",data);
 
     /********************打印数量********************/
     let counter = 0;
