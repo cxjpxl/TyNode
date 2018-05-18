@@ -73,7 +73,7 @@ function  getSaiList() {
     addSaiName("United SC", "联竞技加尔各答",data);
     addSaiName("巴甘莫哈", "莫亨巴根",data);
     addSaiName("托斯諾", "图斯諾",data);
-    addSaiName("卡拉布基斯普", "卡拉布克士邦",data);
+    addSaiName("卡拉布基斯普", "卡拉比克体育",data);
     addSaiName("布隆迪", "蒲隆地共和国",data);
     addSaiName("加巴拉PFC", "卡巴拉",data);
     addSaiName("南德阿美利加", "苏阿美利加",data);
@@ -189,7 +189,7 @@ function  getSaiList() {
     addSaiName("苏迪路", "苏达迪罗尔",data);
     addSaiName("布拉圖", "普拉托",data);
     addSaiName("瓦朗谢讷", "华伦西恩斯",data);
-    addSaiName("卡比", "卡皮",data);
+    addSaiName("卡比", "卡尔皮",data);
     addSaiName("维切利", "普洛维尔切利",data);
     addSaiName("克雷特伊", "基迪尔",data);
     addSaiName("毕士图路华", "布里斯托流浪",data);
@@ -304,7 +304,7 @@ function  getSaiList() {
     addSaiName("卡利地亚雅典", "卡利地亚",data);
     addSaiName("阿尔纳萨杜拜", "纳萨杜拜",data);
     addSaiName("艾恩俱樂部", "阿尔艾因",data);
-    addSaiName("塞那乔恩", "SJK塞那乔其",data);
+    addSaiName("塞那乔恩", "施拿钟基",data);
     addSaiName("阿尔卡迪西亚阿克巴", "瓜达席亚",data);
     addSaiName("帕福斯 FC", "帕福斯",data);
     addSaiName("VVSB Noordwijkerhout", "VVSB",data);
@@ -1148,7 +1148,7 @@ function  getSaiList() {
     addSaiName("高隆", "科隆竞技",data);
     addSaiName("PTT羅勇", "PTT罗勇足球俱乐部",data);
     addSaiName("羅勇", "罗勇",data);
-    addSaiName("卡比利奧馬卡比", "艾罗尼马卡比",data);
+    addSaiName("卡比利奧馬卡比", "卡比利奥马卡比",data);
     addSaiName("比卡塔哈亚登", "吉尔波亚英",data);
     addSaiName("亞夫涅", "亚夫涅英",data);
     addSaiName("姆牙比", "米亚尔比",data);
@@ -2111,7 +2111,7 @@ function  getSaiList() {
     addSaiName("弗洛辛諾內", "弗洛西诺尼",data);
     addSaiName("霍治亞", "福贾",data);
     addSaiName("科雷蒙尼斯", "克雷莫内塞",data);
-    addSaiName("比斯卡拉", "佩斯卡拉",data);
+    addSaiName("比斯卡拉", "斯卡拉",data);
     addSaiName("切辛納", "切塞纳",data);
     addSaiName("真格拿拜列治", "根塞尔伯里吉",data);
     addSaiName("提斯特德", "齐斯泰兹",data);
@@ -2242,6 +2242,14 @@ function  getSaiList() {
     addSaiName("SAI加爾各答", "SAI加尔各答",data);
     addSaiName("Tata Football Academy", "塔塔足球学院",data);
     addSaiName("顺化", "顺化足球俱乐部",data);
+    addSaiName("森布鲁基希讷乌", "森布鲁",data);
+    addSaiName("Uganda", "乌干达",data);
+    addSaiName("Wurzburger Kickers Am", "维尔茨堡踢球者青年队",data);
+    addSaiName("施塔保拉", "斯达德帕鲁拉",data);
+    addSaiName("達比柏林", "尼丝柏林",data);
+    addSaiName("Inter Leipzig", "国际莱比锡",data);
+    addSaiName("瓦爾堡", "瓦尔堡",data);
+    addSaiName("施达迪那", "奇塔代拉",data);
 
     /********************打印数量********************/
     let counter = 0;
