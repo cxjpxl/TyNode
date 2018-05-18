@@ -1974,7 +1974,7 @@ function  getSaiList() {
     addSaiName("河内足球俱乐部 2", "河内II队",data);
     addSaiName("Zhetysu Taldykorgan B", "斯咸迪苏B队",data);
     addSaiName("马克塔拉", "玛塔拉尔杰提萨",data);
-    addSaiName("Pune City (R)", "普纳城",data);
+    addSaiName("Pune City", "普纳城",data);
     addSaiName("Lonestar Kashmir", "克什米尔",data);
     addSaiName("派雅斯特", "皮亚斯特",data);
     addSaiName("雷特林根05", "雷特林根",data);
@@ -2200,7 +2200,7 @@ function  getSaiList() {
     addSaiName("阿拉特B队", "阿拉特II队",data);
     addSaiName("阿拉斯克B队", "阿拉斯克II队",data);
     addSaiName("佩历克B队", "佩历克II队",data);
-    addSaiName("Club Nacional Asuncion (R)", "那西昂诺(後备)",data);
+    addSaiName("Club Nacional Asuncion", "那西昂诺",data);
     addSaiName("Nam Dinh 2", "南定II队",data);
     addSaiName("HJS Akatemia", "HJS阿卡泰米阿",data);
     addSaiName("AGMK Olmaliq", "AGMK",data);
@@ -2233,6 +2233,15 @@ function  getSaiList() {
     addSaiName("佩塔雷体会", "佩塔雷",data);
     addSaiName("Elm City Express", "艾姆城伊克普若斯",data);
     addSaiName("VSLT FC", "VSLT",data);
+    //////////////////////5.18/////////////////////////////
+    addSaiName("Dalian Chanjoy", "大连博阳",data);
+    addSaiName("Osmanlispor", "奥斯曼里士邦",data);
+    addSaiName("Centenary Stormers", "史托姆斯世纪",data);
+    addSaiName("昆士蘭大學", "昆士兰科技大学",data);
+    addSaiName("FFSA NTC", "南澳足协NTC",data);
+    addSaiName("SAI加爾各答", "SAI加尔各答",data);
+    addSaiName("Tata Football Academy", "塔塔足球学院",data);
+
     /********************打印数量********************/
     let counter = 0;
     for(let key in data) counter++;
