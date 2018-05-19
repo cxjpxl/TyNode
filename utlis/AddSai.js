@@ -2284,6 +2284,11 @@ function  getSaiList() {
     addSaiName("斯科德斯莫", "斯凯兹摩",data);
     addSaiName("伊斯沃德 TF", "伊斯沃德",data);
     addSaiName("維京 2", "维京B队",data);
+    addSaiName("卜利达", "绍乌拉",data);
+    addSaiName("EDMF胡拉", "胡拉",data);
+    addSaiName("穆迪爾維拉", "木提维拉",data);
+    addSaiName("东韦尼托", "当宾尼度",data);
+    addSaiName("桑鲁玖诺", "善鲁玖诺",data);
 
     /********************/
     let counter = 0;
