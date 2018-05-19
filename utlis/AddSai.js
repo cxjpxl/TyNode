@@ -985,7 +985,7 @@ function  getSaiList() {
     addSaiName("Manaus AM", "马瑙斯AM",data);
     addSaiName("Atletico Acreano AC", "艾莱提可阿科瑞罗",data);
     addSaiName("瑟克雷大学生体育队", "瑟克雷",data);
-    addSaiName("布拉格斯拉維亞", "布拉格斯拉维亚",data);
+    addSaiName("布拉格斯拉維亞", "布拉格斯巴达",data);
     addSaiName("安德列治", "安德莱赫特",data);
     addSaiName("阿玛祖鲁", "艾玛祖鲁",data);
     addSaiName("摩塔格", "莫塔瓜",data);
@@ -1397,7 +1397,7 @@ function  getSaiList() {
     addSaiName("比尔舒华夏普尔", "比尔舒华哈索罗沙夏普尔",data);
     addSaiName("FC Hermannstadt", "赫曼施塔特",data);
     addSaiName("Cibao FC", "希巴欧",data);
-    addSaiName("全南龙队", "全罗南道天龙",data);
+    addSaiName("全南龙队", "全南天龙",data);
     addSaiName("FC 汉城", "首尔",data);
     addSaiName("艾拉华特", "阿拉特",data);
     addSaiName("简萨沙", "卡磐",data);
@@ -1418,7 +1418,7 @@ function  getSaiList() {
     addSaiName("Park Ridge", "帕克里奇",data);
     addSaiName("Oxley United", "奥克斯利联",data);
     addSaiName("Caboolture FC", "卡布尔彻",data);
-    addSaiName("格蘭", "格兰奇",data);
+    addSaiName("格兰", "格兰奇",data);
     addSaiName("大邱FC", "大邱",data);
     addSaiName("金斯敦城", "金士顿城",data);
     addSaiName("FC岐阜", "岐阜",data);
@@ -1860,7 +1860,7 @@ function  getSaiList() {
     addSaiName("BK 佛瓦德", "佛瓦德",data);
     addSaiName("尼科平", "尼科平斯",data);
     addSaiName("乌梅亚", "乌米亚",data);
-    addSaiName("斯克维德", "史柯瓦德",data);
+    addSaiName("斯克维德", "史柯瓦",data);
     addSaiName("伦格斯凯尔", "卢恩斯基尔",data);
     addSaiName("恩厄尔霍尔姆", "安其尔何马士",data);
     addSaiName("埃斯基爾斯蒂納足球會", "AFC埃斯基尔斯蒂纳",data);
@@ -1963,7 +1963,7 @@ function  getSaiList() {
     addSaiName("圣庄士东", "圣约翰斯顿",data);
     addSaiName("V-瓦仁長崎", "长崎成功丸",data);
     addSaiName("鲁治卓索", "罗切霍茹夫",data);
-    addSaiName("贾布朗尼", "亚布洛内茨",data);
+    addSaiName("贾布朗尼", "奥洛穆茨西格玛",data);
     addSaiName("洛格伦", "洛克伦",data);
     addSaiName("些路迪", "凯尔特人",data);
     addSaiName("尼罗卡", "NEROCA",data);
@@ -2250,8 +2250,9 @@ function  getSaiList() {
     addSaiName("Inter Leipzig", "国际莱比锡",data);
     addSaiName("瓦爾堡", "瓦尔堡",data);
     addSaiName("施达迪那", "奇塔代拉",data);
-
-    /********************打印数量********************/
+    addSaiName("圣奥尔本斯圣特斯", "圣奥尔本斯",data);
+    addSaiName("尤特斯科騰", "乌席登斯",data);
+   /********************/
     let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
