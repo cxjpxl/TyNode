@@ -995,7 +995,7 @@ function  getSaiList() {
     addSaiName("加玛", "加马DF",data);
     addSaiName("帕拉羅阿DF", "帕拉罗阿DF",data);
     addSaiName("巴兰基利亚青年", "小巴兰哈拉",data);
-    addSaiName("卡帕提", "卡帕堤利夫",data);
+    addSaiName("卡帕提", "卡帕迪",data);
     addSaiName("皮耳森", "皮尔森",data);
     addSaiName("斯塔达尔斯", "丝托达尔斯",data);
     addSaiName("郎达伊尔比德", "蓝慕沙",data);
@@ -1328,7 +1328,7 @@ function  getSaiList() {
     addSaiName("Banjul Hawks FC", "班珠尔",data);
     addSaiName("Fram/Ulfarnir", "弗雷姆乌法利尔",data);
     addSaiName("堪萨斯巫师", "肯萨斯城体育会",data);
-    addSaiName("奥拉弗斯维", "维吉欧拉维克",data);
+    addSaiName("奥拉弗斯维", "维京奥拉夫斯维克",data);
     addSaiName("列弗宁", "利汾瑞",data);
     addSaiName("TSV哈特堡格", "哈特堡格",data);
     addSaiName("因斯布鲁克瓦克尔", "因斯布鲁克",data);
@@ -2246,6 +2246,7 @@ function  getSaiList() {
     addSaiName("Wurzburger Kickers Am", "维尔茨堡踢球者青年队",data);
     addSaiName("施塔保拉", "斯达德帕鲁拉",data);
     addSaiName("達比柏林", "尼丝柏林",data);
+    /////////////////////////5.19///////////////////////////////
     addSaiName("Inter Leipzig", "国际莱比锡",data);
     addSaiName("瓦爾堡", "瓦尔堡",data);
     addSaiName("施达迪那", "奇塔代拉",data);
@@ -2263,7 +2264,28 @@ function  getSaiList() {
     addSaiName("JaPS亚文帕", "简沛斯",data);
     addSaiName("科尔丁", "科尔丁IF",data);
     addSaiName("堡魯本 B93", "B93哥本哈根",data);
-   /********************/
+    addSaiName("保定容大", "保定英利易通",data);
+    addSaiName("镇江华萨", "镇江文旅华萨",data);
+    addSaiName("湖南湘涛", "湖南湘涛华莱",data);
+    addSaiName("Ytterhogdals IK", "耶特候格达尔斯",data);
+    addSaiName("亚斯布丹特路斯", "亚斯布丹特路",data);
+    addSaiName("慕达拉", "马塔拉",data);
+    addSaiName("霍加堡", "侯嘉堡格",data);
+    addSaiName("吉比克", "GBK科科拉",data);
+    addSaiName("BK-46", "BK46",data);
+    addSaiName("Bischofswerdaer FV 08", "比绍夫斯韦尔达尔",data);
+    addSaiName("卡尔贝里斯", "卡尔伯格斯",data);
+    addSaiName("南泰利耶", "索德泰结",data);
+    addSaiName("哈瑟侯姆", "哈萨侯姆",data);
+    addSaiName("IFK 贝尔加", "波阁",data);
+    addSaiName("FBK卡尔斯塔得", "FBK卡尔斯塔德",data);
+    addSaiName("塔拉特", "塔特",data);
+    addSaiName("SV Atlas Delmenhorst", "代尔门霍斯特",data);
+    addSaiName("斯科德斯莫", "斯凯兹摩",data);
+    addSaiName("伊斯沃德 TF", "伊斯沃德",data);
+    addSaiName("維京 2", "维京B队",data);
+
+    /********************/
     let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
