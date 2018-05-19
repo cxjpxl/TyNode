@@ -2289,6 +2289,9 @@ function  getSaiList() {
     addSaiName("穆迪爾維拉", "木提维拉",data);
     addSaiName("东韦尼托", "当宾尼度",data);
     addSaiName("桑鲁玖诺", "善鲁玖诺",data);
+    addSaiName("欧帕尔利奥", "欧帕瑞欧PR",data);
+    addSaiName("卡罗莱纳鹰", "北卡罗莱纳",data);
+    addSaiName("柏林恒钢铁", "伯勒恒斯堤尔",data);
 
     /********************/
     let counter = 0;
