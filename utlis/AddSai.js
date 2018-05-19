@@ -2251,6 +2251,12 @@ function  getSaiList() {
     addSaiName("施达迪那", "奇塔代拉",data);
     addSaiName("圣奥尔本斯圣特斯", "圣奥尔本斯",data);
     addSaiName("尤特斯科騰", "乌席登斯",data);
+    addSaiName("Lahti YJ", "拉迪YJ",data);
+    addSaiName("摩托鲁滨", "莫托路宾",data);
+    addSaiName("查洛裏", "奇偌佰格沃古夫",data);
+    addSaiName("Centra Ostrow Wielkopolski", "奥斯特鲁",data);
+    addSaiName("KS Drweca NML", "德尔文察",data);
+    addSaiName("思科夫倫德", "巴勒鲁普",data);
 
    /********************/
     let counter = 0;
