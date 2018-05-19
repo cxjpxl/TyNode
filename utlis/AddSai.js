@@ -2257,7 +2257,12 @@ function  getSaiList() {
     addSaiName("Centra Ostrow Wielkopolski", "奥斯特鲁",data);
     addSaiName("KS Drweca NML", "德尔文察",data);
     addSaiName("思科夫倫德", "巴勒鲁普",data);
-
+    addSaiName("Spjelkavik IL Fotball", "斯皮杰卡维克",data);
+    addSaiName("弗利加", "弗利格",data);
+    addSaiName("Gallivare Malmbergets FF", "马尔姆贝里耶",data);
+    addSaiName("JaPS亚文帕", "简沛斯",data);
+    addSaiName("科尔丁", "科尔丁IF",data);
+    addSaiName("堡魯本 B93", "B93哥本哈根",data);
    /********************/
     let counter = 0;
     for(let key in data) counter++;
