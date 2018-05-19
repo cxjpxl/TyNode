@@ -1444,7 +1444,6 @@ function  getSaiList() {
     addSaiName("栃木SC", "槴木SC",data);
     addSaiName("庆尚南道", "庆南",data);
     addSaiName("Acacia Ridge", "阿卡西亚岭",data);
-    addSaiName("首尔衣恋", "首尔埃兰",data);
     addSaiName("Sunshine Coast Wanderers", "阳光海岸流浪者",data);
     addSaiName("貝賽聯", "贝赛联",data);
     addSaiName("昆士兰大学", "昆士兰科技大学",data);
@@ -2252,6 +2251,7 @@ function  getSaiList() {
     addSaiName("施达迪那", "奇塔代拉",data);
     addSaiName("圣奥尔本斯圣特斯", "圣奥尔本斯",data);
     addSaiName("尤特斯科騰", "乌席登斯",data);
+
    /********************/
     let counter = 0;
     for(let key in data) counter++;
