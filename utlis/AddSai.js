@@ -159,7 +159,7 @@ function  getSaiList() {
      addSaiName("伊斯坦堡", "伊斯坦堡士邦",data);
      addSaiName("班加罗尔", "班加鲁鲁",data);
      addSaiName("史特加Am", "斯图加特青年队",data);
-     addSaiName("拉素", "拉齐奥",data);
+     addSaiName("拉素", "拉齐",data);
      addSaiName("乐克雷拉联", "尤尼昂",data);
      addSaiName("悉尼 FC", "悉尼",data);
      addSaiName("恩高斯达", "印戈斯塔德",data);
@@ -238,7 +238,6 @@ function  getSaiList() {
     addSaiName("NK 路德斯", "鲁达士",data);
     addSaiName("班尼云度", "班尼文托",data);
     addSaiName("拉斯帕尔马斯", "拉斯彭马斯",data);
-    addSaiName("里斯本竞技", "士砵亭",data);
     addSaiName("艾科坎", "阿柯孔",data);
     addSaiName("华历简奴", "巴列卡诺",data);
     addSaiName("Keshla FK", "克斯拉",data);
@@ -1055,7 +1054,7 @@ function  getSaiList() {
     addSaiName("艾尔格里尼克", "阿格利尼克",data);
     addSaiName("伊斯特恩沙伯奥克兰", "伊斯特恩沙伯",data);
     addSaiName("萨尔斯堡", "萨尔茨堡红牛",data);
-    addSaiName("亞塔奇", "亚塔奇",data);
+    addSaiName("亞塔奇", "阿尔塔奇",data);
     addSaiName("基亞索", "基亚索",data);
     addSaiName("河床蒙特维多", "蒙特维多河床队",data);
     addSaiName("芬斯", "凡尼克斯孟特维迪欧",data);
@@ -1628,7 +1627,6 @@ function  getSaiList() {
     addSaiName("Shijiazhuang Ever Bright", "石家庄永昌",data);
     addSaiName("西贡足球俱乐部", "西贡",data);
     addSaiName("列本", "乌兹提纳拉班",data);
-    addSaiName("里斯本竞技B", "士砵亭B队",data);
     addSaiName("特拉凱", "达卡",data);
     addSaiName("基輔阿仙奴", "基辅阿森纳",data);
     addSaiName("波爾塔瓦", "波尔塔瓦",data);
@@ -2292,6 +2290,9 @@ function  getSaiList() {
     addSaiName("欧帕尔利奥", "欧帕瑞欧PR",data);
     addSaiName("卡罗莱纳鹰", "北卡罗莱纳",data);
     addSaiName("柏林恒钢铁", "伯勒恒斯堤尔",data);
+    addSaiName("麥克亞瑟公羊隊", "马卡瑟尔",data);
+    addSaiName("咸史泰斯", "哈尔姆斯塔德",data);
+    addSaiName("阿德米拉瓦克默德林", "阿德米拉",data);
 
     /********************/
     let counter = 0;
