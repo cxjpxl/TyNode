@@ -1750,7 +1750,7 @@ function  getSaiList() {
     addSaiName("庆州水利", "庆州KHNP",data);
     addSaiName("莫蘭德城", "莫兰德城",data);
     addSaiName("萨瑟兰鲨鱼", "萨瑟兰德",data);
-    addSaiName("索甸奴拖比度", "鱼雷佐迪诺",data);
+    addSaiName("索甸奴拖比度", "佐迪诺鱼雷",data);
     addSaiName("索斯諾維茨", "索斯诺维茨",data);
     addSaiName("町田澤維亞", "町田泽维亚",data);
     addSaiName("東京日視", "东京绿茵",data);
@@ -2325,6 +2325,20 @@ function  getSaiList() {
     addSaiName("科捷尔鲁普", "吉勒普",data);
     addSaiName("3 de Febrero", "弗布罗",data);
     addSaiName("Blumenthaler SV", "布鲁蒙塔勒",data);
+    addSaiName("PSV燕豪芬", "PSV埃因霍温",data);
+    addSaiName("施禾尼", "兹沃勒",data);
+    addSaiName("巴纳特斯B队", "纳特斯II队",data);
+    addSaiName("贝德邦 AM", "帕德博恩青年队",data);
+    addSaiName("裡林德加", "瑞林德加",data);
+    addSaiName("Hodd 2", "禾特B队",data);
+    addSaiName("KFUM奥斯陆 2", "KFUM奥斯陆B队",data);
+    addSaiName("泰夫", "特拉夫",data);
+    addSaiName("Melhus Fotball", "梅尔胡斯",data);
+    addSaiName("索勒", "苏拉",data);
+    addSaiName("斯坦卡姆", "斯塔卡米拉坦",data);
+    addSaiName("东斯柏", "通斯堡",data);
+    addSaiName("侯登鹰队", "ORN侯登",data);
+
     /********************/
     let counter = 0;
     for(let key in data) counter++;
