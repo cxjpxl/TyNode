@@ -2321,7 +2321,10 @@ function  getSaiList() {
     addSaiName("沙瑞拉馬卡恩斯", "沙瑞拉马卡恩斯RJ",data);
     addSaiName("EC Primavera", "皮马维拉SP",data);
     addSaiName("禾夫斯堡", "沃尔夫斯贝格",data);
-
+    ///////////////////////5.21///////////////////////////////
+    addSaiName("科捷尔鲁普", "吉勒普",data);
+    addSaiName("3 de Febrero", "弗布罗",data);
+    addSaiName("Blumenthaler SV", "布鲁蒙塔勒",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
