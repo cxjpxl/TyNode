@@ -35,7 +35,7 @@ router.post('/getCode', async (ctx, next) => {
 });
 
 
-//参数message   参数  user   pwd   all
+//参数message   参数  user   pwd   all  sys
 router.get('/getUserInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
     let user = [
@@ -53,19 +53,30 @@ router.get('/getUserInfo', async (ctx, next) => {
     let time = new Date().getTime()- 10*24*60*60*1000;
     let data ;
 
-    if(ctx_query.noTime){
+
+    if(ctx_query.sys){  //查系统
         if(ctx_query.all){
-            data = await Web.find({}).sort({time:-1}).exec();
+            data = await Web.find({sys:ctx_query.sys}).sort({time:-1}).exec();
         }else {
-            data = await Web.find({$or: user}).sort({time:-1}).exec();
+            data = await Web.find({sys:ctx_query.sys,$or: user}).sort({time:-1}).exec();
         }
     }else{
-        if(ctx_query.all){
-            data = await Web.find({time:{$gte:time}}).sort({time:-1}).exec();
-        }else {
-            data = await Web.find({$or: user,time:{$gte:time}}).sort({time:-1}).exec();
+        if(ctx_query.noTime){
+            if(ctx_query.all){
+                data = await Web.find({}).sort({time:-1}).exec();
+            }else {
+                data = await Web.find({$or: user}).sort({time:-1}).exec();
+            }
+        }else{
+            if(ctx_query.all){
+                data = await Web.find({time:{$gte:time}}).sort({time:-1}).exec();
+            }else {
+                data = await Web.find({$or: user,time:{$gte:time}}).sort({time:-1}).exec();
+            }
         }
     }
+
+
 
 
 
