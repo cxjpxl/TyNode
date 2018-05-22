@@ -412,7 +412,7 @@ function  getSaiList() {
     addSaiName("肯梅利塔", "卡梅利塔",data);
     addSaiName("明尼路", "米内罗竞技",data);
     addSaiName("尼奥特", "尼奥尔",data);
-    addSaiName("格洛堡", "格洛堡38",data);
+    addSaiName("格洛堡", "格勒诺布",data);
     addSaiName("圣诺伊斯", "安坦迪",data);
     addSaiName("康卡纽", "孔卡诺",data);
     addSaiName("薩瑟堡", "波城",data);
@@ -1141,7 +1141,7 @@ function  getSaiList() {
     addSaiName("尼日爾托納多斯", "尼日尔托纳多斯",data);
     addSaiName("Bolamense DF", "博拉门瑟DF",data);
     addSaiName("阿尔曼西亚贝尼哈山", "曼序亚特",data);
-    addSaiName("阿曼FC", "阿曼俱乐部",data);
+    addSaiName("阿曼FC", "阿曼拉真登塞俱乐部",data);
     addSaiName("阿纳斯尔", "阿尔纳斯",data);
     addSaiName("高隆", "科隆竞技",data);
     addSaiName("PTT羅勇", "PTT罗勇足球俱乐部",data);
@@ -1201,7 +1201,7 @@ function  getSaiList() {
     addSaiName("波帕扬大学", "珀帕妍",data);
     addSaiName("Olympic Real De Bangui", "皇家奥林匹克",data);
     addSaiName("IF Magni", "马格力",data);
-    addSaiName("候卡尔夏拿佐杜亚", "豪卡尔",data);
+    addSaiName("候卡尔", "豪卡尔",data);
     addSaiName("Libertad", "利伯泰德",data);
     addSaiName("蒙特维多竞技", "蒙特维多竞赛会",data);
     addSaiName("丹奴比", "丹纽比奥",data);
@@ -2273,7 +2273,6 @@ function  getSaiList() {
     addSaiName("Bischofswerdaer FV 08", "比绍夫斯韦尔达尔",data);
     addSaiName("卡尔贝里斯", "卡尔伯格斯",data);
     addSaiName("南泰利耶", "索德泰结",data);
-    addSaiName("哈瑟侯姆", "哈萨侯姆",data);
     addSaiName("IFK 贝尔加", "波阁",data);
     addSaiName("FBK卡尔斯塔得", "FBK卡尔斯塔德",data);
     addSaiName("塔拉特", "塔特",data);
@@ -2338,6 +2337,25 @@ function  getSaiList() {
     addSaiName("斯坦卡姆", "斯塔卡米拉坦",data);
     addSaiName("东斯柏", "通斯堡",data);
     addSaiName("侯登鹰队", "ORN侯登",data);
+    addSaiName("拉佔", "拉占",data);
+    addSaiName("乌田纳", "乌特尼斯",data);
+    addSaiName("兰达斯弗雷亚", "兰讷斯弗雷亚",data);
+    addSaiName("RKC华域克", "瓦尔维克",data);
+    addSaiName("史达比克 B", "达比克B队",data);
+    addSaiName("利尼史特朗 2", "利勒斯特罗姆B队",data);
+    addSaiName("杜恩", "多恩",data);
+    addSaiName("辛迪夫佐特 2", "桑德菲杰B队",data);
+    addSaiName("Egersunds IK 2", "埃格尔松斯B队",data);
+    addSaiName("FC Teutonia 1905", "特乌托尼亚奥藤森",data);
+    addSaiName("拉真登塞", "拉吉德尼斯RS",data);
+    addSaiName("CD Hermanos Colmenares", "赫马洛斯柯莫纳雷",data);
+    addSaiName("乌雷尼亚", "乌勒纳",data);
+    addSaiName("亞拉庫雅諾斯", "亚拉库雅诺斯",data);
+    addSaiName("拉尼罗斯", "拉尼罗斯瓜纳雷",data);
+    addSaiName("猎鹰竞技", "法尔孔",data);
+    addSaiName("瑟福斯哈瑪爾阿吉爾亞伯格", "瑟福斯哈玛尔阿吉尔亚伯格",data);
+    addSaiName("尤柔", "尤柔纽约",data);
+    addSaiName("智利国家队", "智利大学",data);
 
     /********************/
     let counter = 0;
