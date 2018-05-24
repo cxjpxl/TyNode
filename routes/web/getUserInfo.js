@@ -56,7 +56,7 @@ router.get('/getUserInfo', async (ctx, next) => {
 
     if(ctx_query.sys){  //查系统
         if(ctx_query.all){
-            data = await Web.find({sys:ctx_query.sys}).sort({time:-1}).exec();
+            data = await Web.find({sys:ctx_query.sys}).sort({url:-1}).exec();
         }else {
             data = await Web.find({sys:ctx_query.sys,$or: user}).sort({time:-1}).exec();
         }
