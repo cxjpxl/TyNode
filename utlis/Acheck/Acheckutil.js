@@ -34,7 +34,7 @@ async function check(){
 
     setInterval(async ()=>{//
         await getAdata();//获取更新正在比赛的数据
-    },10*1000)//1min一次获取发生变化对应球
+    },50*1000)//1min一次获取发生变化对应球
 }
 
 async function parse(allobj){
@@ -96,7 +96,7 @@ async function parse(allobj){
                             }
 
                         }
-                        console.log('zcm--------',mname,isMasterIn,mscore,gscore,master,guest,time)
+                        console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
                         if(obj&&!obj.direct){
                             console.log(`-----网站球队方向与A系统的球队方向相反-----`)
                         }
@@ -153,17 +153,45 @@ function getTeamChange(aa,D){
  *	获取A网正在进行的比赛
  **/
 async function getAdata(){
-    for(let p in AUrlList){
-        let config = getAconfig(p);
-        let data = await get(config);
-        try{
-            let tt = JSON.parse(data.data);
-            if(tt.db.length>0){
-                ADATA=tt;
-                return;
+    let adata = [];
+    for(let item in AUrlList){
+        let page=1;
+        while(true){
+            let config = getAconfig(item,page);
+            let data = await get(config);
+            try{
+                let tt=data.data;
+                if(typeof tt != 'object'){
+                    tt = JSON.parse(data.data);
+                }
+                //数据格式转换，以及数据赋值
+                switch(tt.db.constructor){
+                    case Array:
+                        adata=adata.concat(tt.db);
+                        break;
+                    case Object:
+                        let td = [];
+                        for(let i in tt.db){
+                            td.push(tt.db[i]);
+                        }
+                        adata=adata.concat(td);
+                        break;
+                }
+                if(tt.page&&tt.page>page){page++;}
+                else{break;}
+            }catch(err){
+                page++;
+                if(page>10){
+                    break;
+                }
             }
-        }catch(err){
-            // console.error('getAdata err')
+        }
+        //有效赋值
+        if(adata&&adata.length>0){
+            ADATA=adata;
+            break;
+        }else{
+            adata=[];
         }
     }
 }
@@ -207,10 +235,10 @@ function checkParams(j,time,state){
     let obj={radio:[0,0,0]},targetArr=[];
     // console.log('ADATAADATA',ADATA)
 
-    if(ADATA && ADATA.db){
-        for(let item in ADATA.db){
+    if(ADATA){
+        for(let item in ADATA){
             //第一种存在完全相同的情况
-            let it=ADATA.db[item];
+            let it=ADATA[item];
             // console.log('ADATA.db[item]',item,it);
 
             // if(j[5]==it.Match_Master||j[6]==it.Match_Master||j[8]==it.Match_Guest||j[9]==it.Match_Guest){
@@ -396,9 +424,7 @@ async function getAlldata(){
  **/
 function getconfig(key){
     let URL = "http://live.titan007.com";
-    if(key=='Adata'){
-        URL = "http://www.424680.com";//http://www.9920333.com,
-    }
+
     let headers = {
         Host:URL.replace(/^http[s]?:\/\//,''),
         Connection:'keep-alive',
@@ -406,10 +432,6 @@ function getconfig(key){
         'Cache-Control':"max-age=0",
         Referer:URL,
         'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"
-    }
-    if(key=='Adata'){
-        headers.ContentLength = Buffer.byteLength(`p=2&oddpk=H&leg=`);
-        headers.Referer=`${URL}/index.php/sports/main?token=&uid=`
     }
     let config = {
         change:{
@@ -435,17 +457,6 @@ function getconfig(key){
             url:URL,
             path:`/vbsxml/bfdata.js?r=007${Date.now()}`,
             headers:headers
-        },
-        Adata:{
-            method:'POST',
-            url:URL,
-            path:`/index.php/sports/Match/FootballPlaying/?t=${Math.random()}`,
-            headers:headers,
-            params:{
-                p: 2,
-                oddpk: 'H',
-                leg: ''
-            }
         }
     }
     return config[key];
@@ -453,7 +464,7 @@ function getconfig(key){
 
 //获取获取网站的配置
 let AUrlList=['http://www.424680.com','http://www.9920333.com','http://www.083m.com','http://www.pj66692.com','http://www.ml598.com','http://www.2764n.com'];
-function getAconfig(index){
+function getAconfig(index,page){
     index=(index==null?0:(index>=AUrlList.length?AUrlList.length-1:index));
     let headers = {
         Host:AUrlList[index].replace(/^http[s]?:\/\//,''),
@@ -469,7 +480,7 @@ function getAconfig(index){
         path:`/index.php/sports/Match/FootballPlaying/?t=${Math.random()}`,
         headers:headers,
         params:{
-            p: 2,
+            p: page,
             oddpk: 'H',
             leg: ''
         }
