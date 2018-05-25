@@ -1416,7 +1416,7 @@ function  getSaiList() {
     addSaiName("Park Ridge", "帕克里奇",data);
     addSaiName("Oxley United", "奥克斯利联",data);
     addSaiName("Caboolture FC", "卡布尔彻",data);
-    addSaiName("格兰", "格兰奇",data);
+    addSaiName("格蘭", "格兰奇",data);
     addSaiName("大邱FC", "大邱",data);
     addSaiName("金斯敦城", "金士顿城",data);
     addSaiName("FC岐阜", "岐阜",data);
@@ -2364,6 +2364,12 @@ function  getSaiList() {
     addSaiName("Kallithea", "卡利地亚",data);
     addSaiName("挪萨比", "诺沙比",data);
     addSaiName("安克尔维斯马", "安科维斯玛",data);
+    //////////////////////////5.25//////////////////////////////////////////////////
+    addSaiName("Changnyeong", "昌宁",data);
+    addSaiName("MFK Frydek-Mistek", "弗雷德克",data);
+    addSaiName("FK Vlasim", "维拉斯姆",data);
+    addSaiName("SV Rot Weiss Hadamar", "洛特维哈达马尔",data);
+    addSaiName("SC Waldgirmes", "瓦德吉尔么斯",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
