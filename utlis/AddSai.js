@@ -2376,6 +2376,11 @@ function  getSaiList() {
     addSaiName("兰沃里林弗洛", "蓝沃里林弗洛",data);
     addSaiName("IFK Stocksund", "斯托克松德",data);
     addSaiName("烏普薩拉", "甘马乌沙拉",data);
+    addSaiName("夏尔喀塔罗博泽戈", "斯阿卡",data);
+    addSaiName("Warta Sieradz", "席拉兹",data);
+    addSaiName("羅姆查", "LKS 罗姆查",data);
+    addSaiName("桑德维肯斯", "IL桑德维肯斯",data);
+    addSaiName("UMF瑟福斯", "塞尔福斯",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
