@@ -1565,7 +1565,7 @@ function  getSaiList() {
     addSaiName("航源足球队", "航源",data);
     addSaiName("TJ ISKRA Borcice", "伊斯卡波瑞斯",data);
     addSaiName("巴迪", "波里索夫巴迪",data);
-    addSaiName("雲特史比斯", "云特史比斯",data);
+    addSaiName("雲特史比斯", "文茨皮尔斯",data);
     addSaiName("利耶帕亞", "利耶帕亚",data);
     addSaiName("洛斯查兰特", "丁级精选队",data);
     addSaiName("马勒多士波德戈里察", "莫拉多斯特",data);
@@ -2381,6 +2381,7 @@ function  getSaiList() {
     addSaiName("羅姆查", "LKS 罗姆查",data);
     addSaiName("桑德维肯斯", "IL桑德维肯斯",data);
     addSaiName("UMF瑟福斯", "塞尔福斯",data);
+    addSaiName("佩莱札", "佩拉扎科朗尼亚",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
