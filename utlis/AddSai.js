@@ -2370,6 +2370,10 @@ function  getSaiList() {
     addSaiName("FK Vlasim", "维拉斯姆",data);
     addSaiName("SV Rot Weiss Hadamar", "洛特维哈达马尔",data);
     addSaiName("SC Waldgirmes", "瓦德吉尔么斯",data);
+    ////////////////////////5.26//////////////////////////////////////////////
+    addSaiName("莱姆顿雅法", "兰布顿加法斯",data);
+    addSaiName("金堡雄獅", "金保罗夫狮联",data);
+    addSaiName("兰沃里林弗洛", "蓝沃里林弗洛",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
