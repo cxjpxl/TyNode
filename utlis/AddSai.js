@@ -811,7 +811,6 @@ function  getSaiList() {
     addSaiName("密斯托", "密斯托MT",data);
     addSaiName("斯尔诺特", "斯尔诺特PR",data);
     addSaiName("里奧布兰克 PR", "里奥布郎库PR",data);
-    addSaiName("哥里迪巴", "哥里迪巴PR",data);
     addSaiName("伊瓜苏", "伊瓜苏PR",data);
     addSaiName("Londrina PR", "隆迪那PR",data);
     addSaiName("波蒂加", "波蒂家莫索罗RN",data);
@@ -2416,6 +2415,25 @@ function  getSaiList() {
     addSaiName("Podhale Nowy Targ", "波多贺新塔尔格",data);
     addSaiName("KSZO奥斯罗维克", "奥斯罗维克",data);
     addSaiName("斯提隆哥奏", "KS斯提隆哥奏",data);
+
+    addSaiName("克伦摩里兹", "克罗梅瑞兹",data);
+    addSaiName("CSK Uhersky Brod", "乌赫尔布罗德",data);
+    addSaiName("馬拉威", "马拉维",data);
+    addSaiName("Scandinavian FC Orebro", "斯堪的纳维亚",data);
+    addSaiName("FK Bosna 92 Orebro", "波斯拿奥雷布洛",data);
+    addSaiName("莊森利特斯", "庄森利特斯",data);
+    addSaiName("Sandvikens AIK FK", "桑德维肯斯AIK",data);
+    addSaiName("Slatta SK", "斯拉塔",data);
+    addSaiName("克维定", "奎维丁",data);
+    addSaiName("BK Astrio", "阿斯特里",data);
+    addSaiName("拉弘斯", "拉后姆",data);
+    addSaiName("斯克捷沃", "斯尔沃于",data);
+    addSaiName("霖高平", "霖寇平",data);
+    addSaiName("Grindavik/GG", "格连戴域克GG",data);
+    addSaiName("布格勒斯特戴拿模", "布加勒斯特迪纳摩",data);
+    addSaiName("Coritiba PR", "哥里迪巴PR",data);
+    addSaiName("佛得角", "佛得角共和国",data);
+    addSaiName("B京都", "京都兔子",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
