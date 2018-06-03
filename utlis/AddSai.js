@@ -2464,6 +2464,10 @@ function  getSaiList() {
     addSaiName("阿兰迪纳", "阿伦迪娜",data);
     addSaiName("LDU洛哈", "罗加",data);
     addSaiName("阿科瑞罗AC", "艾莱提可阿科瑞罗",data);
+    addSaiName("FCM Portland", "米卢斯波特兰",data);
+    addSaiName("维多利亚高地", "维多利亚海兰德斯",data);
+    addSaiName("Wairarapa United", "怀拉拉帕联",data);
+    addSaiName("Central United", "中央联",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
