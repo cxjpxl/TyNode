@@ -2468,6 +2468,16 @@ function  getSaiList() {
     addSaiName("维多利亚高地", "维多利亚海兰德斯",data);
     addSaiName("Wairarapa United", "怀拉拉帕联",data);
     addSaiName("Central United", "中央联",data);
+/////////////////////////6.6//////////////////////////////////////////////////////////
+    addSaiName("水戶霍利克", "水户蜀葵",data);
+    addSaiName("山形蒙迪奥", "山形山神",data);
+    addSaiName("Kochi United SC", "高知联",data);
+    addSaiName("Vonds Ichihara", "VONDS市原",data);
+    addSaiName("奈良Club", "奈良俱乐部",data);
+    addSaiName("FC 今治", "今治",data);
+    addSaiName("流通経済大学FC", "流通经济大学龙崎",data);
+    addSaiName("Tadotsu FC", "多度津",data);
+    addSaiName("松江FC", "松江市",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
