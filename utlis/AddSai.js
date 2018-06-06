@@ -571,7 +571,7 @@ function  getSaiList() {
     addSaiName("杰拉", "阿尔杰拉",data);
     addSaiName("卡兹玛", "卡斯马",data);
     addSaiName("艾吉亚", "阿亚纳帕",data);
-    addSaiName("阿美利加明尼路", "美国MG",data);
+    addSaiName("阿美利加明尼路", "阿美利加MG",data);
     addSaiName("Oeste FC SP", "欧斯特SP",data);
     addSaiName("Sao Carlos FC SP", "索卡罗斯SP",data);
     addSaiName("Monte Azul SP", "蒙特阿苏尔SP",data);
@@ -728,7 +728,7 @@ function  getSaiList() {
     addSaiName("甘美奥诺瓦里桑蒂诺", "甘美奥诺瓦里桑蒂诺SP",data);
     addSaiName("卡洛圣佩德鲁", "卡洛",data);
     addSaiName("拉斯禾拉斯", "乌拉坎拉斯埃拉斯",data);
-    addSaiName("国际立寐热SP", "国际里梅拉SP",data);
+    addSaiName("国际立寐热SP", "国际利美拉SP",data);
     addSaiName("CD 帕萨基纳", "帕萨奎纳",data);
     addSaiName("利斯菲体育会", "利斯菲体育会PE",data);
     addSaiName("阿福加杜斯", "阿福加杜斯PE",data);
@@ -856,7 +856,7 @@ function  getSaiList() {
     addSaiName("羅卡體育", "罗卡",data);
     addSaiName("布里斯班前锋", "布里斯本前锋",data);
     addSaiName("立纳瑟", "立纳瑟SP",data);
-    addSaiName("里奧普雷圖SP", "里奥沛图SP",data);
+    addSaiName("里奧普雷圖SP", "奥沛图SP",data);
     addSaiName("民主队 GV", "迪模卡拉塔MG",data);
     addSaiName("卡斯卡韦尔", "卡斯卡韦尔PR",data);
     addSaiName("CE Uniao PR", "乌尼昂PR",data);
@@ -2478,6 +2478,20 @@ function  getSaiList() {
     addSaiName("流通経済大学FC", "流通经济大学龙崎",data);
     addSaiName("Tadotsu FC", "多度津",data);
     addSaiName("松江FC", "松江市",data);
+    addSaiName("冈比亚", "甘比亚",data);
+    addSaiName("威灵根", "维连根",data);
+    addSaiName("萊索托", "赖索托",data);
+    addSaiName("津巴布韦", "辛巴威",data);
+    addSaiName("巴西佩洛塔斯RS", "布拉希尔佩洛塔斯RS",data);
+    addSaiName("尤文图斯SP", "佐云图斯SP",data);
+    addSaiName("里奥卡拉羅", "里奥克拉洛SP",data);
+    addSaiName("费罗维亚里亚SP", "费罗维里亚SP",data);
+    addSaiName("亞特蘭大席瓦貝克", "亚特兰大银猩",data);
+    addSaiName("Miami FC 2", "迈阿密II队",data);
+    addSaiName("夏洛特鹰队", "夏洛特鹰",data);
+    addSaiName("理海谷联音速", "理海谷联",data);
+    addSaiName("文图拉县", "文图拉考迪菲优升",data);
+
     /********************/
     let counter = 0;
     for(let key in data) counter++;
