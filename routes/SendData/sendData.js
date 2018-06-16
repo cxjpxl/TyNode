@@ -26,7 +26,7 @@ router.post('/sendData', async (ctx, next) => {
     let message  = body.message;
     let type = body.type;
 
-    console.log("data",type,message);
+ //   console.log("data",type,message);
 
     if(!message||!type){
         ctx.body={
