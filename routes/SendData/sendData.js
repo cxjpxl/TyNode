@@ -26,6 +26,8 @@ router.post('/sendData', async (ctx, next) => {
     let message  = body.message;
     let type = body.type;
 
+    console.log("data",type,message);
+
     if(!message||!type){
         ctx.body={
             no:201,
@@ -40,6 +42,8 @@ router.post('/sendData', async (ctx, next) => {
     }catch (e){
 
     }
+
+
 
     if(message == "null") {
         ctx.body={
