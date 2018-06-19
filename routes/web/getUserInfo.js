@@ -36,8 +36,45 @@ router.post('/getCode', async (ctx, next) => {
 
 
 //参数message   参数  user   pwd   all  sys
+//角球单独处理 jiaoQiu   noTime  角球接口就这两个参数
 router.get('/getUserInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
+    let data ;
+    let time = new Date().getTime()- 20*24*60*60*1000;
+
+    //角球单独处理
+    if(ctx_query.jiaoQiu){
+        if(ctx_query.noTime){
+            data = await Web.find({fun:1}).sort({time:-1}).exec();
+        }else {
+            data = await Web.find({fun:1,time:{$gte:time}}).sort({time:-1}).exec();
+        }
+        if(!data || data.length == 0){
+            ctx.body = {
+                msg:"暂无数据",
+            };
+            return ;
+        }
+
+        let doc = [];
+        for(let i = 0 ; i < data.length ; i ++){
+            if(!doc[i]) doc[i]={};
+            doc[i]["用户"] = data[i].userName;
+            doc[i]["网址"] = data[i].url;
+            doc[i]["系统"] = data[i].sys;
+            doc[i]["金额"] = data[i].money;
+            doc[i]["账户"] = data[i].webUser;
+            if(ctx_query.pwd){
+                doc[i]["密码"] = data[i].webPwd;
+            }
+            doc[i]["时间"]=data[i].timeChina;
+
+        }
+        ctx.downloadXLS(doc,'web');
+      return ;
+    }
+
+
     let user = [
         {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},{userName:"admin4"},
         {userName:"admin5"}, {userName:"admin6"},{userName:"admin7"}, {userName:"admin8"},
@@ -50,9 +87,6 @@ router.get('/getUserInfo', async (ctx, next) => {
     if(ctx_query.user){
         user = [{userName:ctx_query.user}]
     }
-    let time = new Date().getTime()- 10*24*60*60*1000;
-    let data ;
-
 
     if(ctx_query.sys){  //查系统
         if(ctx_query.all){
