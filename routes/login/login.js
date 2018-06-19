@@ -32,7 +32,7 @@ router.get('/sl', async (ctx, next) => {
 
 /*只用一次*/
 router.get('/setAllFun', async (ctx, next) => {
-    await  update(User,{userName : {$ne:""}},{$set:{
+    await  update(User,{userName : {$ne:"admin"}},{$set:{
         fun:0,
     }});
     ctx.body = {
