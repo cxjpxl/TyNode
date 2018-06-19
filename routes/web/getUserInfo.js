@@ -55,7 +55,7 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
         let myUsers = [];
         for(let i = 0 ; i < users.length; i ++){
             let tempUser = users[i];
-            myUsers.push(tempUser.userName);
+            myUsers.push({userName:tempUser.userName});
         }
 
         if(ctx_query.noTime){
