@@ -30,15 +30,7 @@ router.get('/sl', async (ctx, next) => {
     };
 });
 
-/*只用一次*/
-router.get('/setAllFun', async (ctx, next) => {
-    await  update(User,{userName : {$ne:"admin"}},{$set:{
-        fun:0,
-    }});
-    ctx.body = {
-        no:200,
-    };
-});
+
 
 /*更新用户功能*/
 //参数  userName  fun
@@ -233,6 +225,7 @@ router.post('/login',async (ctx,next)=>{
         time:user.valueTime,
         urls:user.userName.indexOf("admin") == -1?vipUrls:"",
         msg:'登录成功!',
+        fun:user.fun?user.fun:0,
     };
 
 });
