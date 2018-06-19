@@ -110,8 +110,13 @@ router.post('/register',async (ctx,next)=>{
     if(user){
         msg = "时间修改成功";
     }
-    console.log(msg);
-    await update(User,{userName : userName},{$set:{valueTime:valueTime}});
+    if(body.fun==undefined || body.fun == null){
+        await update(User,{userName : userName},{$set:{valueTime:valueTime}});
+        msg = msg + "\n用户功能不变"
+    }else{
+        await update(User,{userName : userName},{$set:{valueTime:valueTime,fun:body.fun}});
+        msg = msg + "\n用户功能为"+body.fun;
+    }
     ctx.body = {
         no:200,
         time:valueTime,
