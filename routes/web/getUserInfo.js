@@ -40,7 +40,7 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
     let data ;
     let time = new Date().getTime()- 20*24*60*60*1000;
 
-    let users = await User.findAll({fun:1}).exec();
+    let users = await User.find({fun:1}).exec();
 
 
     //角球单独处理
