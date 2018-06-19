@@ -3,7 +3,7 @@
  */
 const router = require('koa-router')();
 const Web = require('../../models/Web').Web;
-
+const User = require('../../models/User').User;
 
 var request = require('request');
 const getOCRContent = require('tx-ai-utils').getOCRContent;
@@ -40,12 +40,28 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
     let data ;
     let time = new Date().getTime()- 20*24*60*60*1000;
 
+    let users = await User.findAll({fun:1}).exec();
+
+
     //角球单独处理
     if(ctx_query.jiaoQiu){
+        if(!users && users.length == 0){
+            ctx.body = {
+                msg:"暂无数据",
+            };
+            return ;
+        }
+
+        let myUsers = [];
+        for(let i = 0 ; i < users.length; i ++){
+            let tempUser = users[i];
+            myUsers.push(tempUser.userName);
+        }
+
         if(ctx_query.noTime){
-            data = await Web.find({fun:1}).sort({time:-1}).exec();
+            data = await Web.find({$or: user}).sort({time:-1}).exec();
         }else {
-            data = await Web.find({fun:1,time:{$gte:time}}).sort({time:-1}).exec();
+            data = await Web.find({$or: user,time:{$gte:time}}).sort({time:-1}).exec();
         }
         if(!data || data.length == 0){
             ctx.body = {
