@@ -35,9 +35,7 @@ router.post('/getCode', async (ctx, next) => {
 });
 
 
-//参数message   参数  user   pwd   all  sys
-//角球单独处理 jiaoQiu   noTime  角球接口就这两个参数
-router.get('/getUserInfo', async (ctx, next) => {
+router.get('/getJiaoQiuInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
     let data ;
     let time = new Date().getTime()- 20*24*60*60*1000;
@@ -71,9 +69,21 @@ router.get('/getUserInfo', async (ctx, next) => {
 
         }
         ctx.downloadXLS(doc,'web');
-      return ;
+        return ;
+    }else {
+        ctx.body = {
+            msg:"参数错误",
+        };
     }
+});
 
+
+//参数message   参数  user   pwd   all  sys
+//角球单独处理 jiaoQiu   noTime  角球接口就这两个参数
+router.get('/getUserInfo', async (ctx, next) => {
+    let ctx_query = ctx.query;
+    let data ;
+    let time = new Date().getTime()- 20*24*60*60*1000;
 
     let user = [
         {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},{userName:"admin4"},
