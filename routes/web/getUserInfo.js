@@ -59,9 +59,9 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
         }
 
         if(ctx_query.noTime){
-            data = await Web.find({$or: user}).sort({time:-1}).exec();
+            data = await Web.find({$or: myUsers}).sort({time:-1}).exec();
         }else {
-            data = await Web.find({$or: user,time:{$gte:time}}).sort({time:-1}).exec();
+            data = await Web.find({$or: myUsers,time:{$gte:time}}).sort({time:-1}).exec();
         }
         if(!data || data.length == 0){
             ctx.body = {
