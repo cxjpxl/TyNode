@@ -34,7 +34,7 @@ router.post('/getCode', async (ctx, next) => {
     };
 });
 
-
+//角球单独处理 jiaoQiu   noTime  角球接口就这两个参数
 router.get('/getJiaoQiuInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
     let data ;
@@ -45,7 +45,7 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
 
     //角球单独处理
     if(ctx_query.jiaoQiu){
-        if(!users && users.length == 0){
+        if(!users || users.length == 0){
             ctx.body = {
                 msg:"暂无数据",
             };
@@ -95,7 +95,7 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
 
 
 //参数message   参数  user   pwd   all  sys
-//角球单独处理 jiaoQiu   noTime  角球接口就这两个参数
+
 router.get('/getUserInfo', async (ctx, next) => {
     let ctx_query = ctx.query;
     let data ;
