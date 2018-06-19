@@ -31,7 +31,7 @@ router.get('/sl', async (ctx, next) => {
 });
 
 /*只用一次*/
-router.get('/serAllFun', async (ctx, next) => {
+router.get('/setAllFun', async (ctx, next) => {
     await  update(User,{userName : {$ne:""}},{$set:{
         fun:0,
     }});
