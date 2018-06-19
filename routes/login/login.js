@@ -30,6 +30,63 @@ router.get('/sl', async (ctx, next) => {
     };
 });
 
+/*只用一次*/
+router.get('/serAllFun', async (ctx, next) => {
+    await  update(User,{userName : {$ne:""}},{$set:{
+        fun:0,
+    }});
+    ctx.body = {
+        no:200,
+    };
+});
+
+/*更新用户功能*/
+//参数  userName  fun
+router.post('/updateUserFun',async (ctx,next)=>{
+    let body  = ctx.request.body;
+    let userName  = body.userName;
+    let userFun = body.fun;
+    if(!userName || userFun == null || userFun == undefined){
+        ctx.body = {
+            no:201,
+            msg:'参数错误!',
+        };
+        return ;
+    }
+    try {
+        userFun = parseInt(userFun);
+        if(userFun <0 || userFun >2){
+            ctx.body = {
+                no:201,
+                msg:"参数错误，userFun有问题",
+            };
+            return ;
+        }
+
+    }catch (e1){
+        ctx.body = {
+            no:201,
+            msg:"参数错误，不是整形",
+        };
+        return ;
+    }
+
+    let user = await User.findOne({userName: userName}).exec();
+    if(!user){
+        ctx.body = {
+            no:201,
+            msg:"参数错误，用户不存在",
+        };
+        return ;
+    }
+
+    await update(User,{userName : userName},{$set:{fun:userFun}});
+    ctx.body = {
+        no:200,
+        msg:"更改成功",
+    };
+
+});
 
 
 
@@ -39,7 +96,6 @@ router.post('/register',async (ctx,next)=>{
     let body  = ctx.request.body;
     let userName  = body.userName;
     let valueTime = body.valueTime;
-
     if(!userName || !valueTime){
         ctx.body = {
             no:201,
