@@ -64,7 +64,7 @@ router.post('/updateUserFun',async (ctx,next)=>{
     }
 
     let user = await User.findOne({userName: userName}).exec();
-    if(!user){
+    if(!user||!user.userName){
         ctx.body = {
             no:201,
             msg:"参数错误，用户不存在",
