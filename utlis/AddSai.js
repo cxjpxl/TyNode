@@ -541,7 +541,6 @@ function  getSaiList() {
     addSaiName("巴西佩洛塔斯", "布拉希尔佩洛塔斯RS",data);
     addSaiName("法林明高", "法林明高RJ",data);
     addSaiName("丹波SC", "甸普",data);
-    addSaiName("布尔诺", "泽伯约维卡般奴",data);
     addSaiName("MFK 斯卡利察", "斯卡利卡",data);
     addSaiName("拉賈马特魯港", "阿尔拉加马特鲁港",data);
     addSaiName("高士路 RS", "高士路",data);
@@ -2491,7 +2490,6 @@ function  getSaiList() {
     addSaiName("夏洛特鹰队", "夏洛特鹰",data);
     addSaiName("理海谷联音速", "理海谷联",data);
     addSaiName("文图拉县", "文图拉考迪菲优升",data);
-
     /********************/
     let counter = 0;
     for(let key in data) counter++;
