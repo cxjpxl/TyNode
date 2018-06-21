@@ -600,7 +600,6 @@ function  getSaiList() {
     addSaiName("彼辛度", "帕桑度PA",data);
     addSaiName("Parauapebas FC", "帕劳阿佩巴斯PA",data);
     addSaiName("Aparecidense GO", "阿帕雷西登瑟GO",data);
-    addSaiName("戈亚斯GO", "奎亚斯GO",data);
     addSaiName("Uniclinic AC CE", "尤尼克立尼CE",data);
     addSaiName("福塔雷萨", "福塔雷萨CE",data);
     addSaiName("法林明高阿爾科韋迪PE", "明高PE",data);
@@ -1552,7 +1551,7 @@ function  getSaiList() {
     addSaiName("Paganese", "帕加尼斯",data);
     addSaiName("NK 克尔什科", "克尔什科",data);
     addSaiName("塞利根普腾", "塞利根波滕",data);
-    addSaiName("恩高斯达Am", "印戈斯塔德青年队",data);
+    addSaiName("恩高斯达Am", "因戈尔施塔特青年队",data);
     addSaiName("拜列治", "拜罗伊特",data);
     addSaiName("皮平斯列特", "皮皮斯里德",data);
     addSaiName("1860慕尼黑", "慕尼黑1860",data);
@@ -1806,7 +1805,7 @@ function  getSaiList() {
     addSaiName("馬司法特", "马斯富阿基曼",data);
     addSaiName("加拉波沃", "贝迪夫格勒博沃",data);
     addSaiName("NFA Kaunas", "NFA卡奥拿斯",data);
-    addSaiName("特拉凱 B ", "达卡B队",data);
+    addSaiName("特拉凱 B ", "特拉凯B队",data);
     addSaiName("高斯錫火車頭", "柯西斯火车头",data);
     addSaiName("諾瓦威斯", "斯比锡卡",data);
     addSaiName("维多利亚 奥特罗克维斯", "维多利亚奥特罗科维采",data);
@@ -1853,7 +1852,7 @@ function  getSaiList() {
     addSaiName("BK 佛瓦德", "佛瓦德",data);
     addSaiName("尼科平", "尼科平斯",data);
     addSaiName("乌梅亚", "乌米亚",data);
-    addSaiName("斯克维德", "史柯瓦",data);
+    addSaiName("斯克维德", "史柯瓦德",data);
     addSaiName("伦格斯凯尔", "卢恩斯基尔",data);
     addSaiName("恩厄尔霍尔姆", "安其尔何马士",data);
     addSaiName("埃斯基爾斯蒂納足球會", "AFC埃斯基尔斯蒂纳",data);
@@ -2517,6 +2516,22 @@ function  getSaiList() {
     addSaiName("西切斯特聯", "威彻斯特联",data);
     addSaiName("OSA FC", "OSA",data);
     addSaiName("尤尼昂卡拉雷联", "尤尼昂",data);
+    addSaiName("阿兰德", "奥兰联",data);
+    addSaiName("索格达 2", "桑恩达B队",data);
+    addSaiName("PK-35万塔", "PK35万达",data);
+    addSaiName("ONS奥卢", "ONS奥鲁",data);
+    addSaiName("帕洛基沙特", "帕罗基桑特",data);
+    addSaiName("埃斯基尔斯蒂纳", "艾基图纳联",data);
+    addSaiName("維特斯喬", "维特斯求",data);
+    addSaiName("奧斯特桑斯", "IFK奥斯特桑斯",data);
+    addSaiName("呂勒奧", "IFK吕勒奥",data);
+    addSaiName("纽若兹", "纽罗兹",data);
+    addSaiName("Malmo City FC", "马尔默城",data);
+    addSaiName("科斯達德", "科斯达德",data);
+    addSaiName("候卡尔夏拿佐杜亚", "豪卡尔",data);
+    addSaiName("Goias GO", "奎亚斯GO",data);
+    addSaiName("费古埃伦斯SC", "费古伦斯SC",data);
+    addSaiName("福斯卡塔拉塔斯", "卡塔拉塔斯PR",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
