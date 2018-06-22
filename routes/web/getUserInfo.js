@@ -40,24 +40,11 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
     let data ;
     let time = new Date().getTime()- 20*24*60*60*1000;
 
-    let users = await User.find({fun:1}).exec();
-
-
+    let myUsers = [
+        {userName:"admin6001"}, {userName:"admin6002"},
+    ];
     //角球单独处理
     if(ctx_query.jiaoQiu){
-        if(!users || users.length == 0){
-            ctx.body = {
-                msg:"暂无数据",
-            };
-            return ;
-        }
-
-        let myUsers = [];
-        for(let i = 0 ; i < users.length; i ++){
-            let tempUser = users[i];
-            myUsers.push({userName:tempUser.userName});
-        }
-
         if(ctx_query.noTime){
             data = await Web.find({$or: myUsers}).sort({time:-1}).exec();
         }else {
@@ -108,6 +95,7 @@ router.get('/getUserInfo', async (ctx, next) => {
         {userName:"admin1001"}, {userName:"admin1002"}, {userName:"admin1003"},{userName:"admin1004"},
         {userName:"admin2001"}, {userName:"admin2002"}, {userName:"admin2003"},{userName:"admin2004"},
         {userName:"admin3001"},
+        {userName:"admin5001"},{userName:"admin5002"},{userName:"admin5003"},
         {userName:"VIP1"},{userName:"VIP4"},{userName:"VIP5"},{userName:"VIP3"}
         ];
     if(ctx_query.user){
