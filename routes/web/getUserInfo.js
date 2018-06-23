@@ -41,7 +41,7 @@ router.get('/getJiaoQiuInfo', async (ctx, next) => {
     let time = new Date().getTime()- 20*24*60*60*1000;
 
     let myUsers = [
-        {userName:"admin6001"}, {userName:"admin6002"},
+        {userName:"VIP11"}, {userName:"VIP10"},
     ];
     //角球单独处理
     if(ctx_query.jiaoQiu){
@@ -96,6 +96,7 @@ router.get('/getUserInfo', async (ctx, next) => {
         {userName:"admin2001"}, {userName:"admin2002"}, {userName:"admin2003"},{userName:"admin2004"},
         {userName:"admin3001"},
         {userName:"admin5001"},{userName:"admin5002"},{userName:"admin5003"},
+        {userName:"VIP11"}, {userName:"VIP10"},
         {userName:"VIP1"},{userName:"VIP4"},{userName:"VIP5"},{userName:"VIP3"}
         ];
     if(ctx_query.user){
