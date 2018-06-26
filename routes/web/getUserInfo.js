@@ -10,6 +10,14 @@ const getOCRContent = require('tx-ai-utils').getOCRContent;
 
 
 
+//角球单独处理 jiaoQiu   noTime  角球接口就这两个参数
+router.get('/getTime', async (ctx, next) => {
+        ctx.body = {
+            no:200,
+            time:new Date(),
+        };
+});
+
 
 /**
  *  参数   base64:""
