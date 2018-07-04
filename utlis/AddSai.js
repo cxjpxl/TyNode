@@ -2536,6 +2536,8 @@ function  getSaiList() {
     addSaiName("阿德萊德联 (青年队)", "阿德莱德联(后备)",data);
     addSaiName("新城堡联(青年队)", "纽卡斯尔喷气机(青年)",data);
     addSaiName("播磨阿尔比恩", "哈瑞玛艾比安",data);
+    addSaiName("京都不死鳥", "京都不死鸟",data);
+    addSaiName("阿德莱德城", "德莱得城",data);
 
     /********************/
     let counter = 0;
