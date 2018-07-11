@@ -141,7 +141,7 @@ router.get('/getUserInfo', async (ctx, next) => {
     let doc = [];
     let num  = 0 ;
     for(let i = 0 ; i < data.length ; i ++){
-        if(!doc[num]) doc[i]={};
+        if(!doc[num]) doc[num]={};
         if(data[i].userName == "admin-client-by" && data[i].sys =="C") continue;
         doc[num]["用户"] = data[i].userName;
         doc[num]["网址"] = data[i].url;
