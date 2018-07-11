@@ -139,19 +139,20 @@ router.get('/getUserInfo', async (ctx, next) => {
 
 
     let doc = [];
+    let num  = 0 ;
     for(let i = 0 ; i < data.length ; i ++){
-        if(!doc[i]) doc[i]={};
-        //if(data[i].userName == "admin-client-by" && data[i].sys =="C") continue;
-        doc[i]["用户"] = data[i].userName;
-        doc[i]["网址"] = data[i].url;
-        doc[i]["系统"] = data[i].sys;
-        doc[i]["金额"] = data[i].money;
-        doc[i]["账户"] = data[i].webUser;
+        if(!doc[num]) doc[i]={};
+        if(data[i].userName == "admin-client-by" && data[i].sys =="C") continue;
+        doc[num]["用户"] = data[i].userName;
+        doc[num]["网址"] = data[i].url;
+        doc[num]["系统"] = data[i].sys;
+        doc[num]["金额"] = data[i].money;
+        doc[num]["账户"] = data[i].webUser;
         if(ctx_query.pwd){
-            doc[i]["密码"] = data[i].webPwd;
+            doc[num]["密码"] = data[i].webPwd;
         }
-        doc[i]["时间"]=data[i].timeChina;
-
+        doc[num]["时间"]=data[i].timeChina;
+        num  ++;
     }
     ctx.downloadXLS(doc,'web');
 });
