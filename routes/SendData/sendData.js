@@ -87,6 +87,7 @@ router.post('/sendData', async (ctx, next) => {
 
 
     if(type == 2){
+        console.log("有事件发送过来!");
         await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
             message:message,

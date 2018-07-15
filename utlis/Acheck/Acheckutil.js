@@ -64,17 +64,17 @@ async function parse(allobj){
                     // console.log('jjjjj',j)
                     // if(j[13]=='0'||j[13]=='2')console.log('j...',ADATA)
                     //比赛比分发生变化 j[13]  0,1表示上半场，2,3表示下半场；0表示上半场刚刚开始，2表示下半场刚刚开始
-                    console.log(`联赛：${j[2]}-产生进球 `);//比分发生变化-------:
+                    //console.log(`联赛：${j[2]}-产生进球 `);//比分发生变化-------:
                     let time =  `${(j[13] == "1"||j[13]=='0')?parseInt(minute):parseInt(minute)+45}`;//比赛进行时间
-                    console.log(`${j[5]}-${j[8]}::${j[14]}-${j[15]} 比赛进行时间：${time}`);
+                  //  console.log(`${j[5]}-${j[8]}::${j[14]}-${j[15]} 比赛进行时间：${time}`);
                     //主队或客队比分发生变化
-                    console.log(`${score1change?'主队':"客队"}进球：${score1change?j[5]:j[8]}，比分为${score1change?j[14]:j[15]}`)
+                  //  console.log(`${score1change?'主队':"客队"}进球：${score1change?j[5]:j[8]}，比分为${score1change?j[14]:j[15]}`)
                     //上半场	   //下半场
                     if(/[0123]/.test(j[13])){
                         // console.log('进来。。。')
                         //0,2为上下半场比赛刚刚开始的时间,这个可以不再考虑范围内
                         if (time<START||time>END) {
-                            console.log(`时间条件不满足:${START}~${END}\n`)
+                        //    console.log(`时间条件不满足:${START}~${END}\n`)
                             break;
                         }
                         //callback之前先匹配一下球队,用A系统的比赛球队来返回
@@ -96,13 +96,13 @@ async function parse(allobj){
                             }
 
                         }
-                        console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
+                       // console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
                         if(obj&&!obj.direct){
-                            console.log(`-----网站球队方向与A系统的球队方向相反-----`)
+                         //   console.log(`-----网站球队方向与A系统的球队方向相反-----`)
                         }
                         obj&&CALLBACK&&CALLBACK(mname,isMasterIn,mscore,gscore,master,guest,time);
                     }
-                    console.log(`\n`)
+                 //   console.log(`\n`)
                     break;
                 }
             }
@@ -222,7 +222,7 @@ function runtest(){
     // console.log('结果----',obj)
     // console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
     if(obj&&!obj.direct){
-        console.log(`网站球队方向与A系统的球队方向相反`)
+     //   console.log(`网站球队方向与A系统的球队方向相反`)
     }
 }
 // runtest()
@@ -292,7 +292,7 @@ function checkParams(j,time,state){
             obj=getTeamRadio(obj,item);
         }
     }
-    console.log('结果：',obj)
+ //   console.log('结果：',obj)
     return obj.obj;
 }
 //获取两个匹配中较大的一个

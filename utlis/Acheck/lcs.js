@@ -8,9 +8,9 @@ function print(dp){
             x+=`${i},`
         }
     }
-    console.log('-',x.substring(0,x.length-1))
+    //console.log('-',x.substring(0,x.length-1))
     for(let i in dp){
-        console.log(i+'.',JSON.stringify(dp[i]));
+    //    console.log(i+'.',JSON.stringify(dp[i]));
     }
 }
 /*******************************************
