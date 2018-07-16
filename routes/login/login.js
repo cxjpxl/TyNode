@@ -22,7 +22,11 @@ router.get('/sl', async (ctx, next) => {
         }catch (e){
             console.log(e.toString());
         }
+        console.log("全部连接",global.ws.server.clients)
     }
+
+
+
     ctx.body = {
         no:200,
         length:global.ws?global.ws.server.clients.size:0,
