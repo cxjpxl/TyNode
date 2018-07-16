@@ -231,12 +231,13 @@ router.post('/sendData', async (ctx, next) => {
                     data,
                     curTime:time,
                 };
-
+                console.log("准备发送前:",curData);
                if(global.ws&& global.ws.server&& global.ws.server.clients){
                    try {
                        global.ws.server.clients.forEach(ws=>{
                            try {
                                if(ws&ws.myTag){
+                                   console.log("准备人:",ws.myTag);
                                    ws.send(JSON.stringify(curData));
                                }
                            }catch (e1){
