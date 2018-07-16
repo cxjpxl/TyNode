@@ -240,6 +240,9 @@ router.post('/sendData', async (ctx, next) => {
                                    ws.send(JSON.stringify(curData));
                                }
                            }catch (e1){
+                               if(ws && ws.myTag){
+                                   console.log(ws.myTag+"发送失败");
+                               }
                                console.log(e1.toString());
                            }
                        });
