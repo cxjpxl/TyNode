@@ -20,6 +20,7 @@ let cxjDbCon = mongoose.createConnection(mongodb.url,{
         useMongoClient: true,
     }
 );
+global.ws = null;
 global.cxjDbCon = cxjDbCon;
 console.log("mongo connected");
 /*********************链接webSocket*************************/
