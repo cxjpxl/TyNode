@@ -251,6 +251,9 @@ router.post('/sendData', async (ctx, next) => {
                    }
                }
             }
+            else{
+                console.log("找不到比赛队伍！！！");
+            }
       // }
     }
 
