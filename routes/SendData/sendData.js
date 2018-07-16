@@ -236,7 +236,7 @@ router.post('/sendData', async (ctx, next) => {
                    try {
                        global.ws.server.clients.forEach(ws=>{
                            try {
-                               if(ws){
+                               if(ws&ws.myTag){
                                    ws.send(JSON.stringify(curData));
                                }
                            }catch (e1){

@@ -85,7 +85,7 @@ acheck(1,100,(league,state,score1,score2,tm1,tm2,gametime)=>{
         try {
             global.ws.server.clients.forEach(ws=>{
                 try {
-                    if(ws){
+                    if(ws&&ws.myTag){
                         ws.send(JSON.stringify(data));
                     }
                 }catch (e1){
