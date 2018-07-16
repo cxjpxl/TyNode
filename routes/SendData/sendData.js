@@ -244,7 +244,9 @@ router.post('/sendData', async (ctx, next) => {
                                    ws.send(JSON.stringify(curData));
                                }
                            }catch (e1){
-
+                               if(ws && ws.myTag){
+                                   console.log("没有连接:",ws.myTag);
+                               }
                                console.log(e1.toString());
                            }
                        });
