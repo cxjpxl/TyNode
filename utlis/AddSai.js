@@ -61,7 +61,7 @@ function  getSaiList() {
     addSaiName("维斯瓦克拉科夫", "克拉科夫",data);
     addSaiName("安东米度士", "亚图米图斯",data);
     addSaiName("利瓦迪亚高斯", "利云达高斯",data);
-    addSaiName("伊安尼那", "基亚连拿",data);
+    addSaiName("伊安尼那", "帕斯基安尼纳",data);
     addSaiName("拉密亚", "拉米亚",data);
     addSaiName("艾路卡", "阿鲁卡",data);
     addSaiName("歷索斯", "雷克索西斯",data);
@@ -123,7 +123,7 @@ function  getSaiList() {
     addSaiName("布莱克本流浪", "布力般流浪",data);
     addSaiName("卡莱尔", "卡素尔",data);
     addSaiName("埃克塞特", "艾斯特城",data);
-    addSaiName("格兰森林", "格连森林",data);
+    addSaiName("格兰森林", "格兰森林流浪者",data);
     addSaiName("弗莱德", "菲尔德",data);
     addSaiName("坚士波罗", "真斯布洛治",data);
     addSaiName("乔利", "乔勒伊",data);
@@ -2558,6 +2558,12 @@ function  getSaiList() {
     addSaiName("杜迪蘭治", "F91 杜迪兰治",data);
     addSaiName("慕頓", "格里诺克慕顿",data);
     addSaiName("科尔多瓦中央队", "科尔多瓦圣地亚哥中央队",data);
+    addSaiName("Afjet Afyonspor", "阿菲永士邦",data);
+    addSaiName("甘士比", "格里姆斯比",data);
+    addSaiName("艾迪索特镇", "艾迪索特",data);
+    addSaiName("艾特宁咸", "艾青洽",data);
+    addSaiName("布雷诺", "弗布罗",data);
+    addSaiName("吉奥競技GO", "戈亚尼恩斯",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
