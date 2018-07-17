@@ -67,7 +67,7 @@ router.post('/sendData', async (ctx, next) => {
         let dataArray = JSON5.parse(message);
         if(dataArray.length > 0 ){
             //删除数据
-          /*  await Game.remove({}).exec();
+         /*   await Game.remove({}).exec();
             //存数据
             for(let i = 0 ; i < dataArray.length; i++){
                 let dataItem = dataArray[i];
@@ -90,13 +90,13 @@ router.post('/sendData', async (ctx, next) => {
     if(type == 2){
         console.log("data",type,message);
         console.log("有事件发送过来!");
-      /*  await update(Message,{time:new Date().getTime()},{$set:{
+       /* await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
             message:message,
         }});*/
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
-      //  let game = await Game.findOne({mid: mid}).exec();
+     //  let game1 = await Game.findOne({mid: mid}).exec();
 
         if(!global.biSaiArray || global.biSaiArray.length == 0){
             ctx.body={
@@ -112,7 +112,7 @@ router.post('/sendData', async (ctx, next) => {
             let dataItem = biSaiCatchs[i];
             let teamName = dataItem["teamName"];
             let myMid = dataItem["idset"][0]+"";
-            if(myMid == mid){
+             if(myMid == mid){
                 game ={};
                 game.nameH = teamName[0];
                 game.nameG = teamName[1];
@@ -123,7 +123,7 @@ router.post('/sendData', async (ctx, next) => {
             }
         }
         biSaiCatchs = null; //释放数据
-        let time = new Date().getTime();
+        console.log("game",game);
         if(game&&game.mid){
             console.log("主队:"+game.nameH+"||客队："+ game.nameG);
             if(global.lianSaiData){
@@ -244,7 +244,7 @@ router.post('/sendData', async (ctx, next) => {
                 cmd:1,
                 game,
                 data,
-                curTime:time,
+                curTime:new Date().getTime(),
             };
             console.log("准备发送前:",curData);
             if(global.ws&& global.ws.server&& global.ws.server.clients){
