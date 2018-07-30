@@ -151,7 +151,7 @@ router.post('/login',async (ctx,next)=>{
     let version = body.version;
     let v = "V2.88"; //最新版本信息
 
-    let v1 = "V2.88";
+    let v1 = "V2.90";
 
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
     if(!version ||(version!=v1 && version!=v) ){
