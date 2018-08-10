@@ -268,12 +268,10 @@ router.post('/queryUser',async (ctx,next)=>{
         };
         return ;
     }
-    let webs = await Web.find({userName: userName}).exec();
     ctx.body = {
         no:200,
         msg:'成功!',
         user,
-        webs
     };
 
 });
