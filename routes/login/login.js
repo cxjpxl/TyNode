@@ -37,7 +37,7 @@ router.get('/sl', async (ctx, next) => {
 
 
 /*更新用户功能*/
-//参数  userName  fun
+//参数  userName  fun   hasJinQiuFun
 router.post('/updateUserFun',async (ctx,next)=>{
     let body  = ctx.request.body;
     let userName  = body.userName;
@@ -76,7 +76,14 @@ router.post('/updateUserFun',async (ctx,next)=>{
         return ;
     }
 
-    await update(User,{userName : userName},{$set:{fun:userFun}});
+    let hasJinQiuFun = body.hasJinQiuFun;
+
+    if(hasJinQiuFun!=null){
+        await update(User,{userName : userName},{$set:{fun:userFun,hasJinQiuFun:hasJinQiuFun}});  //是否有进入功能
+    }else {
+        await update(User,{userName : userName},{$set:{fun:userFun}});
+    }
+
     ctx.body = {
         no:200,
         msg:"更改成功",
@@ -235,6 +242,7 @@ router.post('/login',async (ctx,next)=>{
         urls:user.userName.indexOf("admin") == -1?vipUrls:"",
         msg:'登录成功!',
         fun:user.fun?user.fun:0,
+        hasJinQiuFun:user.hasJinQiuFun?user.hasJinQiuFun:false, //是否有进球的功能
     };
 
 });

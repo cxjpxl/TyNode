@@ -2591,6 +2591,8 @@ function  getSaiList() {
     addSaiName("尼达克", "波格尼尔德空",data);
     addSaiName("阿斯基伦夏普尔", "阿什凯泽夏普尔",data);
     addSaiName("飞燕诺", "费耶诺德",data);
+
+
     /********************/
     let counter = 0;
     for(let key in data) counter++;
