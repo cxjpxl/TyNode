@@ -108,7 +108,7 @@ router.get('/getUserInfo', async (ctx, next) => {
         {userName:"admin5001"},{userName:"admin5002"},{userName:"admin5003"},
         {userName:"VIP1"},{userName:"VIP2"},{userName:"VIP3"},{userName:"VIP4"},{userName:"VIP5"},
         {userName:"VIP6"},{userName:"VIP7"},{userName:"VIP8"},{userName:"VIP9"},
-        {userName:"VIP10"},{userName:"VIP11"},{userName:"VIP12"}, {userName:"VIP13"},
+        {userName:"VIP10"},{userName:"VIP11"},{userName:"VIP12"}, {userName:"VIP13"}, {userName:"VIP14"},
         ];
     if(ctx_query.user){
         user = [{userName:ctx_query.user}]

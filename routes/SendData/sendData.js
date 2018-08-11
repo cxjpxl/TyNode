@@ -67,7 +67,7 @@ router.post('/sendData', async (ctx, next) => {
         let dataArray = JSON5.parse(message);
         if(dataArray.length > 0 ){
             //删除数据
-         /*   await Game.remove({}).exec();
+            await Game.remove({}).exec();
             //存数据
             for(let i = 0 ; i < dataArray.length; i++){
                 let dataItem = dataArray[i];
@@ -81,32 +81,32 @@ router.post('/sendData', async (ctx, next) => {
                 let time = dataItem["gameTime"];
                 let g = new Game({nameH,nameG,leagueName,mid,time});
                 await g.save();
-            }*/
+            }
 
-            global.biSaiArray = dataArray;
+        //    global.biSaiArray = dataArray;
         }
     }
 
     if(type == 2){
-        console.log("data",type,message);
-        console.log("有事件发送过来!");
+     //   console.log("data",type,message);
+     //   console.log("有事件发送过来!");
         await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
             message:message,
         }});
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
-     //  let game1 = await Game.findOne({mid: mid}).exec();
+       let game = await Game.findOne({mid: mid}).exec();
 
-        if(!global.biSaiArray || global.biSaiArray.length == 0){
+       /* if(!global.biSaiArray || global.biSaiArray.length == 0){
             ctx.body={
                 no:200,
                 msg:'成功',
             };
             return ;
-        }
+        }*/
 
-        let biSaiCatchs = JSON.parse(JSON.stringify(global.biSaiArray));//复制一份数据   双缓存
+      /*  let biSaiCatchs = JSON.parse(JSON.stringify(global.biSaiArray));//复制一份数据   双缓存
         let game = null;
         for(let i = 0 ; i < biSaiCatchs.length; i++){
             let dataItem = biSaiCatchs[i];
@@ -123,7 +123,7 @@ router.post('/sendData', async (ctx, next) => {
             }
         }
         biSaiCatchs = null; //释放数据
-        console.log("game",game);
+        console.log("game",game);*/
         if(game&&game.mid){
             console.log("主队:"+game.nameH+"||客队："+ game.nameG);
             if(global.lianSaiData){
