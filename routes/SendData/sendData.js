@@ -90,10 +90,10 @@ router.post('/sendData', async (ctx, next) => {
     if(type == 2){
         console.log("data",type,message);
         console.log("有事件发送过来!");
-       /* await update(Message,{time:new Date().getTime()},{$set:{
+        await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
             message:message,
-        }});*/
+        }});
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
      //  let game1 = await Game.findOne({mid: mid}).exec();
