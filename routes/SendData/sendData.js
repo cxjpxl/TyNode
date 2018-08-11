@@ -122,8 +122,8 @@ router.post('/sendData', async (ctx, next) => {
                 break;
             }
         }
-        biSaiCatchs = null; //释放数据
-        console.log("game",game);*/
+        biSaiCatchs = null; //释放数据*/
+        console.log("game",game);
         if(game&&game.mid){
             console.log("主队:"+game.nameH+"||客队："+ game.nameG);
             if(global.lianSaiData){
