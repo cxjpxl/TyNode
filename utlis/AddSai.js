@@ -721,7 +721,7 @@ function  getSaiList() {
     addSaiName("甘美奥诺瓦里桑蒂诺", "甘美奥诺瓦里桑蒂诺SP",data);
     addSaiName("卡洛圣佩德鲁", "卡洛",data);
     addSaiName("拉斯禾拉斯", "乌拉坎拉斯埃拉斯",data);
-    addSaiName("国际立寐热SP", "国际利美拉SP",data);
+    addSaiName("国际立寐热SP", "国际里梅拉SP",data);
     addSaiName("CD 帕萨基纳", "帕萨奎纳",data);
     addSaiName("利斯菲体育会", "利斯菲体育会PE",data);
     addSaiName("阿福加杜斯", "阿福加杜斯PE",data);
@@ -834,7 +834,7 @@ function  getSaiList() {
     addSaiName("普尔城", "罗依斯顿",data);
     addSaiName("温盖特", "温葛特",data);
     addSaiName("曼彻斯特", "联曼足球会",data);
-    addSaiName("斯巴坦斯", "斯巴坦斯爱丁堡",data);
+    addSaiName("斯巴坦斯", "莱斯史巴登斯",data);
     addSaiName("艾爾佛莱頓", "阿尔费登",data);
     addSaiName("哈羅蓋特", "哈洛贾特",data);
     addSaiName("雷明頓", "莱明顿",data);
@@ -2609,8 +2609,24 @@ function  getSaiList() {
     addSaiName("Ruch Wysokie Mazowieckie", "鲁赫维索凯",data);
     addSaiName("Bron Radom", "布朗拉多姆",data);
     addSaiName("Swit Skolwin Szczecin", "斯科尔文什切青",data);
-
-    
+    addSaiName("馬迪堡", "马格德堡",data);
+    addSaiName("慕士達", "普鲁士明斯特",data);
+    addSaiName("SpVgg Ansbach", "安斯巴赫",data);
+    addSaiName("瓦爾斯格呂奧", "瓦尔斯格吕纳",data);
+    addSaiName("TSV 席尔克泽", "席尔克",data);
+    addSaiName("TSV Bordesholm", "博德斯霍尔姆",data);
+    addSaiName("Turk Gucu Friedberg", "土耳古库弗里德伯格",data);
+    addSaiName("Al Fayha FC", "费哈",data);
+    addSaiName("FC Eddersheim", "埃德尔斯海姆",data);
+    addSaiName("鲍纳塔尔", "保纳塔尔",data);
+    addSaiName("FC Monheim", "蒙海姆",data);
+    addSaiName("TV Jahn Hiesfeld", "贾恩希斯菲尔德",data);
+    addSaiName("C Velbert", "SC维柏特",data);
+    addSaiName("TSV Meerbusch", "梅尔布施",data);
+    addSaiName("克莱韦", "克雷夫",data);
+    addSaiName("里奧普雷图SP", "里奥沛图SP",data);
+    addSaiName("沙拉捷禾", "撒拉捷沃",data);
+    addSaiName("達寧頓", "达宁顿",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
