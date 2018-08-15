@@ -816,7 +816,6 @@ function  getSaiList() {
     addSaiName("奥利恩特", "欧里恩特",data);
     addSaiName("廸波特斯", "迪波特斯",data);
     addSaiName("萨连斯基莫斯塔", "瑞尼斯基",data);
-    addSaiName("赫维迪尼", "安卡兰",data);
     addSaiName("SAI (EZ)", "SAI加尔各答",data);
     addSaiName("河内", "河内足球俱乐部",data);
     addSaiName("Football School of India", "印度足球学校",data);
@@ -1859,7 +1858,6 @@ function  getSaiList() {
     addSaiName("SC Dnipro-1", "SC迪尼普",data);
     addSaiName("迈萨非", "马萨菲",data);
     addSaiName("哈尔科夫", "克夏基夫",data);
-    addSaiName("TSV Schwaben Augsburg", "士瓦本奥斯堡",data);
     addSaiName("估特德", "IK高首德",data);
     addSaiName("哈萨侯姆", "哈沙侯姆IF",data);
     addSaiName("索維斯本", "索维斯本GoIF",data);
@@ -2218,7 +2216,6 @@ function  getSaiList() {
     addSaiName("顺化", "顺化足球俱乐部",data);
     addSaiName("森布鲁基希讷乌", "森布鲁",data);
     addSaiName("Uganda", "乌干达",data);
-    addSaiName("Wurzburger Kickers Am", "维尔茨堡踢球者青年队",data);
     addSaiName("施塔保拉", "斯达德帕鲁拉",data);
     addSaiName("達比柏林", "泰尼丝柏林",data);
     /////////////////////////5.19///////////////////////////////
@@ -2591,6 +2588,29 @@ function  getSaiList() {
     addSaiName("Yenisey Krasnoyarsk", "叶尼塞",data);
     addSaiName("尤尼华克鲁日", "古积大学",data);
     addSaiName("IFK诺科平", "诺科平",data);
+
+
+    addSaiName("施坡姆臣", "特库古库阿塔斯普",data);
+    addSaiName("南韓", "韩国",data);
+    addSaiName("北韩", "朝鲜",data);
+    addSaiName("NK Ankaran Postojna", "安卡兰",data);
+    addSaiName("ASK Bravo Publikum", "布拉沃",data);
+    addSaiName("NK Plama Podgrad", "帕拉马波德格勒",data);
+    addSaiName("SD Videm", "维代姆",data);
+    addSaiName("ND Bilje", "比列",data);
+    addSaiName("NK Grad", "格拉德",data);
+    addSaiName("波洛尼亚史洛达", "波罗尼亚斯若达",data);
+    addSaiName("Baltyk Koszalin", "巴尔特克科沙林",data);
+    addSaiName("Chemik Bydgoszcz", "彻米克比得哥什",data);
+    addSaiName("科特维卡", "克特威卡",data);
+    addSaiName("ASV Neumarkt", "诺伊马尔克特",data);
+    addSaiName("维尔茨堡踢球者青年队", "維爾茨堡踢球者青年队",data);
+    addSaiName("斯维施", "瓦达希维切",data);
+    addSaiName("Ruch Wysokie Mazowieckie", "鲁赫维索凯",data);
+    addSaiName("Bron Radom", "布朗拉多姆",data);
+    addSaiName("Swit Skolwin Szczecin", "斯科尔文什切青",data);
+
+    
     /********************/
     let counter = 0;
     for(let key in data) counter++;
