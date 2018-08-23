@@ -466,7 +466,7 @@ function  getSaiList() {
     addSaiName("山度士", "山度士SP",data);
     addSaiName("东北联盟", "东北联",data);
     addSaiName("西亚詹美甘", "史拉加梅罕",data);
-    addSaiName("阿汉", "紮巴汉",data);
+    addSaiName("紮巴汉", "扎巴汉",data);
     addSaiName("塞柏", "塞帕卡拉杰",data);
     addSaiName("最卡宾", "泽维卡平联",data);
     addSaiName("Shan United FC", "掸联",data);
@@ -2643,7 +2643,6 @@ function  getSaiList() {
     addSaiName("希蒙", "赫尔蒙德",data);
     addSaiName("隆姆", "洛默尔",data);
     addSaiName("卡納芬", "卡纳芬城",data);
-
     /********************/
     let counter = 0;
     for(let key in data) counter++;
