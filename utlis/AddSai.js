@@ -2643,6 +2643,13 @@ function  getSaiList() {
     addSaiName("希蒙", "赫尔蒙德",data);
     addSaiName("隆姆", "洛默尔",data);
     addSaiName("卡納芬", "卡纳芬城",data);
+    addSaiName("FC Ararat Armenia 2", "阿拉特阿美尼亚II队",data);
+    addSaiName("FC Yerevan", "叶里温",data);
+    addSaiName("Neftchi Baku 2", "巴库尼菲治II队",data);
+    addSaiName("Sabah FK 2", "沙巴巴库II队",data);
+    addSaiName("Zira Baku 2", "兹拉II队",data);
+    addSaiName("Sabail FK 2", "萨巴伊II队",data);
+    addSaiName("Qarabag Aghdam 2", "卡拉巴克II队",data);
     /********************/
     let counter = 0;
     for(let key in data) counter++;
