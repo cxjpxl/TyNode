@@ -53,7 +53,7 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
-    if(type !=1 && type !=2){
+    if(type !=1 && type !=2 && type !=3){
         console.log("type类型错误!");
         ctx.body={
             no:203,
@@ -84,6 +84,27 @@ router.post('/sendData', async (ctx, next) => {
             }
 
         //    global.biSaiArray = dataArray;
+        }
+    }
+
+    if(type == 3){
+        let dataArray = JSON5.parse(message);
+        if(dataArray.length > 0 ){
+            //删除数据
+            await Game.remove({}).exec();
+            //存数据
+            for(let i = 0 ; i < dataArray.length; i++){
+                let dataItem = dataArray[i];
+                let leagueName = dataItem["leagueName"];
+                let nameH = dataItem["nameH"];
+                let nameG = dataItem["nameG"];
+                let mid = dataItem["mid"];
+                let time = dataItem["gameTime"]?dataItem["gameTime"]:"";
+                let g = new Game({nameH,nameG,leagueName,mid,time});
+                await g.save();
+            }
+
+            //    global.biSaiArray = dataArray;
         }
     }
 
