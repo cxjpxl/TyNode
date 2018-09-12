@@ -98,7 +98,7 @@ router.post('/sendData', async (ctx, next) => {
                 let leagueName = dataItem["leagueName"];
                 let nameH = dataItem["nameH"];
                 let nameG = dataItem["nameG"];
-                let mid = dataItem["mid"];
+                let mid = dataItem["mid"]+"";
                 let time = dataItem["gameTime"]?dataItem["gameTime"]:"";
                 let g = new Game({nameH,nameG,leagueName,mid,time});
                 await g.save();
