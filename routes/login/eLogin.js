@@ -66,7 +66,7 @@ router.post('/e_login',async (ctx,next)=>{
     let userName  = body.userName;
     let comId = body.comId;
     let version = body.version;
-    console.log(version,comId,body);
+
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
     if(!version ||(version!=v1 && version!=v) ){
         ctx.body = {
@@ -76,7 +76,7 @@ router.post('/e_login',async (ctx,next)=>{
         return ;
     }
 
-
+    console.log("1");
     if(!userName||!comId || comId.length === 0){
         ctx.body = {
             no:201,
@@ -84,7 +84,7 @@ router.post('/e_login',async (ctx,next)=>{
         };
         return ;
     }
-
+    console.log("2");
     let eUser = await EUser.findOne({comId: comId}).exec();
     if(eUser && eUser.userName != userName){
         ctx.body = {
@@ -102,7 +102,7 @@ router.post('/e_login',async (ctx,next)=>{
         };
         return ;
     }
-
+    console.log("3");
     if(eUser.comId.length==0){
         //用户第一次注册后的登录
         await  update(EUser,{userName : userName},{$set:{
@@ -117,7 +117,7 @@ router.post('/e_login',async (ctx,next)=>{
 
     }
 
-
+    console.log("4");
     let currentTime  = new Date().getTime();
     if(eUser.valueTime < currentTime){
         ctx.body = {
@@ -126,13 +126,13 @@ router.post('/e_login',async (ctx,next)=>{
         };
         return ;
     }
-
+    console.log("5");
     currentTime = currentTime +"";
     await  update(eUser,{userName : userName},{$set:{
         loginTime:currentTime,
     }});
 
-
+    console.log("6");
     ctx.body = {
         no:200,
         time:eUser.valueTime,
