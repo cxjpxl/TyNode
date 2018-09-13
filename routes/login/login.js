@@ -5,6 +5,8 @@ const router = require('koa-router')();
 const User = require('../../models/User').User;
 const Urls = require('../../models/Urls').Urls;
 const Web = require('../../models/Web').Web;
+let v = require('../../utlis/config').v;
+let v1 = require('../../utlis/config').v1;
 
 router.get('/sl', async (ctx, next) => {
     let  data = "";
@@ -156,10 +158,6 @@ router.post('/login',async (ctx,next)=>{
     let comId = body.comId;
 
     let version = body.version;
-    let v = "V3.1"; //最新版本信息
-
-    let v1 = "V3.1";
-
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
     if(!version ||(version!=v1 && version!=v) ){
         ctx.body = {
