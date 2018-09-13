@@ -128,9 +128,9 @@ router.post('/e_login',async (ctx,next)=>{
     }
     console.log("5");
     currentTime = currentTime +"";
-    await  update(eUser,{userName : userName},{$set:{
+  /*  await  update(eUser,{userName : userName},{$set:{
         loginTime:currentTime,
-    }});
+    }});*/
 
     console.log("6");
     ctx.body = {
