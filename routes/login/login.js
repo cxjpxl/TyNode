@@ -218,7 +218,7 @@ router.post('/login',async (ctx,next)=>{
         return ;
     }
 
-
+    currentTime = currentTime +"";
     await  update(User,{userName : userName},{$set:{
         loginTime:currentTime,
     }});
