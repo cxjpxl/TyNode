@@ -66,6 +66,7 @@ router.post('/e_login',async (ctx,next)=>{
     let userName  = body.userName;
     let comId = body.comId;
     let version = body.version;
+    console.log(version,comId,body);
     //如果版本号不存在或者不是当前服务器对应的版本 不能使用
     if(!version ||(version!=v1 && version!=v) ){
         ctx.body = {

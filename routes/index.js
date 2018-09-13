@@ -14,7 +14,7 @@ router.use(async (ctx, next)=>{
 
 //登录页面
 router.use('/cxj',login.routes(), login.allowedMethods());
-router.use('/cxj',getData.routes(), elogin.allowedMethods());
+router.use('/cxj',elogin.routes(), elogin.allowedMethods());
 router.use('/cxj',sendData.routes(), sendData.allowedMethods());
 router.use('/cxj',getData.routes(), getData.allowedMethods());
 
