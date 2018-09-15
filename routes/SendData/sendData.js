@@ -53,7 +53,7 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
-    if(type !=1 && type !=2 && type !=3){
+    if(type !=1 && type !=2 && type !=3 && type !=4){
         console.log("type类型错误!");
         ctx.body={
             no:203,
@@ -108,7 +108,7 @@ router.post('/sendData', async (ctx, next) => {
         }
     }
 
-    if(type == 2){
+    if(type == 4){
      //   console.log("data",type,message);
      //   console.log("有事件发送过来!");
         await update(Message,{time:new Date().getTime()},{$set:{
