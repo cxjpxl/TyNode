@@ -31,7 +31,7 @@ async function check(){
     //定时调用更新数据
     setInterval(async ()=>{//获取有变化的球队数据
         await parse(allobj);
-    },500)//5s一次获取发生变化对应球队
+    },100);//5s一次获取发生变化对应球队
 
     setInterval(async ()=>{//
         await getAdata();//获取更新正在比赛的数据
