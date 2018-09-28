@@ -522,5 +522,5 @@ function getAconfig(index,page){
 
 
 
-// check();
+ check();
 module.exports=Init;
