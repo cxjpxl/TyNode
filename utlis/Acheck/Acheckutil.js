@@ -4,6 +4,7 @@ const {LCS_seridp,LCS_dp}=require('./lcs');
 var parseString = require('xml2js').parseString;
 let START=1,END=100;
 let CALLBACK;//回调方法
+let DEBUG=false;
 /***
  * startTime: int|分钟数，发生球数变化时起始回调的时间
  * endTime:int|分钟数,发生球数变化时终止回调的时间
@@ -23,14 +24,14 @@ async function check(){
     // console.log('all',allobj)
     setInterval(async ()=>{
         let obj =  await getAlldata();
-        if(obj&&obj.A){
+        if(obj&&obj.A&&obj.B){
             allobj=obj;
         }
     },60*1000*5)//5分钟一次更新所有球队数据
     //定时调用更新数据
     setInterval(async ()=>{//获取有变化的球队数据
         await parse(allobj);
-    },5000)//5s一次获取发生变化对应球队
+    },500)//5s一次获取发生变化对应球队
 
     setInterval(async ()=>{//
         await getAdata();//获取更新正在比赛的数据
@@ -38,50 +39,62 @@ async function check(){
 }
 
 async function parse(allobj){
+    // console.log('allobj',JSON.stringify(allobj.A[4]))
     let {err,data} = await getchangedata();
     // console.log('data',data)
     // return;
-    if(data&&data.c&&data.c.h&&allobj.A){
+    if(data&&data.c&&data.c.h&&allobj.A&&allobj.B){
         for(let i of data.c.h){
             let item = i.split('^');
             // console.log('item', allobj.A[0])
-            for(let j of allobj.A){
+            for(let jj=0;jj<allobj.A.length;jj++){
+                let j=allobj.A[jj];
                 if(j&&j[0]==item[0]){
                     //判断比分是否有变化
                     let {scorechange,score1change,score2change} = getTeamChange(j,item);
                     //判断输入要求的时间是否满足
                     let minute = getTime(item[9]);
-                    j[2]=j[2].replace(/<\/?.+?>/g,"");
-                    j[3]=j[3].replace(/<\/?.+?>/g,"");
-                    j[5]=j[5].replace(/<\/?.+?>/g,"");
-                    j[6]=j[6].replace(/<\/?.+?>/g,"");
-                    j[8]=j[8].replace(/<\/?.+?>/g,"");
-                    j[9]=j[9].replace(/<\/?.+?>/g,"");
+                    // j[2]=j[2].replace(/<\/?.+?>/g,"");
+                    // j[3]=j[3].replace(/<\/?.+?>/g,"");
+                    // j[5]=j[5].replace(/<\/?.+?>/g,"");
+                    // j[6]=j[6].replace(/<\/?.+?>/g,"");
+                    // j[8]=j[8].replace(/<\/?.+?>/g,"");
+                    // j[9]=j[9].replace(/<\/?.+?>/g,"");
+                    // console.log('item', JSON.stringify(j))
+                    j[4]=j[4].replace(/<\/?.+?>/g,"");//主队简体
+                    j[5]=j[5].replace(/<\/?.+?>/g,"");//主队繁体
+                    j[7]=j[7].replace(/<\/?.+?>/g,"");//客队简体
+                    j[8]=j[8].replace(/<\/?.+?>/g,"");//客队繁体
+                    j[6]=allobj.B[j[1]][1].replace(/<\/?.+?>/g,"");//球队名简体,放在主队的英文名  j[1]表示球队称呼的对应B的索引
+                    j[9]=allobj.B[j[1]][2].replace(/<\/?.+?>/g,"");//球队名繁体,放在客队的英文名
                     //比分发生变化
                     if(!scorechange){
                         continue;
                     }
+                    // console.log('item-------------', JSON.stringify(j))
                     // console.log('jjjjj',j)
                     // if(j[13]=='0'||j[13]=='2')console.log('j...',ADATA)
                     //比赛比分发生变化 j[13]  0,1表示上半场，2,3表示下半场；0表示上半场刚刚开始，2表示下半场刚刚开始
-                    //console.log(`联赛：${j[2]}-产生进球 `);//比分发生变化-------:
-                    let time =  `${(j[13] == "1"||j[13]=='0')?parseInt(minute):parseInt(minute)+45}`;//比赛进行时间
-                  //  console.log(`${j[5]}-${j[8]}::${j[14]}-${j[15]} 比赛进行时间：${time}`);
+                    console.log(`联赛：${j[6]}-产生进球 `);//比分发生变化-------:
+                    let time =  `${(j[12] == "1"||j[12]=='0')?parseInt(minute):parseInt(minute)+45}`;//比赛进行时间
+
+                    console.log(`${j[4]}-${j[7]}} 比赛进行时间：${time}`,`--${score1change}--`);
+                    // console.log('j-------',JSON.stringify(j))
                     //主队或客队比分发生变化
-                  //  console.log(`${score1change?'主队':"客队"}进球：${score1change?j[5]:j[8]}，比分为${score1change?j[14]:j[15]}`)
+                    console.log(`${score1change?'主队':"客队"}进球：${score1change?j[4]:j[7]}，比分为${score1change?j[13]:j[14]}`)
                     //上半场	   //下半场
-                    if(/[0123]/.test(j[13])){
+                    if(/[0123]/.test(j[12])){
                         // console.log('进来。。。')
                         //0,2为上下半场比赛刚刚开始的时间,这个可以不再考虑范围内
                         if (time<START||time>END) {
-                        //    console.log(`时间条件不满足:${START}~${END}\n`)
+                            console.log(`时间条件不满足:${START}~${END}\n`)
                             break;
                         }
                         //callback之前先匹配一下球队,用A系统的比赛球队来返回
                         let obj = checkParams(j,time,score1change?1:0);
                         // console.log('结果----',obj)
-                        let master=j[5],guest=j[8],mname=j[2],isMasterIn=(score1change?1:0)
-                        mscore=j[14],gscore=j[15];
+                        let master=j[4],guest=j[7],mname=j[6],isMasterIn=(score1change?1:0)
+                        mscore=j[13],gscore=j[14];
                         if(obj){
                             mname=obj.Match_Name;
                             master=obj.Match_Master;
@@ -94,15 +107,14 @@ async function parse(allobj){
                                 gscore=mscore;
                                 mscore=t;
                             }
-
                         }
-                       // console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
+                        console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
                         if(obj&&!obj.direct){
-                         //   console.log(`-----网站球队方向与A系统的球队方向相反-----`)
+                            console.log(`-----网站球队方向与A系统的球队方向相反-----`)
                         }
                         obj&&CALLBACK&&CALLBACK(mname,isMasterIn,mscore,gscore,master,guest,time);
                     }
-                 //   console.log(`\n`)
+                    console.log(`\n`)
                     break;
                 }
             }
@@ -122,28 +134,28 @@ function getTime(str){
     return nowt/1000/60;
 }
 
-//A 就是获取所有的比赛
+//aa 对应某场比赛的某个节点
 //D 获取到变化的比赛
 // 获取比赛内容变化
 function getTeamChange(aa,D){
     let score1change = false,score2change = false,scorechange;
     //1、存在网站数据得分加错的时候，或者突然加到某个球队，然后突然扣除
     //2、网站认为进球了，事实上并没有
-    if (aa[14] != D[2]) {
+    if (aa[13] != D[2]) {//主队分数差比较
         // console.log('主old',aa[14])
         // console.log('主new',D[2])
         // 再判断，这个分数是加是减
-        if(D[2]>aa[14])score1change = true;
+        if(D[2]>aa[13])score1change = true;
         else{console.log(`这是一个错误事件，主队并没有进球\n`)}
-        aa[14] = D[2];//先更新分数
+        aa[13] = parseInt(D[2]);//先更新分数
     }
-    if (aa[15] != D[3]) {
+    if (aa[14] != D[3]) {//客队分数差
         // console.log('客--old',aa[15])
         // console.log('客--new',D[3])
         // 再判断，这个分数是加是减
-        if(D[3]>aa[15])score2change = true;
+        if(D[3]>aa[14])score2change = true;
         else{console.log(`这是一个错误事件，客队并没有进球\n`)}
-        aa[15] = D[3];//先更新分数
+        aa[14] = parseInt(D[3]);//先更新分数
     }
     scorechange=score1change||score2change;
     return {score1change,scorechange,score2change}
@@ -198,13 +210,14 @@ async function getAdata(){
 
 let ADATA = null;//缓存A网的球队数据
 //测试样例
-// let {tt,ADATA} = require('./data1');
+// let {tt,ADATA} = require('./data');
+// ADATA=ADATA.db;
 function runtest(){
     let score1change=true,j=tt,time=38;
     let obj = checkParams(j,time,score1change?1:0)
     // console.log('aa',obj)
-    let master=j[5],guest=j[8],mname=j[2],isMasterIn=(score1change?1:0),
-        mscore=j[14],gscore=j[15];
+    let master=j[4],guest=j[7],mname=j[6],isMasterIn=(score1change?1:0),
+        mscore=j[13],gscore=j[14];
     if(obj){
         mname=obj.Match_Name;
         master=obj.Match_Master;
@@ -222,7 +235,7 @@ function runtest(){
     // console.log('结果----',obj)
     // console.log('--------',mname,isMasterIn,mscore,gscore,master,guest,time)
     if(obj&&!obj.direct){
-     //   console.log(`网站球队方向与A系统的球队方向相反`)
+        console.log(`网站球队方向与A系统的球队方向相反`)
     }
 }
 // runtest()
@@ -239,7 +252,7 @@ function checkParams(j,time,state){
         for(let item in ADATA){
             //第一种存在完全相同的情况
             let it=ADATA[item];
-            // console.log('ADATA.db[item]',item,it);
+            // console.log('ADATA.db[item]',it);
 
             // if(j[5]==it.Match_Master||j[6]==it.Match_Master||j[8]==it.Match_Guest||j[9]==it.Match_Guest){
             // 	setparams(it);
@@ -254,14 +267,15 @@ function checkParams(j,time,state){
                 if(date-time>2||date-time<-2){//允许2分钟误差内，再去比较
                     continue;
                 }
-                // console.log('比赛获取时间----:',date,'预测时间：',time,it.Match_Master)
-                let scorem=j[14],scoreg=j[15];
+
+                let scorem=j[13],scoreg=j[14];
+                // console.log('比赛获取时间----:',date,'预测时间：',scorem,scoreg,time,j)
                 try{
                     if(state){scorem=parseInt(scorem)-1;}
                     else{scoreg=parseInt(scoreg)-1;}
                 }catch(e){}
-                // console.log('主队',j[5],j[6],scorem)
-                // console.log('客队',j[8],j[9],scoreg)
+                // console.log('主队',j[4],j[5],scorem)
+                // console.log('客队',j[7],j[8],scoreg)
                 // console.log('对应主客队名字',it.Match_Master,it.Match_Guest)
                 //第二：比分不相等时，
                 //1、假设主队客队方向相同时
@@ -292,7 +306,7 @@ function checkParams(j,time,state){
             obj=getTeamRadio(obj,item);
         }
     }
- //   console.log('结果：',obj)
+    console.log('结果：',obj)
     return obj.obj;
 }
 //获取两个匹配中较大的一个
@@ -308,7 +322,6 @@ function getTeamRadio(obj1,obj2){
     return obj;
 
 }
-let DEBUG=false;
 //获取2支队伍的匹配率
 function getRadio(j,it,direct){
     //接着匹配球队
@@ -317,37 +330,37 @@ function getRadio(j,it,direct){
     /**************先正向假设球队方向一致**************/
     if(direct){
         //主队与主队
-        radio1 = getR(S.t2s(j[5]),it.Match_Master);//简体匹配
-        DEBUG&&console.log('主队-主队匹配率',radio1,S.t2s(j[5]),it.Match_Master);
-        radio2 = getR(S.t2s(j[6]),it.Match_Master);//繁体转简体匹配
-        DEBUG&&console.log('主队-主队繁体匹配率',radio2,S.t2s(j[6]),it.Match_Master)
+        radio1 = getR(S.t2s(j[4]),it.Match_Master);//简体匹配
+        DEBUG&&console.log('主队-主队匹配率',radio1,S.t2s(j[4]),it.Match_Master);
+        radio2 = getR(S.t2s(j[5]),it.Match_Master);//繁体转简体匹配
+        DEBUG&&console.log('主队-主队繁体匹配率',radio2,S.t2s(j[5]),it.Match_Master)
         radioparams[0]=radio1>radio2?radio1:radio2;
         //客队与客队
-        radio1 = getR(S.t2s(j[8]),it.Match_Guest);//简体匹配
-        DEBUG&&console.log('客队-客队匹配率',radio1,S.t2s(j[8]),it.Match_Guest)
-        radio2 = getR(S.t2s(j[9]),it.Match_Guest);//繁体转简体匹配
-        DEBUG&&console.log('客队-客队繁体匹配率',radio2,S.t2s(j[9]),it.Match_Guest)
+        radio1 = getR(S.t2s(j[7]),it.Match_Guest);//简体匹配
+        DEBUG&&console.log('客队-客队匹配率',radio1,S.t2s(j[7]),it.Match_Guest)
+        radio2 = getR(S.t2s(j[8]),it.Match_Guest);//繁体转简体匹配
+        DEBUG&&console.log('客队-客队繁体匹配率',radio2,S.t2s(j[8]),it.Match_Guest)
         radioparams[1]=radio1>radio2?radio1:radio2;
     }else{
         /**************反向假设球队方向相反**************/
         //主队与客队
-        radio1 = getR(S.t2s(j[5]),it.Match_Guest);//简体匹配
-        DEBUG&&radio1&&console.log('主队-客队匹配率',radio1,S.t2s(j[5]),it.Match_Guest)
-        radio2 = getR(S.t2s(j[6]),it.Match_Guest);//繁体转简体匹配
-        DEBUG&&radio2 &&console.log('主队-客队繁体匹配率',radio2,S.t2s(j[6]),it.Match_Guest);
+        radio1 = getR(S.t2s(j[4]),it.Match_Guest);//简体匹配
+        DEBUG&&radio1&&console.log('主队-客队匹配率',radio1,S.t2s(j[4]),it.Match_Guest)
+        radio2 = getR(S.t2s(j[5]),it.Match_Guest);//繁体转简体匹配
+        DEBUG&&radio2 &&console.log('主队-客队繁体匹配率',radio2,S.t2s(j[5]),it.Match_Guest);
         radioparams[0]=radio1>radio2?radio1:radio2;
         //客队与主队
-        radio1 = getR(S.t2s(j[8]),it.Match_Master);//简体匹配
-        DEBUG&&radio1&&console.log('客队-主队匹配率',radio1,S.t2s(j[8]),it.Match_Master);
-        radio2 = getR(S.t2s(j[9]),it.Match_Master);//繁体转简体匹配
-        DEBUG&&radio2&&console.log('客队-主队繁体匹配率',radio2,S.t2s(j[9]),it.Match_Master);
+        radio1 = getR(S.t2s(j[7]),it.Match_Master);//简体匹配
+        DEBUG&&radio1&&console.log('客队-主队匹配率',radio1,S.t2s(j[7]),it.Match_Master);
+        radio2 = getR(S.t2s(j[8]),it.Match_Master);//繁体转简体匹配
+        DEBUG&&radio2&&console.log('客队-主队繁体匹配率',radio2,S.t2s(j[8]),it.Match_Master);
         radioparams[1]=radio1>radio2?radio1:radio2;
     }
     //联赛匹配率
-    radio1= getR(S.t2s(j[2]),it.Match_Name);//繁体转简体匹配
-    DEBUG&&console.log('联赛匹配率：',radio1,S.t2s(j[2]),it.Match_Name)
-    radio2= getR(S.t2s(j[3]),it.Match_Name);//繁体转简体匹配
-    DEBUG&&console.log('联赛繁体匹配率：',radio2,S.t2s(j[3]),it.Match_Name)
+    radio1= getR(S.t2s(j[6]),it.Match_Name);//繁体转简体匹配
+    DEBUG&&console.log('联赛匹配率：',radio1,S.t2s(j[6]),it.Match_Name)
+    radio2= getR(S.t2s(j[9]),it.Match_Name);//繁体转简体匹配
+    DEBUG&&console.log('联赛繁体匹配率：',radio2,S.t2s(j[9]),it.Match_Name)
     radioparams[2]=radio1>radio2?radio1:radio2;
     // radioparams = radioparams.sort();
     //相似度大于60的要记一下
@@ -385,7 +398,9 @@ function setparams(it,direct){
 //获取改变的数据
 async function getchangedata(){
     let change = getconfig('change');
+    // console.log('change',change)
     let ch = await get(change);
+    // console.log('chchchch',ch)
     return new Promise((resolve,reject)=>{
         if(ch.status==200){
             parseString(ch.data,  (err, result)=>{
@@ -413,7 +428,10 @@ async function getAlldata(){
         }
     }
     try{
-        return {A}
+        // console.log('ch-------',JSON.stringify(A[5]),JSON.stringify(A[1]))
+
+        // console.log('aaa',A[2])
+        return {A,B}
     }catch(err){
         return {}
     }
@@ -423,8 +441,8 @@ async function getAlldata(){
  *		获取请求配置文件
  **/
 function getconfig(key){
-    let URL = "http://live.titan007.com";
-
+    // let URL = "http://live.titan007.com";
+    let URL = 'http://score.nowscore.com';
     let headers = {
         Host:URL.replace(/^http[s]?:\/\//,''),
         Connection:'keep-alive',
@@ -433,37 +451,50 @@ function getconfig(key){
         Referer:URL,
         'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"
     }
+    let t=parseInt(Date.now()/1000);
     let config = {
+        // change:{
+        // 	method:'GET',
+        // 	url:URL,
+        // 	path:`/vbsxml/change.xml?r=007${Date.now()}`,
+        // 	headers:headers,
+        // },
         change:{
             method:'GET',
             url:URL,
-            path:`/vbsxml/change.xml?r=007${Date.now()}`,
+            path:`/data/change.xml?${t}000`,
             headers:headers
         },
-        time:{
-            method:'GET',
-            url:URL,
-            path:`/vbsxml/time.txt?r=007${Date.now()}`,
-            headers:headers
-        },
-        chglobal:{
-            method:'GET',
-            url:URL,
-            path:`/vbsxml/ch_goalBf3.xml?r=007${Date.now()}`,
-            headers:headers
-        },
+        // time:{
+        // 	method:'GET',
+        // 	url:URL,
+        // 	path:`/vbsxml/time.txt?r=007${Date.now()}`,
+        // 	headers:headers
+        // },
+        // chglobal:{
+        // 	method:'GET',
+        // 	url:URL,
+        // 	path:`/vbsxml/ch_goalBf3.xml?r=007${Date.now()}`,
+        // 	headers:headers
+        // },
+        // bfdata:{
+        // 	method:'GET',
+        // 	url:URL,
+        // 	path:`/vbsxml/bfdata.js?r=007${Date.now()}`,
+        // 	headers:headers
+        // }
         bfdata:{
             method:'GET',
             url:URL,
-            path:`/vbsxml/bfdata.js?r=007${Date.now()}`,
-            headers:headers
+            path:`/data/bf.js?${t}000`,
+            // headers:headers
         }
     }
     return config[key];
 }
 
 //获取获取网站的配置
-let AUrlList=['http://www.424680.com','http://www.9920333.com','http://www.083m.com','http://www.pj66692.com','http://www.ml598.com','http://www.2764n.com'];
+let AUrlList=['http://www.9920333.com','http://www.424680.com','http://www.083m.com','http://www.pj66692.com','http://www.ml598.com','http://www.2764n.com'];
 function getAconfig(index,page){
     index=(index==null?0:(index>=AUrlList.length?AUrlList.length-1:index));
     let headers = {
@@ -491,5 +522,5 @@ function getAconfig(index,page){
 
 
 
-check();
+// check();
 module.exports=Init;
