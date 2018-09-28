@@ -61,8 +61,8 @@ function get({url,path,method,headers,params}){
             });
             res.on('end',()=>{
                 reqData = Buffer.concat(reqData,size);
-                // reqData = reqData.toString();
-                reqData = Iconv.decode(reqData, 'gb2312').toString()
+                reqData = reqData.toString();
+               // reqData = Iconv.decode(reqData, 'gb2312').toString()
                 // console.log('reqData',reqData)
                 resolve({data:reqData,status:res.statusCode});
             })
