@@ -53,7 +53,7 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
-    if(type !=1 && type !=2 && type !=3 && type !=4){
+    if(type !=1 && type !=2 && type !=3 && type !=4 && type !=5 ){
         console.log("type类型错误!");
         ctx.body={
             no:203,
@@ -289,6 +289,27 @@ router.post('/sendData', async (ctx, next) => {
         }
         else{
             console.log("找不到比赛队伍！！！");
+        }
+    }
+
+    if(type == 5){
+        if(global.ws&& global.ws.server&& global.ws.server.clients){
+            console.log("准备发送！");
+            try {
+                global.ws.server.clients.forEach(ws=>{
+                    try {
+                        if(ws){
+                            ws.send(message);
+                        }
+                    }catch (e1){
+                        console.log(e1.toString());
+                    }
+                });
+            }catch (e){
+                console.log(e.toString());
+            }
+        }else{
+            console.log("webSocket 对象连接找不到!");
         }
     }
 
