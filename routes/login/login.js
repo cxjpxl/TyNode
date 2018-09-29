@@ -233,6 +233,32 @@ router.post('/login',async (ctx,next)=>{
         vipUrls = urls.urls;
     }
 
+    let daTuiData = {
+        "VIP4":1,
+        "VIP5":1,
+        "admin4004":1,
+    };
+
+    let noPutAdmin = {
+        "admin4001":1,
+        "admin4002":1,
+        "admin4003":1,
+        "admin4004":1,
+        "admin4005":1,
+        "admin4006":1,
+    };
+
+    let hasDaTui = false;
+    let canPutDaTui = false;
+
+    if(daTuiData[userName+""] == 1){
+        hasDaTui = true;
+    }
+
+    if(userName.indexOf("admin")>=0 && noPutAdmin[userName+""]!=1){
+        canPutDaTui = true;
+    }
+
 
     ctx.body = {
         no:200,
@@ -241,7 +267,10 @@ router.post('/login',async (ctx,next)=>{
         msg:'登录成功!',
         fun:user.fun?user.fun:0,
         hasJinQiuFun:user.hasJinQiuFun?user.hasJinQiuFun:false, //是否有进球的功能
-    };
+        hasDaTui, //有大腿功能
+        canPutDaTui,//有跟大腿功能
+
+};
 
 });
 
