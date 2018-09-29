@@ -251,7 +251,6 @@ router.post('/login',async (ctx,next)=>{
         "admin14":1,
         "admin15":1,
         "admin16":1,
-        "admin-cxj":1,
     };
 
     let hasDaTui = false;
