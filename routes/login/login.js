@@ -237,6 +237,7 @@ router.post('/login',async (ctx,next)=>{
         "VIP4":1,
         "VIP5":1,
         "admin4004":1,
+        "admin4001":1,
     };
 
     let noPutAdmin = {
