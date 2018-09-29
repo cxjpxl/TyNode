@@ -246,6 +246,11 @@ router.post('/login',async (ctx,next)=>{
         "admin4004":1,
         "admin4005":1,
         "admin4006":1,
+        "admin12":1,
+        "admin13":1,
+        "admin14":1,
+        "admin15":1,
+        "admin16":1,
     };
 
     let hasDaTui = false;
