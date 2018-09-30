@@ -296,7 +296,11 @@ router.post('/sendData', async (ctx, next) => {
 
     if(type == 5){
         let data = JSON5.parse(message);
+
+
+        console.log(data);
         if(!data.version || data.version  != v || data.version  != v1){
+            console.log("版本不存在",data.version,v,v1);
             ctx.body={
                 no:200,
                 msg:'发送成功',
@@ -305,6 +309,7 @@ router.post('/sendData', async (ctx, next) => {
         }
 
         if(!data.userName) {
+            console.log("用户名不存在");
             ctx.body={
                 no:200,
                 msg:'发送成功',
