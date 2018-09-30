@@ -55,8 +55,8 @@ router.post('/sendData', async (ctx, next) => {
         }
 
         ctx.body={
-            no:201,
-            msg:'消息不能为空',
+            no:200,
+            msg:'',
         };
         return ;
     }
