@@ -28,7 +28,6 @@ router.post('/sendData', async (ctx, next) => {
     let message  = body.message;
     let type = body.type;
 
-    console.log(type,message);
 
     try{
         type = parseInt(type);
