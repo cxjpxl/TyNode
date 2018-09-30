@@ -28,7 +28,11 @@ router.post('/sendData', async (ctx, next) => {
     let message  = body.message;
     let type = body.type;
 
+    try{
+        type = parseInt(type);
+    }catch (e){
 
+    }
 
     if(type== -1){
         let data ={
@@ -69,18 +73,6 @@ router.post('/sendData', async (ctx, next) => {
         };
         return ;
     }
-
-
-
-
-
-    try{
-        type = parseInt(type);
-    }catch (e){
-
-    }
-
-
 
     if(message == "null") {
         ctx.body={
@@ -154,33 +146,7 @@ router.post('/sendData', async (ctx, next) => {
         }});
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
-       let game = await Game.findOne({mid: mid}).exec();
-
-       /* if(!global.biSaiArray || global.biSaiArray.length == 0){
-            ctx.body={
-                no:200,
-                msg:'成功',
-            };
-            return ;
-        }*/
-
-      /*  let biSaiCatchs = JSON.parse(JSON.stringify(global.biSaiArray));//复制一份数据   双缓存
-        let game = null;
-        for(let i = 0 ; i < biSaiCatchs.length; i++){
-            let dataItem = biSaiCatchs[i];
-            let teamName = dataItem["teamName"];
-            let myMid = dataItem["idset"][0]+"";
-             if(myMid == mid){
-                game ={};
-                game.nameH = teamName[0];
-                game.nameG = teamName[1];
-                game.leagueName = dataItem["leagueName"];
-                game.mid = myMid;
-                game.time = dataItem["gameTime"];
-                break;
-            }
-        }
-        biSaiCatchs = null; //释放数据*/
+        let game = await Game.findOne({mid: mid}).exec();
         console.log("game",game);
         if(game&&game.mid){
             console.log("主队:"+game.nameH+"||客队："+ game.nameG);
@@ -331,8 +297,6 @@ router.post('/sendData', async (ctx, next) => {
 
     if(type == 5){
         let data = JSON5.parse(message);
-
-
         console.log(data);
         if(!data.version || data.version  != v || data.version  != v1){
             console.log("版本不存在",data.version,v,v1);
