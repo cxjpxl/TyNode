@@ -124,7 +124,7 @@ router.post('/sendData', async (ctx, next) => {
         }
     }
 
-    if(type == 3){
+   /* if(type == 3){
         let dataArray = JSON5.parse(message);
         if(dataArray.length > 0 ){
             //删除数据
@@ -144,8 +144,8 @@ router.post('/sendData', async (ctx, next) => {
             //    global.biSaiArray = dataArray;
         }
     }
-
-    if(type == 4 || type == 2){
+    */
+    if(/*type == 4||*/type == 2){
      //   console.log("data",type,message);
      //   console.log("有事件发送过来!");
         await update(Message,{time:new Date().getTime()},{$set:{
