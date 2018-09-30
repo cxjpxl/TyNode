@@ -366,7 +366,7 @@ router.post('/sendData', async (ctx, next) => {
             "admin4005":1,
            "admin4006":1,
         };
-        if(daTuiData[data.userName] == 1){
+       /* if(daTuiData[data.userName] == 1){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
                 console.log("准备发送大腿数据！ "+data.userName);
                 try {
@@ -385,7 +385,7 @@ router.post('/sendData', async (ctx, next) => {
             }else{
                 console.log("webSocket 对象连接找不到!");
             }
-        }
+        }*/
     }
     ctx.body={
         no:200,
