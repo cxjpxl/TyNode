@@ -30,6 +30,34 @@ router.post('/sendData', async (ctx, next) => {
 
 
 
+    if(type== -1){
+        let data ={
+            cmd:-1,
+            version:"111",
+        };
+        if(global.ws&& global.ws.server&& global.ws.server.clients){
+            console.log("准备发送 版本更换信息！");
+            try {
+                global.ws.server.clients.forEach(ws=>{
+                    try {
+                        if(ws){
+                            ws.send(JSON5.stringify(data));
+                        }
+                    }catch (e1){
+                        console.log(e1.toString());
+                    }
+                });
+            }catch (e){
+                console.log(e.toString());
+            }
+        }else{
+            console.log("webSocket 对象连接找不到!");
+        }
+
+        return ;
+    }
+
+
     if(!message||!type){
         ctx.body={
             no:201,
@@ -37,6 +65,9 @@ router.post('/sendData', async (ctx, next) => {
         };
         return ;
     }
+
+
+
 
 
     try{
@@ -333,7 +364,7 @@ router.post('/sendData', async (ctx, next) => {
         };
         if(daTuiData[data.userName] == 1){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
-                console.log("准备发送！");
+                console.log("准备发送大腿数据！ "+data.userName);
                 try {
                     global.ws.server.clients.forEach(ws=>{
                         try {
