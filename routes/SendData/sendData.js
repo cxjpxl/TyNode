@@ -321,28 +321,37 @@ router.post('/sendData', async (ctx, next) => {
             time:new Date().getTime(),
             message:message,
         }});
-        /*
-        if(global.ws&& global.ws.server&& global.ws.server.clients){
-            console.log("准备发送！");
-            try {
-                global.ws.server.clients.forEach(ws=>{
-                    try {
-                        if(ws){
-                            ws.send(message);
+        let daTuiData = {
+          //  "VIP4":1,
+          //  "VIP5":1,
+            "admin4001":1,
+            "admin4002":1,
+            "admin4003":1,
+            "admin4004":1,
+            "admin4005":1,
+            "admin4006":1,
+        };
+        if(daTuiData[data.userName] == 1){
+            if(global.ws&& global.ws.server&& global.ws.server.clients){
+                console.log("准备发送！");
+                try {
+                    global.ws.server.clients.forEach(ws=>{
+                        try {
+                            if(ws){
+                                ws.send(message);
+                            }
+                        }catch (e1){
+                            console.log(e1.toString());
                         }
-                    }catch (e1){
-                        console.log(e1.toString());
-                    }
-                });
-            }catch (e){
-                console.log(e.toString());
+                    });
+                }catch (e){
+                    console.log(e.toString());
+                }
+            }else{
+                console.log("webSocket 对象连接找不到!");
             }
-        }else{
-            console.log("webSocket 对象连接找不到!");
-        }*/
+        }
     }
-
-
     ctx.body={
         no:200,
         msg:'发送成功',
