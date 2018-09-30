@@ -33,7 +33,7 @@ router.post('/sendData', async (ctx, next) => {
     if(type== -1){
         let data ={
             cmd:-1,
-            version:"111",
+            version:v,
         };
         if(global.ws&& global.ws.server&& global.ws.server.clients){
             console.log("准备发送 版本更换信息！");
