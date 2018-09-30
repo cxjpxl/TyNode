@@ -54,6 +54,10 @@ router.post('/sendData', async (ctx, next) => {
             console.log("webSocket 对象连接找不到!");
         }
 
+        ctx.body={
+            no:201,
+            msg:'消息不能为空',
+        };
         return ;
     }
 
