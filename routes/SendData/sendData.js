@@ -3,9 +3,11 @@
  */
 const router = require('koa-router')();
 const Message = require('../../models/Message').Message;
+const Order = require('../../models/Order').Order;
 const Game = require('../../models/Game').Game;
 var JSON5 = require('json5');
-
+let v = require('../../utlis/config').v;
+let v1 = require('../../utlis/config').v1;
 
 function update(model,query,update){
     return new Promise((resolve,reject)=>{
@@ -293,6 +295,28 @@ router.post('/sendData', async (ctx, next) => {
     }
 
     if(type == 5){
+        let data = JSON5.parse(message);
+        if(!data.version || data.version  != v || data.version  != v1){
+            ctx.body={
+                no:200,
+                msg:'发送成功',
+            };
+            return ;
+        }
+
+        if(!data.userName) {
+            ctx.body={
+                no:200,
+                msg:'发送成功',
+            };
+            return ;
+        }
+        //保存数据
+        await update(Order,{time:new Date().getTime()},{$set:{
+            time:new Date().getTime(),
+            message:message,
+        }});
+        /*
         if(global.ws&& global.ws.server&& global.ws.server.clients){
             console.log("准备发送！");
             try {
@@ -310,7 +334,7 @@ router.post('/sendData', async (ctx, next) => {
             }
         }else{
             console.log("webSocket 对象连接找不到!");
-        }
+        }*/
     }
 
 
