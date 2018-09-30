@@ -360,11 +360,11 @@ router.post('/sendData', async (ctx, next) => {
           //  "VIP4":1,
           //  "VIP5":1,
             "admin4001":1,
-            "admin4002":1,
-            "admin4003":1,
+           // "admin4002":1,
+          //  "admin4003":1,
             "admin4004":1,
             "admin4005":1,
-            "admin4006":1,
+          //  "admin4006":1,
         };
         if(daTuiData[data.userName] == 1){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
