@@ -29,12 +29,16 @@ router.post('/sendData', async (ctx, next) => {
     let type = body.type;
 
 
+    console.log(type,message);
+
+
     try{
         type = parseInt(type);
     }catch (e){
 
     }
 
+    //版本更新事件 cmd -1
     if(type== -1){
         let data ={
             cmd:-1,
@@ -83,16 +87,7 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
-    if(type !=1 && type !=2 && type !=3 && type !=4 && type !=5 ){
-        console.log("type类型错误!");
-        ctx.body={
-            no:203,
-            msg:'type类型错误',
-        };
-        return ;
-    }
-
-
+    //h8联赛
     if(type == 1){
         let dataArray = JSON5.parse(message);
         if(dataArray.length > 0 ){
@@ -117,28 +112,8 @@ router.post('/sendData', async (ctx, next) => {
         }
     }
 
-   /* if(type == 3){
-        let dataArray = JSON5.parse(message);
-        if(dataArray.length > 0 ){
-            //删除数据
-            await Game.remove({}).exec();
-            //存数据
-            for(let i = 0 ; i < dataArray.length; i++){
-                let dataItem = dataArray[i];
-                let leagueName = dataItem["leagueName"];
-                let nameH = dataItem["nameH"];
-                let nameG = dataItem["nameG"];
-                let mid = dataItem["mid"]+"";
-                let time = dataItem["gameTime"]?dataItem["gameTime"]:"";
-                let g = new Game({nameH,nameG,leagueName,mid,time});
-                await g.save();
-            }
-
-            //    global.biSaiArray = dataArray;
-        }
-    }
-    */
-    if(/*type == 4||*/type == 2){
+   //H8事件 cmd1
+    if(type == 2){
      //   console.log("data",type,message);
      //   console.log("有事件发送过来!");
         await update(Message,{time:new Date().getTime()},{$set:{
@@ -184,6 +159,7 @@ router.post('/sendData', async (ctx, next) => {
                     if(game.nameH.indexOf("(R)")>0){
                         game.nameH = game.nameH.replace("(R)","").trim();
                     }
+
 
 
                     game.nameH = game.nameH.trim();
@@ -241,6 +217,9 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameG = game.nameG.replace("(R)","").trim();
                     }
 
+
+
+
                     game.nameG = game.nameG.trim();
 
                     let nameGs = game.nameG.split("U");
@@ -265,6 +244,26 @@ router.post('/sendData', async (ctx, next) => {
                 }
 
             }
+
+         /*   let curData = {
+                cmd:1,//事件类型
+                game:{
+                    nameG,//客队
+                    nameH,//主队
+                    leagueName,//联赛
+                    mid,//比赛的mid
+                },
+                data:{
+                    MID, //比赛的mid
+                    CID,//1025 2049 1031 2055
+                    EID,//事件Id
+                    Info,//1025-Corner Home   2049-Corner Away
+                           1031-Possible penalty Home  2055-Possible penalty Away
+                    T,  //比赛时间  毫秒级别
+                },
+                curTime:new Date().getTime(),//当前时间
+             };*/
+
             let curData = {
                 cmd:1,
                 game,
@@ -296,6 +295,7 @@ router.post('/sendData', async (ctx, next) => {
         }
     }
 
+    //大腿事件 cmd666
     if(type == 5){
         let data = JSON5.parse(message);
         console.log(data);
@@ -352,6 +352,10 @@ router.post('/sendData', async (ctx, next) => {
             }
         }
     }
+
+
+    //新的事件源处理
+
     ctx.body={
         no:200,
         msg:'发送成功',
