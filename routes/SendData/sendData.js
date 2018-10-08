@@ -118,12 +118,6 @@ router.post('/sendData', async (ctx, next) => {
             time:new Date().getTime(),
             message:message,
         }});
-        ctx.body={
-            no:200,
-            msg:'发送成功',
-        };
-        return ;
-
 
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
@@ -268,6 +262,21 @@ router.post('/sendData', async (ctx, next) => {
                 },
                 curTime:new Date().getTime(),//当前时间
              };*/
+
+            let CIDStr = {
+                "1025":"Corner Home",
+                "2049":"Corner Away",
+                "1031":"Possible penalty Home",
+                "2055":"Possible penalty Away"
+            };
+            data.Info = CIDStr[data.CID+""];
+            if(!data.Info){
+                ctx.body={
+                    no:200,
+                    msg:'格式错误',
+                };
+                return ;
+            }
 
             let curData = {
                 cmd:1,
