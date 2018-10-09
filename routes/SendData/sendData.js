@@ -269,7 +269,9 @@ router.post('/sendData', async (ctx, next) => {
                 "1031":"Possible penalty Home",
                 "2055":"Possible penalty Away"
             };
-            data.Info = CIDStr[data.CID+""];
+            if(data.T == -1){
+                data.Info = CIDStr[data.CID+""];
+            }
             if(!data.Info){
                 ctx.body={
                     no:200,
