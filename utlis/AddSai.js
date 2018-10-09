@@ -12,7 +12,7 @@ function  addSaiName(key,value,data) {
     }
 }
 
-function  getSaiList() {
+/*function  getSaiList() {
     let data = {};
     addSaiName("切禾", "切沃",data);
     addSaiName("洛达JC", "罗达JC",data);
@@ -2689,12 +2689,25 @@ function  getSaiList() {
     addSaiName("云路", "芬洛",data);
     addSaiName("卢波马蒂尼", "卢波马蒂尼沃尔夫斯堡",data);
     addSaiName("科森察", "科森扎",data);
-    /********************/
+    let counter = 0;
+    for(let key in data) counter++;
+    console.log("已匹配球队数量:"+counter);
+    return data;
+}*/
+
+
+
+function  getSaiList() {
+    let data = {};
+    addSaiName("阿内特花园", "阿内特加登斯",data);
+    addSaiName("蒂沃利花园", "蒂沃利加登斯",data);
+
     let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
     return data;
 }
+
 
 let AddData = {
     getSaiList:getSaiList,

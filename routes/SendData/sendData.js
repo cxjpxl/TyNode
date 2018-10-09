@@ -127,7 +127,7 @@ router.post('/sendData', async (ctx, next) => {
             console.log("主队:"+game.nameH+"||客队："+ game.nameG);
             if(global.lianSaiData){
                 if(game.nameH){
-                    if(game.nameH.indexOf("(中)")>0){
+                    /*if(game.nameH.indexOf("(中)")>0){
                         game.nameH = game.nameH.replace("(中)","").trim();
                     }
 
@@ -157,11 +157,20 @@ router.post('/sendData', async (ctx, next) => {
 
                     if(game.nameH.indexOf("(R)")>0){
                         game.nameH = game.nameH.replace("(R)","").trim();
-                    }
+                    }*/
 
                     if(game.nameH.indexOf("U-")>0){
                         game.nameH = game.nameH.replace("U-","U").trim();
                     }
+
+                    if(game.nameH.indexOf("女子")>0){
+                        game.nameH = game.nameH.replace("女子","").trim();
+                    }
+
+                    if(game.nameH.indexOf("预备")>0){
+                        game.nameH = game.nameH.replace("预备","").trim();
+                    }
+
 
 
                     game.nameH = game.nameH.trim();
@@ -184,11 +193,13 @@ router.post('/sendData', async (ctx, next) => {
                     if(global.lianSaiData[game.nameH+""]){
                         game.nameH = global.lianSaiData[game.nameH+""];
                     }
+
+                    game.nameH = game.nameG.replace("-","").trim();
                 }
 
                 //客队
                 if(game.nameG){
-                    if(game.nameG.indexOf("(中)")>0){
+                    /*if(game.nameG.indexOf("(中)")>0){
                         game.nameG = game.nameG.replace("(中)","").trim();
                     }
                     if(game.nameG.indexOf("[中]")>0){
@@ -217,12 +228,19 @@ router.post('/sendData', async (ctx, next) => {
 
                     if(game.nameG.indexOf("(R)")>0){
                         game.nameG = game.nameG.replace("(R)","").trim();
-                    }
+                    }*/
 
                     if(game.nameG.indexOf("U-")>0){
                         game.nameG = game.nameG.replace("U-","U").trim();
                     }
 
+                    if(game.nameG.indexOf("女子")>0){
+                        game.nameG = game.nameG.replace("女子","").trim();
+                    }
+
+                    if(game.nameG.indexOf("预备")>0){
+                        game.nameG = game.nameG.replace("预备","").trim();
+                    }
 
                     game.nameG = game.nameG.trim();
 
@@ -245,6 +263,8 @@ router.post('/sendData', async (ctx, next) => {
                     if(global.lianSaiData[game.nameG+""]){
                         game.nameG = global.lianSaiData[game.nameG+""];
                     }
+
+                    game.nameG = game.nameG.replace("-","").trim();
                 }
 
             }
