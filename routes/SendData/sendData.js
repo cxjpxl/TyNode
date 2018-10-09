@@ -159,6 +159,9 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameH = game.nameH.replace("(R)","").trim();
                     }
 
+                    if(game.nameH.indexOf("U-")>0){
+                        game.nameH = game.nameH.replace("U-","U").trim();
+                    }
 
 
                     game.nameH = game.nameH.trim();
@@ -216,7 +219,9 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameG = game.nameG.replace("(R)","").trim();
                     }
 
-
+                    if(game.nameG.indexOf("U-")>0){
+                        game.nameG = game.nameG.replace("U-","U").trim();
+                    }
 
 
                     game.nameG = game.nameG.trim();
