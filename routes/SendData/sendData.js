@@ -266,8 +266,8 @@ router.post('/sendData', async (ctx, next) => {
             let CIDStr = {
                 "1025":"Corner Home",
                 "2049":"Corner Away",
-                "1031":"Possible penalty Home",
-                "2055":"Possible penalty Away"
+                "1031":"Penalty Home",
+                "2055":"Penalty Away"
             };
             if(data.T == -1){
                 data.Info = CIDStr[data.CID+""];
