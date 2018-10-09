@@ -2701,6 +2701,18 @@ function  getSaiList() {
     let data = {};
     addSaiName("阿内特花园", "阿内特加登斯",data);
     addSaiName("蒂沃利花园", "蒂沃利加登斯",data);
+    addSaiName("代格福什", "戴戈福斯",data);
+    addSaiName("谢斯伯利", "什鲁斯伯里",data);
+    addSaiName("布拉德福德城", "布拉德福德",data);
+    addSaiName("奥尔德姆竞技", "奥尔德姆",data);
+    addSaiName("西布罗姆维奇艾尔宾", "西布朗",data);
+    addSaiName("耶奥维尔", "约维尔",data);
+    addSaiName("考文垂城", "考文垂",data);
+    addSaiName("莫克姆", "莫康比",data);
+    addSaiName("诺茨郡", "诺士郡",data);
+    addSaiName("纽卡斯尔联", "纽卡斯尔",data);
+
+
 
     let counter = 0;
     for(let key in data) counter++;
