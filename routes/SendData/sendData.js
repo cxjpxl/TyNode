@@ -167,8 +167,8 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameH = game.nameH.replace("女子","").trim();
                     }
 
-                    if(game.nameH.indexOf("预备")>0){
-                        game.nameH = game.nameH.replace("预备","").trim();
+                    if(game.nameH.indexOf("预备队")>0){
+                        game.nameH = game.nameH.replace("预备队","").trim();
                     }
 
 
@@ -194,7 +194,7 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameH = global.lianSaiData[game.nameH+""];
                     }
 
-                    game.nameH = game.nameG.replace("-","").trim();
+                    game.nameH = game.nameH.replace("-","").trim();
                 }
 
                 //客队
@@ -238,8 +238,8 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameG = game.nameG.replace("女子","").trim();
                     }
 
-                    if(game.nameG.indexOf("预备")>0){
-                        game.nameG = game.nameG.replace("预备","").trim();
+                    if(game.nameG.indexOf("预备队")>0){
+                        game.nameG = game.nameG.replace("预备队","").trim();
                     }
 
                     game.nameG = game.nameG.trim();
