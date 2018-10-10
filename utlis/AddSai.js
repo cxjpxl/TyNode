@@ -2933,6 +2933,9 @@ function  getSaiList() {
     addSaiName("萨莫拉", "萨马拉",data);
     addSaiName("安索阿迪古", "安索阿特吉",data);
     addSaiName("阿拉加", "阿拉瓜",data);
+    addSaiName("克莱费", "克雷夫",data);
+    addSaiName("乌丁根05", "乌丁根",data);
+    addSaiName("欧登塞", "奥丹斯",data);
 
 
     let counter = 0;

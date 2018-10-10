@@ -164,6 +164,10 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameH = game.nameH.replace("-2","").trim();
                     }
 
+                    if(game.nameH.indexOf("-3")>0){
+                        game.nameH = game.nameH.replace("-3","").trim();
+                    }
+
                     if(game.nameH.indexOf("U-")>0){
                         game.nameH = game.nameH.replace("U-","U").trim();
                     }
@@ -175,7 +179,9 @@ router.post('/sendData', async (ctx, next) => {
                     if(game.nameH.indexOf("预备队")>0){
                         game.nameH = game.nameH.replace("预备队","").trim();
                     }
-
+                    if(game.nameH.indexOf("后备队")>0){
+                        game.nameH = game.nameH.replace("后备队","").trim();
+                    }
 
 
                     game.nameH = game.nameH.trim();
@@ -239,6 +245,10 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameG = game.nameG.replace("-2","").trim();
                     }
 
+                    if(game.nameG.indexOf("-3")>0){
+                        game.nameG = game.nameG.replace("-3","").trim();
+                    }
+
                     if(game.nameG.indexOf("U-")>0){
                         game.nameG = game.nameG.replace("U-","U").trim();
                     }
@@ -249,6 +259,10 @@ router.post('/sendData', async (ctx, next) => {
 
                     if(game.nameG.indexOf("预备队")>0){
                         game.nameG = game.nameG.replace("预备队","").trim();
+                    }
+
+                    if(game.nameG.indexOf("后备队")>0){
+                        game.nameG = game.nameG.replace("后备队","").trim();
                     }
 
                     game.nameG = game.nameG.trim();
