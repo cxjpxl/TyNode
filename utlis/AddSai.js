@@ -2936,6 +2936,10 @@ function  getSaiList() {
     addSaiName("克莱费", "克雷夫",data);
     addSaiName("乌丁根05", "乌丁根",data);
     addSaiName("欧登塞", "奥丹斯",data);
+    addSaiName("戴纳瓦", "DFK戴拿瓦",data);
+    addSaiName("内韦日斯", "尼维斯",data);
+    addSaiName("斯图布拉斯II", "施登巴斯B队",data);
+    addSaiName("萨拉基利斯II", "萨基列斯B队",data);
 
 
     let counter = 0;
