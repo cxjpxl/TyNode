@@ -2920,6 +2920,10 @@ function  getSaiList() {
     addSaiName("里奥沛图", "里奥沛图SP",data);
     addSaiName("费罗维亚里亚", "费罗维里亚SP",data);
     addSaiName("阿尔加兹拉", "阿尔贾兹拉",data);
+    addSaiName("图巴朗竞技", "图坝奥SC",data);
+    addSaiName("防卫者竞技", "德丰索体育队",data);
+    addSaiName("兰普拉青年", "罗姆帕拉",data);
+    addSaiName("菲尼克斯竞技", "凡尼克斯孟特维迪欧",data);
 
 
 
