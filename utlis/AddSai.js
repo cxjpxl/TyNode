@@ -2856,7 +2856,32 @@ function  getSaiList() {
     addSaiName("阿普利亚", "艾普瑞利亚",data);
     addSaiName("乌罗宰", "乌鲁扎伊",data);
     addSaiName("斯塔夫罗波耶", "迪纳摩斯塔夫罗波尔",data);
-    
+    addSaiName("军团", "莱迪奥戴拿模",data);
+    addSaiName("顿河畔罗斯托夫学院", "阿卡德米亚",data);
+    addSaiName("朱利亚诺瓦皇家", "积利安洛华",data);
+    addSaiName("卡西诺1924", "卡西诺",data);
+    addSaiName("皮阿尼斯", "匹安斯",data);
+    addSaiName("塞拉韦扎波齐", "塞拉韦扎",data);
+    addSaiName("蒙特瓦奇阿奎拉", "蒙泰瓦尔基",data);
+    addSaiName("列高", "莱可",data);
+    addSaiName("卡罗内塞", "卡龙尼斯",data);
+    addSaiName("维拉达尔梅瓦尔布雷姆巴纳", "维拉地阿美",data);
+    addSaiName("阿尔巴朗格", "阿尔巴诺卡",data);
+    addSaiName("阿尔塔穆拉队", "阿尔塔穆拉",data);
+    addSaiName("切里尼奥拉奥达切", "奥达彻切里尼奥拉",data);
+    addSaiName("桑毛雷塞", "桑木瑞斯",data);
+    addSaiName("费尔特雷联盟", "费尔特雷联",data);
+    addSaiName("莱尼亚戈萨卢斯", "尼亚戈萨卢斯",data);
+    addSaiName("塔雷托", "塔拉恩托",data);
+    addSaiName("FC索伦托", "索任托",data);
+    addSaiName("塔波斯科", "泰博斯寇",data);
+    addSaiName("科希策火车头", "柯西斯火车头",data);
+    addSaiName("特伦辛AS", "特伦辛",data);
+    addSaiName("兹拉特莫拉夫采", "莫拉斯",data);
+    addSaiName("波德布雷佐瓦钢铁", "波德布雷佐瓦",data);
+    addSaiName("瓦迪德格拉", "瓦迪戴加",data);
+    addSaiName("艾尔高纳", "高纳",data);
+
 
     let counter = 0;
     for(let key in data) counter++;
