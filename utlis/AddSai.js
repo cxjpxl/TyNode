@@ -2905,6 +2905,9 @@ function  getSaiList() {
     addSaiName("贝尔格兰诺体育", "斯伯迪沃贝尔格拉诺",data);
     addSaiName("AH 萨普拉", "阿图斯候诺扎普拉",data);
     addSaiName("查克永恒", "查科",data);
+    addSaiName("乌勒恩", "乌拉恩",data);
+    addSaiName("几内亚比绍", "几内亚比索",data);
+
 
 
     let counter = 0;
