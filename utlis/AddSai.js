@@ -2806,6 +2806,7 @@ function  getSaiList() {
     addSaiName("邓甘嫩雨燕", "邓根伦",data);
     addSaiName("巴利米纳联", "巴利米纳",data);
     addSaiName("哈兰德和沃尔夫焊工", "哈兰德沃夫",data);
+    ////////////////////////10.10/////////////////////////////////
     addSaiName("纳什维尔", "纳什维尔SC",data);
     addSaiName("多伦多FC II", "多伦多II队",data);
     addSaiName("柏太阳神", "柏雷素尔",data);
@@ -2836,7 +2837,19 @@ function  getSaiList() {
     addSaiName("伊尔库茨克泽尼特", "泽尼特伊尔库茨克",data);
     addSaiName("卡马斯纳贝列日尼切尔尼", "卡马斯",data);
     addSaiName("车里雅宾斯克", "切亚宾斯克",data);
-
+    addSaiName("依莫尔塞", "伊莫勒斯",data);
+    addSaiName("比士托尔斯1921", "比士托尔斯",data);
+    addSaiName("法诺", "阿尔马祖云达斯法诺",data);
+    addSaiName("米奥文尼", "米文尼",data);
+    addSaiName("阿尔杰什皮特什蒂", "阿格斯",data);
+    addSaiName("科学探索", "科特布斯",data);
+    addSaiName("哈勒施", "哈雷斯彻",data);
+    addSaiName("阿莱森多里亚", "亚历山德利亚",data);
+    addSaiName("费拉尔皮沙洛", "菲拉皮沙洛",data);
+    addSaiName("维德思维罗纳", "维图斯维罗纳",data);
+    addSaiName("汤顿镇", "湯顿",data);
+    addSaiName("基斯格罗夫竞技", "金斯高路华",data);
+    addSaiName("沃金顿", "沃京顿",data);
 
 
     let counter = 0;
