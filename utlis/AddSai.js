@@ -2699,6 +2699,8 @@ function  addSaiName(key,value,data) {
 
 function  getSaiList() {
     let data = {};
+
+    //规则  去掉预备队   女子
     addSaiName("阿内特花园", "阿内特加登斯",data);
     addSaiName("蒂沃利花园", "蒂沃利加登斯",data);
     addSaiName("谢斯伯利", "什鲁斯伯里",data);
@@ -2805,7 +2807,15 @@ function  getSaiList() {
     addSaiName("巴利米纳联", "巴利米纳",data);
     addSaiName("哈兰德和沃尔夫焊工", "哈兰德沃夫",data);
     addSaiName("乌尔基萨大学体育", "乌尔基萨",data);
-
+    addSaiName("纳什维尔", "纳什维尔SC",data);
+    addSaiName("多伦多FC II", "多伦多II队",data);
+    addSaiName("柏太阳神", "柏雷素尔",data);
+    addSaiName("印度尼西亚", "印尼",data);
+    addSaiName("埃米尼奥", "加纳埃米尼奥",data);
+    addSaiName("阿尔比诺莱费", "艾宾奴列夫",data);
+    addSaiName("CSKA莫斯科", "莫斯科中央陆军",data);
+    addSaiName("CR比罗达特", "贝鲁扎达",data);
+    addSaiName("USM阿尔及尔", "USM阿尔格",data);
 
 
     let counter = 0;
