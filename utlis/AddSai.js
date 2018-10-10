@@ -2806,16 +2806,37 @@ function  getSaiList() {
     addSaiName("邓甘嫩雨燕", "邓根伦",data);
     addSaiName("巴利米纳联", "巴利米纳",data);
     addSaiName("哈兰德和沃尔夫焊工", "哈兰德沃夫",data);
-    addSaiName("乌尔基萨大学体育", "乌尔基萨",data);
     addSaiName("纳什维尔", "纳什维尔SC",data);
     addSaiName("多伦多FC II", "多伦多II队",data);
     addSaiName("柏太阳神", "柏雷素尔",data);
     addSaiName("印度尼西亚", "印尼",data);
-    addSaiName("埃米尼奥", "加纳埃米尼奥",data);
-    addSaiName("阿尔比诺莱费", "艾宾奴列夫",data);
     addSaiName("CSKA莫斯科", "莫斯科中央陆军",data);
     addSaiName("CR比罗达特", "贝鲁扎达",data);
     addSaiName("USM阿尔及尔", "USM阿尔格",data);
+    addSaiName("巴洛特斯帝", "巴罗特斯缇",data);
+    addSaiName("乌拉尔-2", "乌拉尔II队",data);
+    addSaiName("塞兹兰-2003", "塞兹兰",data);
+    addSaiName("巴尔瑙尔迪纳摩", "巴尔瑙尔戴拿模",data);
+    addSaiName("赤塔", "基塔",data);
+    addSaiName("乌法-2", "乌法II队",data);
+    addSaiName("ACS蒂米什瓦拉", "ACS蒂米索拉",data);
+    addSaiName("辛迪泰哥维斯特", "辛迪亚泰哥维斯特",data);
+    addSaiName("蒂米什瓦拉里彭斯亚", "里彭斯亚",data);
+    addSaiName("埃内杰提奇努尔", "埃涅尔格提西安奴尔",data);
+    addSaiName("UTA阿拉德", "UTA亚拉德",data);
+    addSaiName("梅塔洛格布斯", "梅塔罗洛布斯",data);
+    addSaiName("布加勒斯特达契-盖提卡", "达科格提卡布加勒斯提",data);
+    addSaiName("阿罗斯塔巴克乌", "阿尔斯塔尔巴卡乌",data);
+    addSaiName("巴雷拉", "芭雷拉",data);
+    addSaiName("ASU蒂米什瓦拉理工", "普利塔力卡蒂米什瓦拉",data);
+    addSaiName("埃米尼奥", "加纳埃米尼奥",data);
+    addSaiName("阿尔比诺莱费", "艾宾奴列夫",data);
+    addSaiName("法乌尔康斯坦察", "法乌尔",data);
+    addSaiName("鄂木斯克额尔齐斯", "艾立叙欧斯克",data);
+    addSaiName("伊尔库茨克泽尼特", "泽尼特伊尔库茨克",data);
+    addSaiName("卡马斯纳贝列日尼切尔尼", "卡马斯",data);
+    addSaiName("车里雅宾斯克", "切亚宾斯克",data);
+
 
 
     let counter = 0;
