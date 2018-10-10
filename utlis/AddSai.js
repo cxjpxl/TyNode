@@ -2907,6 +2907,19 @@ function  getSaiList() {
     addSaiName("查克永恒", "查科",data);
     addSaiName("乌勒恩", "乌拉恩",data);
     addSaiName("几内亚比绍", "几内亚比索",data);
+    addSaiName("国际-RS", "国际体育会RS",data);
+    addSaiName("科里蒂巴", "哥里迪巴PR",data);
+    addSaiName("沙佩科恩斯", "乔沛高恩斯SC",data);
+    addSaiName("桑托斯", "山度士",data);
+    addSaiName("韦拉克鲁斯", "维拉库鲁PE",data);
+    addSaiName("德基绍", "迪茨韶PE",data);
+    addSaiName("阿尔富吉拉迪巴", "迪巴阿富查伊拉",data);
+    addSaiName("凯勒巴阿尔伊蒂哈德", "伊蒂哈德卡尔巴",data);
+    addSaiName("迪拜阿尔纳斯尔", "纳萨杜拜",data);
+    addSaiName("阿尔沙迦", "沙迦",data);
+    addSaiName("里奥沛图", "里奥沛图SP",data);
+    addSaiName("费罗维亚里亚", "费罗维里亚SP",data);
+    addSaiName("阿尔加兹拉", "阿尔贾兹拉",data);
 
 
 
