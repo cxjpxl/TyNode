@@ -2999,6 +2999,10 @@ function  getSaiList() {
     addSaiName("华斯兰比华伦", "华斯兰德",data);
     addSaiName("03希尔登", "希尔登",data);
     addSaiName("哈斯里豪尔蒙", "哈萨侯姆",data);
+    addSaiName("巴尔德拉卡尔萨达", "瓦德拉卡扎达",data);
+    addSaiName("民族竞技", "国家体育会",data);
+    addSaiName("雷昂内斯", "利昂内斯",data);
+
 
     let counter = 0;
     for(let key in data) counter++;
