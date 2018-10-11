@@ -3019,6 +3019,10 @@ function  getSaiList() {
     addSaiName("多哈艾阿沙比", "阿拉毕多哈",data);
     addSaiName("卡塔尔体育", "卡达尔竞技",data);
     addSaiName("乌姆沙拉尔", "沙拉尔",data);
+    addSaiName("诺斯特兰德", "诺德斯特兰德",data);
+    addSaiName("斯塔贝克", "史达比克",data);
+    addSaiName("比利亚雷亚尔", "维拉利尔",data);
+    addSaiName("皇家贝蒂斯", "皇家贝迪斯",data);
 
     let counter = 0;
     for(let key in data) counter++;
