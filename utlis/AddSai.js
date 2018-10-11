@@ -2994,7 +2994,11 @@ function  getSaiList() {
     addSaiName("塞斯陶河", "施斯达奥",data);
     addSaiName("莱加内斯", "雷加利斯",data);
     addSaiName("洛亚LDU", "洛加",data);
-
+    addSaiName("阿尔托纳93", "阿尔托纳",data);
+    addSaiName("布莱德斯", "布拉德",data);
+    addSaiName("华斯兰比华伦", "华斯兰德",data);
+    addSaiName("03希尔登", "希尔登",data);
+    addSaiName("哈斯里豪尔蒙", "哈萨侯姆",data);
 
     let counter = 0;
     for(let key in data) counter++;
