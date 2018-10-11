@@ -2980,6 +2980,11 @@ function  getSaiList() {
     addSaiName("马勒基", "马尔基",data);
     addSaiName("巴尔代约夫游击", "巴尔代约夫",data);
     addSaiName("特尔纳瓦斯巴达克", "泰拿华斯巴达",data);
+    addSaiName("平阳", "贝卡麦克斯",data);
+    addSaiName("河内", "河内足球俱乐部",data);
+    addSaiName("比尔森胜利", "皮尔森",data);
+
+
 
 
     let counter = 0;
