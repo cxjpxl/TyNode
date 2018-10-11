@@ -2958,8 +2958,11 @@ function  getSaiList() {
     addSaiName("贝拉维斯塔", "贝拉维斯塔RJ",data);
     addSaiName("黑珍珠", "佩罗拉斯尼加斯RJ",data);
     addSaiName("坎珀斯AA", "坎波斯RJ",data);
-
-
+    addSaiName("法拉帝水流", "沃特尔菲尔蒂",data);
+    addSaiName("马那瓜尤文图斯", "祖云达斯马纳瓜",data);
+    addSaiName("塔尔萨钻机工", "塔尔萨罗夫内卡斯",data);
+    addSaiName("克鲁塞罗MG", "高士路MG",data);
+    addSaiName("科林蒂安-SP", "哥连泰斯SP",data);
 
     let counter = 0;
     for(let key in data) counter++;
