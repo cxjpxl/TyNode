@@ -2968,6 +2968,17 @@ function  getSaiList() {
     addSaiName("西雅图海湾人", "西雅图海湾人队",data);
     addSaiName("科罗拉多跃泉", "科罗拉多斯普林斯",data);
     addSaiName("拉斯维加斯光", "拉斯维加斯之光",data);
+    ///////////////////////10.11/////////////////////////////////////
+    addSaiName("麦迪亚奥林匹克", "美狄亚",data);
+    addSaiName("拉贝河畔乌斯季", "乌兹提纳拉班",data);
+    addSaiName("ES塞蒂夫", "瑟特福",data);
+    addSaiName("CS君士坦丁", "CS康桑汰",data);
+    addSaiName("侯赛因德尔", "贺赛恩",data);
+    addSaiName("波黑", "波斯尼亚和黑塞哥维那",data);
+    addSaiName("科林蒂安", "哥连泰斯SP",data);
+    addSaiName("弗拉门戈", "法林明高RJ",data);
+
+
 
     let counter = 0;
     for(let key in data) counter++;
