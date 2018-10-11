@@ -160,6 +160,10 @@ router.post('/sendData', async (ctx, next) => {
                     }*/
 
 
+                    if(game.nameH.indexOf("II")>0){
+                        game.nameH = game.nameH.replace("II","").trim();
+                    }
+
                     if(game.nameH.indexOf("-2")>0){
                         game.nameH = game.nameH.replace("-2","").trim();
                     }
@@ -240,6 +244,10 @@ router.post('/sendData', async (ctx, next) => {
                     if(game.nameG.indexOf("(R)")>0){
                         game.nameG = game.nameG.replace("(R)","").trim();
                     }*/
+
+                    if(game.nameG.indexOf("II")>0){
+                        game.nameG = game.nameG.replace("II","").trim();
+                    }
 
                     if(game.nameG.indexOf("-2")>0){
                         game.nameG = game.nameG.replace("-2","").trim();
