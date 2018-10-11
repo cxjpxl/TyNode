@@ -2977,7 +2977,9 @@ function  getSaiList() {
     addSaiName("波黑", "波斯尼亚和黑塞哥维那",data);
     addSaiName("科林蒂安", "哥连泰斯SP",data);
     addSaiName("弗拉门戈", "法林明高RJ",data);
-
+    addSaiName("马勒基", "马尔基",data);
+    addSaiName("巴尔代约夫游击", "巴尔代约夫",data);
+    addSaiName("特尔纳瓦斯巴达克", "泰拿华斯巴达",data);
 
 
     let counter = 0;
