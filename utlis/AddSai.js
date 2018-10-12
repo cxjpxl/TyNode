@@ -3130,8 +3130,8 @@ function  getSaiList() {
     addSaiName("多姆扎勒", "多姆扎莱",data);
     addSaiName("林茨俱乐部", "林茨",data);
     addSaiName("SKU阿姆施泰滕", "阿姆施泰滕",data);
-
-
+    addSaiName("卡尔达斯十一人", "卡尔打斯",data);
+    addSaiName("里奥内格罗金鹰", "里奥内格罗阿古拉斯",data);
 
 
     let counter = 0;
