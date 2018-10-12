@@ -3116,6 +3116,7 @@ function  getSaiList() {
     addSaiName("卢基安纳基亚", "卢奇安拿吉耶",data);
     addSaiName("弗拉迪米尔鱼雷", "维拉狄米鱼雷",data);
     addSaiName("列宁格拉德茨", "列宁格雷德",data);
+    addSaiName("乔恩皮", "查部伊",data);
 
 
     let counter = 0;
