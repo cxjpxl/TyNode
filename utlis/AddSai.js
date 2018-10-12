@@ -3078,7 +3078,17 @@ function  getSaiList() {
     addSaiName("马里诺", "马力诺",data);
     addSaiName("维拉圣塔布里奇特", "圣他布利吉达",data);
     addSaiName("圭马尔联", "尤宁贵马尔",data);
-
+    addSaiName("塔比历斯", "特普利采",data);
+    addSaiName("利贝雷茨斯洛万", "利贝雷茨",data);
+    addSaiName("贝亚赛恩", "比亚沙圣",data);
+    addSaiName("索莫罗斯特罗", "苏莫洛斯特茹",data);
+    addSaiName("巴尔马塞达", "巴马社达",data);
+    addSaiName("梅迪奥库德奥", "索拉雷斯梅迪奥库德奥",data);
+    addSaiName("艾伯利西亚竞技", "阿尔比瑞卡",data);
+    addSaiName("莱佩桑罗奎", "桑罗奎莱佩",data);
+    addSaiName("科利亚", "科瑞亚CF",data);
+    addSaiName("河内I", "河内",data);
+    addSaiName("胡志明市", "胡志明市足球俱乐部",data);
 
 
     let counter = 0;
