@@ -3023,6 +3023,47 @@ function  getSaiList() {
     addSaiName("斯塔贝克", "史达比克",data);
     addSaiName("比利亚雷亚尔", "维拉利尔",data);
     addSaiName("皇家贝蒂斯", "皇家贝迪斯",data);
+    //////////////////////10.12/////////////////////////////////
+    addSaiName("杜兰戈", "杜兰高",data);
+    addSaiName("巴雷卡尔多", "巴拉卡度",data);
+    addSaiName("阿尔瓦塞特", "阿尔巴塞特",data);
+    addSaiName("埃尔切", "艾尔切",data);
+    addSaiName("洪堡", "侯姆堡",data);
+    addSaiName("维尔拉", "SC维尔",data);
+    addSaiName("亚琛阿勒曼尼亚", "亚琛",data);
+    addSaiName("利默里克", "利麦立克",data);
+    addSaiName("圣巴特里克竞技", "圣帕特里克",data);
+    addSaiName("沃特福德", "瓦特福德",data);
+    addSaiName("邓多克", "登克尔克",data);
+    addSaiName("AZ阿尔克马尔青年", "阿尔克马尔青年队",data);
+    addSaiName("乌得勒支青年", "乌德勒支青年队",data);
+    addSaiName("NEC奈梅亨", "奈梅亨",data);
+    addSaiName("FC埃因霍温", "埃因霍温",data);
+    addSaiName("RKC华域克", "瓦尔维克",data);
+    addSaiName("沃伦达姆", "沃伦丹",data);
+    addSaiName("阿尔梅勒", "阿尔默勒城",data);
+    addSaiName("阿布洛斯", "亚布岳夫",data);
+    addSaiName("爱丁堡城队", "爱丁堡城",data);
+    addSaiName("塞维利亚C", "塞维利亚C队",data);
+    addSaiName("贝蒂斯竞技", "贝迪斯体育会",data);
+    addSaiName("巴雷达", "巴雷达巴洛皮",data);
+    addSaiName("Ribamontan al Mar", "瑞班模坦",data);
+    addSaiName("柏图加烈特", "波图哥尼迪",data);
+    addSaiName("SD圣佩德罗", "SD圣佩德鲁",data);
+    addSaiName("圣伊格纳西奥", "CD圣伊格纳西奥",data);
+    addSaiName("乌特雷拉", "乌特拉",data);
+    addSaiName("蓬特赫尼尔圣费尔明", "圣费尔明",data);
+    addSaiName("赫雷斯体育", "萨雷斯竞技",data);
+    addSaiName("洛加雷斯", "罗斯加勒斯",data);
+    addSaiName("迪奥塞萨诺", "迪欧瑟萨洛",data);
+    addSaiName("埃斯特雷马杜拉B", "埃斯特雷马杜拉B队",data);
+    addSaiName("阿利沃斯体育", "艾乐斯维斯",data);
+    addSaiName("贝蒂-奥纳克", "比堤欧纳克",data);
+    addSaiName("Avance Ezcabarte", "艾万瑟亦卡巴特",data);
+    addSaiName("尔恩特雷戈", "恩阙谷",data);
+    addSaiName("巴尼捷亚", "巴列彻",data);
+    addSaiName("杜希达联", "德罗赫达联",data);
+
 
     let counter = 0;
     for(let key in data) counter++;
