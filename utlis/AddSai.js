@@ -3119,6 +3119,11 @@ function  getSaiList() {
     addSaiName("乔恩皮", "查部伊",data);
     addSaiName("希洪", "希杭FF",data);
     addSaiName("蒙特", "莫特",data);
+    addSaiName("姆拉达博莱斯拉夫", "博莱斯拉夫",data);
+    addSaiName("赫拉德茨克拉洛韦", "贺拉戴克",data);
+
+
+
 
     let counter = 0;
     for(let key in data) counter++;
