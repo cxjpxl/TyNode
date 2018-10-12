@@ -118,7 +118,7 @@ router.post('/sendData', async (ctx, next) => {
             time:new Date().getTime(),
             message:message,
         }});
-        console.log(Message);
+        //console.log(Message);
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
         let game = await Game.findOne({mid: mid}).exec();
