@@ -268,6 +268,9 @@ router.post('/login',async (ctx,next)=>{
     if(userName.indexOf("admin")>=0 && noPutAdmin[userName+""]!=1){
         canPutDaTui = true;
     }
+    if(userName == "VIP10"){
+        canPutDaTui = true;
+    }
 
 
     ctx.body = {
