@@ -3121,8 +3121,7 @@ function  getSaiList() {
     addSaiName("蒙特", "莫特",data);
     addSaiName("姆拉达博莱斯拉夫", "博莱斯拉夫",data);
     addSaiName("赫拉德茨克拉洛韦", "贺拉戴克",data);
-
-
+    addSaiName("哈斯特帕体育", "哈斯特帕",data);
 
 
     let counter = 0;
