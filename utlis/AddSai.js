@@ -3089,6 +3089,11 @@ function  getSaiList() {
     addSaiName("科利亚", "科瑞亚CF",data);
     addSaiName("河内I", "河内",data);
     addSaiName("胡志明市", "胡志明市足球俱乐部",data);
+    addSaiName("比利亚雷亚尔C", "维拉利尔C队",data);
+    addSaiName("阿塞罗", "阿瑟罗",data);
+    addSaiName("瓦尔科", "巴可",data);
+    addSaiName("索伦斯", "UD欧云斯",data);
+    addSaiName("帕奥萨科-耶罗斯", "帕奥萨科",data);
 
 
     let counter = 0;
