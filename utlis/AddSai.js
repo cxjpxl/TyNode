@@ -3094,6 +3094,28 @@ function  getSaiList() {
     addSaiName("瓦尔科", "巴可",data);
     addSaiName("索伦斯", "UD欧云斯",data);
     addSaiName("帕奥萨科-耶罗斯", "帕奥萨科",data);
+    addSaiName("维拉鲁比亚", "维拉鲁比亚",data);
+    addSaiName("曼彻格", "曼彻高雷阿尔城",data);
+    addSaiName("卡纳芬镇", "卡纳芬城",data);
+    addSaiName("拉内利镇", "拉内利城",data);
+    addSaiName("卡迪夫都会", "卡迪夫都会大学",data);
+    addSaiName("昆卡市", "昆卡",data);
+    addSaiName("皇家韦尔瓦娱乐", "维尔瓦",data);
+    addSaiName("蒂罗-皮乔恩", "蒂罗皮成",data);
+    addSaiName("罗塞斯", "若西斯",data);
+    addSaiName("科瓦东加", "科瓦栋卡",data);
+    addSaiName("雷乌斯竞技", "雷乌斯",data);
+    addSaiName("皇家西班牙人", "爱斯宾奴",data);
+    addSaiName("塞内卡", "瑟勒卡",data);
+    addSaiName("拿撒勒马卡比阿希", "阿基纳扎力马卡比",data);
+    addSaiName("拉马特甘夏普尔", "夏普尔拉马甘吉夫塔伊姆",data);
+    addSaiName("阿克里夏普尔", "阿卡夏普尔",data);
+    addSaiName("纳扎雷斯伊利特夏普尔", "拿撒勒伊里特夏普尔",data);
+    addSaiName("卡法萨巴夏普尔", "法萨巴夏普尔",data);
+    addSaiName("埃克萨夏普尔", "艾萨拉埃马达",data);
+    addSaiName("卢基安纳基亚", "卢奇安拿吉耶",data);
+    addSaiName("弗拉迪米尔鱼雷", "维拉狄米鱼雷",data);
+    addSaiName("列宁格拉德茨", "列宁格雷德",data);
 
 
     let counter = 0;
