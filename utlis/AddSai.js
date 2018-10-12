@@ -3158,6 +3158,15 @@ function  getSaiList() {
     addSaiName("杜斯兰堡", "卡斯多夫",data);
     addSaiName("韦尔斯赫塔", "WSC赫塔威尔斯",data);
     addSaiName("TUS贝德-巴特格莱兴贝格", "巴特格莱兴贝格",data);
+    addSaiName("塔鲁普-帕鲁普", "塔鲁普",data);
+    addSaiName("B 1893", "B93哥本哈根",data);
+    addSaiName("BBSF", "巴勒鲁普",data);
+    addSaiName("汉堡康科迪亚", "WTSV康科迪亚",data);
+    addSaiName("达森多夫", "达森多尔夫",data);
+    addSaiName("塞利根波顿", "塞利根波滕",data);
+    addSaiName("DJK格本巴赫", "格本巴赫",data);
+    addSaiName("红白艾伦", "艾伦",data);
+    addSaiName("威斯特法利亚里嫩", "威斯法利亚利耶尼恩",data);
 
 
     let counter = 0;
