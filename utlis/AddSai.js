@@ -3122,6 +3122,16 @@ function  getSaiList() {
     addSaiName("姆拉达博莱斯拉夫", "博莱斯拉夫",data);
     addSaiName("赫拉德茨克拉洛韦", "贺拉戴克",data);
     addSaiName("哈斯特帕体育", "哈斯特帕",data);
+    addSaiName("埃斯基谢希尔体育", "伊斯基锡海斯普",data);
+    addSaiName("圣帕尔滕", "圣普尔顿",data);
+    addSaiName("MTK", "MTK布达佩斯",data);
+    addSaiName("特里波利斯阿斯特拉斯", "泰利普利斯",data);
+    addSaiName("帕纳察基", "佩拿恰奇",data);
+    addSaiName("多姆扎勒", "多姆扎莱",data);
+    addSaiName("林茨俱乐部", "林茨",data);
+    addSaiName("SKU阿姆施泰滕", "阿姆施泰滕",data);
+
+
 
 
     let counter = 0;
