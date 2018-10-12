@@ -3183,7 +3183,15 @@ function  getSaiList() {
     addSaiName("亚松森瓜拉尼", "瓜拉尼",data);
     addSaiName("塔尔伯特港足球俱乐部", "塔尔波特港",data);
     addSaiName("亚分利多", "爱芬里多",data);
-
+    addSaiName("海伦芬", "海伦维恩",data);
+    addSaiName("精英/巴伦德雷赫特", "巴伦德雷赫特精英队",data);
+    addSaiName("阿基里斯29", "艾切尔斯",data);
+    addSaiName("ADO海牙", "海牙",data);
+    addSaiName("VV阿尔克马尔", "VV艾克马亚",data);
+    addSaiName("FC大阪", "大阪",data);
+    addSaiName("大分公式", "伟士帕大分",data);
+    addSaiName("内卡哈", "拿加沙",data);
+    addSaiName("奇瓦瓦多拉多斯", "阿托马奇瓦瓦大学",data);
 
     let counter = 0;
     for(let key in data) counter++;
