@@ -3155,7 +3155,6 @@ function  getSaiList() {
     addSaiName("滨湖新锡德尔", "纽塞德尔",data);
     addSaiName("埃布雷斯多夫", "埃布罗切斯多夫",data);
     addSaiName("特赖斯基兴", "提尔艾克琛",data);
-    addSaiName("杜斯兰堡", "卡斯多夫",data);
     addSaiName("韦尔斯赫塔", "WSC赫塔威尔斯",data);
     addSaiName("TUS贝德-巴特格莱兴贝格", "巴特格莱兴贝格",data);
     addSaiName("塔鲁普-帕鲁普", "塔鲁普",data);
@@ -3192,6 +3191,26 @@ function  getSaiList() {
     addSaiName("大分公式", "伟士帕大分",data);
     addSaiName("内卡哈", "拿加沙",data);
     addSaiName("奇瓦瓦多拉多斯", "阿托马奇瓦瓦大学",data);
+////////////////////////10.13//////////////////////////////////////////
+    addSaiName("藤枝", "藤枝MYFC",data);
+    addSaiName("大阪钢巴", "大阪飞脚",data);
+    addSaiName("东京武藏野城", "东京武藏野",data);
+    addSaiName("仙台索尼", "仙台新力",data);
+    addSaiName("奈良俱乐部", "奈良俱乐部",data);
+    addSaiName("维尔天桑名", "威蒂恩三重",data);
+    addSaiName("流通经济大学之龙", "流通经济大学龙崎",data);
+    addSaiName("宫崎特格瓦雅罗", "特格瓦嘉洛宫崎",data);
+    addSaiName("INAC雌狮", "INAC神户李奥内萨",data);
+    addSaiName("长野帕塞罗", "长野琶扼搂",data);
+    addSaiName("JEF联", "千叶市原",data);
+    addSaiName("大阪樱花", "大阪樱花堺",data);
+    addSaiName("日视美人", "贝拉萨",data);
+    addSaiName("野岛", "野岛斯特拉神奈川相模原",data);
+    addSaiName("尼塔代", "尼塔代菲尔兹横滨",data);
+    addSaiName("蒂华纳", "提华纳",data);
+    addSaiName("多拉多斯锡那罗亚", "多拉多斯",data);
+
+
 
     let counter = 0;
     for(let key in data) counter++;
