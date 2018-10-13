@@ -3209,7 +3209,10 @@ function  getSaiList() {
     addSaiName("尼塔代", "尼塔代菲尔兹横滨",data);
     addSaiName("蒂华纳", "提华纳",data);
     addSaiName("多拉多斯锡那罗亚", "多拉多斯",data);
-
+    addSaiName("SKA-哈巴罗夫斯克", "SKA哈巴罗夫斯克",data);
+    addSaiName("伏尔加格勒转子", "伏尔加格勒",data);
+    addSaiName("城南一和天马", "城南足球俱乐部",data);
+    addSaiName("光州FC", "光州",data);
 
 
     let counter = 0;
