@@ -3347,6 +3347,9 @@ function  getSaiList() {
     addSaiName("摩伦体育", "马伦",data);
     addSaiName("富川FC", "富川",data);
     addSaiName("FC安养", "安阳",data);
+    addSaiName("湖南湘涛", "湖南湘涛华莱",data);
+    addSaiName("国际", "FK国际体育会",data);
+    addSaiName("布罗达拉茨", "伯达拉克",data);
 
 
     let counter = 0;
