@@ -3375,6 +3375,11 @@ function  getSaiList() {
     addSaiName("捷克布杰约维采迪纳摩", "布迪祖怀斯",data);
     addSaiName("卡罗维发利", "K卡罗维瓦利",data);
     addSaiName("斯拉沃维谢赫拉德", "维谢赫拉得",data);
+    addSaiName("西隆拉壮", "拉莊",data);
+    addSaiName("马德里", "马德里CFF",data);
+    addSaiName("巴伦西亚", "华伦西亚",data);
+    addSaiName("莱万特", "利云特",data);
+    addSaiName("贝蒂斯", "皇家贝迪斯",data);
 
 
     let counter = 0;
