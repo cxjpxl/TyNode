@@ -3350,7 +3350,9 @@ function  getSaiList() {
     addSaiName("湖南湘涛", "湖南湘涛华莱",data);
     addSaiName("国际", "FK国际体育会",data);
     addSaiName("布罗达拉茨", "伯达拉克",data);
-
+    addSaiName("协会足球俱乐部", "协会队",data);
+    addSaiName("连菲特", "林菲尔德",data);
+    
 
     let counter = 0;
     for(let key in data) counter++;
