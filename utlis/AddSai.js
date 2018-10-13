@@ -3173,7 +3173,6 @@ function  getSaiList() {
     addSaiName("红牛", "巴西红牛SP",data);
     addSaiName("诺瓦里桑蒂诺", "甘美奥诺瓦里桑蒂诺SP",data);
     addSaiName("葡萄牙人SP", "波图加沙SP",data);
-    addSaiName("庞特普雷塔", "邦迪比达SP",data);
     addSaiName("巴西体育", "布拉希尔SP",data);
     addSaiName("圣卡埃塔诺", "圣卡坦奴SP",data);
     addSaiName("15皮拉西卡巴", "皮拉西卡巴SP",data);
