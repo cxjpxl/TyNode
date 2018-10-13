@@ -3352,7 +3352,13 @@ function  getSaiList() {
     addSaiName("布罗达拉茨", "伯达拉克",data);
     addSaiName("协会足球俱乐部", "协会队",data);
     addSaiName("连菲特", "林菲尔德",data);
-    
+    addSaiName("普沃茨克维斯瓦", "华沙普洛克",data);
+    addSaiName("克勒拉希多瑙", "克勒拉希",data);
+    addSaiName("费伦茨瓦罗斯", "GKS贾特雷比",data);
+    addSaiName("索罗克萨", "索斯诺维茨",data);
+
+
+
 
     let counter = 0;
     for(let key in data) counter++;
