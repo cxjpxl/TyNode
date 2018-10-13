@@ -3429,6 +3429,34 @@ function  getSaiList() {
     addSaiName("卡塞塔斯", "戈萨塔",data);
     addSaiName("阿伦泰罗", "阿仁特若",data);
     addSaiName("索伦斯", "欧伦塞",data);
+    addSaiName("多哈阿赫利", "阿尔艾利多哈",data);
+    addSaiName("JSM贝贾亚", "比捷亚",data);
+    addSaiName("US比斯克拉", "比斯克拉",data);
+    addSaiName("USM哈拉彻", "哈拉彻",data);
+    addSaiName("科尔多瓦学院", "联合队",data);
+    addSaiName("奥达柯", "格雷米奥奥萨斯库奥达柯SP",data);
+    addSaiName("圣安德雷", "圣安德雷SP",data);
+    addSaiName("陶巴特", "陶巴特SP",data);
+    addSaiName("里奥克拉罗", "里奥克拉洛SP",data);
+    addSaiName("沃图波兰圭伦斯", "沃图波兰伦斯SP",data);
+    addSaiName("圣贝尔纳多", "圣贝纳多SP",data);
+    addSaiName("尤文图斯SP", "佐云图斯SP",data);
+    addSaiName("阿蒂巴亚", "阿提柏SP",data);
+    addSaiName("隆德里纳", "隆迪那PR",data);
+    addSaiName("圣本托", "圣本托SP",data);
+    addSaiName("阿利安萨石油", "阿利安萨",data);
+    addSaiName("博亚卡捷高", "奇科",data);
+    addSaiName("科尔多巴美洲豹", "贾奎斯科尔多瓦",data);
+    addSaiName("乌伊拉竞技", "修罗",data);
+    addSaiName("圣菲", "圣塔菲",data);
+    addSaiName("奥卡斯竞技", "奥卡斯",data);
+    addSaiName("基多民族", "国家报队",data);
+    addSaiName("基多天主教大学", "卡托利卡基多",data);
+    addSaiName("LDU基多", "奎托",data);
+    addSaiName("阿特纳斯", "阿特那斯珊卡洛斯",data);
+    addSaiName("佩那罗尔", "佩纳罗尔",data);
+    addSaiName("菲尼克斯", "凡尼克斯孟特维迪欧",data);
+    addSaiName("圣卡洛斯", "珊卡洛斯",data);
 
 
     let counter = 0;
