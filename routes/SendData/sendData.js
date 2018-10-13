@@ -180,6 +180,10 @@ router.post('/sendData', async (ctx, next) => {
                         game.nameH = game.nameH.replace("女子","").trim();
                     }
 
+                    if(game.nameH.indexOf("女足")>0){
+                        game.nameH = game.nameH.replace("女足","").trim();
+                    }
+
                     if(game.nameH.indexOf("预备队")>0){
                         game.nameH = game.nameH.replace("预备队","").trim();
                     }
@@ -263,6 +267,10 @@ router.post('/sendData', async (ctx, next) => {
 
                     if(game.nameG.indexOf("女子")>0){
                         game.nameG = game.nameG.replace("女子","").trim();
+                    }
+
+                    if(game.nameG.indexOf("女足")>0){
+                        game.nameG = game.nameG.replace("女足","").trim();
                     }
 
                     if(game.nameG.indexOf("预备队")>0){

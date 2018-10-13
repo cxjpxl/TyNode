@@ -3411,10 +3411,13 @@ function  getSaiList() {
     addSaiName("巴洛姆", "贝鲁姆",data);
     addSaiName("奥德格陵兰B队", "奥特B队",data);
     addSaiName("劳弗斯", "诺霍斯",data);
-    addSaiName("瓦勒伦加女足", "瓦勒伦加",data);
-    addSaiName("阿华德斯纳斯女足", "阿华德斯纳斯",data);
-
-
+    addSaiName("阿西里斯卡BK", "艾西里斯卡BK",data);
+    addSaiName("希塔普斯", "海塔普斯",data);
+    addSaiName("奈舍", "纳斯乔",data);
+    addSaiName("拉斯拉特", "拉士拉提斯",data);
+    addSaiName("托尔斯兰达", "托斯兰达",data);
+    addSaiName("维纳什堡IF", "维安斯博格斯",data);
+    addSaiName("斯托姆堡", "史卓贝治",data);
 
 
 
