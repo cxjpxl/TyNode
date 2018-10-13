@@ -3356,6 +3356,18 @@ function  getSaiList() {
     addSaiName("克勒拉希多瑙", "克勒拉希",data);
     addSaiName("费伦茨瓦罗斯", "GKS贾特雷比",data);
     addSaiName("索罗克萨", "索斯诺维茨",data);
+    addSaiName("索斯诺维茨扎格勒比", "索斯诺维茨",data);
+    addSaiName("GKS亚斯琴别-兹德鲁伊", "GKS贾特雷比",data);
+    addSaiName("克拉斯诺戈尔斯克佐尔基", "佐基利",data);
+    addSaiName("莫斯科斯特吉诺", "斯特罗吉诺",data);
+    addSaiName("萨鲁特", "沙由别尔哥罗德",data);
+    addSaiName("希姆基-M", "希姆基队",data);
+    addSaiName("FK卡卢加", "卡卢咖",data);
+    addSaiName("新莫斯科斯克希米克", "韦莱斯莫斯科",data);
+    addSaiName("奥布宁斯克克万特", "皮斯科维",data);
+
+
+
 
 
 
