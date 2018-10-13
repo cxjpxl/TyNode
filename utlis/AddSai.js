@@ -3365,11 +3365,16 @@ function  getSaiList() {
     addSaiName("FK卡卢加", "卡卢咖",data);
     addSaiName("新莫斯科斯克希米克", "韦莱斯莫斯科",data);
     addSaiName("奥布宁斯克克万特", "皮斯科维",data);
-
-
-
-
-
+    addSaiName("贝济耶", "贝兹尔",data);
+    addSaiName("帕尔杜比采", "帕都拜斯",data);
+    addSaiName("俄斯特拉发巴尼克", "奥斯泰华",data);
+    addSaiName("伊赫拉瓦维索奇纳", "伊希拉瓦",data);
+    addSaiName("史洛特", "斯洛瓦茨科",data);
+    addSaiName("布尔诺兹布罗约夫卡", "布尔诺",data);
+    addSaiName("布拉格杜克拉", "杜克拉布拉格",data);
+    addSaiName("捷克布杰约维采迪纳摩", "布迪祖怀斯",data);
+    addSaiName("卡罗维发利", "K卡罗维瓦利",data);
+    addSaiName("斯拉沃维谢赫拉德", "维谢赫拉得",data);
 
 
     let counter = 0;
