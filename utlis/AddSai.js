@@ -3391,6 +3391,32 @@ function  getSaiList() {
     addSaiName("奥胡斯弗雷马德", "阿尔胡斯费马",data);
     addSaiName("布拉迪斯拉发斯洛万", "布拉迪斯拉发",data);
     addSaiName("斯崔达", "斯特里达",data);
+    addSaiName("阿尔堡KFUM", "KFUM奥斯陆",data);
+    addSaiName("布莱尼", "拜尼",data);
+    addSaiName("巴洛姆", "贝鲁姆",data);
+    addSaiName("奥德格陵兰B队", "奥特B队",data);
+    addSaiName("劳弗斯", "诺霍斯",data);
+    addSaiName("吉奥利ETO", "吉奥利",data);
+    addSaiName("扎布热戈尔尼克", "萨比利斯",data);
+    addSaiName("弗罗茨瓦夫斯拉斯克", "斯拉斯克",data);
+    addSaiName("HJK", "赫尔辛基",data);
+    addSaiName("PK-35", "PK35万达",data);
+    addSaiName("特莱弗", "特拉夫",data);
+    addSaiName("迪祖戈斯", "德兹尤加斯",data);
+    addSaiName("卢克尼奥竞技", "卢捷诺体育会",data);
+    addSaiName("二月三日", "弗布罗",data);
+    addSaiName("卡比亚塔竞技", "卡比亚塔",data);
+    addSaiName("TPV", "TPV谭柏利",data);
+    addSaiName("MYPA", "迈柏",data);
+    addSaiName("巴洛姆", "贝鲁姆",data);
+    addSaiName("奥德格陵兰B队", "奥特B队",data);
+    addSaiName("劳弗斯", "诺霍斯",data);
+    addSaiName("瓦勒伦加女足", "瓦勒伦加",data);
+    addSaiName("阿华德斯纳斯女足", "阿华德斯纳斯",data);
+
+
+
+
 
     let counter = 0;
     for(let key in data) counter++;
