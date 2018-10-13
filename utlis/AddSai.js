@@ -3416,7 +3416,13 @@ function  getSaiList() {
     addSaiName("斯托姆堡", "史卓贝治",data);
     addSaiName("斯塔肯", "斯塔根",data);
     addSaiName("HNK戈里察", "戈里察",data);
-
+    addSaiName("希贝尼克", "席比尼克",data);
+    addSaiName("卢斯高", "鲁高萨格勒布",data);
+    addSaiName("札格华尔杰", "迪列高禾杰卡",data);
+    addSaiName("杜格波尔耶", "杜国坡吉",data);
+    addSaiName("瓦拉日丁", "华迪斯",data);
+    addSaiName("斯普利特海杜克", "夏积杜克队",data);
+    addSaiName("梅迪穆杰", "梅吉慕捷",data);
 
     let counter = 0;
     for(let key in data) counter++;
