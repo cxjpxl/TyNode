@@ -3433,7 +3433,6 @@ function  getSaiList() {
     addSaiName("JSM贝贾亚", "比捷亚",data);
     addSaiName("US比斯克拉", "比斯克拉",data);
     addSaiName("USM哈拉彻", "哈拉彻",data);
-    addSaiName("科尔多瓦学院", "联合队",data);
     addSaiName("奥达柯", "格雷米奥奥萨斯库奥达柯SP",data);
     addSaiName("圣安德雷", "圣安德雷SP",data);
     addSaiName("陶巴特", "陶巴特SP",data);
@@ -3442,8 +3441,6 @@ function  getSaiList() {
     addSaiName("圣贝尔纳多", "圣贝纳多SP",data);
     addSaiName("尤文图斯SP", "佐云图斯SP",data);
     addSaiName("阿蒂巴亚", "阿提柏SP",data);
-    addSaiName("隆德里纳", "隆迪那PR",data);
-    addSaiName("圣本托", "圣本托SP",data);
     addSaiName("阿利安萨石油", "阿利安萨",data);
     addSaiName("博亚卡捷高", "奇科",data);
     addSaiName("科尔多巴美洲豹", "贾奎斯科尔多瓦",data);

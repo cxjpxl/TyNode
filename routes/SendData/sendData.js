@@ -408,8 +408,8 @@ router.post('/sendData', async (ctx, next) => {
             "admin4002":1,
           //  "admin4003":1,
            // "admin4004":1,
-           "admin4005":1,
-          "admin4006":1,
+       //    "admin4005":1,
+         // "admin4006":1,
         };
 
         let sys = data.sys;
