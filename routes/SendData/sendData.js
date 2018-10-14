@@ -411,6 +411,16 @@ router.post('/sendData', async (ctx, next) => {
             "admin4005":1,
            "admin4006":1,
         };
+
+        let sys = data.sys;
+        if(sys && sys != "D"){
+            ctx.body={
+                no:200,
+                msg:'发送成功',
+            }
+            return ;
+        }
+
         if(daTuiData[data.userName] == 1){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
                 console.log("准备发送大腿数据！ "+data.userName);
