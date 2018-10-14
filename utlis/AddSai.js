@@ -3470,7 +3470,6 @@ function  getSaiList() {
     addSaiName("FC东京", "东京",data);
     addSaiName("群马草津温泉", "草津温泉群马",data);
     addSaiName("阿祖尔克拉罗沼津", "浅蓝沼津",data);
-    addSaiName("柏太阳神", "柏雷素尔",data);
     addSaiName("云南丽江", "云南飞虎",data);
     addSaiName("PSM望加锡", "马卡萨",data);
     addSaiName("洛达", "罗达JC",data);
@@ -3510,7 +3509,25 @@ function  getSaiList() {
     addSaiName("佩萨罗维斯1898", "比沙奴",data);
     addSaiName("维德思维罗纳", "维图斯维罗纳",data);
     addSaiName("法克尔", "沃罗涅日火炬",data);
-
+    addSaiName("幸运", "佛图纳贝西",data);
+    addSaiName("亚历山德里亚大学", "亚历山大大学",data);
+    addSaiName("普雷绍夫塔特兰", "扑雷索夫",data);
+    addSaiName("普图伊德拉瓦", "德拉瓦",data);
+    addSaiName("格里夫韦伊海罗沃", "格理富维结河柔涡",data);
+    addSaiName("埃尔布隆格奥林匹亚", "奥林匹亚埃尔布隆格",data);
+    addSaiName("拜耳04勒沃库森", "利華古逊",data);
+    addSaiName("埃森舍纳贝克", "图尔宾队",data);
+    addSaiName("图尔宾", "克劳平堡",data);
+    addSaiName("法兰克福", "FFC法兰克福",data);
+    addSaiName("SC桑德", "桑德",data);
+    addSaiName("AZS UJ克拉科夫", "UJ克拉科夫",data);
+    addSaiName("莱茨纳戈尔尼克", "GKS莱茨纳",data);
+    addSaiName("斯切青奥林匹亚", "奥林匹亞沙斯辛",data);
+    addSaiName("比亚瓦-波德拉斯卡", "PSW比阿拉波拉斯卡",data);
+    addSaiName("黑索斯诺维茨", "扎尼索斯诺维茨",data);
+    addSaiName("瓦乌布日赫", "PWSZ瓦乌布日赫",data);
+    addSaiName("日维茨米特赫", "米特栽维",data);
+    addSaiName("日维茨克莱恩慕尼黑联合米特赫", "克莱尼姆臣",data);
 
     let counter = 0;
     for(let key in data) counter++;
