@@ -3757,6 +3757,10 @@ function  getSaiList() {
     addSaiName("北克鲁塞罗", "克鲁塞罗德尔诺特",data);
     addSaiName("登嘉楼", "丁加奴队",data);
     addSaiName("大馬國立大學", "马来西亚国家大学",data);
+    addSaiName("布埃纳夏普尔", "布讷哈普尔",data);
+    addSaiName("迪莫纳", "MS迪莫纳",data);
+    addSaiName("霍尔森斯", "霍森斯",data);
+
 
     let counter = 0;
     for(let key in data) counter++;
