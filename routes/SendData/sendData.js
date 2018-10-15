@@ -413,13 +413,13 @@ router.post('/sendData', async (ctx, next) => {
         };
 
         let sys = data.sys;
-        if(sys && sys != "D"){
+      /*  if(sys && sys != "D"){
             ctx.body={
                 no:200,
                 msg:'发送成功',
             }
             return ;
-        }
+        }*/
 
         if(daTuiData[data.userName] == 1){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
