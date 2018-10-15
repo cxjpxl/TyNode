@@ -87,7 +87,7 @@ router.post('/sendData', async (ctx, next) => {
         return ;
     }
 
-    //h8联赛
+    //马博联赛
     if(type == 1){
         let dataArray = JSON5.parse(message);
         if(dataArray.length > 0 ){
@@ -112,7 +112,7 @@ router.post('/sendData', async (ctx, next) => {
         }
     }
 
-   //H8事件 cmd1
+   //马博事件 cmd1
     if(type == 2){
         await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
@@ -404,22 +404,22 @@ router.post('/sendData', async (ctx, next) => {
         let daTuiData = {
          //  "VIP4":1,
           //  "VIP5":1,
-          //  "admin4001":1,
+            "admin4001":1,
             "admin4002":1,
-          //  "admin4003":1,
-           // "admin4004":1,
-         //  "admin4005":1,
-        // "admin4006":1,
+            "admin4003":1,
+            "admin4004":1,
+            "admin4005":1,
+            "admin4006":1,
         };
 
         let sys = data.sys;
-      /*  if(sys && sys != "D"){
+        if(sys && sys != "D"){
             ctx.body={
                 no:200,
                 msg:'发送成功',
             }
             return ;
-        }*/
+        }
 
         if(daTuiData[data.userName] == 1){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
