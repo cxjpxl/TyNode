@@ -3702,6 +3702,55 @@ function  getSaiList() {
     addSaiName("竞技男孩", "柏斯体育队",data);
     addSaiName("利马联盟", "阿里萨利马",data);
     addSaiName("港海景", "哈波尔维",data);
+//////////////////////10.15///////////////////////////////////////////////
+    addSaiName("海法罗比沙皮若", "海法罗比沙普拉",data);
+    addSaiName("伊罗尼太巴列", "提比哩亚",data);
+    addSaiName("霍隆伊尔米耶胡", "霍隆耶尔米亚胡",data);
+    addSaiName("卡法尔卡瑟姆", "卡法加西姆",data);
+    addSaiName("沙法拉姆夏普尔", "夏普尔沙法拉姆",data);
+    addSaiName("提拉", "提尔拉",data);
+    addSaiName("加西姆村参孙", "参孙卡法权瑟姆",data);
+    addSaiName("耶路撒冷诺迪亚", "阿古达",data);
+    addSaiName("考卡布夏普尔", "考凯夏普尔",data);
+    addSaiName("阿塔市马卡比伊罗尼", "艾罗尼马卡比",data);
+    addSaiName("亚夫内马卡比", "亚夫涅英",data);
+    addSaiName("卡比利奥雅法马卡比", "卡比利奥马卡比",data);
+    addSaiName("荷兹利亚马卡比", "赫兹立亚马卡比",data);
+    addSaiName("AS阿什杜德", "阿古达阿舒多",data);
+    addSaiName("拉马特甘哈科阿米达", "克拉阿米达马甘",data);
+    addSaiName("迦特镇马卡比", "马卡比凯尔耶特",data);
+    addSaiName("伊若尼内瑟", "伊若尼勒谢尔",data);
+    addSaiName("纳夫特希密克", "内弗特赫米克",data);
+    addSaiName("莫斯科斯巴达克", "莫斯科斯巴达",data);
+    addSaiName("米特拉-库卡尔", "密特拉库卡",data);
+    addSaiName("索梅尔", "萨瓦默",data);
+    addSaiName("潘切沃迪纳摩", "迪纳摩潘切沃",data);
+    addSaiName("因吉亚", "印地加",data);
+    addSaiName("塞阿拉", "卡尔拉CE",data);
+    addSaiName("贝塔尔吉瓦特泽夫", "比达吉瓦特泽西维",data);
+    addSaiName("埃拉特布内", "埃拉特",data);
+    addSaiName("希昆哈米兹拉", "石库哈米扎哈",data);
+    addSaiName("贝尔谢巴", "比尔舒华",data);
+    addSaiName("阿富拉夏普尔", "阿福拉哈普尔",data);
+    addSaiName("拉马特沙龙夏普尔尼尔", "哈萨隆",data);
+    addSaiName("马莫里克夏普尔", "雷霍沃特夏普尔",data);
+    addSaiName("卡塔蒙夏普尔", "卡塔蒙耶路撒冷",data);
+    addSaiName("塞克特兹亚", "耐斯茨奥纳",data);
+    addSaiName("亚实基伦夏普尔", "阿什凯泽夏普尔",data);
+    addSaiName("阿米沙夫马卡比", "阿米沙夫彼达迪华马卡比",data);
+    addSaiName("参孙布内-塔伊贝", "希姆尔雄布内",data);
+    addSaiName("特拉维夫参孙", "参孙特拉维夫",data);
+    addSaiName("布内雅法奥托都西姆", "柏纳加法欧托杜瑟姆",data);
+    addSaiName("雷吉纳", "里贾纳",data);
+    addSaiName("阿雷佐", "阿雷素",data);
+    addSaiName("彭特德拉", "邦特德拉",data);
+    addSaiName("恩厄尔霍尔姆斯", "安其尔何马士",data);
+    addSaiName("克里斯蒂安斯塔德", "克里斯提斯塔",data);
+    addSaiName("埃因霍温青年队", "PSV埃因霍温青年队",data);
+    addSaiName("清化队", "FLC清化",data);
+
+
+
 
 
     let counter = 0;
