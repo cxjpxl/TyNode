@@ -3748,10 +3748,15 @@ function  getSaiList() {
     addSaiName("克里斯蒂安斯塔德", "克里斯提斯塔",data);
     addSaiName("埃因霍温青年队", "PSV埃因霍温青年队",data);
     addSaiName("清化队", "FLC清化",data);
-
-
-
-
+    addSaiName("波多纽沃", "波多黎各努埃沃",data);
+    addSaiName("西班牙语中央队", "西班牙中央队",data);
+    addSaiName("坎巴塞雷斯守卫者", "坎巴塞雷斯",data);
+    addSaiName("卡塞洛斯大学生", "埃斯蒂特斯卡塞罗斯",data);
+    addSaiName("挨斯卡拉达工坊", "塔勒雷斯雷梅迪奥斯",data);
+    addSaiName("雷西斯滕西亚萨米恩托", "萨尔米安杜雷斯登夏",data);
+    addSaiName("北克鲁塞罗", "克鲁塞罗德尔诺特",data);
+    addSaiName("登嘉楼", "丁加奴队",data);
+    addSaiName("大馬國立大學", "马来西亚国家大学",data);
 
     let counter = 0;
     for(let key in data) counter++;
