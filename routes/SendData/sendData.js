@@ -402,7 +402,7 @@ router.post('/sendData', async (ctx, next) => {
             message:message,
         }});
         let daTuiData = {
-         //  "VIP4":1,
+           "VIP4":1,
           //  "VIP5":1,
         //    "admin4001":1,
             "admin4002":1,
