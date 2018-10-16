@@ -3760,7 +3760,7 @@ function  getSaiList() {
     addSaiName("布埃纳夏普尔", "布讷哈普尔",data);
     addSaiName("迪莫纳", "MS迪莫纳",data);
     addSaiName("霍尔森斯", "霍森斯",data);
-
+/////////////////////////////////10.16///////////////////////////////
     addSaiName("奈斯特韦兹", "奈司特维德",data);
     addSaiName("卡法肯纳特泽雷", "提泽尔卡法卡纳",data);
     addSaiName("拿撒勒阿尔拿达", "伊纳哈达拿撒勒",data);
@@ -3781,6 +3781,9 @@ function  getSaiList() {
     addSaiName("比格尔韦德", "比格尔斯韦德",data);
     addSaiName("伊希库斯尼斯塔史", "意大利人竞技",data);
     addSaiName("阿梅尼奥竞技", "梅洛",data);
+    addSaiName("汉萨罗斯托克", "汉莎罗斯托克",data);
+    addSaiName("莫诺波利1966", "摩诺波利",data);
+    addSaiName("柏干尼斯", "帕加尼斯",data);
 
 
 
