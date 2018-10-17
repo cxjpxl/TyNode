@@ -3591,7 +3591,6 @@ function  getSaiList() {
     addSaiName("韦尔瓦竞技女子", "斯波盯维尔瓦",data);
     addSaiName("洛格罗尼奥", "罗格揉路",data);
     addSaiName("皇家拉科鲁尼亚竞技", "拉科鲁尼亚",data);
-    addSaiName("桑坦德竞技", "阿维芬尼",data);
     addSaiName("海鸥女子", "瑟古尔",data);
     addSaiName("Aem", "SEAEM",data);
     addSaiName("萨尔迪纳", "松萨迪纳",data);
@@ -3814,6 +3813,24 @@ function  getSaiList() {
     addSaiName("卡赫拉曼马拉什", "卡拉曼马士邦",data);
     addSaiName("帕扎尔斯普", "帕萨士邦",data);
     addSaiName("苏坦贝利市体育", "苏坦贝利",data);
+    addSaiName("奥曼尼纽", "奥斯曼尼耶",data);
+    addSaiName("凡布尤克谢希尔", "凡普野社希尔",data);
+    addSaiName("特拉布宗赫基莫格鲁", "赫克莫古特拉仲",data);
+    addSaiName("约姆拉体育", "永拉斯堡",data);
+    addSaiName("弗拉涅迪纳摩", "维兰捷",data);
+    addSaiName("克鲁舍瓦茨进步", "纳普里达克",data);
+    addSaiName("新圣人TNS", "新圣徒",data);
+    addSaiName("奥林匹亚", "奥林匹亚SP",data);
+    addSaiName("阿尔比索拉", "阿尔比索拉",data);
+    addSaiName("桑坦德竞技", "桑坦德",data);
+    addSaiName("洛格朗尼斯", "洛哥尼斯",data);
+    addSaiName("莱昂内萨文化", "利安尼沙",data);
+    addSaiName("CA塞罗后", "切洛",data);
+    addSaiName("加尔各答竞技", "ATK加尔各答",data);
+    addSaiName("阿尔丁达格耶尼", "阿亭达格",data);
+    addSaiName("凯梅尔体育2003", "克美尔斯堡",data);
+    addSaiName("盖布泽体育", "吉伯斯士邦",data);
+    addSaiName("纳济利市体育", "纳兹利",data);
 
 
     let counter = 0;
