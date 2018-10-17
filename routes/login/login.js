@@ -261,17 +261,14 @@ router.post('/login',async (ctx,next)=>{
     };
 
     let hasDaTui = false;
-    let canPutDaTui = false;
+    let canPutDaTui = true;
 
     if(daTuiData[userName+""] == 1){
         hasDaTui = true;
     }
 
-    if(userName.indexOf("admin")>=0 && noPutAdmin[userName+""]!=1){
-        canPutDaTui = true;
-    }
-    if(userName == "VIP10"){
-        canPutDaTui = true;
+    if(noPutAdmin[userName+""]!=1){
+        canPutDaTui = false;
     }
 
 
