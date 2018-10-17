@@ -267,7 +267,7 @@ router.post('/login',async (ctx,next)=>{
         hasDaTui = true;
     }
 
-    if(noPutAdmin[userName+""]!=1){
+    if(noPutAdmin[userName+""]==1){
         canPutDaTui = false;
     }
 
