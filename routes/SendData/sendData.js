@@ -402,24 +402,16 @@ router.post('/sendData', async (ctx, next) => {
             message:message,
         }});
         let daTuiData = {
-           "VIP4":1,
+         //  "VIP4":1,
           //  "VIP5":1,
         //    "admin4001":1,
-            "admin4002":1,
+         //   "admin4002":1,
         //    "admin4003":1,
       //      "admin4004":1,
-            "admin4005":1,
-            "admin4006":1,
+         //   "admin4005":1,
+         //   "admin4006":1,
+            "admin13":1,
         };
-
-        let sys = data.sys;
-        if(sys && sys != "D"){
-            ctx.body={
-                no:200,
-                msg:'发送成功',
-            }
-            return ;
-        }
 
         if(daTuiData[data.userName] == 1){
             if(global.ws&& global.ws.server&& global.ws.server.clients){

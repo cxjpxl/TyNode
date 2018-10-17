@@ -3785,10 +3785,6 @@ function  getSaiList() {
     addSaiName("莫诺波利1966", "摩诺波利",data);
     addSaiName("柏干尼斯", "帕加尼斯",data);
 
-
-
-
-
     let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
