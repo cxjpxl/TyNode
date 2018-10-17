@@ -3783,11 +3783,37 @@ function  getSaiList() {
     addSaiName("阿梅尼奥竞技", "梅洛",data);
     addSaiName("汉萨罗斯托克", "汉莎罗斯托克",data);
     addSaiName("莫诺波利1966", "摩诺波利",data);
+    ////////////////////////////////////////////////////
     addSaiName("匹尼", "PSTIRA",data);
     addSaiName("PSIS三宝垄", "PSIS三宝珑",data);
     addSaiName("埃勒斯学院-哈拉德斯", "艾卡迪麻亚",data);
     addSaiName("济州联", "济州联队",data);
-
+    addSaiName("古姆森斯堡", "古姆森士邦",data);
+    addSaiName("锡瓦斯市体育", "锡瓦斯贝莱迪耶",data);
+    addSaiName("梅内门市体育", "梅内门",data);
+    addSaiName("加济安泰普体育", "加辛塔士邦",data);
+    addSaiName("克斯欧仁古库", "凯瑟兰高古",data);
+    addSaiName("拜拉姆贝沙", "拜拉姆贝沙斯堡",data);
+    addSaiName("安卡拉德米尔斯普尔", "安卡拉德米士邦",data);
+    addSaiName("宗古达克斯堡", "宗古尔达克",data);
+    addSaiName("托卡特体育", "杜卡士邦",data);
+    addSaiName("伊特梅斯格", "艾堤密古特",data);
+    addSaiName("塞尔丘克体育阿纳多卢", "阿纳多卢",data);
+    addSaiName("伊內哥斯堡", "伊尼高尔士邦",data);
+    addSaiName("萨热耶尔", "沙里耶尔",data);
+    addSaiName("博德鲁姆体育", "波德姆比勒蒂耶斯",data);
+    addSaiName("萨姆斯普尔", "萨姆士邦",data);
+    addSaiName("彭迪克斯普尔", "佩迪卡斯堡",data);
+    addSaiName("班迪马士普尔", "班迪马士邦",data);
+    addSaiName("克尔克拉雷利体育", "克拉雷利士邦",data);
+    addSaiName("达勒贾G.比利吉", "达里卡",data);
+    addSaiName("Utas乌沙克体育", "乌塔斯乌沙克士邦",data);
+    addSaiName("马尼萨市体育", "马尼沙普野社希尔",data);
+    addSaiName("尚勒乌尔法体育", "山路法斯堡",data);
+    addSaiName("塔尔苏斯伊德曼-约尔杜", "塔苏斯",data);
+    addSaiName("卡赫拉曼马拉什", "卡拉曼马士邦",data);
+    addSaiName("帕扎尔斯普", "帕萨士邦",data);
+    addSaiName("苏坦贝利市体育", "苏坦贝利",data);
 
 
     let counter = 0;
