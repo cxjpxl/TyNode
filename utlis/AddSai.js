@@ -3783,7 +3783,12 @@ function  getSaiList() {
     addSaiName("阿梅尼奥竞技", "梅洛",data);
     addSaiName("汉萨罗斯托克", "汉莎罗斯托克",data);
     addSaiName("莫诺波利1966", "摩诺波利",data);
-    addSaiName("柏干尼斯", "帕加尼斯",data);
+    addSaiName("匹尼", "PSTIRA",data);
+    addSaiName("PSIS三宝垄", "PSIS三宝珑",data);
+    addSaiName("埃勒斯学院-哈拉德斯", "艾卡迪麻亚",data);
+    addSaiName("济州联", "济州联队",data);
+
+
 
     let counter = 0;
     for(let key in data) counter++;
