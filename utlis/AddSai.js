@@ -3851,6 +3851,13 @@ function  getSaiList() {
     addSaiName("基尔荷尔斯泰因", "荷尔斯泰因",data);
     addSaiName("苏维埃之翼", "苏维杜夫",data);
 
+    addSaiName("阿美恩斯", "亚眠",data);
+    addSaiName("桑德菲奥德", "桑德菲杰",data);
+    addSaiName("斯托姆加斯特", "史卓加斯特",data);
+    addSaiName("莫斯克伦皇家精英", "摩斯高伦",data);
+    addSaiName("标准列治", "标准列日",data);
+    addSaiName("格丁尼亚阿尔卡", "阿卡",data);
+
 
 
     let counter = 0;
