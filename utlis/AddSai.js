@@ -3846,6 +3846,12 @@ function  getSaiList() {
     addSaiName("卢布尔雅那奥林匹亚", "奥林比查",data);
     addSaiName("索尔纳AIK", "AIK索尔纳",data);
     addSaiName("奥雷布洛", "KIF奥雷布洛",data);
+    addSaiName("札幌冈萨多", "北海道札幌冈萨多",data);
+    addSaiName("阿克希萨尔市体育", "阿克希萨尔",data);
+    addSaiName("基尔荷尔斯泰因", "荷尔斯泰因",data);
+    addSaiName("苏维埃之翼", "苏维杜夫",data);
+
+
 
     let counter = 0;
     for(let key in data) counter++;
