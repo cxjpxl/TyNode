@@ -3850,13 +3850,19 @@ function  getSaiList() {
     addSaiName("阿克希萨尔市体育", "阿克希萨尔",data);
     addSaiName("基尔荷尔斯泰因", "荷尔斯泰因",data);
     addSaiName("苏维埃之翼", "苏维杜夫",data);
-
     addSaiName("阿美恩斯", "亚眠",data);
     addSaiName("桑德菲奥德", "桑德菲杰",data);
     addSaiName("斯托姆加斯特", "史卓加斯特",data);
     addSaiName("莫斯克伦皇家精英", "摩斯高伦",data);
     addSaiName("标准列治", "标准列日",data);
     addSaiName("格丁尼亚阿尔卡", "阿卡",data);
+    addSaiName("马德里竞技", "马德里体育会",data);
+    addSaiName("精英队", "SBV精英队",data);
+    addSaiName("圣乔治斯普希OSK", "圣格奥尔基塞普西",data);
+    addSaiName("波兹南莱克", "波兹南莱希",data);
+    addSaiName("凯尔采科罗纳", "科罗纳",data);
+
+
 
 
 
