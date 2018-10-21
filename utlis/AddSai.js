@@ -3871,6 +3871,32 @@ function  getSaiList() {
     addSaiName("伊尔韦斯坦佩雷", "伊尔韦斯",data);
     addSaiName("拉赫蒂", "拉迪",data);
 
+    addSaiName("锡塔德福图纳", "锡塔德命运",data);
+    addSaiName("迪加史卓普", "格拉夫夏普",data);
+    addSaiName("VVV云路", "芬洛",data);
+    addSaiName("切沃维罗纳", "切沃",data);
+    addSaiName("亚特兰大", "阿特兰大",data);
+    addSaiName("米兰", "AC米兰",data);
+    addSaiName("圣艾蒂安", "圣埃蒂安",data);
+    addSaiName("厄斯特松德", "奥斯特桑斯",data);
+    addSaiName("弗赖堡", "费雷堡",data);
+    addSaiName("卢宾扎格勒比", "路宾",data);
+    addSaiName("克拉科夫维斯瓦", "克拉科夫",data);
+    addSaiName("FC哥本哈根", "哥本哈根",data);
+    addSaiName("爱斯宾奴", "皇家西班牙人",data);
+    addSaiName("松兹瓦尔", "桑斯瓦尔",data);
+    addSaiName("豪格桑德", "候格森德",data);
+    addSaiName("奥特格宁兰", "奥特",data);
+    addSaiName("罗森博格", "洛辛堡",data);
+    addSaiName("兰黑姆", "雷黑姆",data);
+    addSaiName("波杜/基林特", "波杜基林特",data);
+    addSaiName("克里斯蒂安松", "克里斯恬桑德",data);
+    addSaiName("布拉恩足球俱乐部", "白兰恩",data);
+    addSaiName("瓜达拉哈拉", "芝华士",data);
+    addSaiName("皇家巴利亚多利德", "巴拉多利德",data);
+    addSaiName("沙佩科恩斯", "乔沛高恩斯SC",data);
+
+
 
 
     let counter = 0;
