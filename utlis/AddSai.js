@@ -3862,7 +3862,14 @@ function  getSaiList() {
     addSaiName("波兹南莱克", "波兹南莱希",data);
     addSaiName("凯尔采科罗纳", "科罗纳",data);
 
-
+    addSaiName("中岸水手", "中央海岸水手",data);
+    addSaiName("长崎瓦伦", "长崎成功丸",data);
+    addSaiName("云德斯素", "文德斯尔",data);
+    addSaiName("弗罗西诺内", "弗洛西诺尼",data);
+    addSaiName("帕德博恩07", "帕德博恩",data);
+    addSaiName("柏林联盟", "柏林联",data);
+    addSaiName("伊尔韦斯坦佩雷", "伊尔韦斯",data);
+    addSaiName("拉赫蒂", "拉迪",data);
 
 
 
