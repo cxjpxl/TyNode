@@ -3894,7 +3894,12 @@ function  getSaiList() {
     addSaiName("布拉恩足球俱乐部", "白兰恩",data);
     addSaiName("瓜达拉哈拉", "芝华士",data);
     addSaiName("皇家巴利亚多利德", "巴拉多利德",data);
-    addSaiName("沙佩科恩斯", "乔沛高恩斯SC",data);
+    addSaiName("邦加罗尔", "班加鲁鲁",data);
+    addSaiName("雅典阿特罗米托斯", "阿特罗米托斯",data);
+    addSaiName("扎布热戈尔尼克", "萨比利斯",data);
+    addSaiName("哥德堡", "IFK哥德堡",data);
+    addSaiName("桑普多利亚", "森多利亚",data);
+    addSaiName("萨索罗", "萨索洛",data);
 
 
 
