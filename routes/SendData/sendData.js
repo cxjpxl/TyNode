@@ -333,13 +333,14 @@ router.post('/sendData', async (ctx, next) => {
                 "1031":"Penalty Home",
                 "2055":"Penalty Away"
             };
+            let enCid = data.CID+"";
             if(data.T == -1){
-                data.Info = CIDStr[data.CID+""];
+                data.Info = CIDStr[enCid];
             }
-            if(!data.Info){
+            if(!data.Info || enCid == "1031" || enCid == "2055" ){
                 ctx.body={
                     no:200,
-                    msg:'格式错误',
+                    msg:'OK',
                 };
                 return ;
             }
@@ -437,6 +438,55 @@ router.post('/sendData', async (ctx, next) => {
 
 
     //新的事件源处理
+    if(type == 8){
+        await update(Message,{time:new Date().getTime()},{$set:{
+            time:new Date().getTime(),
+            message:message,
+        }});
+        let data = JSON5.parse(message);
+        console.log(data);
+        data.curTime=new Date().getTime();//当前时间
+        data.cmd = 1;
+         /*  let curData = {
+                cmd:1,//事件类型
+                game:{
+                    nameG,//客队
+                    nameH,//主队
+                    leagueName,//联赛
+                    mid,//比赛的mid 一场比赛一个MID   不同比赛不同的MID  字符串
+                },
+                data:{
+                    MID, //比赛的mid 一场比赛一个MID   不同比赛不同的MID  字符串  和上面对应
+                    CID,//888
+                    EID,//事件Id  一场比赛的EID递增
+                    Info,//dianqiu
+                    T,  //-1
+                },
+                curTime:new Date().getTime(),//当前时间
+             };*/
+
+        console.log("准备发送前:",data);
+        /*
+        if(global.ws&& global.ws.server&& global.ws.server.clients){
+            console.log("准备发送！");
+            try {
+                global.ws.server.clients.forEach(ws=>{
+                    try {
+                        if(ws){
+                            ws.send(JSON.stringify(data));
+                        }
+                    }catch (e1){
+                        console.log(e1.toString());
+                    }
+                });
+            }catch (e){
+                console.log(e.toString());
+            }
+        }else{
+            console.log("webSocket 对象连接找不到!");
+        }*/
+    }
+
 
     ctx.body={
         no:200,
