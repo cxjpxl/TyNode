@@ -337,7 +337,14 @@ router.post('/sendData', async (ctx, next) => {
             if(data.T == -1){
                 data.Info = CIDStr[enCid];
             }
-            if(!data.Info || enCid == "1031" || enCid == "2055" ){
+            if(enCid == "1031" || enCid == "2055"){
+                ctx.body={
+                    no:200,
+                    msg:'OK',
+                };
+                return ;
+            }
+            if(!data.Info){
                 ctx.body={
                     no:200,
                     msg:'OK',
