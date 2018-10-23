@@ -473,7 +473,7 @@ router.post('/sendData', async (ctx, next) => {
              };*/
 
         console.log("准备发送前:",data);
-        /*
+
         if(global.ws&& global.ws.server&& global.ws.server.clients){
             console.log("准备发送！");
             try {
@@ -491,7 +491,7 @@ router.post('/sendData', async (ctx, next) => {
             }
         }else{
             console.log("webSocket 对象连接找不到!");
-        }*/
+        }
     }
 
 
