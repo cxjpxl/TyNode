@@ -453,7 +453,7 @@ router.post('/sendData', async (ctx, next) => {
         let data = JSON5.parse(message);
         console.log(data);
         data.curTime=new Date().getTime();//当前时间
-         data.cmd = 101;
+         data.cmd = 100;
          /*  let curData = {
                 cmd:1,//事件类型
                 game:{
