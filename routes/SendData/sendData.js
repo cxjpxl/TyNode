@@ -114,11 +114,11 @@ router.post('/sendData', async (ctx, next) => {
 
    //马博事件 cmd1
     if(type == 2){
-        await update(Message,{time:new Date().getTime()},{$set:{
+        /*await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
             message:message,
-        }});
-        //console.log(Message);
+        }});*/
+
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
         let game = await Game.findOne({mid: mid}).exec();
@@ -386,7 +386,7 @@ router.post('/sendData', async (ctx, next) => {
     //大腿事件 cmd666
     if(type == 5){
         let data = JSON5.parse(message);
-        console.log(data);
+       // console.log(data);
         if(!data.version || data.version  != v || data.version  != v1){
             console.log("版本不存在",data.version,v,v1);
             ctx.body={
@@ -446,11 +446,18 @@ router.post('/sendData', async (ctx, next) => {
 
     //新的事件源处理
     if(type == 8){
-        await update(Message,{time:new Date().getTime()},{$set:{
-            time:new Date().getTime(),
-            message:message,
-        }});
         let data = JSON5.parse(message);
+        if(!data.matchTime){ //保存华哥数据  方便查看数据库
+            await update(Message,{time:new Date().getTime()},{$set:{
+                time:new Date().getTime(),
+                message:message,
+            }});
+            ctx.body={
+                no:200,
+                msg:'华哥没有问题',
+            };
+            return;
+        }
         console.log(data);
         data.curTime=new Date().getTime();//当前时间
          data.cmd = 100;
