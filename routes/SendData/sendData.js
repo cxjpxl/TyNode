@@ -447,17 +447,10 @@ router.post('/sendData', async (ctx, next) => {
     //新的事件源处理
     if(type == 8){
         let data = JSON5.parse(message);
-        if(!data.matchTime){ //保存华哥数据  方便查看数据库
-            await update(Message,{time:new Date().getTime()},{$set:{
-                time:new Date().getTime(),
-                message:message,
-            }});
-            ctx.body={
-                no:200,
-                msg:'华哥没有问题',
-            };
-            return;
-        }
+        await update(Message,{time:new Date().getTime()},{$set:{
+            time:new Date().getTime(),
+            message:message,
+        }});
         console.log(data);
         data.curTime=new Date().getTime();//当前时间
          data.cmd = 100;
