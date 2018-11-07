@@ -108,7 +108,7 @@ router.get('/getUserInfo', async (ctx, next) => {
         {userName:"admin4001"},{userName:"admin4002"},{userName:"admin4003"},
         {userName:"admin4004"}, {userName:"admin4005"}, {userName:"admin4006"},
         {userName:"admin4007"}, {userName:"admin4008"}, {userName:"admin4009"},
-        {userName:"admin4010"},
+        {userName:"admin4010"},  {userName:"admin4011"},
         {userName:"admin5002"},
         {userName:"VIP1"},{userName:"VIP2"},{userName:"VIP3"},{userName:"VIP4"},{userName:"VIP5"},
         {userName:"VIP6"},{userName:"VIP7"},{userName:"VIP8"},{userName:"VIP9"},
