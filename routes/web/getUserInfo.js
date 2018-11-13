@@ -98,7 +98,7 @@ router.get('/getUserInfo', async (ctx, next) => {
     let time = new Date().getTime()- 20*24*60*60*1000;
 
     let user = [
-        {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},{userName:"admin4"},
+        {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},{userName:"admin99"},
         {userName:"admin5"}, {userName:"admin6"},{userName:"admin7"}, {userName:"admin8"},
         {userName:"admin9"}, {userName:"admin10"},{userName:"admin11"},{userName:"admin12"},
         {userName:"admin13"}, {userName:"admin14"},{userName:"admin15"},{userName:"admin16"},
