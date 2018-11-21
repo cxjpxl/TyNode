@@ -298,14 +298,14 @@ router.post('/login',async (ctx,next)=>{
 
     ctx.body = {
         no:200,
+        msg:'登录成功!',
         time:user.valueTime,
         urls:user.userName.indexOf("admin") == -1?vipUrls:"",
-        msg:'登录成功!',
         fun:user.fun?user.fun:0,
         hasJinQiuFun:user.hasJinQiuFun?user.hasJinQiuFun:false, //是否有进球的功能
         hasDaTui, //有大腿功能
         canPutDaTui,//有跟大腿功能
-
+        has40Enbale:user.has40Enbale?user.has40Enbale:false, //是否有40分钟的角球功能
 };
 
 });
