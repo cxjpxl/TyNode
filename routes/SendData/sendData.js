@@ -493,7 +493,7 @@ router.post('/sendData', async (ctx, next) => {
         }});
         data.curTime=new Date().getTime();//当前时间
         data.cmd = 101;
-        /*if(global.ws&& global.ws.server&& global.ws.server.clients){
+        if(global.ws&& global.ws.server&& global.ws.server.clients){
             console.log("准备发送！");
             try {
                 global.ws.server.clients.forEach(ws=>{
@@ -510,7 +510,7 @@ router.post('/sendData', async (ctx, next) => {
             }
         }else{
             console.log("webSocket 对象连接找不到!");
-        }*/
+        }
     }
 
     ctx.body={
