@@ -98,7 +98,7 @@ router.get('/getUserInfo', async (ctx, next) => {
     let time = new Date().getTime()- 20*24*60*60*1000;
 
     let user = [
-        {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},{userName:"admin99"},
+        {userName:"admin1"}, {userName:"admin2"}, {userName:"admin3"},
         {userName:"admin5"}, {userName:"admin6"},{userName:"admin7"}, {userName:"admin8"},
         {userName:"admin9"}, {userName:"admin10"},{userName:"admin11"},{userName:"admin12"},
         {userName:"admin13"}, {userName:"admin14"},{userName:"admin15"},{userName:"admin16"},
@@ -112,9 +112,8 @@ router.get('/getUserInfo', async (ctx, next) => {
         {userName:"admin4010"},  {userName:"admin4011"},
         {userName:"admin5002"},{userName:"admin5003"},
         {userName:"admin6001"},  {userName:"admin6002"},
-        {userName:"VIP1"},{userName:"VIP2"},{userName:"VIP3"},{userName:"VIP4"},{userName:"VIP5"},
-        {userName:"VIP6"},{userName:"VIP7"},{userName:"VIP8"},{userName:"VIP9"},
-        {userName:"VIP14"},{userName:"VIP15"},
+        {userName:"VIP1"},{userName:"VIP4"},{userName:"VIP5"},
+        {userName:"VIP14"},
         ];
     if(ctx_query.user){
         user = [{userName:ctx_query.user}]
