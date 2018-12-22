@@ -406,7 +406,7 @@ router.post('/sendData', async (ctx, next) => {
             message:message,
         }});
         let daTuiData = {
-            "admin13":1,
+            "admin2":1,
         };
 
         if(daTuiData[data.userName] == 1){
