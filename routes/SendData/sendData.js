@@ -392,7 +392,7 @@ router.post('/sendData', async (ctx, next) => {
             return ;
         }
 
-        if(!data.userName) {
+        if(!data.userName ) {
             console.log("用户名不存在");
             ctx.body={
                 no:200,
@@ -409,7 +409,7 @@ router.post('/sendData', async (ctx, next) => {
             "admin4005":1,
         };
 
-        if(daTuiData[data.userName] == 1){
+        if(daTuiData[data.userName] == 1 || data.sys!="D"){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
                 console.log("准备发送大腿数据！ "+data.userName);
                 try {
