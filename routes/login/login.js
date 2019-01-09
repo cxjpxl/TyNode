@@ -266,7 +266,7 @@ router.post('/login',async (ctx,next)=>{
       //  "admin4004":1,
       //  "admin4005":1,
       //  "admin4006":1,
-        "admin4005":1,
+        "admin2":1,
     };
 
     let noPutAdmin = {
@@ -277,7 +277,7 @@ router.post('/login',async (ctx,next)=>{
       //  "admin4005":1,
       //  "admin4006":1,
       //  "admin12":1,
-        "admin4005":1,
+        "admin2":1,
         "admin13":1,
       //  "admin14":1,
       //  "admin15":1,
