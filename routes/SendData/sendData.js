@@ -405,11 +405,8 @@ router.post('/sendData', async (ctx, next) => {
             time:new Date().getTime(),
             message:message,
         }});
-        let daTuiData = {
-            "admin2":1,
-        };
 
-        if(daTuiData[data.userName] == 1 || data.sys!="D"){
+        if(data.sys=="D"||data.sys=="BB1"){
             if(global.ws&& global.ws.server&& global.ws.server.clients){
                 console.log("准备发送大腿数据！ "+data.userName);
                 try {
