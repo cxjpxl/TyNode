@@ -405,27 +405,34 @@ router.post('/sendData', async (ctx, next) => {
             time:new Date().getTime(),
             message:message,
         }});
+        let daTuiData = {
+            "admin2":1,
+        };
 
-        if(data.sys=="D"||data.sys=="BB1"){
-            if(global.ws&& global.ws.server&& global.ws.server.clients){
-                console.log("准备发送大腿数据！ "+data.userName);
-                try {
-                    global.ws.server.clients.forEach(ws=>{
-                        try {
-                            if(ws){
-                                ws.send(message);
+        if(data.userName&&daTuiData[data.userName]&&daTuiData[data.userName] == 1){
+            if(data.sys&&data.sys=="D"||data.sys=="BB1"){
+                if(global.ws&& global.ws.server&& global.ws.server.clients){
+                    console.log("准备发送大腿数据！ "+data.userName);
+                    try {
+                        global.ws.server.clients.forEach(ws=>{
+                            try {
+                                if(ws){
+                                    ws.send(message);
+                                }
+                            }catch (e1){
+                                console.log(e1.toString());
                             }
-                        }catch (e1){
-                            console.log(e1.toString());
-                        }
-                    });
-                }catch (e){
-                    console.log(e.toString());
+                        });
+                    }catch (e){
+                        console.log(e.toString());
+                    }
+                }else{
+                    console.log("webSocket 对象连接找不到!");
                 }
-            }else{
-                console.log("webSocket 对象连接找不到!");
             }
         }
+
+
     }
 
 
