@@ -410,7 +410,7 @@ router.post('/sendData', async (ctx, next) => {
         };
 
         if(data.userName&&daTuiData[data.userName]&&daTuiData[data.userName] == 1){
-            if(data.sys&&data.sys=="D"||data.sys=="BB1"){
+            if(data.sys&&(data.sys=="D"||data.sys=="BB1")){
                 if(global.ws&& global.ws.server&& global.ws.server.clients){
                     console.log("准备发送大腿数据！ "+data.userName);
                     try {
