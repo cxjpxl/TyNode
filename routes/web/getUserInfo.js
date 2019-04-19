@@ -162,18 +162,20 @@ router.get('/getUserInfo', async (ctx, next) => {
     let doc = [];
     let num  = 0 ;
     for(let i = 0 ; i < data.length ; i ++){
-        if(!doc[num]) doc[num]={};
-        if((data[i].userName == "admin-client-by" && data[i].sys =="C")||data[i].userName == "admin-cxj") continue;
-        doc[num]["用户"] = data[i].userName;
-        doc[num]["网址"] = data[i].url;
-        doc[num]["系统"] = data[i].sys;
-        doc[num]["金额"] = data[i].money;
-        doc[num]["账户"] = data[i].webUser;
-        if(ctx_query.pwd){
-            doc[num]["密码"] = data[i].webPwd;
+        if(!doc[num]) {
+            doc[num]={}
+        }else{
+            doc[num]["用户"] = data[i].userName?data[i].userName:"未知";
+            doc[num]["网址"] = data[i].url?data[i].url:"未知";
+            doc[num]["系统"] = data[i].sys?data[i].sys:"未知";
+            doc[num]["金额"] = data[i].money?data[i].money:"未知";
+            doc[num]["账户"] = data[i].webUser?data[i].webUser:"未知";
+            if(ctx_query.pwd){
+                doc[num]["密码"] = data[i].webPwd?data[i].webPwd:"未知";
+            }
+            doc[num]["时间"]=data[i].timeChina?data[i].timeChina:"未知";
+            num  ++;
         }
-        doc[num]["时间"]=data[i].timeChina;
-        num  ++;
     }
     ctx.downloadXLS(doc,'web');
 });
