@@ -154,13 +154,9 @@ router.get('/getUserInfo', async (ctx, next) => {
             }
         }
     }
-
-
-
-
-
     let doc = [];
     let num  = 0 ;
+    console.log("data.len = "+ data.length);
     for(let i = 0 ; i < data.length ; i ++){
         if(!doc[num]) {
             doc[num]={}
@@ -177,6 +173,7 @@ router.get('/getUserInfo', async (ctx, next) => {
             num  ++;
         }
     }
+    console.log("doc.len = "+ doc.length);
     ctx.downloadXLS(doc,'web');
 });
 
