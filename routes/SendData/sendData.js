@@ -492,6 +492,7 @@ router.post('/sendData', async (ctx, next) => {
     //新的事件源处理  新的M8数据
     if(type == 10){
         let data = JSON5.parse(message);
+        console.log("data",data);
         await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
             message:message,
