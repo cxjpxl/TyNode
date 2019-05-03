@@ -29,12 +29,17 @@ router.post('/sendData', async (ctx, next) => {
     let type = body.type;
 
 
-    console.log(type,message);
+
     try{
         type = parseInt(type);
     }catch (e){
 
     }
+
+    if(type!=1){
+        console.log(type,message);
+    }
+
 
     //版本更新事件 cmd -1
     if(type== -1){
