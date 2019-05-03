@@ -29,9 +29,7 @@ router.post('/sendData', async (ctx, next) => {
     let type = body.type;
 
 
- //   console.log(type,message);
-
-
+    console.log(type,message);
     try{
         type = parseInt(type);
     }catch (e){
@@ -118,9 +116,9 @@ router.post('/sendData', async (ctx, next) => {
         let data = JSON5.parse(message);
         let mid = data["MID"]+"";
         let game = await Game.findOne({mid: mid}).exec();
-        console.log("game",game);
+        //console.log("game",game);
         if(game&&game.mid){
-            console.log("主队:"+game.nameH+"||客队："+ game.nameG);
+           // console.log("主队:"+game.nameH+"||客队："+ game.nameG);
             if(global.lianSaiData){
                 if(game.nameH){
                     /*if(game.nameH.indexOf("(中)")>0){
@@ -354,9 +352,9 @@ router.post('/sendData', async (ctx, next) => {
                 data,
                 curTime:new Date().getTime(),
             };
-            console.log("准备发送前:",curData);
+           // console.log("准备发送前:",curData);
             if(global.ws&& global.ws.server&& global.ws.server.clients){
-                console.log("准备发送！");
+            //    console.log("准备发送！");
                 try {
                     global.ws.server.clients.forEach(ws=>{
                         try {
@@ -492,7 +490,6 @@ router.post('/sendData', async (ctx, next) => {
     //新的事件源处理  新的M8数据
     if(type == 10){
         let data = JSON5.parse(message);
-        console.log("data",data);
         await update(Message,{time:new Date().getTime()},{$set:{
             time:new Date().getTime(),
             message:message,
