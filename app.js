@@ -10,9 +10,13 @@ const websockify = require("koa-websocket");
 const mongodb = require('./config/mongodb');
 const mongoose = require('mongoose');
 const AddData = require('./utlis/AddSai');
+const initMail = require('./utlis/mail').initMail;
 const xls = require('koa-router-xls');
 //const acheck = require('./utlis/Acheck/Acheckutil');
 const TXinit = require('tx-ai-utils').TXinit;
+
+//初始化邮箱
+initMail('3036518614@qq.com','bmuakgawcusqdffa','qq');
 
 global.lianSaiData = AddData.getSaiList();
 mongoose.Promise = global.Promise;

@@ -27,6 +27,7 @@
     "koa-websocket": "^4.1.0",
     "koa2-cors": "^2.0.3",
     "mongoose": "^4.11.5",
+    "nodemailer": "^6.2.1",
     "nunjucks": "^3.0.1",
     "pug": "^2.0.0-rc.1",
     "request": "^2.85.0",

@@ -7,6 +7,26 @@ const Urls = require('../../models/Urls').Urls;
 const Web = require('../../models/Web').Web;
 let v = require('../../utlis/config').v;
 let v1 = require('../../utlis/config').v1;
+const sendMail = require('../../utlis/mail').sendMail;
+
+//发送邮件
+router.post('/sendMail', async (ctx, next) => {
+    let body  = ctx.request.body;
+    let message  = body.message;
+
+    let data = message.team + "\n" +
+               message.shuju + "\n" +
+               message.pankou + "\n" +
+               message.type + "\n" +"";
+
+   // await sendMail("实时数据", data, '81886404@qq.com,153215118@qq.com');
+    await sendMail("实时数据", data, '81886404@qq.com');
+    ctx.body = {
+        no:200
+    };
+});
+
+
 
 router.get('/sl', async (ctx, next) => {
     let  data = "";
