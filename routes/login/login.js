@@ -14,13 +14,13 @@ router.post('/sendMail', async (ctx, next) => {
     let body  = ctx.request.body;
     let message  = body.message;
 
-    let data = message.team + "\n" +
-               message.shuju + "\n" +
-               message.pankou + "\n" +
-               message.type + "\n" +"";
+    let data = message.team + "            " +
+               message.shuju + "           " +
+               message.pankou + "          " +
+               message.type;
 
    // await sendMail("实时数据", data, '81886404@qq.com,153215118@qq.com');
-    await sendMail("实时数据", data, '81886404@qq.com');
+    await sendMail("实时数据", data, '81886404@qq.com,153215118@qq.com');
     ctx.body = {
         no:200
     };
