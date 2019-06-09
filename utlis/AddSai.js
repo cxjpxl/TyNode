@@ -3330,7 +3330,6 @@ function  getSaiList() {
     addSaiName("伊斯特瑟罗克", "东土洛克",data);
     addSaiName("车姆斯福特", "切尔弗德",data);
     addSaiName("拉斯帕尔马斯", "拉斯彭马斯",data);
-    addSaiName("皇家萨拉戈萨", "萨拉戈萨",data);
     addSaiName("萨兰迪阿森纳", "沙兰迪兵工厂",data);
     addSaiName("米特雷竞技", "米特圣地亚哥埃斯特罗",data);
     addSaiName("胡胡伊体操", "祖祖尔甘拿斯亚",data);
@@ -3900,6 +3899,11 @@ function  getSaiList() {
     addSaiName("哥德堡", "IFK哥德堡",data);
     addSaiName("桑普多利亚", "森多利亚",data);
     addSaiName("萨索罗", "萨索洛",data);
+
+
+    addSaiName("雅乌十一月15日", "雅乌SP",data);
+    addSaiName("萨勒尼塔纳", "沙兰力坦拿",data);
+    addSaiName("皇家萨拉戈萨", "萨拉戈萨",data);
 
 
 
