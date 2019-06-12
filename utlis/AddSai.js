@@ -3904,7 +3904,7 @@ function  getSaiList() {
     addSaiName("雅乌十一月15日", "雅乌SP",data);
     addSaiName("萨勒尼塔纳", "沙兰力坦拿",data);
     addSaiName("皇家萨拉戈萨", "萨拉戈萨",data);
-
+    addSaiName("克卢日大学", "古积大学",data);
 
 
 
