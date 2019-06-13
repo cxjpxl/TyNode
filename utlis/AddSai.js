@@ -3906,6 +3906,7 @@ function  getSaiList() {
     addSaiName("皇家萨拉戈萨", "萨拉戈萨",data);
     addSaiName("克卢日大学", "古积大学",data);
 
+    addSaiName("维尼亚德尔马埃弗顿", "爱华顿比尼亚德尔马",data);
 
 
     let counter = 0;
