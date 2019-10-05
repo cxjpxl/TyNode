@@ -53,11 +53,12 @@ global.ws = appWebSocket.ws;
 appWebSocket.listen(8600); //webSocket端口
 console.log("webSocket on 8600");
 
+const cors = require('koa2-cors'); //跨域处理
+app.use(cors());
 /*****************session的处理******************/
 /*const Store = require('./lib/store');
 const session = require("koa-session2");
-const cors = require('koa2-cors'); //跨域处理
-app.use(cors());
+
 app.use(session({
     key: "SESSIONID",   //default "koa:sess"
     store: new Store(),
