@@ -54,7 +54,7 @@ appWebSocket.listen(8600); //webSocket端口
 console.log("webSocket on 8600");
 
 /*****************session的处理******************/
-const Store = require('./lib/store');
+/*const Store = require('./lib/store');
 const session = require("koa-session2");
 const cors = require('koa2-cors'); //跨域处理
 app.use(cors());
@@ -64,7 +64,7 @@ app.use(session({
     maxAge:1000*60*60*24,//一个小时有效
     httpOnly:true,
     prefix:'cxj-sess', // 存储sessoin时的前缀
-}));
+}));*/
 /****************楚明代码****************************/
 TXinit("1106845374","hCcpXobCTUgSEDz0"); //识别码处理
 // 联赛名字，{1:主队进球,0:客队进球},主队比分,客队比分,主队名字,客队名字,比赛进行的时间
