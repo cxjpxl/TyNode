@@ -2807,7 +2807,6 @@ function  getSaiList() {
     addSaiName("哈兰德和沃尔夫焊工", "哈兰德沃夫",data);
     ////////////////////////10.10/////////////////////////////////
     addSaiName("纳什维尔", "纳什维尔SC",data);
-    addSaiName("多伦多FC", "多伦多队",data);
     addSaiName("柏太阳神", "柏雷素尔",data);
     addSaiName("印度尼西亚", "印尼",data);
     addSaiName("CSKA莫斯科", "莫斯科中央陆军",data);
@@ -3862,7 +3861,6 @@ function  getSaiList() {
     addSaiName("凯尔采科罗纳", "科罗纳",data);
 
     addSaiName("中岸水手", "中央海岸水手",data);
-    addSaiName("长崎瓦伦", "长崎成功丸",data);
     addSaiName("云德斯素", "文德斯尔",data);
     addSaiName("弗罗西诺内", "弗洛西诺尼",data);
     addSaiName("帕德博恩07", "帕德博恩",data);
@@ -3895,7 +3893,6 @@ function  getSaiList() {
     addSaiName("皇家巴利亚多利德", "巴拉多利德",data);
     addSaiName("邦加罗尔", "班加鲁鲁",data);
     addSaiName("雅典阿特罗米托斯", "阿特罗米托斯",data);
-    addSaiName("扎布热戈尔尼克", "萨比利斯",data);
     addSaiName("哥德堡", "IFK哥德堡",data);
     addSaiName("桑普多利亚", "森多利亚",data);
     addSaiName("萨索罗", "萨索洛",data);
@@ -3916,6 +3913,13 @@ function  getSaiList() {
     addSaiName("阿特兰大", "亚特兰大",data);
     addSaiName("戴戈福斯", "代格福什",data);
     addSaiName("小保加", "博卡青年",data);
+
+    addSaiName("本田FC", "本田",data);
+    addSaiName("长崎瓦伦", "长崎成功丸",data);
+    addSaiName("那不勒斯", "拿玻里",data);
+    addSaiName("多伦多FC", "多伦多",data);
+
+
 
     let counter = 0;
     for(let key in data) counter++;
