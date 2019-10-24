@@ -756,7 +756,6 @@ function  addSaiName(key,value,data) {
     addSaiName("切达约拉德尔瓦", "切达约拉德尔瓦莱斯",data);
     addSaiName("欧罗巴", "CE优蹂帕",data);
     addSaiName("帕拉莫斯", "帕拉玛斯",data);
-    addSaiName("爱斯宾奴 B", "爱斯宾奴B队",data);
     addSaiName("利雲特體育會", "利云特体育会",data);
     addSaiName("CD莫斯托莱斯", "莫斯托莱斯",data);
     addSaiName("波苏埃洛德阿拉尔孔", "波卒埃洛",data);
@@ -3918,6 +3917,24 @@ function  getSaiList() {
     addSaiName("长崎瓦伦", "长崎成功丸",data);
     addSaiName("那不勒斯", "拿玻里",data);
     addSaiName("多伦多FC", "多伦多",data);
+
+    addSaiName("卡拉巴赫", "卡拉巴克",data);
+    addSaiName("APOEL", "阿普尔",data);
+    addSaiName("流浪者", "格拉斯哥流浪",data);
+    addSaiName("伯尔尼年轻人", "年青人",data);
+    addSaiName("拉兹格勒卢多戈雷茨", "卢多格德斯",data);
+    addSaiName("伊斯坦布尔巴萨克塞尔", "伊斯坦堡巴萨希尔",data);
+    addSaiName("伍尔弗汉普顿流浪者", "狼队",data);
+    addSaiName("布拉加竞技", "布拉加",data);
+    addSaiName("AZ阿尔克马尔", "阿尔克马尔",data);
+    addSaiName("阿斯塔纳FC", "艾斯坦拿",data);
+    addSaiName("迪德朗日", "F91 杜迪兰治",data);
+    addSaiName("FC哥本哈根", "哥本哈根",data);
+    addSaiName("特拉布宗体育", "特拉布宗",data);
+    addSaiName("CFR克卢日", "克卢日",data);
+    addSaiName("法兰克福和谐", "法兰克福",data);
+    addSaiName("吉马良斯维多利亚", "甘马雷斯",data);
+    addSaiName("洛杉矶FC", "洛杉矶",data);
 
 
 

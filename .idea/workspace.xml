@@ -48,8 +48,8 @@
       <file leaf-file-name="AddSai.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="2808" column="38" lean-forward="false" selection-start-line="2808" selection-start-column="38" selection-end-line="2808" selection-end-column="38" />
+            <state relative-caret-position="42">
+              <caret line="3934" column="38" lean-forward="false" selection-start-line="3934" selection-start-column="38" selection-end-line="3934" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -121,17 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>希尔迪奥诺</find>
-      <find>爱斯宾奴</find>
-      <find>皇家西班牙人</find>
-      <find>哈雷斯彻</find>
-      <find>汉莎罗斯托克</find>
-      <find>迈克拉奥维</find>
-      <find>马特洛克镇</find>
-      <find>PSIS三宝垄</find>
-      <find>阿维芬尼</find>
-      <find>桑坦德竞技</find>
-      <find>克鲁萨德</find>
       <find>葡萄牙人</find>
       <find>大阪钢巴</find>
       <find>札幌冈萨多</find>
@@ -151,6 +140,17 @@
       <find>长崎瓦伦</find>
       <find>巴伦西亚</find>
       <find>多伦多FC</find>
+      <find>格雷米奥</find>
+      <find>弗拉门戈</find>
+      <find>爱斯宾奴</find>
+      <find>莫斯科中央陆军</find>
+      <find>圣埃蒂安</find>
+      <find>沃尔夫斯贝格</find>
+      <find>布拉迪斯拉发</find>
+      <find>哥本哈根</find>
+      <find>林茨</find>
+      <find>洛辛堡</find>
+      <find>标准列日</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -226,8 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,6 +248,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -914,12 +914,13 @@
       <workItem from="1567651837525" duration="163000" />
       <workItem from="1570247391200" duration="244000" />
       <workItem from="1571761805416" duration="402000" />
-      <workItem from="1571828175054" duration="932000" />
+      <workItem from="1571828175054" duration="1009000" />
+      <workItem from="1571912741846" duration="288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1071420000" />
+    <option name="totallyTimeSpent" value="1071785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -931,7 +932,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4770017" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36797273" sideWeight="0.47916666" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50596255" sideWeight="0.47916666" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6541738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1341,8 +1342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="2808" column="38" lean-forward="false" selection-start-line="2808" selection-start-column="38" selection-end-line="2808" selection-end-column="38" />
+        <state relative-caret-position="42">
+          <caret line="3934" column="38" lean-forward="false" selection-start-line="3934" selection-start-column="38" selection-end-line="3934" selection-end-column="38" />
           <folding />
         </state>
       </provider>
