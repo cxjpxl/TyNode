@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="3934" column="38" lean-forward="false" selection-start-line="3934" selection-start-column="38" selection-end-line="3934" selection-end-column="38" />
+              <caret line="3946" column="35" lean-forward="false" selection-start-line="3946" selection-start-column="35" selection-end-line="3946" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -121,10 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>葡萄牙人</find>
-      <find>大阪钢巴</find>
-      <find>札幌冈萨多</find>
-      <find>await update</find>
       <find>update</find>
       <find>xml2js</find>
       <find>xls</find>
@@ -151,6 +147,10 @@
       <find>林茨</find>
       <find>洛辛堡</find>
       <find>标准列日</find>
+      <find>荷尔斯泰因</find>
+      <find>维拉利尔</find>
+      <find>阿尔巴塞特</find>
+      <find>拿加沙</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -226,6 +226,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,8 +250,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -915,12 +915,13 @@
       <workItem from="1570247391200" duration="244000" />
       <workItem from="1571761805416" duration="402000" />
       <workItem from="1571828175054" duration="1009000" />
-      <workItem from="1571912741846" duration="288000" />
+      <workItem from="1571912741846" duration="356000" />
+      <workItem from="1572000101277" duration="96000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1071785000" />
+    <option name="totallyTimeSpent" value="1071949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1343,7 +1344,7 @@
     <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="3934" column="38" lean-forward="false" selection-start-line="3934" selection-start-column="38" selection-end-line="3934" selection-end-column="38" />
+          <caret line="3946" column="35" lean-forward="false" selection-start-line="3946" selection-start-column="35" selection-end-line="3946" selection-end-column="35" />
           <folding />
         </state>
       </provider>

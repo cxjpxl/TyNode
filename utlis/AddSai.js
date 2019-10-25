@@ -3935,7 +3935,16 @@ function  getSaiList() {
     addSaiName("法兰克福和谐", "法兰克福",data);
     addSaiName("吉马良斯维多利亚", "甘马雷斯",data);
     addSaiName("洛杉矶FC", "洛杉矶",data);
-
+    addSaiName("上海申花", "上海绿地申花",data);
+    addSaiName("什切青波贡", "沙斯辛",data);
+    addSaiName("达姆施塔特98", "达姆斯塔特",data);
+    addSaiName("艾格比治", "厄尔士奥厄",data);
+    addSaiName("阿拉维斯", "艾拉维斯",data);
+    addSaiName("恩特拉维图斯", "恩特拉",data);
+    addSaiName("帕科斯费雷拉", "费雷拉",data);
+    addSaiName("阿韦利亚内达独立", "独立队",data);
+    addSaiName("拉努斯", "拉鲁斯",data);
+    addSaiName("阿特拉斯", "艾特莱",data);
 
 
     let counter = 0;
