@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="3946" column="35" lean-forward="false" selection-start-line="3946" selection-start-column="35" selection-end-line="3946" selection-end-column="35" />
+              <caret line="2954" column="39" lean-forward="false" selection-start-line="2954" selection-start-column="39" selection-end-line="2954" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -121,36 +121,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>update</find>
-      <find>xml2js</find>
-      <find>xls</find>
-      <find>console.log</find>
-      <find>47.88.168.99</find>
-      <find>AddData</find>
-      <find>萨拉戈萨</find>
-      <find>202</find>
-      <find>redis</find>
-      <find>store</find>
-      <find>萨比利斯</find>
-      <find>长崎成功丸</find>
-      <find>长崎瓦伦</find>
-      <find>巴伦西亚</find>
-      <find>多伦多FC</find>
-      <find>格雷米奥</find>
-      <find>弗拉门戈</find>
-      <find>爱斯宾奴</find>
-      <find>莫斯科中央陆军</find>
-      <find>圣埃蒂安</find>
-      <find>沃尔夫斯贝格</find>
-      <find>布拉迪斯拉发</find>
-      <find>哥本哈根</find>
-      <find>林茨</find>
-      <find>洛辛堡</find>
-      <find>标准列日</find>
       <find>荷尔斯泰因</find>
       <find>维拉利尔</find>
       <find>阿尔巴塞特</find>
       <find>拿加沙</find>
+      <find>哥本哈根</find>
+      <find>特雷斯登</find>
+      <find>桑斯瓦尔</find>
+      <find>柏林联</find>
+      <find>帕德博恩</find>
+      <find>费雷堡</find>
+      <find>巴列卡诺</find>
+      <find>邦弗拉甸拿</find>
+      <find>雷加利斯</find>
+      <find>比兰尼塞斯</find>
+      <find>PFC索治</find>
+      <find>桑坦德</find>
+      <find>瓦尔维克</find>
+      <find>巴拉多利德</find>
+      <find>海牙</find>
+      <find>奈梅斯</find>
+      <find>锡塔德命运</find>
+      <find>马德里体育会</find>
+      <find>山度士</find>
+      <find>卡尔拉CE</find>
+      <find>巴海亚BA</find>
+      <find>国际体育会RS</find>
+      <find>富明尼斯RJ</find>
+      <find>乔沛高恩斯SC</find>
+      <find>福塔雷萨CE</find>
+      <find>哥连泰斯SP</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -226,8 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,6 +248,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -916,12 +916,13 @@
       <workItem from="1571761805416" duration="402000" />
       <workItem from="1571828175054" duration="1009000" />
       <workItem from="1571912741846" duration="356000" />
-      <workItem from="1572000101277" duration="96000" />
+      <workItem from="1572000101277" duration="130000" />
+      <workItem from="1572096340071" duration="800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1071949000" />
+    <option name="totallyTimeSpent" value="1072783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1344,7 +1345,7 @@
     <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="3946" column="35" lean-forward="false" selection-start-line="3946" selection-start-column="35" selection-end-line="3946" selection-end-column="35" />
+          <caret line="2954" column="39" lean-forward="false" selection-start-line="2954" selection-start-column="39" selection-end-line="2954" selection-end-column="39" />
           <folding />
         </state>
       </provider>

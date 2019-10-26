@@ -2902,7 +2902,6 @@ function  getSaiList() {
     addSaiName("国际-RS", "国际体育会RS",data);
     addSaiName("科里蒂巴", "哥里迪巴PR",data);
     addSaiName("沙佩科恩斯", "乔沛高恩斯SC",data);
-    addSaiName("桑托斯", "山度士",data);
     addSaiName("韦拉克鲁斯", "维拉库鲁PE",data);
     addSaiName("德基绍", "迪茨韶PE",data);
     addSaiName("阿尔富吉拉迪巴", "迪巴阿富查伊拉",data);
@@ -2954,7 +2953,6 @@ function  getSaiList() {
     addSaiName("马那瓜尤文图斯", "祖云达斯马纳瓜",data);
     addSaiName("塔尔萨钻机工", "塔尔萨罗夫内卡斯",data);
     addSaiName("克鲁塞罗MG", "高士路MG",data);
-    addSaiName("科林蒂安-SP", "哥连泰斯SP",data);
     addSaiName("赫拉胡", "夏拉祖",data);
     addSaiName("奇安特拉竞技", "奇安特拉",data);
     addSaiName("西雅图海湾人", "西雅图海湾人队",data);
@@ -2967,7 +2965,6 @@ function  getSaiList() {
     addSaiName("CS君士坦丁", "CS康桑汰",data);
     addSaiName("侯赛因德尔", "贺赛恩",data);
     addSaiName("波黑", "波斯尼亚和黑塞哥维那",data);
-    addSaiName("科林蒂安", "哥连泰斯SP",data);
     addSaiName("弗拉门戈", "法林明高RJ",data);
     addSaiName("马勒基", "马尔基",data);
     addSaiName("巴尔代约夫游击", "巴尔代约夫",data);
@@ -3929,7 +3926,6 @@ function  getSaiList() {
     addSaiName("AZ阿尔克马尔", "阿尔克马尔",data);
     addSaiName("阿斯塔纳FC", "艾斯坦拿",data);
     addSaiName("迪德朗日", "F91 杜迪兰治",data);
-    addSaiName("FC哥本哈根", "哥本哈根",data);
     addSaiName("特拉布宗体育", "特拉布宗",data);
     addSaiName("CFR克卢日", "克卢日",data);
     addSaiName("法兰克福和谐", "法兰克福",data);
@@ -3946,6 +3942,27 @@ function  getSaiList() {
     addSaiName("拉努斯", "拉鲁斯",data);
     addSaiName("阿特拉斯", "艾特莱",data);
 
+    addSaiName("比勒费尔德阿米尼亚", "比勒费尔德",data);
+    addSaiName("北京国安", "北京中赫国安",data);
+    addSaiName("深圳1994", "深圳佳兆业",data);
+    addSaiName("安塔利亚体育", "安塔利亚",data);
+    addSaiName("哈化柏林", "柏林赫塔",data);
+    addSaiName("贺芬咸", "1899霍芬海姆",data);
+    addSaiName("杜塞尔多夫幸运", "杜塞尔多夫",data);
+    addSaiName("卡尔马", "卡马亚",data);
+    addSaiName("加济安泰普加济谢希尔", "加斯希尔加斯安泰普",data);
+    addSaiName("阿拉尼亚体育", "阿兰亚体育",data);
+    addSaiName("基维辛迪", "吉尔维森特",data);
+    addSaiName("波尔蒂芒斯", "波蒂蒙尼斯",data);
+    addSaiName("米兰德斯", "米兰迪斯",data);
+    addSaiName("斯特拉斯堡", "史特拉斯堡",data);
+    addSaiName("热那亚", "热拿亚",data);
+    addSaiName("桑托斯", "山度士SP",data);
+    addSaiName("科林蒂安-SP	", "哥连泰斯SP",data);
+    addSaiName("瓦斯科-达迦马-RJ", "华斯高RJ",data);
+    addSaiName("克鲁塞罗-MG", "高士路MG",data);
+    addSaiName("老虎", "塔格雷斯",data);
+    addSaiName("蓝十字", "阿苏尔",data);
 
     let counter = 0;
     for(let key in data) counter++;
