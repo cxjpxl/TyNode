@@ -1302,6 +1302,11 @@ function  getSaiList() {
     addSaiName("巴拉纳竞技", "帕拉尼恩斯",data);
     addSaiName("克雷莫塞", "克雷莫内塞",data);
 
+    addSaiName("塞图巴尔维多利亚", "塞图巴尔",data);
+    addSaiName("贝莱斯萨斯菲尔德", "沙士菲",data);
+    addSaiName("飓风", "乌拉坎",data);
+    addSaiName("莱昂", "利昂",data);
+    addSaiName("圣塔克拉拉", "圣塔克莱拉",data);
     let counter = 0;
     for(let key in data) counter++;
     console.log("已匹配球队数量:"+counter);
