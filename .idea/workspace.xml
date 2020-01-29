@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b4842fe-6c7c-4a86-858d-ac2b675afc5d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utlis/AddSai.js" afterPath="$PROJECT_DIR$/utlis/AddSai.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/SendData/sendData.js" afterPath="$PROJECT_DIR$/routes/SendData/sendData.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,20 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sendData.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sendData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/SendData/sendData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="245">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
               <folding>
-                <element signature="e#954#1730#0" expanded="false" />
-                <element signature="e#1884#1987#0" expanded="false" />
-                <element signature="e#2860#12049#0" expanded="false" />
-                <element signature="e#3058#11980#0" expanded="false" />
-                <element signature="e#11993#12043#0" expanded="false" />
-                <element signature="e#12086#13762#0" expanded="false" />
-                <element signature="e#13796#15310#0" expanded="false" />
-                <element signature="e#15354#16220#0" expanded="false" />
+                <element signature="e#958#1734#0" expanded="false" />
+                <element signature="e#1760#1860#0" expanded="false" />
+                <element signature="e#1888#1991#0" expanded="false" />
+                <element signature="e#2864#12053#0" expanded="false" />
+                <element signature="e#3062#11984#0" expanded="false" />
+                <element signature="e#11997#12047#0" expanded="false" />
+                <element signature="e#12090#13766#0" expanded="false" />
+                <element signature="e#13800#15314#0" expanded="false" />
+                <element signature="e#15358#16224#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddSai.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddSai.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="1306" column="33" lean-forward="false" selection-start-line="1306" selection-start-column="33" selection-end-line="1306" selection-end-column="33" />
+            <state relative-caret-position="216">
+              <caret line="1313" column="1" lean-forward="true" selection-start-line="1313" selection-start-column="1" selection-end-line="1313" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -204,11 +205,11 @@
         <option value="$PROJECT_DIR$/utlis/config.js" />
         <option value="$PROJECT_DIR$/utlis/mail.js" />
         <option value="$PROJECT_DIR$/routes/login/login.js" />
-        <option value="$PROJECT_DIR$/routes/SendData/sendData.js" />
         <option value="$PROJECT_DIR$/routes/web/getUserInfo.js" />
         <option value="$PROJECT_DIR$/lib/store.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/utlis/AddSai.js" />
+        <option value="$PROJECT_DIR$/routes/SendData/sendData.js" />
       </list>
     </option>
   </component>
@@ -258,8 +259,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -930,12 +931,13 @@
       <workItem from="1572096340071" duration="837000" />
       <workItem from="1572172404245" duration="1541000" />
       <workItem from="1572316061348" duration="1285000" />
-      <workItem from="1572521234285" duration="307000" />
+      <workItem from="1572521234285" duration="341000" />
+      <workItem from="1580305460691" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1075953000" />
+    <option name="totallyTimeSpent" value="1076039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1301,6 +1303,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1346,36 +1356,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Game.js">
+    <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="216">
+          <caret line="1313" column="1" lean-forward="true" selection-start-line="1313" selection-start-column="1" selection-end-line="1313" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/SendData/sendData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        <state relative-caret-position="245">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
-            <element signature="e#954#1730#0" expanded="false" />
-            <element signature="e#1884#1987#0" expanded="false" />
-            <element signature="e#2860#12049#0" expanded="false" />
-            <element signature="e#3058#11980#0" expanded="false" />
-            <element signature="e#11993#12043#0" expanded="false" />
-            <element signature="e#12086#13762#0" expanded="false" />
-            <element signature="e#13796#15310#0" expanded="false" />
-            <element signature="e#15354#16220#0" expanded="false" />
+            <element signature="e#958#1734#0" expanded="false" />
+            <element signature="e#1760#1860#0" expanded="false" />
+            <element signature="e#1888#1991#0" expanded="false" />
+            <element signature="e#2864#12053#0" expanded="false" />
+            <element signature="e#3062#11984#0" expanded="false" />
+            <element signature="e#11997#12047#0" expanded="false" />
+            <element signature="e#12090#13766#0" expanded="false" />
+            <element signature="e#13800#15314#0" expanded="false" />
+            <element signature="e#15358#16224#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utlis/AddSai.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="1306" column="33" lean-forward="false" selection-start-line="1306" selection-start-column="33" selection-end-line="1306" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
