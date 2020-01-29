@@ -36,9 +36,9 @@ router.post('/sendData', async (ctx, next) => {
 
     }
 
-    //if(type!=1){
+    if(type!=1){
         console.log(type,message);
-  //  }
+   }
 
 
     //版本更新事件 cmd -1
