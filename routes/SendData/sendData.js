@@ -37,8 +37,10 @@ router.post('/sendData', async (ctx, next) => {
     }
 
     if(type!=1){
-        console.log(type,message);
-   }
+        console.log("事件",type,message);
+    }else{
+        console.log("联赛");
+    }
 
 
     //版本更新事件 cmd -1
