@@ -335,7 +335,7 @@ router.post('/sendData', async (ctx, next) => {
                 "2055":"Penalty Away"
             };
             let enCid = data.CID+"";
-            if(data.T == -1){
+            if(data.T == -1 && data.Info!=="danger_free_kick"){
                 data.Info = CIDStr[enCid];
             }
             if(enCid == "1031" || enCid == "2055"){
@@ -359,6 +359,11 @@ router.post('/sendData', async (ctx, next) => {
                 data,
                 curTime:new Date().getTime(),
             };
+
+            if(data.Info == "danger_free_kick"){
+                curData.cmd = 101;
+            }
+
            // console.log("准备发送前:",curData);
             if(global.ws&& global.ws.server&& global.ws.server.clients){
             //    console.log("准备发送！");
