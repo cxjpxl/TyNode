@@ -338,7 +338,7 @@ router.post('/sendData', async (ctx, next) => {
             if(data.T == -1 && data.Info!=="danger_free_kick"){
                 data.Info = CIDStr[enCid];
             }
-            if(enCid == "1031" || enCid == "2055"){
+            if((enCid == "1031" || enCid == "2055") && data.Info!=="danger_free_kick" ){
                 ctx.body={
                     no:200,
                     msg:'OK',
