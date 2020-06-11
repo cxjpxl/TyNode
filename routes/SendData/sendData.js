@@ -25,6 +25,9 @@ function update(model,query,update){
 //参数message
 router.post('/sendData', async (ctx, next) => {
     let body  = ctx.request.body;
+
+    console.log(body);
+
     let message  = body.message;
     let type = body.type;
 
