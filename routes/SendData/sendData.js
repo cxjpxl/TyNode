@@ -26,7 +26,7 @@ function update(model,query,update){
 router.post('/sendData', async (ctx, next) => {
     let body  = ctx.request.body;
 
-    console.log(body);
+   // console.log(body);
 
     let message  = body.message;
     let type = body.type;
