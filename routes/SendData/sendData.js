@@ -507,7 +507,11 @@ router.post('/sendData', async (ctx, next) => {
             message:message,
         }});
         data.curTime=new Date().getTime();//当前时间
-        data.cmd = 101;
+        if( data.data.CID == 2049 || data.data.CID == 1025 ){
+            data.cmd = 1; //角球
+        }else {
+            data.cmd = 101;
+        }
         if(global.ws&& global.ws.server&& global.ws.server.clients){
             console.log("准备发送！");
             try {
